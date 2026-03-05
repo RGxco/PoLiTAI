@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Members of Parliament (MP)",
+    "details": "Elected representatives of the people in the Lok Sabha. Currently includes 543 elected members from various constituencies across India.",
+    "importance": "MPs are the primary link between the central government and the local constituency. They participate in national policy making and oversight.",
+    "source": "https://sansad.in/ls/members",
+    "examples": [
+      {"name": "Narendra Modi", "constituency": "Varanasi", "state": "Uttar Pradesh"},
+      {"name": "Rahul Gandhi", "constituency": "Rae Bareli", "state": "Uttar Pradesh"}
+    ]
+  },
+  {
+    "category": "Members of Legislative Assembly (MLA)",
+    "details": "Elected representatives to the State Legislative Assembly (Vidhan Sabha) of various states and union territories in India.",
+    "importance": "MLAs focus on state-level legislation and local development within their state constituencies.",
+    "source": "Official State Assembly websites (e.g., evidhan.nic.in)"
+  }
+]

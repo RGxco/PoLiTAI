@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Sync Frequency Options -->
+    <string-array name="sync_frequencies">
+        <item>Every 1 hour</item>
+        <item>Every 6 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+    </string-array>
+    
+    <!-- TTS Language Options -->
+    <string-array name="tts_languages">
+        <item>English (India)</item>
+        <item>हिन्दी (Hindi)</item>
+        <item>தமிழ் (Tamil)</item>
+        <item>తెలుగు (Telugu)</item>
+        <item>मराठी (Marathi)</item>
+        <item>বাংলা (Bengali)</item>
+        <item>ગુજરાતી (Gujarati)</item>
+        <item>ಕನ್ನಡ (Kannada)</item>
+        <item>മലയാളം (Malayalam)</item>
+        <item>ਪੰਜਾਬੀ (Punjabi)</item>
+    </string-array>
+    
+</resources>

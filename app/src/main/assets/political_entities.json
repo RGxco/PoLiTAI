@@ -1,0 +1,54 @@
+[
+  {
+    "category": "Former Prime Ministers",
+    "list": [
+      {"name": "Jawaharlal Nehru", "tenure": "1947-1964", "party": "INC"},
+      {"name": "Lal Bahadur Shastri", "tenure": "1964-1966", "party": "INC"},
+      {"name": "Indira Gandhi", "tenure": "1966-1977, 1980-1984", "party": "INC"},
+      {"name": "Morarji Desai", "tenure": "1977-1979", "party": "Janata Party"},
+      {"name": "Rajiv Gandhi", "tenure": "1984-1989", "party": "INC"},
+      {"name": "V. P. Singh", "tenure": "1989-1990", "party": "Janata Dal"},
+      {"name": "P. V. Narasimha Rao", "tenure": "1991-1996", "party": "INC"},
+      {"name": "Atal Bihari Vajpayee", "tenure": "1996, 1998-2004", "party": "BJP"},
+      {"name": "Manmohan Singh", "tenure": "2004-2014", "party": "INC"}
+    ],
+    "importance": "Provides historical context and policy legacy for current politicians."
+  },
+  {
+    "category": "Former Presidents",
+    "list": [
+      {"name": "Rajendra Prasad", "tenure": "1950-1962"},
+      {"name": "S. Radhakrishnan", "tenure": "1962-1967"},
+      {"name": "Zakir Husain", "tenure": "1967-1969"},
+      {"name": "V. V. Giri", "tenure": "1969-1974"},
+      {"name": "A. P. J. Abdul Kalam", "tenure": "2002-2007"},
+      {"name": "Pranab Mukherjee", "tenure": "2012-2017"},
+      {"name": "Ram Nath Kovind", "tenure": "2017-2022"}
+    ],
+    "importance": "Constitutional history and state-level leadership context."
+  },
+  {
+    "category": "Current Chief Ministers (Major States)",
+    "list": [
+      {"state": "Uttar Pradesh", "name": "Yogi Adityanath", "party": "BJP"},
+      {"state": "West Bengal", "name": "Mamata Banerjee", "party": "TMC"},
+      {"state": "Tamil Nadu", "name": "M. K. Stalin", "party": "DMK"},
+      {"state": "Maharashtra", "name": "Eknath Shinde", "party": "Shiv Sena"},
+      {"state": "Bihar", "name": "Nitish Kumar", "party": "JDU"},
+      {"state": "Karnataka", "name": "Siddaramaiah", "party": "INC"},
+      {"state": "Rajasthan", "name": "Bhajan Lal Sharma", "party": "BJP"}
+    ],
+    "importance": "Crucial for understanding state-center relations and regional politics."
+  },
+  {
+    "category": "Cabinet Ministers (Key Portfolios)",
+    "list": [
+      {"portfolio": "Home Affairs", "name": "Amit Shah"},
+      {"portfolio": "Defence", "name": "Rajnath Singh"},
+      {"portfolio": "External Affairs", "name": "S. Jaishankar"},
+      {"portfolio": "Finance", "name": "Nirmala Sitharaman"},
+      {"portfolio": "Road Transport & Highways", "name": "Nitin Gadkari"}
+    ],
+    "importance": "Essential for legislative coordination and policy implementation."
+  }
+]

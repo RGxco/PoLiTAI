@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoLiTAI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <!-- Input Hints -->
+    <string name="hint_message">Ask about schemes, meetings, policies…</string>
+    
+    <!-- Status Messages -->
+    <string name="status_initializing">Initializing AI Model…</string>
+    <string name="status_ready">PoLiTAI Ready</string>
+    <string name="status_generating">Generating response…</string>
+    
+    <!-- Toast Messages -->
+    <string name="toast_copied">Copied to clipboard</string>
+    <string name="toast_wait">Please wait for current response…</string>
+    
+</resources>

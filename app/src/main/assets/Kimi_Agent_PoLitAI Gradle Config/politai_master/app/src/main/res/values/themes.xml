@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme - Dark Mode (Default) -->
+    <style name="Theme.PoLiTAI" parent="Theme.MaterialComponents.Dark.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/indigo_500</item>
+        <item name="colorSecondaryVariant">@color/indigo_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white_alpha_70</item>
+        
+        <!-- Window properties -->
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+    
+    <!-- No Action Bar variant -->
+    <style name="Theme.PoLiTAI.NoActionBar" parent="Theme.PoLiTAI">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <!-- Light Theme variant -->
+    <style name="Theme.PoLiTAI.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/indigo_500</item>
+        <item name="colorSecondaryVariant">@color/indigo_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+</resources>

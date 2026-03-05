@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new_chat"
+            android:icon="@drawable/ic_chat_new"
+            android:title="New Chat" />
+    </group>
+
+    <item android:title="History">
+        <menu>
+            <item
+                android:id="@+id/nav_by_date"
+                android:icon="@drawable/ic_calendar"
+                android:title="By Date" />
+            <item
+                android:id="@+id/nav_by_topic"
+                android:icon="@drawable/ic_topic"
+                android:title="By Topic" />
+            <item
+                android:id="@+id/nav_search_history"
+                android:icon="@drawable/ic_search"
+                android:title="Search History" />
+        </menu>
+    </item>
+
+    <item android:title="Application">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

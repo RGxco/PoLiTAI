@@ -1,0 +1,23 @@
+[
+  {
+    "sector": "Education",
+    "allocation_2024_25": "₹1.20 lakh crore",
+    "details": "Focus on Samagra Shiksha, PM-SHRI schools, and higher education research.",
+    "importance": "Allows politicians to track spending on human capital and school infrastructure in their regions.",
+    "source": "https://www.unionbudget.gov.in"
+  },
+  {
+    "sector": "Healthcare",
+    "allocation_2024_25": "₹90,658 crore",
+    "details": "Includes Ayushman Bharat (PM-JAY), National Health Mission, and digital health initiatives.",
+    "importance": "Essential for monitoring the quality and reach of public health services.",
+    "source": "https://www.unionbudget.gov.in"
+  },
+  {
+    "sector": "Infrastructure",
+    "allocation_2024_25": "₹11.11 lakh crore (Capex)",
+    "details": "Dedicated to roads, railways, and renewable energy projects.",
+    "importance": "Critical for politicians advocating for better connectivity and jobs in their constituencies.",
+    "source": "https://www.unionbudget.gov.in"
+  }
+]

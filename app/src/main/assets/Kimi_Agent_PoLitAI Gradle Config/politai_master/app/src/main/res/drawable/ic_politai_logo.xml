@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#1a1a2e"
+        android:pathData="M60,60m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0"/>
+    
+    <!-- Parliament Dome Shape -->
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M60,25 
+                         C45,25 35,35 35,50 
+                         L35,85 
+                         L45,85 
+                         L45,60 
+                         L55,60 
+                         L55,85 
+                         L65,85 
+                         L65,60 
+                         L75,60 
+                         L75,85 
+                         L85,85 
+                         L85,50 
+                         C85,35 75,25 60,25Z"/>
+    
+    <!-- Dome Top -->
+    <path
+        android:fillColor="#9F7AEA"
+        android:pathData="M60,15 
+                         C50,15 42,20 38,28 
+                         L82,28 
+                         C78,20 70,15 60,15Z"/>
+    
+    <!-- AI Circuit Lines -->
+    <path
+        android:strokeColor="#4F46E5"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M20,60 L30,60 L35,50"/>
+    <path
+        android:strokeColor="#4F46E5"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M100,60 L90,60 L85,50"/>
+    <path
+        android:strokeColor="#4F46E5"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M60,95 L60,105"/>
+    
+    <!-- Circuit Nodes -->
+    <circle
+        android:fillColor="#7C3AED"
+        android:cx="20"
+        android:cy="60"
+        android:r="4"/>
+    <circle
+        android:fillColor="#7C3AED"
+        android:cx="100"
+        android:cy="60"
+        android:r="4"/>
+    <circle
+        android:fillColor="#7C3AED"
+        android:cx="60"
+        android:cy="105"
+        android:r="4"/>
+    
+    <!-- Center Glow -->
+    <circle
+        android:fillColor="#9F7AEA"
+        android:cx="60"
+        android:cy="55"
+        android:r="8"/>
+</vector>

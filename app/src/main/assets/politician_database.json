@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Narendra Modi",
+    "role": "Prime Minister of India",
+    "party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Varanasi",
+    "text": "Narendra Modi: 14th and current Prime Minister of India since 2014. Previously Chief Minister of Gujarat. Focus areas: Digital India, Swachh Bharat, Atmanirbhar Bharat, and infrastructure development."
+  },
+  {
+    "name": "Amit Shah",
+    "role": "Minister of Home Affairs",
+    "party": "BJP",
+    "constituency": "Gandhinagar",
+    "text": "Amit Shah: Current Minister of Home Affairs and Minister of Co-operation. Key roles: Internal security, border management, and legislative reforms like Article 370 abrogation."
+  },
+  {
+    "name": "S. Jaishankar",
+    "role": "Minister of External Affairs",
+    "party": "BJP",
+    "constituency": "Rajya Sabha (Gujarat)",
+    "text": "Subrahmanyam Jaishankar: Minister of External Affairs. Former Foreign Secretary. Focus: Indian diplomacy, global strategic partnerships, and 'India First' foreign policy."
+  },
+  {
+    "name": "Nirmala Sitharaman",
+    "role": "Minister of Finance",
+    "party": "BJP",
+    "constituency": "Rajya Sabha (Karnataka)",
+    "text": "Nirmala Sitharaman: Minister of Finance and Corporate Affairs. Previously Defense Minister. Managing Union Budgets, GST reforms, and economic growth strategies."
+  },
+  {
+    "name": "Rajnath Singh",
+    "role": "Minister of Defence",
+    "party": "BJP",
+    "constituency": "Lucknow",
+    "text": "Rajnath Singh: Current Minister of Defence. Former Home Minister and BJP President. Focus: Modernization of armed forces and 'Make in India' in defence."
+  },
+  {
+    "name": "Yogi Adityanath",
+    "role": "Chief Minister of Uttar Pradesh",
+    "party": "BJP",
+    "constituency": "Gorakhpur Urban",
+    "text": "Yogi Adityanath: 22nd and current Chief Minister of Uttar Pradesh since 2017. Known for law and order focus and development projects in UP."
+  },
+  {
+    "name": "Rahul Gandhi",
+    "role": "Leader of Opposition (Lok Sabha)",
+    "party": "Indian National Congress (INC)",
+    "constituency": "Rae Bareli",
+    "text": "Rahul Gandhi: Member of Parliament and current Leader of Opposition in the 18th Lok Sabha. Former Congress President. Prominent opposition voice."
+  },
+  {
+    "name": "Mallikarjun Kharge",
+    "role": "Congress President",
+    "party": "INC",
+    "constituency": "Rajya Sabha (Karnataka)",
+    "text": "Mallikarjun Kharge: Current President of the Indian National Congress. Leader of Opposition in Rajya Sabha. Long-standing parliamentary career."
+  },
+  {
+    "name": "Arvind Kejriwal",
+    "role": "Former Chief Minister of Delhi",
+    "party": "Aam Aadmi Party (AAP)",
+    "constituency": "New Delhi",
+    "text": "Arvind Kejriwal: National Convener of AAP. Served as Chief Minister of Delhi. Focus areas: Mohalla Clinics, education reforms, and free electricity/water models."
+  },
+  {
+    "name": "Mamata Banerjee",
+    "role": "Chief Minister of West Bengal",
+    "party": "All India Trinamool Congress (TMC)",
+    "constituency": "Bhabanipur",
+    "text": "Mamata Banerjee: 8th and current Chief Minister of West Bengal since 2011. Founder of TMC. Key focus: Social welfare schemes like Kanyashree."
+  },
+  {
+    "name": "M. K. Stalin",
+    "role": "Chief Minister of Tamil Nadu",
+    "party": "DMK",
+    "constituency": "Kolathur",
+    "text": "M. K. Stalin: 8th and current Chief Minister of Tamil Nadu. President of DMK. Focus: Dravidian model of governance and social justice."
+  },
+  {
+    "name": "C. Rajagopalachari",
+    "role": "Last Governor-General of India",
+    "party": "Swatantra Party",
+    "text": "C. Rajagopalachari (Rajaji): Last Governor-General of India, first Indian-born. Bharat Ratna recipient. Chief Minister of Madras. Founded Swatantra Party (Free Market focus)."
+  },
+  {
+    "name": "B. R. Ambedkar",
+    "role": "Father of Indian Constitution",
+    "party": "Independent Labour Party",
+    "text": "B. R. Ambedkar: Architect of the Indian Constitution. First Law Minister. Social reformer who fought against caste discrimination."
+  },
+  {
+    "name": "Jawaharlal Nehru",
+    "role": "1st Prime Minister of India",
+    "party": "INC",
+    "text": "Jawaharlal Nehru: First Prime Minister of India (1947-1964). Central figure in the independence movement. Architect of modern Indian nation-state."
+  }
+]

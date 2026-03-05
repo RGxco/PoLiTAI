@@ -1,0 +1,24 @@
+[
+  {
+    "complaint_id": "GR-2024-001",
+    "location": "Jaipur, Rajasthan",
+    "issue_type": "Water Scarcity",
+    "citizen_description": "Regular water supply has been interrupted for the last 10 days in the Mansarovar area. Hand pumps are also not functional.",
+    "status": "In Progress",
+    "department_assigned": "Public Health Engineering Department (PHED)",
+    "resolution_date": "Expected by 15-Oct-2024",
+    "importance": "Politicians must track these to ensure basic amenities and voter satisfaction.",
+    "source": "https://pgportal.gov.in"
+  },
+  {
+    "complaint_id": "GR-2024-002",
+    "location": "Lucknow, Uttar Pradesh",
+    "issue_type": "Street Lighting",
+    "citizen_description": "Street lights on the main road of Gomti Nagar extension are not working, causing safety concerns for women and elderly at night.",
+    "status": "Resolved",
+    "department_assigned": "Lucknow Municipal Corporation",
+    "resolution_date": "05-Oct-2024",
+    "importance": "Safety issues are high priority for local representatives.",
+    "source": "https://jansunwai.up.nic.in"
+  }
+]

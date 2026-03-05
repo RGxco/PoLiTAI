@@ -1,0 +1,29 @@
+[
+  {
+    "issue_type": "Water Infrastructure",
+    "weekly_frequency": 45,
+    "district": "Jaipur",
+    "citizen_reports": "High volume of complaints regarding pipeline leakage and contaminated supply.",
+    "severity": "Critical",
+    "importance": "Allows politicians to identify systemic infrastructure failure before it becomes a protest point.",
+    "source": "State Grievance Portal (Integrated)"
+  },
+  {
+    "issue_type": "Street Lighting & Safety",
+    "weekly_frequency": 28,
+    "district": "Lucknow",
+    "citizen_reports": "Repeated requests for LED installation in extension areas.",
+    "severity": "Medium",
+    "importance": "Directly linked to women's safety metrics and local urban development scores.",
+    "source": "Municipal Dashboard"
+  },
+  {
+    "issue_type": "Crop Insurance Delay",
+    "weekly_frequency": 112,
+    "district": "Nagpur",
+    "citizen_reports": "Farmers reporting 3-month delay in PM-FBY disbursements.",
+    "severity": "High",
+    "importance": "Crucial for avoiding agrarian distress and preparing for assembly questions.",
+    "source": "District Agriculture Office"
+  }
+]

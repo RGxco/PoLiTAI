@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoLiTAI</string>
+    <string name="app_subtitle">AI Co-Pilot for Indian Governance</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Input Hints -->
+    <string name="hint_message">Ask about schemes, meetings, policies…</string>
+    <string name="hint_voice">Tap microphone to speak</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_send">Send</string>
+    <string name="btn_voice">Voice Input</string>
+    <string name="btn_attach">Attach File</string>
+    
+    <!-- Status Messages -->
+    <string name="status_initializing">Initializing AI Model…</string>
+    <string name="status_downloading">Downloading model (first time)…</string>
+    <string name="status_ready">PoLiTAI Ready</string>
+    <string name="status_generating">Generating response…</string>
+    <string name="status_listening">Listening…</string>
+    
+    <string name="toast_copied">Copied to clipboard</string>
+    <string name="toast_wait">Please wait for current response…</string>
+    <string name="toast_initializing">AI is initializing, please wait…</string>
+    <string name="error_model_load">Failed to load AI model</string>
+</resources>

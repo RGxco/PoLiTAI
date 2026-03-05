@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="purple_500">#7C3AED</color>
+    <color name="purple_700">#6D28D9</color>
+    <color name="purple_900">#5B21B6</color>
+    <color name="indigo_500">#4F46E5</color>
+    <color name="indigo_700">#4338CA</color>
+    
+    <!-- Background Colors -->
+    <color name="background_dark">#1a1a2e</color>
+    <color name="background_darker">#16162a</color>
+    <color name="surface_dark">#16213e</color>
+    
+    <!-- Text Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_30">#4DFFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    
+    <!-- Accent Colors -->
+    <color name="error">#DC2626</color>
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Glassmorphism -->
+    <color name="glass_white">#20FFFFFF</color>
+    <color name="glass_border">#30FFFFFF</color>
+</resources>

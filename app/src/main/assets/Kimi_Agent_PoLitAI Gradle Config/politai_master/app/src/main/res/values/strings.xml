@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoLiTAI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hint_message">Ask about schemes, meetings, policies...</string>
+    <string name="status_loading">Initializing AI Engine...</string>
+    <string name="status_ready">PoLiTAI Ready</string>
+    <string name="status_error">Error initializing AI</string>
+</resources>

@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Starred Question",
+    "id": "SQ-402",
+    "session": "Monsoon Session 2024",
+    "question": "Regarding the steps taken to increase the production of semiconductors in India.",
+    "answer": "The Ministry of Electronics and IT has launched the Semicon India program with an outlay of ₹76,000 crore to provide financial support to companies investing in semiconductors.",
+    "importance": "MPs use starred questions to hold ministries accountable and get oral answers on the floor of the House.",
+    "source": "https://sansad.in/ls/questions/starred-questions"
+  },
+  {
+    "category": "Committee Report",
+    "title": "Standing Committee on External Affairs - 24th Report",
+    "text": "Report on India's 'Neighborhood First' policy, focusing on trade and security cooperation with BIMSTEC nations.",
+    "importance": "Committee reports provide deep technical analysis of policies and help politicians understand legislative nuances.",
+    "source": "https://sansad.in/ls/committees/reports"
+  },
+  {
+    "category": "Bill Voting Record",
+    "bill_name": "Digital Personal Data Protection Bill, 2023",
+    "status": "Passed",
+    "voting": "Voice Vote in Lok Sabha, Passed with amendments in Rajya Sabha.",
+    "importance": "Crucial for tracking party positions and legislative history of major laws.",
+    "source": "https://sansad.in/ls/legislation/bills"
+  }
+]

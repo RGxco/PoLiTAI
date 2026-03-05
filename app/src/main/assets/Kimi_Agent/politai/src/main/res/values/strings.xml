@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoLiTAI</string>
+    <string name="app_subtitle">AI Co-Pilot for Indian Governance</string>
+    
+    <!-- Input Hints -->
+    <string name="hint_message">Ask about schemes, meetings, policies…</string>
+    <string name="hint_voice">Tap microphone to speak</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_send">Send</string>
+    <string name="btn_voice">Voice Input</string>
+    <string name="btn_attach">Attach File</string>
+    
+    <!-- Status Messages -->
+    <string name="status_initializing">Initializing AI Model…</string>
+    <string name="status_downloading">Downloading model (first time)…</string>
+    <string name="status_ready">PoLiTAI Ready</string>
+    <string name="status_generating">Generating response…</string>
+    <string name="status_listening">Listening…</string>
+    
+    <!-- Toast Messages -->
+    <string name="toast_copied">Copied to clipboard</string>
+    <string name="toast_wait">Please wait for current response…</string>
+    <string name="toast_initializing">AI is initializing, please wait…</string>
+    <string name="toast_no_speech">Speech recognition not available</string>
+    <string name="toast_mic_permission">Microphone permission required for voice input</string>
+    
+    <!-- Error Messages -->
+    <string name="error_model_load">Failed to load AI model</string>
+    <string name="error_generation">Error generating response</string>
+    <string name="error_file">Error processing file</string>
+    <string name="error_pdf">Error extracting PDF</string>
+    
+    <!-- Language Names -->
+    <string name="lang_english">English (India)</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_tamil">தமிழ்</string>
+    <string name="lang_telugu">తెలుగు</string>
+    <string name="lang_marathi">मराठी</string>
+    <string name="lang_bengali">বাংলা</string>
+    <string name="lang_gujarati">ગુજરાતી</string>
+    <string name="lang_kannada">ಕನ್ನಡ</string>
+    <string name="lang_malayalam">മലയാളം</string>
+    <string name="lang_punjabi">ਪੰਜਾਬੀ</string>
+    
+    <!-- Sample Queries -->
+    <string name="query_meeting">Summarize last meeting</string>
+    <string name="query_scheme">What is PM-KISAN?</string>
+    <string name="query_budget">Budget utilization status</string>
+    <string name="query_speech">Draft speech for farmers</string>
+    <string name="query_trend">Top 3 issues in my district</string>
+    
+</resources>

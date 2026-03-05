@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="purple_500">#7C3AED</color>
+    <color name="purple_600">#7C3AED</color>
+    <color name="purple_700">#6D28D9</color>
+    <color name="indigo_600">#4F46E5</color>
+    
+    <!-- Background Colors -->
+    <color name="dark_navy">#1a1a2e</color>
+    <color name="midnight_blue">#16213e</color>
+    <color name="royal_blue">#0f3460</color>
+    
+    <!-- Glassmorphism Colors -->
+    <color name="glass_white">#26FFFFFF</color>
+    <color name="glass_white_border">#40FFFFFF</color>
+    <color name="glass_dark">#CC1a1a2e</color>
+    
+    <!-- White Variants -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha_90">#E6FFFFFF</color>
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_30">#4DFFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    <color name="white_alpha_10">#1AFFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#4B5563</color>
+    <color name="text_hint">#9CA3AF</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Bubble Colors -->
+    <color name="user_bubble_start">#7C3AED</color>
+    <color name="user_bubble_end">#4F46E5</color>
+    <color name="ai_bubble_bg">#26FFFFFF</color>
+    <color name="ai_bubble_border">#66FFFFFF</color>
+    
+</resources>

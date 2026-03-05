@@ -1,0 +1,20 @@
+[
+  {
+    "party": "Bharatiya Janata Party (BJP)",
+    "ideology": "Right-wing, Hindutva, Integral Humanism, Nationalism.",
+    "focus": "Economic growth, infrastructure, national security, and cultural preservation.",
+    "manifesto_points": "Atmanirbhar Bharat, Uniform Civil Code, Digital India, infrastructure development."
+  },
+  {
+    "party": "Indian National Congress (INC)",
+    "ideology": "Centrist, Big tent, Secularism, Social Democracy.",
+    "focus": "Social welfare, secularism, rural development, and healthcare access.",
+    "manifesto_points": "NYAY (Social Justice), minimum income support, healthcare for all, strengthening MSMEs."
+  },
+  {
+    "party": "Aam Aadmi Party (AAP)",
+    "ideology": "Centrist, Populism, Anti-corruption.",
+    "focus": "Education, healthcare, free electricity/water, and direct democracy.",
+    "manifesto_points": "Mohalla Clinics, school infrastructure overhaul, transparent governance."
+  }
+]

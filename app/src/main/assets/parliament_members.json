@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Lok Sabha",
+    "details": "The lower house of India's bicameral Parliament. It is composed of representatives of the people chosen by direct election on the basis of adult suffrage.",
+    "importance": "Crucial for understanding legislative representation and the source of major national laws.",
+    "source": "https://sansad.in/ls"
+  },
+  {
+    "category": "Rajya Sabha",
+    "details": "The upper house of India's bicameral Parliament. It is a permanent body and not subject to dissolution. One third of its members retire every second year.",
+    "importance": "Key for understanding state representation at the center and review of legislation passed by Lok Sabha.",
+    "source": "https://sansad.in/rs"
+  }
+]

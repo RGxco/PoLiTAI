@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Outer Circle -->
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M60,10C32.4,10 10,32.4 10,60s22.4,50 50,50s50,-22.4 50,-50S87.6,10 60,10zM60,100c-22.1,0 -40,-17.9 -40,-40s17.9,-40 40,-40s40,17.9 40,40S82.1,100 60,100z"/>
+    
+    <!-- Inner Circle -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M60,25c-19.3,0 -35,15.7 -35,35s15.7,35 35,35s35,-15.7 35,-35S79.3,25 60,25zM60,85c-13.8,0 -25,-11.2 -25,-25s11.2,-25 25,-25s25,11.2 25,25S73.8,85 60,85z"/>
+    
+    <!-- Center P -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,40h15c8.3,0 15,6.7 15,15s-6.7,15 -15,15h-5v15h-10V40zM60,55h5c2.8,0 5,-2.2 5,-5s-2.2,-5 -5,-5h-5V55z"/>
+    
+</vector>

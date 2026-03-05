@@ -1,0 +1,26 @@
+[
+  {
+    "speaker": "Jawaharlal Nehru",
+    "title": "Tryst with Destiny",
+    "occasion": "Independence Day 1947",
+    "key_quote": "Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge...",
+    "style": "Eloquent, visionary, historical significance.",
+    "text_sample": "At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance."
+  },
+  {
+    "speaker": "Atal Bihari Vajpayee",
+    "title": "Pokhran Nuclear Test Address",
+    "occasion": "Parliamentary Debate",
+    "key_quote": "India is now a nuclear weapon state.",
+    "style": "Firm, patriotic, poetic yet decisive.",
+    "text_sample": "We have never used force to resolve disputes. But let no one doubt our resolve to protect our territory and our sovereignty. Our strength is for peace, not for aggression."
+  },
+  {
+    "speaker": "Dr. B.R. Ambedkar",
+    "title": "Final Address to Constituent Assembly",
+    "occasion": "Constitution Adoption 1949",
+    "key_quote": "Constitutional morality is not a natural sentiment. It has to be cultivated.",
+    "style": "Analytical, legalistic, focused on social justice.",
+    "text_sample": "If we wish to maintain democracy not merely in form, but also in fact, what must we do? The first thing in my judgement we must do is to hold fast to constitutional methods of achieving our social and economic objectives."
+  }
+]
