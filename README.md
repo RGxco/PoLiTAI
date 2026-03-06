@@ -9,7 +9,7 @@ PoLiTAI is a professional-grade governance assistant and RAG-powered AI tool des
 
 ### 1. Prerequisites
 - Android Device (API 26+)
-- Processor minimum 732g (testing) would run smooth on 8 gen processors ( works only on snapdragon processors for now ) 
+- Processor minimum 732g (testing) would run smooth on 8 gen processors ( works only on snapdragon & exynos processors for now ) 
 - 6GB+ RAM (8GB recommended for Gemma 2B)
 
 ### 2. Installation
