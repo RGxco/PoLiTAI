@@ -6,6 +6,8 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -14,6 +16,7 @@ import android.os.Looper
 import android.speech.RecognizerIntent
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -21,6 +24,7 @@ import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -45,9 +49,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         private const val TAG = "PoLiTAI-Main"
         private const val MAX_CONTEXT_LENGTH = 15000 
         private const val MAX_CONVERSATION_HISTORY = 3
+        private const val MAX_HISTORY_CHARS = 600
         private const val MODEL_FILENAME = "gemma-2b-it-gpu-int4.bin"
         private const val REQUEST_AUDIO_PERMISSION = 1001
         private const val MAX_TOKENS = 4096 
+        private const val FALLBACK_RESPONSE = "Information not available in the local governance database."
     }
 
     private var llmInference: LlmInference? = null
@@ -69,6 +75,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var attachmentPreview: LinearLayout
     private lateinit var attachmentName: TextView
     private lateinit var removeAttachment: ImageButton
+
+    // Quality selector buttons
+    private lateinit var btnQuick: TextView
+    private lateinit var btnNormal: TextView
+    private lateinit var btnDeep: TextView
+    private lateinit var btnAuto: TextView
     
     private val chatList = mutableListOf<ChatMessage>()
     private val conversationHistory = mutableListOf<Pair<String, String>>()
@@ -76,7 +88,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private val pendingMessageIndex = AtomicInteger(-1)
     private var currentLanguage = "en-IN"
     private var currentSessionId: Long = -1
+    private var sessionReady = CompletableDeferred<Long>()  // FIX: guarantees session is ready
     private var attachedFile: AttachedFile? = null
+    
+    // Response quality: null = auto-detect
+    private var userComplexityOverride: QueryComplexity? = null
     
     private val supportedLanguages = mapOf(
         "en-IN" to Pair("English (India)", Locale("en", "IN")),
@@ -95,9 +111,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         initializeUI()
         initializeComponents()
         checkPermissions()
+        setupBackPressInterceptor()
+        
+        // FIX: Create session and signal when ready
         lifecycleScope.launch {
             chatHistoryManager = ChatHistoryManager(this@MainActivity)
-            currentSessionId = chatHistoryManager?.createSession("New Conversation") ?: -1
+            val id = chatHistoryManager?.createSession("New Conversation") ?: -1
+            currentSessionId = id
+            sessionReady.complete(id)
+            Log.d(TAG, "Session created: $id")
         }
     }
     
@@ -108,7 +130,78 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         navigationView.setNavigationItemSelectedListener(this)
-        findViewById<ImageButton>(R.id.menuButton)?.setOnClickListener { drawerLayout.openDrawer(GravityCompat.START) }
+        findViewById<ImageButton>(R.id.menuButton)?.setOnClickListener { 
+            loadHistoryIntoDrawer()
+            drawerLayout.openDrawer(GravityCompat.START) 
+        }
+    }
+
+    private fun loadHistoryIntoDrawer() {
+        lifecycleScope.launch(Dispatchers.IO) {
+            val historyMap = chatHistoryManager?.getSessionsByDate() ?: return@launch
+            withContext(Dispatchers.Main) {
+                val menu = navigationView.menu
+                
+                // For simplicity: clear the whole menu and re-inflate, then append history
+                menu.clear()
+                menuInflater.inflate(R.menu.nav_drawer_menu, menu)
+                
+                // Now append history under a new group
+                val recentGroup = menu.addSubMenu("Recent Chats")
+                
+                var count = 0
+                for ((_, sessions) in historyMap) {
+                    if (count >= 10) break // Show only top 10 recent
+                    
+                    // Add date header as an uncheckable item
+                    // recentGroup.add(Menu.NONE, Menu.NONE, Menu.NONE, dateLabel).setEnabled(false)
+                    
+                    for (session in sessions.sortedByDescending { it.updatedAt }) {
+                        if (count >= 10) break
+                        
+                        val menuItem = recentGroup.add(R.id.group_history, session.id.toInt(), count, session.title)
+                        menuItem.setIcon(R.drawable.ic_topic)
+                        
+                        count++
+                    }
+                }
+            }
+        }
+    }
+    
+    private fun setupBackPressInterceptor() {
+        onBackPressedDispatcher.addCallback(this, object : androidx.activity.OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                    return
+                }
+
+                // If chat is empty, just exit
+                if (chatList.isEmpty()) {
+                    finish()
+                    return
+                }
+
+                AlertDialog.Builder(this@MainActivity)
+                    .setTitle("Exit PoLiTAI")
+                    .setMessage("Do you want to save this chat session?")
+                    .setPositiveButton("Save & Exit") { _, _ ->
+                        finish() // Session is already saved incrementally in DB
+                    }
+                    .setNegativeButton("Discard") { _, _ ->
+                        // Delete the current session so it doesn't clutter history
+                        lifecycleScope.launch(Dispatchers.IO) {
+                            if (currentSessionId != -1L) {
+                                chatHistoryManager?.deleteSession(currentSessionId)
+                            }
+                            withContext(Dispatchers.Main) { finish() }
+                        }
+                    }
+                    .setNeutralButton("Cancel", null)
+                    .show()
+            }
+        })
     }
     
     private fun initializeUI() {
@@ -122,6 +215,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         attachmentPreview = findViewById(R.id.attachmentPreview)
         attachmentName = findViewById(R.id.attachmentName)
         removeAttachment = findViewById(R.id.removeAttachment)
+
+        // Quality selector buttons
+        btnQuick = findViewById(R.id.btnQuick)
+        btnNormal = findViewById(R.id.btnNormal)
+        btnDeep = findViewById(R.id.btnDeep)
+        btnAuto = findViewById(R.id.btnAuto)
+
         chatAdapter = ChatAdapter(chatList) { message -> copyToClipboard(message) }
         recyclerView.layoutManager = LinearLayoutManager(this).apply { stackFromEnd = true }
         recyclerView.adapter = chatAdapter
@@ -140,6 +240,46 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             attachedFile = null
             attachmentPreview.visibility = View.GONE
         }
+
+        // Quality selector listeners
+        setupQualitySelector()
+    }
+
+    /**
+     * Setup the response quality chips.
+     * Default: Auto (system auto-detects complexity per query)
+     */
+    private fun setupQualitySelector() {
+        // Default state: Auto is selected
+        selectQualityButton(null)
+
+        btnQuick.setOnClickListener { selectQualityButton(QueryComplexity.SHORT) }
+        btnNormal.setOnClickListener { selectQualityButton(QueryComplexity.MEDIUM) }
+        btnDeep.setOnClickListener { selectQualityButton(QueryComplexity.LONG) }
+        btnAuto.setOnClickListener { selectQualityButton(null) }
+    }
+
+    private fun selectQualityButton(complexity: QueryComplexity?) {
+        userComplexityOverride = complexity
+
+        // Reset all to inactive style (pill shape)
+        val inactiveButtons = listOf(btnQuick, btnNormal, btnDeep, btnAuto)
+        inactiveButtons.forEach { btn ->
+            btn.setBackgroundResource(R.drawable.chip_inactive)
+            btn.setTextColor(ContextCompat.getColor(this, R.color.white_alpha_70))
+            btn.setTypeface(null, android.graphics.Typeface.NORMAL)
+        }
+
+        // Set active button
+        val activeBtn = when (complexity) {
+            QueryComplexity.SHORT -> btnQuick
+            QueryComplexity.MEDIUM -> btnNormal
+            QueryComplexity.LONG -> btnDeep
+            null -> btnAuto
+        }
+        activeBtn.setBackgroundResource(R.drawable.chip_active)
+        activeBtn.setTextColor(ContextCompat.getColor(this, R.color.white))
+        activeBtn.setTypeface(null, android.graphics.Typeface.BOLD)
     }
     
     private fun initializeComponents() {
@@ -183,12 +323,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun sendMessage(query: String, isVoiceInput: Boolean = false) {
         if (isGenerating.get()) return
 
-        // 1. QUICK GREETING INTERCEPT (Master Grade Speed)
+        // 1. QUICK GREETING INTERCEPT
         val lowerQuery = query.lowercase(Locale.ROOT).trim()
-        if (lowerQuery == "hi" || lowerQuery == "hello") {
+        if (lowerQuery == "hi" || lowerQuery == "hello" || lowerQuery == "namaste" || lowerQuery == "namaskar") {
             addUserMessage(query)
             addAIPlaceholder()
-            updateAIMessage("PoLiTAI system online. Awaiting governance query.")
+            val greeting = if (currentLanguage == "hi-IN") {
+                "नमस्ते, मैं आपकी कैसे सहायता कर सकती हूँ?"
+            } else {
+                "PoLiTAI system online. Awaiting governance query."
+            }
+            updateAIMessage(greeting)
             return
         }
 
@@ -219,29 +364,99 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         
         lifecycleScope.launch(Dispatchers.IO) {
             try {
-                val context = conversationHistory.takeLast(MAX_CONVERSATION_HISTORY).joinToString("\n") { (u, a) -> "U: $u\nA: $a" }
-                val ragContext = ragEngine?.loadRAGContext(fullQuery, context) ?: ""
+                // FIX: Wait for session to be ready before saving
+                val safeSessionId = sessionReady.await()
+
+                val convContext = conversationHistory.takeLast(MAX_CONVERSATION_HISTORY)
+                    .joinToString("\n") { (u, a) -> "U: $u\nA: $a" }
+                    .takeLast(MAX_HISTORY_CHARS)
+
+                // RAG retrieval with complexity support
+                val (ragContext, detectedComplexity) = ragEngine?.loadRAGContext(
+                    fullQuery, convContext, userComplexityOverride
+                ) ?: ("" to QueryComplexity.MEDIUM)
+
+                Log.d(TAG, "RAG context length: ${ragContext.length}, complexity: ${detectedComplexity.label}")
+                Log.d(TAG, "RAG context preview: ${ragContext.take(200)}")
+
                 val langInstr = if (currentLanguage != "en-IN") "\n\n(Respond in ${supportedLanguages[currentLanguage]?.first})" else ""
                 
                 val prompt = SystemPrompts.buildCompletePrompt(
                     userQuery = fullQuery + langInstr,
                     ragContext = ragContext,
-                    conversationContext = context,
-                    isFollowUp = conversationHistory.isNotEmpty()
+                    conversationContext = convContext,
+                    isFollowUp = conversationHistory.isNotEmpty(),
+                    complexity = detectedComplexity
                 )
                 
-                var response = llmInference?.generateResponse(prompt) ?: "No data found."
+                var response = llmInference?.generateResponse(prompt) ?: FALLBACK_RESPONSE
                 
-                // 2. CLEANUP: Remove any hallucinations of few-shot examples
-                response = response.substringBefore("[USER QUERY]").substringBefore("User:").trim()
+                // CLEANUP: Remove any hallucinated prompt leakage
+                response = response
+                    .substringBefore("[USER QUERY]")
+                    .substringBefore("User:")
+                    .substringBefore("[GOVERNANCE RECORDS]")
+                    .substringBefore("ANSWER:")
+                    .trim()
+
+                // POST-VALIDATION: ONLY trust the LLM if RAG actually returned data.
+                // If RAG context is empty, the LLM has ZERO factual knowledge about this local offline question, 
+                // so anything it said is a hallucination (even if it's well-formatted Hindi).
+                if (ragContext.isBlank()) {
+                    response = FALLBACK_RESPONSE
+                }
+
+                // Remove "no real-time access" hallucination if model still produces it
+                if (response.contains("real-time", ignoreCase = true) ||
+                    response.contains("do not have access", ignoreCase = true) ||
+                    response.contains("don't have access", ignoreCase = true)) {
+                    if (ragContext.isNotBlank()) {
+                        // We DO have data — re-generate focusing on the data
+                        // Just strip the refusal prefix and use whatever follows
+                        val cleaned = response
+                            .replace(Regex("(?i)I (do not|don't) have access to real-time information[.,]?\\s*"), "")
+                            .replace(Regex("(?i)therefore[,]?\\s*"), "")
+                            .replace(Regex("(?i)I cannot provide[^.]*\\.\\s*"), "")
+                            .trim()
+                        response = if (cleaned.length > 20) cleaned else FALLBACK_RESPONSE
+                    } else {
+                        response = FALLBACK_RESPONSE
+                    }
+                }
+
+                // Remove conversational filler at the end of responses
+                response = response
+                    .replace(Regex("(?i)Please provide (additional|more) context.*"), "")
+                    .replace(Regex("(?i)Let me know if you need .*"), "")
+                    .replace(Regex("(?i)Is there anything else .*"), "")
+                    .replace(Regex("(?i)(If|Please let me know if) you have any (further|more) questions.*"), "")
+                    .trim()
+
+                // Ensure response isn't empty
+                if (response.isBlank()) response = FALLBACK_RESPONSE
 
                 withContext(Dispatchers.Main) {
                     updateAIMessage(response)
                     conversationHistory.add(fullQuery to response)
-                    chatHistoryManager?.saveMessages(currentSessionId, chatList)
+                    
+                    // Save messages with guaranteed valid session
+                    try {
+                        chatHistoryManager?.saveMessage(
+                            safeSessionId,
+                            ChatMessage(fullQuery, true, System.currentTimeMillis())
+                        )
+                        chatHistoryManager?.saveMessage(
+                            safeSessionId,
+                            ChatMessage(response, false, System.currentTimeMillis())
+                        )
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Failed to save chat message", e)
+                    }
+                    
                     if (isVoiceInput) speakResponse(response)
                 }
             } catch (e: Exception) {
+                Log.e(TAG, "Generation error", e)
                 withContext(Dispatchers.Main) { updateAIMessage("❌ Generation Error: ${e.message}") }
             } finally {
                 withContext(Dispatchers.Main) {
@@ -337,7 +552,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
     
     private fun speakResponse(text: String) {
-        val clean = text.replace(Regex("[*_#`📝📊💰🎙️❌→✓✅🔴🟠🟡🟢]"), "").take(500)
+        val clean = text.replace(Regex("[*_#`📝📊💰🎙️❌→✓✅🔴🟠🟡🟢⚡🤖🖋️]"), "").take(500)
         textToSpeech?.speak(clean, TextToSpeech.QUEUE_FLUSH, null, null)
     }
     
@@ -348,13 +563,76 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 chatList.clear()
                 chatAdapter.notifyDataSetChanged()
                 conversationHistory.clear()
+                // FIX: Reset session deferred for new chat
+                sessionReady = CompletableDeferred()
                 lifecycleScope.launch {
-                    currentSessionId = chatHistoryManager?.createSession("New Conversation") ?: -1
+                    val id = chatHistoryManager?.createSession("New Conversation") ?: -1
+                    currentSessionId = id
+                    sessionReady.complete(id)
+                }
+            }
+            R.id.nav_help, R.id.nav_about -> {
+                // Ignore for now
+            }
+            else -> {
+                // History item clicked
+                if (item.groupId == R.id.group_history) {
+                    val sessionIdToLoad = item.itemId.toLong()
+                    val sessionTitle = item.title.toString()
+                    
+                    // Show a dialog to Open or Delete (since NavigationView lacks native long-press)
+                    AlertDialog.Builder(this)
+                        .setTitle("Chat Options")
+                        .setMessage("What would you like to do with '$sessionTitle'?")
+                        .setPositiveButton("Open Chat") { _, _ -> loadChatSession(sessionIdToLoad) }
+                        .setNegativeButton("Delete Chat") { _, _ ->
+                            lifecycleScope.launch(Dispatchers.IO) {
+                                chatHistoryManager?.deleteSession(sessionIdToLoad)
+                                withContext(Dispatchers.Main) {
+                                    Toast.makeText(this@MainActivity, "Chat deleted", Toast.LENGTH_SHORT).show()
+                                    // Refresh the drawer history
+                                    loadHistoryIntoDrawer()
+                                }
+                            }
+                        }
+                        .setNeutralButton("Cancel", null)
+                        .show()
                 }
             }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+    
+    private fun loadChatSession(sessionId: Long) {
+        lifecycleScope.launch(Dispatchers.IO) {
+            val messages = chatHistoryManager?.loadSessionMessages(sessionId) ?: emptyList()
+            withContext(Dispatchers.Main) {
+                chatList.clear()
+                conversationHistory.clear()
+                
+                messages.forEach { msg ->
+                    chatList.add(ChatMessage(msg.content, msg.isUser, msg.timestamp))
+                }
+                
+                // Rebuild conversation history for RAG Context
+                for (i in 0 until messages.size step 2) {
+                    if (i + 1 < messages.size) {
+                        conversationHistory.add(messages[i].content to messages[i+1].content)
+                    }
+                }
+                
+                chatAdapter.notifyDataSetChanged()
+                scrollToBottom()
+                
+                // Update current session
+                currentSessionId = sessionId
+                sessionReady = CompletableDeferred()
+                sessionReady.complete(sessionId)
+                
+                Toast.makeText(this@MainActivity, "Chat Loaded", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
     
     private fun copyToClipboard(msg: ChatMessage) {

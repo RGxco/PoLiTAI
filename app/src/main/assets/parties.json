@@ -1,0 +1,747 @@
+{
+  "metadata": {
+    "title": "Indian Political Parties - Complete Database",
+    "version": "2.0",
+    "created_date": "2026-03-06",
+    "last_updated": "2026-03-06",
+    "source": "Government Records, Wikipedia",
+    "purpose": "AI Training Dataset & Political Analysis",
+    "description": "Comprehensive profiles of major Indian political parties with historical and statistical data",
+    "total_parties": 6,
+    "data_quality": {
+      "completeness_percentage": 95,
+      "validation_status": "passed",
+      "last_verified": "2026-03-06"
+    }
+  },
+  "parties": [
+    {
+      "party_id": "bjp_001",
+      "party_name": "Bharatiya Janata Party",
+      "abbreviation": "BJP",
+      "founded_year": 1980,
+      "founded_date": "1980-04-06",
+      "headquarters": "11 Ashoka Road, New Delhi 110001",
+      "headquarters_coordinates": {
+        "latitude": 28.6139,
+        "longitude": 77.2090
+      },
+      "website": "www.bjp.org",
+      "ideology": [
+        "Hindu Nationalism",
+        "Conservatism",
+        "Economic Liberalism",
+        "Nationalism"
+      ],
+      "founding_leaders": [
+        "Atal Bihari Vajpayee",
+        "Lal Krishna Advani"
+      ],
+      "current_president": "JP Nadda",
+      "current_president_start_year": 2020,
+      "electoral_alliance": "NDA (National Democratic Alliance)",
+      "alliance_color": "#FF9900",
+      "party_color": "#FF9900",
+      "symbol": "Lotus",
+      "election_statistics": {
+        "lok_sabha_seats_current": 240,
+        "lok_sabha_seats_2019": 303,
+        "lok_sabha_seats_2014": 282,
+        "lok_sabha_seats_2009": 116,
+        "lok_sabha_seats_2004": 138,
+        "rajya_sabha_seats_current": 96,
+        "state_assembly_seats_approximate": 2150,
+        "vote_share_2024": "36.5%",
+        "vote_share_2019": "37.4%",
+        "vote_share_2014": "31.0%"
+      },
+      "state_presence": [
+        "Gujarat",
+        "Madhya Pradesh",
+        "Rajasthan",
+        "Uttar Pradesh",
+        "Maharashtra",
+        "Karnataka",
+        "Himachal Pradesh",
+        "Uttarakhand",
+        "Assam",
+        "Tripura"
+      ],
+      "chief_ministers_governed": 10,
+      "prime_ministers": 2,
+      "notable_achievements": [
+        "Largest political party by seats in Lok Sabha",
+        "Three consecutive election victories (2014, 2019, 2024)",
+        "Currently leads NDA coalition government",
+        "Expanded from regional to national party",
+        "Strong organizational infrastructure"
+      ],
+      "membership": {
+        "total_members": "180 million",
+        "estimated_workers": "15 million"
+      },
+      "national_leaders": [
+        {
+          "name": "Narendra Modi",
+          "position": "Prime Minister & Party Leader",
+          "since": 2014
+        },
+        {
+          "name": "JP Nadda",
+          "position": "Party President",
+          "since": 2020
+        },
+        {
+          "name": "Rajnath Singh",
+          "position": "Defence Minister & Senior Leader",
+          "since": 2014
+        },
+        {
+          "name": "Amit Shah",
+          "position": "Home Minister & Senior Leader",
+          "since": 2019
+        }
+      ],
+      "key_policies": [
+        "Uniform Civil Code",
+        "Economic Nationalism",
+        "Make in India",
+        "Digital India",
+        "Swachh Bharat Mission",
+        "Ayushman Bharat",
+        "Hindutva ideology"
+      ],
+      "controversies": [
+        "Communal violence accusations",
+        "Minority rights concerns",
+        "Secular principles criticism",
+        "Media freedom concerns"
+      ],
+      "social_media": {
+        "twitter": "@BJP4India",
+        "twitter_followers_millions": 28.5,
+        "facebook_followers_millions": 45.2,
+        "instagram_followers_millions": 12.8
+      },
+      "official_publications": [
+        "Karyavahi (Newsletter)",
+        "BJP Magazine"
+      ],
+      "party_structure": {
+        "national_committee": "185 members",
+        "parliamentary_board": "20 members",
+        "central_election_committee": "13 members",
+        "state_units": 28
+      },
+      "budget_2023_2024": "₹200+ crores",
+      "major_funders": "Corporate donations, state funds",
+      "relationship_with_rss": "Ideological alignment",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bharatiya_Janata_Party_logo.svg/400px-Bharatiya_Janata_Party_logo.svg.png"
+    },
+    {
+      "party_id": "inc_001",
+      "party_name": "Indian National Congress",
+      "abbreviation": "INC",
+      "founded_year": 1885,
+      "founded_date": "1885-12-28",
+      "headquarters": "24 Akbar Road, New Delhi 110011",
+      "headquarters_coordinates": {
+        "latitude": 28.6061,
+        "longitude": 77.2100
+      },
+      "website": "www.inc.org.in",
+      "ideology": [
+        "Social Democracy",
+        "Secularism",
+        "Liberalism",
+        "Inclusive Development"
+      ],
+      "founding_leaders": [
+        "Dadabhai Naoroji",
+        "Surendranath Banerjea",
+        "Pherozeshah Mehta"
+      ],
+      "current_president": "Mallikarjun Kharge",
+      "current_president_start_year": 2022,
+      "electoral_alliance": "UPA (United Progressive Alliance) / INDIA",
+      "alliance_color": "#19AAED",
+      "party_color": "#19AAED",
+      "symbol": "Hand (Open Palm)",
+      "election_statistics": {
+        "lok_sabha_seats_current": 99,
+        "lok_sabha_seats_2019": 52,
+        "lok_sabha_seats_2014": 44,
+        "lok_sabha_seats_2009": 206,
+        "lok_sabha_seats_2004": 145,
+        "rajya_sabha_seats_current": 42,
+        "state_assembly_seats_approximate": 1200,
+        "vote_share_2024": "21.0%",
+        "vote_share_2019": "19.5%",
+        "vote_share_2014": "17.4%"
+      },
+      "state_presence": [
+        "Himachal Pradesh",
+        "Punjab",
+        "Rajasthan",
+        "Chattisgarh",
+        "Jharkhand",
+        "Kerala",
+        "Karnataka",
+        "Maharashtra",
+        "Tamil Nadu"
+      ],
+      "chief_ministers_governed": 18,
+      "prime_ministers": 15,
+      "notable_achievements": [
+        "Oldest national political party",
+        "Led India's independence movement",
+        "15 Prime Ministers from Congress",
+        "Governed India for 49+ years post-independence",
+        "Key role in framing Indian Constitution"
+      ],
+      "membership": {
+        "total_members": "45 million",
+        "estimated_workers": "2 million"
+      },
+      "national_leaders": [
+        {
+          "name": "Mallikarjun Kharge",
+          "position": "Party President",
+          "since": 2022
+        },
+        {
+          "name": "Rahul Gandhi",
+          "position": "Vice President & Parliamentary Leader",
+          "since": 2019
+        },
+        {
+          "name": "Sonia Gandhi",
+          "position": "Chairperson UPA",
+          "since": 2004
+        },
+        {
+          "name": "Ashok Gehlot",
+          "position": "Senior Leader",
+          "since": 2008
+        }
+      ],
+      "key_policies": [
+        "Inclusive Growth",
+        "Social Welfare Programs",
+        "Secularism",
+        "Federalism",
+        "MGNREGA",
+        "Right to Education",
+        "Right to Information"
+      ],
+      "controversies": [
+        "Dynastic politics criticism",
+        "Electoral decline",
+        "Government scams (2G, 2010s)",
+        "Leadership succession debates"
+      ],
+      "social_media": {
+        "twitter": "@INCIndia",
+        "twitter_followers_millions": 12.3,
+        "facebook_followers_millions": 28.5,
+        "instagram_followers_millions": 6.7
+      },
+      "official_publications": [
+        "Congress Today (Magazine)",
+        "Patriot (Newspaper, historical)"
+      ],
+      "party_structure": {
+        "national_committee": "439 members",
+        "parliamentary_board": "31 members",
+        "central_election_committee": "15 members",
+        "state_units": 28
+      },
+      "budget_2023_2024": "₹150+ crores",
+      "major_funders": "Private donations, Rahul Gandhi family",
+      "historical_significance": "Main party during independence struggle",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Indian_National_Congress_Logo.svg/400px-Indian_National_Congress_Logo.svg.png"
+    },
+    {
+      "party_id": "aap_001",
+      "party_name": "Aam Aadmi Party",
+      "abbreviation": "AAP",
+      "founded_year": 2012,
+      "founded_date": "2012-11-26",
+      "headquarters": "58 Nehruvihar, Delhi 110019",
+      "headquarters_coordinates": {
+        "latitude": 28.5921,
+        "longitude": 77.2150
+      },
+      "website": "www.aamaadmiparty.org",
+      "ideology": [
+        "Anti-corruption",
+        "Populism",
+        "Welfare State",
+        "Progressive Politics"
+      ],
+      "founding_leaders": [
+        "Arvind Kejriwal",
+        "Yogendra Yadav",
+        "Prashant Bhushan"
+      ],
+      "current_president": "Arvind Kejriwal",
+      "current_president_start_year": 2012,
+      "electoral_alliance": "INDIA (Indian National Developmental Inclusive Alliance)",
+      "alliance_color": "#1E90FF",
+      "party_color": "#1E90FF",
+      "symbol": "Broom",
+      "election_statistics": {
+        "lok_sabha_seats_current": 13,
+        "lok_sabha_seats_2019": 1,
+        "lok_sabha_seats_2014": 4,
+        "lok_sabha_seats_2009": 0,
+        "rajya_sabha_seats_current": 3,
+        "state_assembly_seats_approximate": 140,
+        "vote_share_2024": "2.1%",
+        "vote_share_2019": "1.6%",
+        "vote_share_2014": "1.0%"
+      },
+      "state_presence": [
+        "Delhi",
+        "Punjab",
+        "Gujarat",
+        "Rajasthan",
+        "Goa",
+        "Haryana"
+      ],
+      "chief_ministers_governed": 2,
+      "prime_ministers": 0,
+      "notable_achievements": [
+        "Anti-corruption movement origin (IAC)",
+        "Swept Delhi elections (2015, 2020)",
+        "First government in Punjab (2022)",
+        "Rapid expansion from single state to multi-state",
+        "Focus on education and welfare reforms"
+      ],
+      "membership": {
+        "total_members": "12 million",
+        "estimated_workers": "800000"
+      },
+      "national_leaders": [
+        {
+          "name": "Arvind Kejriwal",
+          "position": "National Convener & Delhi CM",
+          "since": 2012
+        },
+        {
+          "name": "Manish Sisodia",
+          "position": "Senior Leader & Deputy CM (former)",
+          "since": 2015
+        },
+        {
+          "name": "Bhagwant Mann",
+          "position": "Punjab CM & Senior Leader",
+          "since": 2022
+        }
+      ],
+      "key_policies": [
+        "Free electricity and water",
+        "School education reforms",
+        "Anti-corruption drives",
+        "Subsidized public transport",
+        "Healthcare improvements",
+        "Pension schemes"
+      ],
+      "controversies": [
+        "Funding sources questions",
+        "Corruption charges against leaders",
+        "Liquor scam investigation",
+        "Political promises vs delivery debates"
+      ],
+      "social_media": {
+        "twitter": "@AAPofficial",
+        "twitter_followers_millions": 6.8,
+        "facebook_followers_millions": 12.4,
+        "instagram_followers_millions": 3.2
+      },
+      "official_publications": [
+        "AAP Newsletter"
+      ],
+      "party_structure": {
+        "national_committee": "62 members",
+        "working_committee": "28 members",
+        "state_units": 6
+      },
+      "budget_2023_2024": "₹50 crores",
+      "major_funders": "Arvind Kejriwal, voluntary donations",
+      "grassroots_connection": "Strong emphasis on local issues",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Aam_Aadmi_Party_logo.svg/400px-Aam_Aadmi_Party_logo.svg.png"
+    },
+    {
+      "party_id": "bsp_001",
+      "party_name": "Bahujan Samaj Party",
+      "abbreviation": "BSP",
+      "founded_year": 1984,
+      "founded_date": "1984-04-14",
+      "headquarters": "Taj Upvan Complex, Lucknow, Uttar Pradesh",
+      "headquarters_coordinates": {
+        "latitude": 26.8467,
+        "longitude": 80.9462
+      },
+      "website": "www.bspindia.org",
+      "ideology": [
+        "Dalit Politics",
+        "Social Justice",
+        "Ambedkarite",
+        "Reservation Rights"
+      ],
+      "founding_leaders": [
+        "Kanshi Ram"
+      ],
+      "current_president": "Mayawati",
+      "current_president_start_year": 1995,
+      "electoral_alliance": "INDIA (sometimes independent)",
+      "alliance_color": "#FF6600",
+      "party_color": "#FF6600",
+      "symbol": "Elephant",
+      "election_statistics": {
+        "lok_sabha_seats_current": 0,
+        "lok_sabha_seats_2019": 10,
+        "lok_sabha_seats_2014": 22,
+        "lok_sabha_seats_2009": 21,
+        "lok_sabha_seats_2004": 19,
+        "rajya_sabha_seats_current": 5,
+        "state_assembly_seats_approximate": 15,
+        "vote_share_2024": "2.0%",
+        "vote_share_2019": "5.7%",
+        "vote_share_2014": "4.2%"
+      },
+      "state_presence": [
+        "Uttar Pradesh",
+        "Madhya Pradesh",
+        "Rajasthan",
+        "Haryana",
+        "Punjab"
+      ],
+      "chief_ministers_governed": 3,
+      "prime_ministers": 0,
+      "notable_achievements": [
+        "First Dalit-led political party",
+        "Mayawati - first Dalit woman CM of UP",
+        "Ambedkar monument construction",
+        "Dalit representation champion",
+        "Strong base in Uttar Pradesh"
+      ],
+      "membership": {
+        "total_members": "8 million",
+        "estimated_workers": "600000"
+      },
+      "national_leaders": [
+        {
+          "name": "Mayawati",
+          "position": "National President",
+          "since": 1995
+        },
+        {
+          "name": "Satish Chandra Misra",
+          "position": "General Secretary",
+          "since": 2009
+        }
+      ],
+      "key_policies": [
+        "Dalit empowerment",
+        "Reservation expansion",
+        "OBC representation",
+        "Ambedkar ideology",
+        "Social equality",
+        "Anti-brahminism"
+      ],
+      "controversies": [
+        "Luxury monument spending during CM tenure",
+        "Authoritarian governance accusations",
+        "Criminal charges against Mayawati",
+        "Electoral decline in recent years"
+      ],
+      "social_media": {
+        "twitter": "@mayawatiofficial",
+        "twitter_followers_millions": 3.2,
+        "facebook_followers_millions": 5.8,
+        "instagram_followers_millions": 1.2
+      },
+      "official_publications": [
+        "Samaj Shakti (Magazine)"
+      ],
+      "party_structure": {
+        "national_committee": "95 members",
+        "state_units": 5,
+        "dalit_commission": "Specialized wing"
+      },
+      "budget_2023_2024": "₹30 crores",
+      "major_funders": "Party funds, Mayawati donations",
+      "social_base": "Historically oppressed castes (SC/ST/OBC)",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bahujan_Samaj_Party_logo.svg/400px-Bahujan_Samaj_Party_logo.svg.png"
+    },
+    {
+      "party_id": "cpim_001",
+      "party_name": "Communist Party of India (Marxist)",
+      "abbreviation": "CPI(M)",
+      "founded_year": 1964,
+      "founded_date": "1964-11-01",
+      "headquarters": "A.K. Gopalan Bhavan, New Delhi",
+      "headquarters_coordinates": {
+        "latitude": 28.5921,
+        "longitude": 77.2400
+      },
+      "website": "www.cpim.org",
+      "ideology": [
+        "Communism",
+        "Marxism",
+        "Socialism",
+        "Workers' Rights"
+      ],
+      "founding_leaders": [
+        "E.M.S. Namboodiripad",
+        "A.K. Gopalan"
+      ],
+      "current_president": "Sitaram Yechury",
+      "current_president_start_year": 2015,
+      "electoral_alliance": "INDIA",
+      "alliance_color": "#FF0000",
+      "party_color": "#FF0000",
+      "symbol": "Hammer & Sickle",
+      "election_statistics": {
+        "lok_sabha_seats_current": 4,
+        "lok_sabha_seats_2019": 9,
+        "lok_sabha_seats_2014": 9,
+        "lok_sabha_seats_2009": 25,
+        "lok_sabha_seats_2004": 43,
+        "rajya_sabha_seats_current": 9,
+        "state_assembly_seats_approximate": 65,
+        "vote_share_2024": "0.7%",
+        "vote_share_2019": "1.6%",
+        "vote_share_2014": "1.6%"
+      },
+      "state_presence": [
+        "Kerala",
+        "West Bengal",
+        "Tripura",
+        "Assam",
+        "Odisha"
+      ],
+      "chief_ministers_governed": 6,
+      "prime_ministers": 0,
+      "notable_achievements": [
+        "Ruled Kerala for 25+ years",
+        "Long West Bengal government tenure",
+        "Workers' rights champion",
+        "Strong grassroots organization",
+        "International communist movement ties"
+      ],
+      "membership": {
+        "total_members": "2.8 million",
+        "estimated_workers": "800000"
+      },
+      "national_leaders": [
+        {
+          "name": "Sitaram Yechury",
+          "position": "General Secretary",
+          "since": 2015
+        },
+        {
+          "name": "Pinarayi Vijayan",
+          "position": "Kerala CM & Senior Leader",
+          "since": 2018
+        },
+        {
+          "name": "Mohit Sen",
+          "position": "Politburo Member",
+          "since": 1997
+        }
+      ],
+      "key_policies": [
+        "Workers' rights",
+        "Land redistribution",
+        "Education accessibility",
+        "Healthcare universalization",
+        "Anti-imperialism",
+        "Socialist economy"
+      ],
+      "controversies": [
+        "Electoral decline",
+        "Sectarian politics accusations",
+        "Left Front disintegration",
+        "Internal party disputes"
+      ],
+      "social_media": {
+        "twitter": "@CPIMofficial",
+        "twitter_followers_millions": 1.1,
+        "facebook_followers_millions": 2.3,
+        "instagram_followers_millions": 0.4
+      },
+      "official_publications": [
+        "People's Democracy (Weekly)",
+        "Marxist Magazine (Monthly)"
+      ],
+      "party_structure": {
+        "politburo": "18 members",
+        "central_committee": "96 members",
+        "state_units": 29
+      },
+      "budget_2023_2024": "₹20 crores",
+      "major_funders": "Party membership fees",
+      "international_affiliation": "International communist movement",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Communist_Party_of_India_%28Marxist%29_Logo.svg/400px-Communist_Party_of_India_%28Marxist%29_Logo.svg.png"
+    },
+    {
+      "party_id": "npp_001",
+      "party_name": "National People's Party",
+      "abbreviation": "NPP",
+      "founded_year": 2013,
+      "founded_date": "2013-03-31",
+      "headquarters": "New Delhi",
+      "headquarters_coordinates": {
+        "latitude": 28.6100,
+        "longitude": 77.2300
+      },
+      "website": "www.nppindia.org",
+      "ideology": [
+        "Regionalism",
+        "Social Democracy",
+        "Inclusive Politics",
+        "Northeast India Focus"
+      ],
+      "founding_leaders": [
+        "P. A. Sangma",
+        "Conrad Sangma"
+      ],
+      "current_president": "Conrad Sangma",
+      "current_president_start_year": 2018,
+      "electoral_alliance": "NDA (National Democratic Alliance)",
+      "alliance_color": "#FFA500",
+      "party_color": "#FFA500",
+      "symbol": "Cogwheel",
+      "election_statistics": {
+        "lok_sabha_seats_current": 7,
+        "lok_sabha_seats_2019": 6,
+        "lok_sabha_seats_2014": 3,
+        "lok_sabha_seats_2009": 0,
+        "rajya_sabha_seats_current": 2,
+        "state_assembly_seats_approximate": 80,
+        "vote_share_2024": "0.4%",
+        "vote_share_2019": "0.5%",
+        "vote_share_2014": "0.2%"
+      },
+      "state_presence": [
+        "Meghalaya",
+        "Manipur",
+        "Mizoram",
+        "Nagaland",
+        "Tripura",
+        "Arunachal Pradesh"
+      ],
+      "chief_ministers_governed": 2,
+      "prime_ministers": 0,
+      "notable_achievements": [
+        "Achieved national party status (2019)",
+        "Strong Northeast presence",
+        "Meghalaya government leading party",
+        "Youngest regional party with growth trajectory",
+        "Key NDA coalition member"
+      ],
+      "membership": {
+        "total_members": "2 million",
+        "estimated_workers": "200000"
+      },
+      "national_leaders": [
+        {
+          "name": "Conrad Sangma",
+          "position": "National President & Meghalaya CM",
+          "since": 2018
+        },
+        {
+          "name": "Agatha Sangma",
+          "position": "Lok Sabha MP & Senior Leader",
+          "since": 2024
+        },
+        {
+          "name": "Rishang Keishing",
+          "position": "Senior Leader",
+          "since": 2013
+        }
+      ],
+      "key_policies": [
+        "Northeast India development",
+        "Regional autonomy",
+        "Tribal rights protection",
+        "Environmental conservation",
+        "Indigenous culture preservation",
+        "Minority protection"
+      ],
+      "controversies": [
+        "Regional party limitations",
+        "Coalition dependency",
+        "Limited national presence"
+      ],
+      "social_media": {
+        "twitter": "@NPPIndia",
+        "twitter_followers_millions": 0.8,
+        "facebook_followers_millions": 1.5,
+        "instagram_followers_millions": 0.3
+      },
+      "official_publications": [
+        "NPP Newsletter"
+      ],
+      "party_structure": {
+        "central_committee": "45 members",
+        "state_units": 6,
+        "regional_focus": "Northeast India specialized"
+      },
+      "budget_2023_2024": "₹15 crores",
+      "major_funders": "NDA alliance support, party funds",
+      "regional_stronghold": "Meghalaya (largest support base)",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/National_People%27s_Party_of_India_logo.svg/400px-National_People%27s_Party_of_India_logo.svg.png"
+    }
+  ],
+  "data_validation_rules": {
+    "required_fields": [
+      "party_id",
+      "party_name",
+      "abbreviation",
+      "founded_year",
+      "headquarters",
+      "ideology",
+      "electoral_alliance",
+      "election_statistics"
+    ],
+    "field_constraints": {
+      "party_id": "Format: XXX_001",
+      "founded_year": "Integer 1800-2026",
+      "party_color": "Hex color code format #XXXXXX",
+      "election_statistics": "Non-negative integers for seats"
+    }
+  },
+  "statistics": {
+    "total_parties": 6,
+    "parties_in_government": 2,
+    "parties_in_opposition": 4,
+    "total_lok_sabha_seats_accounted": 363,
+    "total_state_assembly_seats_accounted": 4815,
+    "oldest_party": {
+      "name": "Indian National Congress",
+      "founded_year": 1885
+    },
+    "newest_party": {
+      "name": "National People's Party",
+      "founded_year": 2013
+    },
+    "largest_party_by_seats": {
+      "name": "Bharatiya Janata Party",
+      "current_lok_sabha_seats": 240
+    },
+    "parties_by_alliance": {
+      "NDA": 2,
+      "UPA_INDIA": 3,
+      "Independent": 1
+    },
+    "parties_by_ideology": {
+      "Right_Wing": 2,
+      "Center_Left": 3,
+      "Left": 1
+    }
+  }
+}

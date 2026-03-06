@@ -1,0 +1,66 @@
+[
+    {
+        "id": "MBA_001",
+        "ministry": "Ministry of Defence",
+        "fy": "FY2024-25",
+        "allocation_crore": 625000,
+        "pct_of_total_budget": 12.9,
+        "text": "Ministry Budget: Defence. FY2024-25 allocation: ₹6,25,000 crore. 12.9% of total budget. Capital outlay: ₹1,72,000 cr. Revenue: ₹2,82,000 cr. Pensions: ₹1,41,000 cr. Focus: Indigenous weapons, Agni-V, Tejas, aircraft carriers."
+    },
+    {
+        "id": "MBA_002",
+        "ministry": "Ministry of Road Transport & Highways",
+        "fy": "FY2024-25",
+        "allocation_crore": 278000,
+        "pct_of_total_budget": 5.8,
+        "text": "Ministry Budget: Road Transport & Highways. FY2024-25: ₹2,78,000 crore. 5.8% of total. Bharatmala Pariyojana: ₹78,000 cr. Target: 12,500 km highways in FY25. National Highway length: 1,46,145 km."
+    },
+    {
+        "id": "MBA_003",
+        "ministry": "Ministry of Railways",
+        "fy": "FY2024-25",
+        "allocation_crore": 255000,
+        "pct_of_total_budget": 5.3,
+        "text": "Ministry Budget: Railways. FY2024-25: ₹2,55,000 crore. 5.3% of budget. Capital expenditure highest ever. 3 new Vande Bharat corridors. Station redevelopment: 1,300. Amrit Bharat stations. Track electrification: 95% complete."
+    },
+    {
+        "id": "MBA_004",
+        "ministry": "Ministry of Education",
+        "fy": "FY2024-25",
+        "allocation_crore": 120628,
+        "pct_of_total_budget": 2.5,
+        "text": "Ministry Budget: Education. FY2024-25: ₹1,20,628 crore. 2.5% of budget. Higher education: ₹47,619 cr. School education: ₹73,009 cr. IITs, IIMs expansion. PM SHRI Schools. NEP implementation. Atal Tinkering Labs."
+    },
+    {
+        "id": "MBA_005",
+        "ministry": "Ministry of Health",
+        "fy": "FY2024-25",
+        "allocation_crore": 90959,
+        "pct_of_total_budget": 1.9,
+        "text": "Ministry Budget: Health & Family Welfare. FY2024-25: ₹90,959 crore. 1.9% of budget. Ayushman Bharat: ₹7,500 cr. AIIMS expansion. 157 new nursing colleges. PM Jan Aushadhi: 12,000+ stores. Target: 3% of GDP for health."
+    },
+    {
+        "id": "MBA_006",
+        "ministry": "Ministry of Agriculture",
+        "fy": "FY2024-25",
+        "allocation_crore": 123000,
+        "pct_of_total_budget": 2.6,
+        "text": "Ministry Budget: Agriculture. FY2024-25: ₹1,23,000 crore. PM-KISAN: ₹60,000 cr. Crop insurance (PMFBY): ₹14,600 cr. eNAM: ₹150 cr. Micro irrigation fund: ₹5,000 cr. Natural farming push."
+    },
+    {
+        "id": "MBA_007",
+        "ministry": "Ministry of Rural Development",
+        "fy": "FY2024-25",
+        "allocation_crore": 178000,
+        "pct_of_total_budget": 3.7,
+        "text": "Ministry Budget: Rural Development. FY2024-25: ₹1,78,000 crore. MGNREGA: ₹86,000 cr. PMAY-Gramin: ₹54,500 cr. PMGSY (rural roads): ₹19,000 cr. DAY-NRLM: ₹14,129 cr."
+    },
+    {
+        "id": "MBA_008",
+        "ministry": "Ministry of Home Affairs",
+        "fy": "FY2024-25",
+        "allocation_crore": 205000,
+        "pct_of_total_budget": 4.3,
+        "text": "Ministry Budget: Home Affairs. FY2024-25: ₹2,05,000 crore. 4.3% of budget. CRPF, BSF, CISF, ITBP maintenance. Border infrastructure. Cybersecurity. Census preparation. NIA and counter-terror."
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": "GOV_001",
+        "name": "C.V. Ananda Bose",
+        "state": "West Bengal",
+        "since": "2023",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "C.V. Ananda Bose: Governor of West Bengal since 2023. Appointed by President Droupadi Murmu. Former IAS officer. Governors are constitutional heads of states appointed under Article 155."
+    },
+    {
+        "id": "GOV_002",
+        "name": "R.N. Ravi",
+        "state": "Tamil Nadu (former)",
+        "since": "2021-2025",
+        "appointed_by": "President Ram Nath Kovind",
+        "text": "R.N. Ravi: Former Governor of Tamil Nadu (2021-2025). Former interlocutor for Naga peace talks. Governors serve at the pleasure of the President under Article 156."
+    },
+    {
+        "id": "GOV_003",
+        "name": "Arif Mohammed Khan",
+        "state": "Kerala (former)",
+        "since": "2019-2024",
+        "appointed_by": "President Ram Nath Kovind",
+        "text": "Arif Mohammed Khan: Former Governor of Kerala (2019-2024). Former Union Minister. Known for championing the Shah Bano case. Governors act as Chancellor of state universities."
+    },
+    {
+        "id": "GOV_004",
+        "name": "Banwarilal Purohit",
+        "state": "Punjab",
+        "since": "2021",
+        "appointed_by": "President Ram Nath Kovind",
+        "text": "Banwarilal Purohit: Governor of Punjab since 2021 and Administrator of Chandigarh. Former Governor of Tamil Nadu. Senior BJP leader. Governors also serve as UT administrators."
+    },
+    {
+        "id": "GOV_005",
+        "name": "Ramesh Bais",
+        "state": "Maharashtra",
+        "since": "2023",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Ramesh Bais: Governor of Maharashtra since 2023. Former Governor of Jharkhand. Senior BJP leader. 7-term Lok Sabha MP. Governors give assent to state bills under Article 200."
+    },
+    {
+        "id": "GOV_006",
+        "name": "Shiv Pratap Shukla",
+        "state": "Himachal Pradesh",
+        "since": "2024",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Shiv Pratap Shukla: Governor of Himachal Pradesh since 2024. Former Union Minister of State for Finance. BJP Rajya Sabha MP. Governors can reserve state bills for Presidential consideration."
+    },
+    {
+        "id": "GOV_007",
+        "name": "Gulab Chand Kataria",
+        "state": "Assam",
+        "since": "2023",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Gulab Chand Kataria: Governor of Assam since 2023. Former Leader of Opposition in Rajasthan Assembly. Senior BJP leader. Governors address the first session of state legislature each year."
+    },
+    {
+        "id": "GOV_008",
+        "name": "Lakshman Prasad Acharya",
+        "state": "Sikkim & Manipur",
+        "since": "2023",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Lakshman Prasad Acharya: Governor of Sikkim and Manipur since 2023. One governor can hold charge of multiple states. Former RSS leader. Appointed under Article 153 of the Constitution."
+    },
+    {
+        "id": "GOV_009",
+        "name": "Haribhau Bagde",
+        "state": "Rajasthan",
+        "since": "2024",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Haribhau Bagde: Governor of Rajasthan since 2024. Former Speaker of Maharashtra Legislative Assembly. 6-term MLA. Governors play key role during government formation."
+    },
+    {
+        "id": "GOV_010",
+        "name": "Om Prakash Mathur",
+        "state": "Odisha",
+        "since": "2024",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Om Prakash Mathur: Governor of Odisha since 2024. Former BJP Rajasthan leader. Under Article 163, the Governor acts on the aid and advice of the Council of Ministers."
+    },
+    {
+        "id": "GOV_011",
+        "name": "Santosh Kumar Gangwar",
+        "state": "Jharkhand",
+        "since": "2024",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Santosh Kumar Gangwar: Governor of Jharkhand since 2024. Former Union Minister of Labour. 6-term MP from Bareilly. Governors can dissolve the state assembly on the advice of the CM."
+    },
+    {
+        "id": "GOV_012",
+        "name": "Rajendra Arlekar",
+        "state": "Bihar",
+        "since": "2023",
+        "appointed_by": "President Droupadi Murmu",
+        "text": "Rajendra Arlekar: Governor of Bihar since 2023. Former Governor of Himachal Pradesh. Former Speaker of Goa Assembly. Governors can recommend President's Rule under Article 356."
+    }
+]

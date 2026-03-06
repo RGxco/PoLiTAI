@@ -1,0 +1,74 @@
+[
+    {
+        "id": "SB_001",
+        "state": "Uttar Pradesh",
+        "fy": "FY2024-25",
+        "total_budget_crore": 737902,
+        "revenue_receipts_crore": 581000,
+        "key_allocation": "Roads ₹39,000 cr, Education ₹87,000 cr",
+        "text": "State Budget: Uttar Pradesh FY2024-25. Total: ₹7,37,902 crore. India's largest state budget. Revenue receipts: ₹5,81,000 crore. Key: Roads ₹39,000 cr, Education ₹87,000 cr, Healthcare ₹43,000 cr. Focus: Expressways, industrial corridors."
+    },
+    {
+        "id": "SB_002",
+        "state": "Maharashtra",
+        "fy": "FY2024-25",
+        "total_budget_crore": 671010,
+        "revenue_receipts_crore": 510000,
+        "key_allocation": "Mumbai Metro ₹15,000 cr, Agriculture ₹30,000 cr",
+        "text": "State Budget: Maharashtra FY2024-25. Total: ₹6,71,010 crore. Revenue receipts: ₹5,10,000 crore. Key: Mumbai infrastructure, Ladki Bahin Yojana (₹46,000 cr), farmer support. Fiscal deficit: 2.5% of GSDP."
+    },
+    {
+        "id": "SB_003",
+        "state": "Tamil Nadu",
+        "fy": "FY2024-25",
+        "total_budget_crore": 357000,
+        "revenue_receipts_crore": 275000,
+        "key_allocation": "Healthcare ₹22,000 cr, Education ₹45,000 cr",
+        "text": "State Budget: Tamil Nadu FY2024-25. Total: ₹3,57,000 crore. Revenue receipts: ₹2,75,000 crore. Key: Breakfast scheme, EV manufacturing incentives, healthcare expansion, urban infrastructure. State GSDP: ₹28 lakh crore."
+    },
+    {
+        "id": "SB_004",
+        "state": "Karnataka",
+        "fy": "FY2024-25",
+        "total_budget_crore": 372000,
+        "revenue_receipts_crore": 290000,
+        "key_allocation": "Five guarantees ₹52,000 cr",
+        "text": "State Budget: Karnataka FY2024-25. Total: ₹3,72,000 crore. Five guarantee schemes cost: ₹52,000 crore. Shakti (free bus), Gruha Jyothi (free electricity), Gruha Lakshmi (₹2000/month), Anna Bhagya, Yuva Nidhi."
+    },
+    {
+        "id": "SB_005",
+        "state": "Gujarat",
+        "fy": "FY2024-25",
+        "total_budget_crore": 355000,
+        "revenue_receipts_crore": 270000,
+        "key_allocation": "GIFT City ₹5,000 cr, Industry ₹18,000 cr",
+        "text": "State Budget: Gujarat FY2024-25. Total: ₹3,55,000 crore. Key: GIFT City development, semiconductor plant, industrial incentives, diamond and textile sector support. Revenue surplus state. Focus on investment attraction."
+    },
+    {
+        "id": "SB_006",
+        "state": "Bihar",
+        "fy": "FY2024-25",
+        "total_budget_crore": 262000,
+        "revenue_receipts_crore": 195000,
+        "key_allocation": "Special status demand, Education ₹42,000 cr",
+        "text": "State Budget: Bihar FY2024-25. Total: ₹2,62,000 crore. Revenue receipts: ₹1,95,000 crore. Heavy Central transfers dependence. Key: Education ₹42,000 cr, rural roads, flood management. Demand for Special Category State status."
+    },
+    {
+        "id": "SB_007",
+        "state": "Rajasthan",
+        "fy": "FY2024-25",
+        "total_budget_crore": 305000,
+        "revenue_receipts_crore": 230000,
+        "key_allocation": "Water ₹28,000 cr, Tourism ₹5,000 cr",
+        "text": "State Budget: Rajasthan FY2024-25. Total: ₹3,05,000 crore. Key: Water conservation ₹28,000 cr (ERCP), tourism, solar energy parks, highway connectivity. Rajasthan largest state by area."
+    },
+    {
+        "id": "SB_008",
+        "state": "West Bengal",
+        "fy": "FY2024-25",
+        "total_budget_crore": 337000,
+        "revenue_receipts_crore": 260000,
+        "key_allocation": "Lakshmir Bhandar ₹12,000 cr, Kanyashree ₹2,000 cr",
+        "text": "State Budget: West Bengal FY2024-25. Total: ₹3,37,000 crore. Key: Lakshmir Bhandar (₹1000/month to women), Kanyashree (girl education), Duare Sarkar, Swasthya Sathi (health insurance). Strong social welfare focus."
+    }
+]

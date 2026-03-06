@@ -1,0 +1,30 @@
+[
+    {
+        "id": "FERT_001",
+        "program": "Urea Subsidy",
+        "subsidy_crore": 163000,
+        "beneficiaries": "12 crore farmers",
+        "text": "Fertilizer Subsidy: Urea. ₹1,63,000 crore FY24. Maximum Retail Price fixed at ₹242/45kg bag. Government bears 75% of cost. Neem coating mandatory since 2015. Production: 31.4 MT. Import: 9 MT. Subsidy via DBT to companies."
+    },
+    {
+        "id": "FERT_002",
+        "program": "Nutrient Based Subsidy (NBS)",
+        "subsidy_crore": 40000,
+        "beneficiaries": "All farmers using P&K fertilizers",
+        "text": "Fertilizer Subsidy: NBS for P&K fertilizers. ₹40,000 crore FY24. DAP, MOP, SSP, NPK compounds. DAP MRP fixed at ₹1,350/bag (≈₹3,500 actual cost). Government absorbs difference. Promotes balanced fertilization."
+    },
+    {
+        "id": "FERT_003",
+        "program": "PM Bhartiya Janaushadhi Pariyojana",
+        "subsidy_crore": 3000,
+        "beneficiaries": "All citizens",
+        "text": "Fertilizer/Pharma: PM Bhartiya Janaushadhi Pariyojana. 12,000+ Janaushadhi Kendras. Generic medicines at 50-90% cheaper. Sales: ₹1,000 crore+ annually. Saving ₹28,000 crore for citizens. Target: 25,000 kendras."
+    },
+    {
+        "id": "FERT_004",
+        "program": "Nano Urea Initiative",
+        "subsidy_crore": 5000,
+        "beneficiaries": "Farmers nationwide",
+        "text": "Fertilizer: Nano Urea by IFFCO. ₹225/500ml bottle (replaces 1 bag of urea). 36 crore bottles sold. 8 plants operational. Reduces fertilizer use by 50%. Carbon footprint reduction. Promotes precision agriculture."
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "ASE_001",
+        "state": "Madhya Pradesh",
+        "year": 2023,
+        "total_seats": 230,
+        "bjp": 163,
+        "inc": 66,
+        "others": 1,
+        "turnout_pct": 75.6,
+        "cm_elected": "Mohan Yadav",
+        "text": "Assembly Election: Madhya Pradesh 2023. BJP: 163/230. INC: 66. Others: 1. Turnout: 75.6%. Mohan Yadav elected CM. Ladli Behna Yojana credited for BJP's landslide. Anti-incumbency did not work against BJP."
+    },
+    {
+        "id": "ASE_002",
+        "state": "Rajasthan",
+        "year": 2023,
+        "total_seats": 200,
+        "bjp": 115,
+        "inc": 69,
+        "others": 16,
+        "turnout_pct": 74.6,
+        "cm_elected": "Bhajan Lal Sharma",
+        "text": "Assembly Election: Rajasthan 2023. BJP: 115/200. INC: 69. Others: 16. Turnout: 74.6%. Bhajan Lal Sharma elected CM. Traditional alternation pattern continued — BJP replaced INC after one term."
+    },
+    {
+        "id": "ASE_003",
+        "state": "Telangana",
+        "year": 2023,
+        "total_seats": 119,
+        "inc": 64,
+        "brs": 39,
+        "bjp": 8,
+        "others": 8,
+        "turnout_pct": 71.3,
+        "cm_elected": "Revanth Reddy",
+        "text": "Assembly Election: Telangana 2023. INC: 64/119. BRS: 39. BJP: 8. Others: 8. Turnout: 71.3%. Revanth Reddy elected CM. INC returned to power after 10 years, ending KCR's BRS rule. Six guarantees campaign."
+    },
+    {
+        "id": "ASE_004",
+        "state": "Karnataka",
+        "year": 2023,
+        "total_seats": 224,
+        "inc": 135,
+        "bjp": 66,
+        "jds": 19,
+        "others": 4,
+        "turnout_pct": 73.3,
+        "cm_elected": "Siddaramaiah",
+        "text": "Assembly Election: Karnataka 2023. INC: 135/224. BJP: 66. JDS: 19. Others: 4. Turnout: 73.3%. Siddaramaiah elected CM. INC's five guarantees (Shakti, Gruha Jyothi, Gruha Lakshmi, Anna Bhagya, Yuva Nidhi) were decisive."
+    },
+    {
+        "id": "ASE_005",
+        "state": "Maharashtra",
+        "year": 2024,
+        "total_seats": 288,
+        "mahayuti": 235,
+        "mva": 49,
+        "others": 4,
+        "turnout_pct": 66.0,
+        "cm_elected": "Devendra Fadnavis",
+        "text": "Assembly Election: Maharashtra 2024. Mahayuti: 235/288 (BJP 132, Shiv Sena-Shinde 57, NCP-Ajit Pawar 41, others 5). MVA: 49 (SS-UBT 20, NCP-SP 10, INC 16, others 3). Turnout: 66%. Devendra Fadnavis CM. Ladki Bahin Yojana impact."
+    },
+    {
+        "id": "ASE_006",
+        "state": "Jharkhand",
+        "year": 2024,
+        "total_seats": 81,
+        "jmm_india": 56,
+        "bjp_nda": 24,
+        "others": 1,
+        "turnout_pct": 67.7,
+        "cm_elected": "Hemant Soren",
+        "text": "Assembly Election: Jharkhand 2024. JMM-led INDIA: 56/81 (JMM 34, INC 16, RJD 4, CPI-ML 2). BJP-NDA: 24 (BJP 21, AJSU 1, JDU 1, LJP 1). Turnout: 67.7%. Hemant Soren re-elected CM. Tribal rights and welfare agenda won."
+    },
+    {
+        "id": "ASE_007",
+        "state": "Haryana",
+        "year": 2024,
+        "total_seats": 90,
+        "bjp": 48,
+        "inc": 37,
+        "others": 5,
+        "turnout_pct": 67.9,
+        "cm_elected": "Nayab Singh Saini",
+        "text": "Assembly Election: Haryana 2024. BJP: 48/90. INC: 37. Others: 5. Turnout: 67.9%. Nayab Singh Saini elected CM. Surprise BJP 3rd-term victory defying anti-incumbency predictions. Non-Jat OBC consolidation was key factor."
+    },
+    {
+        "id": "ASE_008",
+        "state": "Uttar Pradesh",
+        "year": 2022,
+        "total_seats": 403,
+        "bjp": 255,
+        "sp": 111,
+        "bsp": 1,
+        "inc": 2,
+        "others": 34,
+        "turnout_pct": 60.2,
+        "cm_elected": "Yogi Adityanath",
+        "text": "Assembly Election: UP 2022. BJP: 255/403. SP: 111. BSP: 1. INC: 2. Others: 34. Turnout: 60.2%. Yogi Adityanath re-elected CM. First CM to return to power in UP in 37 years. Law and order, expressway development as issues."
+    }
+]

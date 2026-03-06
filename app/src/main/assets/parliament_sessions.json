@@ -1,0 +1,82 @@
+[
+    {
+        "id": "PS_001",
+        "session": "Budget Session 2024",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Jan 31 - Feb 9 (Part I), March 11 - March 29 (Part II)",
+        "year": 2024,
+        "bills_passed": 7,
+        "key_events": "Interim Budget presented, JPC on Waqf Bill",
+        "text": "Budget Session 2024: Jan 31 to March 29 (in two parts). Interim Budget presented by FM Nirmala Sitharaman. 7 bills passed. Key: JPC on Waqf Amendment Bill constituted. Both Houses sat for combined 48 productive days."
+    },
+    {
+        "id": "PS_002",
+        "session": "Monsoon Session 2024",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "July 22 - August 9, 2024",
+        "year": 2024,
+        "bills_passed": 5,
+        "key_events": "18th Lok Sabha first session, Speaker election, NEET debate",
+        "text": "Monsoon Session 2024: July 22 to August 9. First session of 18th Lok Sabha. Om Birla re-elected Speaker. 5 bills passed including Finance Bill. Major debates on NEET examination controversy."
+    },
+    {
+        "id": "PS_003",
+        "session": "Winter Session 2023",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Dec 4 - Dec 21, 2023",
+        "year": 2023,
+        "bills_passed": 4,
+        "key_events": "Parliament security breach, 146 MPs suspended",
+        "text": "Winter Session 2023: Dec 4 to Dec 21. Marred by Parliament security breach on Dec 13 anniversary. Record 146 opposition MPs suspended. 4 bills passed including Telecommunications Act 2023."
+    },
+    {
+        "id": "PS_004",
+        "session": "Special Session 2023",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Sept 18 - Sept 22, 2023",
+        "year": 2023,
+        "bills_passed": 2,
+        "key_events": "Women's Reservation Bill (Nari Shakti Vandan Adhiniyam) passed, shift to new Parliament building",
+        "text": "Special Session 2023: Sept 18-22. Historic: Shifted to new Parliament building. Women's Reservation Bill (Nari Shakti Vandan Adhiniyam) passed — 33% seats reserved for women in Lok Sabha and State Assemblies."
+    },
+    {
+        "id": "PS_005",
+        "session": "Budget Session 2023",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Jan 31 - March 29, 2023",
+        "year": 2023,
+        "bills_passed": 11,
+        "key_events": "Union Budget 2023-24 with ₹45 lakh crore expenditure, Digital Personal Data Protection Bill intro",
+        "text": "Budget Session 2023: Jan 31 to March 29. Union Budget 2023-24 presented — ₹45 lakh crore expenditure. 11 bills passed. Digital Personal Data Protection Bill introduced. Adani-Hindenburg debate in opposition."
+    },
+    {
+        "id": "PS_006",
+        "session": "Budget Session 2025",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Jan 31 - February 13 (Part I)",
+        "year": 2025,
+        "bills_passed": 3,
+        "key_events": "Union Budget 2025-26 presented, income tax reforms",
+        "text": "Budget Session 2025 Part I: Jan 31 to Feb 13. Union Budget 2025-26 presented by FM Nirmala Sitharaman. Major income tax reform — new slab with no tax up to ₹12 lakh. 3 bills introduced in first part."
+    },
+    {
+        "id": "PS_007",
+        "session": "Monsoon Session 2023",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "July 20 - August 11, 2023",
+        "year": 2023,
+        "bills_passed": 7,
+        "key_events": "Manipur violence debate, Digital Personal Data Protection Bill passed, Delhi Services Bill",
+        "text": "Monsoon Session 2023: July 20 to Aug 11. 7 bills passed including Digital Personal Data Protection Act 2023, Delhi Services Bill. Intense debate on Manipur ethnic violence. 25 hours lost to disruptions."
+    },
+    {
+        "id": "PS_008",
+        "session": "Winter Session 2024",
+        "house": "Lok Sabha + Rajya Sabha",
+        "dates": "Nov 25 - Dec 20, 2024",
+        "year": 2024,
+        "bills_passed": 4,
+        "key_events": "B.R. Ambedkar tribute controversy, Opposition protests",
+        "text": "Winter Session 2024: Nov 25 to Dec 20. 4 bills passed. Major controversy over B.R. Ambedkar references. Opposition protests led to significant disruptions. Both Houses saw low productivity due to standoffs."
+    }
+]

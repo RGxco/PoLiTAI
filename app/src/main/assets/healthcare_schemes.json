@@ -1,0 +1,45 @@
+[
+    {
+        "id": "HC_001",
+        "scheme": "Ayushman Bharat PM-JAY",
+        "budget_crore": 7500,
+        "beneficiaries": "55 crore people",
+        "coverage": "₹5 lakh/family/year",
+        "text": "Healthcare: Ayushman Bharat PM-JAY. World's largest health insurance scheme. ₹5 lakh/family/year for hospitalization. 55 crore beneficiaries (12 crore families). 1,949 medical packages. 28,000+ empaneled hospitals. 7.5 crore treatments provided."
+    },
+    {
+        "id": "HC_002",
+        "scheme": "PM National Dialysis Programme",
+        "budget_crore": 2000,
+        "beneficiaries": "Free dialysis for BPL patients",
+        "text": "Healthcare: PM National Dialysis Programme. Free dialysis for BPL patients at 920 district hospitals. PPP model. 1.5+ crore dialysis sessions provided. Addresses chronic kidney disease burden disproportionately affecting poor."
+    },
+    {
+        "id": "HC_003",
+        "scheme": "Ayushman Bharat Health Infrastructure Mission",
+        "budget_crore": 64180,
+        "beneficiaries": "All citizens",
+        "text": "Healthcare: PM ABHIM (Ayushman Bharat Health Infrastructure Mission). ₹64,180 crore. Strengthens primary, secondary, tertiary care. 11,024 Health and Wellness Centres upgraded. Integrated Public Health Labs in 730 districts. Pandemic preparedness."
+    },
+    {
+        "id": "HC_004",
+        "scheme": "Janani Suraksha Yojana",
+        "budget_crore": 3000,
+        "beneficiaries": "₹1,400/delivery (rural)",
+        "text": "Healthcare: Janani Suraksha Yojana. Cash incentive for institutional delivery. ₹1,400 per delivery (rural), ₹1,000 (urban). 1.1 crore beneficiaries annually. Reduced maternal mortality from 167 to 97 per lakh live births."
+    },
+    {
+        "id": "HC_005",
+        "scheme": "National Health Mission",
+        "budget_crore": 36785,
+        "beneficiaries": "All citizens",
+        "text": "Healthcare: National Health Mission (NHM). ₹36,785 crore FY24. Covers Rural & Urban Health Missions. ASHA workers: 10.4 lakh. 1,65,000 Health & Wellness Centres. Immunization: 95% coverage. TB elimination target: 2025."
+    },
+    {
+        "id": "HC_006",
+        "scheme": "CoWIN and COVID Vaccination",
+        "budget_crore": 35000,
+        "beneficiaries": "220 crore+ doses administered",
+        "text": "Healthcare: COVID-19 Vaccination and CoWIN platform. 220 crore+ doses administered. World's largest vaccination drive. Both Covishield and Covaxin (indigenous). CoWIN platform managed 4 billion+ transactions. Vaccine Maitri: 30+ country exports."
+    }
+]

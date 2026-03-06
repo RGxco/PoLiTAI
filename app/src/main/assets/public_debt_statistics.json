@@ -1,0 +1,42 @@
+[
+    {
+        "id": "PD_001",
+        "fy": "FY2024",
+        "total_debt_crore": 17006000,
+        "total_debt_pct_gdp": 56.8,
+        "external_debt_bn_usd": 663.8,
+        "text": "Public Debt: FY2024. Total Government Debt: ₹170.06 lakh crore (56.8% of GDP). External Debt: $663.8 billion. Internal Debt: 93% of total. Market Borrowings: ₹15.43 lakh crore. Debt servicing: 20% of revenue."
+    },
+    {
+        "id": "PD_002",
+        "fy": "FY2023",
+        "total_debt_crore": 155000000,
+        "total_debt_pct_gdp": 57.1,
+        "external_debt_bn_usd": 629.1,
+        "text": "Public Debt: FY2023. Total Government Debt: ₹155 lakh crore (57.1% of GDP). External Debt: $629.1 billion. Debt-to-GDP ratio stable. FRBM target: 40% central government debt by FY2027."
+    },
+    {
+        "id": "PD_003",
+        "fy": "FY2022",
+        "total_debt_crore": 147000000,
+        "total_debt_pct_gdp": 59.2,
+        "external_debt_bn_usd": 617.0,
+        "text": "Public Debt: FY2022. Total Government Debt: ₹147 lakh crore (59.2% of GDP). Elevated due to COVID borrowing. External Debt: $617 billion. Forex reserves: $607 billion. Import cover: 11 months."
+    },
+    {
+        "id": "PD_004",
+        "fy": "FY2025 (Est)",
+        "total_debt_crore": 185000000,
+        "total_debt_pct_gdp": 56.0,
+        "external_debt_bn_usd": 690.0,
+        "text": "Public Debt: FY2025 (Estimated). Total: ₹185 lakh crore (56% of GDP). Fiscal consolidation path. Target fiscal deficit: 4.9%. Market borrowing: ₹14.01 lakh crore. Debt sustainability improving."
+    },
+    {
+        "id": "PD_005",
+        "fy": "FY2021",
+        "total_debt_crore": 140000000,
+        "total_debt_pct_gdp": 61.5,
+        "external_debt_bn_usd": 570.0,
+        "text": "Public Debt: FY2021. Total: ₹140 lakh crore (61.5% of GDP). Pandemic peak. Fiscal deficit: 9.2% of GDP. Emergency borrowing for COVID relief. ₹20 lakh crore Atmanirbhar Bharat package impact."
+    }
+]

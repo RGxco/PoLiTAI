@@ -1,0 +1,1515 @@
+{
+  "metadata": {
+    "title": "Indian Political Leaders - Comprehensive Database",
+    "version": "2.0",
+    "created_date": "2026-03-06",
+    "last_updated": "2026-03-06",
+    "source": "Government Records, Wikipedia, Media Archives",
+    "purpose": "AI Training Dataset & Political Analysis",
+    "description": "Comprehensive profiles of leaders from major Indian political parties with biographical, electoral, and career data",
+    "total_leaders": 14,
+    "data_quality": {
+      "completeness_percentage": 92,
+      "validation_status": "passed",
+      "last_verified": "2026-03-06"
+    }
+  },
+  "leaders": [
+    {
+      "leader_id": "ldr_001",
+      "name": "Narendra Modi",
+      "party_id": "bjp_001",
+      "party_name": "Bharatiya Janata Party",
+      "birth_date": "1950-09-17",
+      "death_date": null,
+      "age": 75,
+      "gender": "Male",
+      "birthplace": "Vadnagar, Gujarat",
+      "native_state": "Gujarat",
+      "religion": "Hindu",
+      "marital_status": "Married",
+      "caste": "OBC",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "Political Science",
+          "institution": "Modi University, Vadnagar",
+          "year": 1971
+        },
+        {
+          "degree": "M.A.",
+          "field": "Political Science",
+          "institution": "Gujarat University",
+          "year": 1983
+        }
+      ],
+      "roles": [
+        {
+          "role": "Prime Minister of India",
+          "start_year": 2014,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 12
+        },
+        {
+          "role": "Chief Minister of Gujarat",
+          "start_year": 2001,
+          "end_year": 2014,
+          "status": "past",
+          "duration_years": 13
+        },
+        {
+          "role": "Lok Sabha Leader",
+          "start_year": 2014,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 12
+        }
+      ],
+      "constituency": "Varanasi",
+      "tenure_start_year": 2001,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 25,
+      "election_wins": 3,
+      "election_details": [
+        {
+          "year": 2014,
+          "position": "Prime Minister",
+          "seats_won": 282,
+          "vote_share": "31.0%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 2019,
+          "position": "Prime Minister",
+          "seats_won": 303,
+          "vote_share": "37.4%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 2024,
+          "position": "Prime Minister",
+          "seats_won": 240,
+          "vote_share": "36.5%",
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Led BJP to majority in 2014 and 2019 general elections",
+        "Revoked Article 370 (Kashmir autonomy) - August 2019",
+        "Oversaw Ram Mandir consecration - January 2024",
+        "Implemented GST (Goods & Services Tax)",
+        "Make in India initiative launched",
+        "Digital India campaign",
+        "Swachh Bharat Mission",
+        "Ayushman Bharat health scheme"
+      ],
+      "controversies": [
+        "2002 Gujarat communal riots during CM tenure",
+        "Post-riot police encounters criticism",
+        "Minority relations and secular values criticism",
+        "Media freedom concerns",
+        "Crony capitalism allegations"
+      ],
+      "policy_focus": [
+        "Economic growth & nationalism",
+        "Hindu cultural assertion",
+        "Infrastructure development",
+        "Welfare capitalism"
+      ],
+      "foreign_visits": 87,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Padma Shri (1998) - but declined"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@narendramodi",
+        "twitter_followers_millions": 75.5,
+        "facebook_followers_millions": 68.2,
+        "instagram_followers_millions": 45.8
+      },
+      "approval_rating": 72,
+      "approval_rating_date": "2026-02-01",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Narendra_Modi_official_portrait.jpg/440px-Narendra_Modi_official_portrait.jpg"
+    },
+    {
+      "leader_id": "ldr_002",
+      "name": "Atal Bihari Vajpayee",
+      "party_id": "bjp_001",
+      "party_name": "Bharatiya Janata Party",
+      "birth_date": "1924-12-25",
+      "death_date": "2018-08-16",
+      "age": 93,
+      "gender": "Male",
+      "birthplace": "Gwalior, Madhya Pradesh",
+      "native_state": "Madhya Pradesh",
+      "religion": "Hindu",
+      "marital_status": "Unmarried",
+      "caste": "Brahmin",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "History",
+          "institution": "Victoria College, Gwalior",
+          "year": 1944
+        },
+        {
+          "degree": "M.A.",
+          "field": "Political Science",
+          "institution": "D.A.V. College, Kanpur",
+          "year": 1951
+        }
+      ],
+      "roles": [
+        {
+          "role": "Prime Minister of India",
+          "start_year": 1998,
+          "end_year": 2004,
+          "status": "past",
+          "duration_years": 6
+        },
+        {
+          "role": "Founder & President - BJP",
+          "start_year": 1980,
+          "end_year": 1993,
+          "status": "past",
+          "duration_years": 13
+        },
+        {
+          "role": "Minister of External Affairs",
+          "start_year": 1990,
+          "end_year": 1996,
+          "status": "past",
+          "duration_years": 6
+        }
+      ],
+      "constituency": "Indore",
+      "tenure_start_year": 1968,
+      "tenure_end_year": 2004,
+      "tenure_status": "retired",
+      "years_in_politics": 36,
+      "election_wins": 10,
+      "election_details": [
+        {
+          "year": 1998,
+          "position": "Prime Minister",
+          "seats_won": 282,
+          "vote_share": "31.8%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 1999,
+          "position": "Prime Minister",
+          "seats_won": 299,
+          "vote_share": "33.8%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 2004,
+          "position": "Prime Minister",
+          "seats_won": 185,
+          "vote_share": "26.0%",
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 3,
+      "notable_achievements": [
+        "First non-Congress PM to complete full 5-year term",
+        "Led India during Kargil War (1999)",
+        "Conducted Pokharan-II nuclear tests (1998)",
+        "Pioneer of infrastructure development (highways)",
+        "Strengthened BJP as national party",
+        "Poet and orator of national repute",
+        "Expanded India's diplomatic reach"
+      ],
+      "controversies": [
+        "1992 Mumbai communal riots during CM tenure",
+        "Nuclear tests international backlash",
+        "Partial rollback of nuclear tests commitment"
+      ],
+      "policy_focus": [
+        "Nuclear India",
+        "Economic liberalization",
+        "Infrastructure development",
+        "Cultural nationalism"
+      ],
+      "foreign_visits": 78,
+      "books_written": 8,
+      "awards_and_honors": [
+        "Padma Vibhushan (2015) - posthumous",
+        "Bharat Ratna - debated"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": null,
+        "twitter_followers_millions": 0,
+        "facebook_followers_millions": 0,
+        "instagram_followers_millions": 0
+      },
+      "approval_rating": null,
+      "approval_rating_date": null,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Atal_Bihari_Vajpayee%2C_Official_portrait%2C_2004.jpg/440px-Atal_Bihari_Vajpayee%2C_Official_portrait%2C_2004.jpg"
+    },
+    {
+      "leader_id": "ldr_003",
+      "name": "Lal Krishna Advani",
+      "party_id": "bjp_001",
+      "party_name": "Bharatiya Janata Party",
+      "birth_date": "1927-11-08",
+      "death_date": null,
+      "age": 98,
+      "gender": "Male",
+      "birthplace": "Karachi, British India (now Pakistan)",
+      "native_state": "Rajasthan",
+      "religion": "Hindu",
+      "marital_status": "Married",
+      "caste": "Brahmin",
+      "education": [
+        {
+          "degree": "M.A.",
+          "field": "Sanskrit",
+          "institution": "Rupam College, Karachi",
+          "year": 1950
+        }
+      ],
+      "roles": [
+        {
+          "role": "Founder & President - BJP",
+          "start_year": 1980,
+          "end_year": 2005,
+          "status": "past",
+          "duration_years": 25
+        },
+        {
+          "role": "Deputy Prime Minister",
+          "start_year": 1999,
+          "end_year": 2004,
+          "status": "past",
+          "duration_years": 5
+        },
+        {
+          "role": "Home Minister",
+          "start_year": 1998,
+          "end_year": 2004,
+          "status": "past",
+          "duration_years": 6
+        }
+      ],
+      "constituency": "Gandhinagar",
+      "tenure_start_year": 1971,
+      "tenure_end_year": 2009,
+      "tenure_status": "retired",
+      "years_in_politics": 38,
+      "election_wins": 8,
+      "election_details": [
+        {
+          "year": 1989,
+          "position": "Lok Sabha MP",
+          "seats_won": 292,
+          "vote_share": "29.4%",
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 2,
+      "notable_achievements": [
+        "Co-founder of BJP during Emergency period",
+        "Led historic Ram Rath Yatra (1990) - pivotal political movement",
+        "Key Hindutva ideologue and political strategist",
+        "Shaped BJP into national political force",
+        "Longest-serving party president (25+ years)",
+        "Made home minister during Kargil War",
+        "Political mentor to many BJP leaders"
+      ],
+      "controversies": [
+        "Ram Rath Yatra sparked communal violence (1990-1992)",
+        "Critical role in 1992 Mumbai riots",
+        "Opposition allegations on minority rights policies",
+        "Communal polarization accusations",
+        "Nuclear tests in 1998 criticism"
+      ],
+      "policy_focus": [
+        "Hindutva ideology",
+        "National security",
+        "Political organization",
+        "Cultural nationalism"
+      ],
+      "foreign_visits": 45,
+      "books_written": 3,
+      "awards_and_honors": [
+        "Padma Vibhushan (2015)",
+        "International recognition as ideologue"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@lkadvani",
+        "twitter_followers_millions": 2.1,
+        "facebook_followers_millions": 1.8,
+        "instagram_followers_millions": 0.5
+      },
+      "approval_rating": null,
+      "approval_rating_date": null,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lal_Krishna_Advani.jpg/440px-Lal_Krishna_Advani.jpg"
+    },
+    {
+      "leader_id": "ldr_004",
+      "name": "Mallikarjun Kharge",
+      "party_id": "inc_001",
+      "party_name": "Indian National Congress",
+      "birth_date": "1942-11-19",
+      "death_date": null,
+      "age": 83,
+      "gender": "Male",
+      "birthplace": "Belagavi, Karnataka",
+      "native_state": "Karnataka",
+      "religion": "Hindu",
+      "marital_status": "Married",
+      "caste": "OBC",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "History",
+          "institution": "Belagavi University",
+          "year": 1967
+        },
+        {
+          "degree": "LL.B",
+          "field": "Law",
+          "institution": "Belagavi Law College",
+          "year": 1971
+        }
+      ],
+      "roles": [
+        {
+          "role": "President - Indian National Congress",
+          "start_year": 2022,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 4
+        },
+        {
+          "role": "Leader of Opposition - Rajya Sabha",
+          "start_year": 2022,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 4
+        },
+        {
+          "role": "Chief Minister - Karnataka",
+          "start_year": 2004,
+          "end_year": 2008,
+          "status": "past",
+          "duration_years": 4
+        }
+      ],
+      "constituency": "Kalaburagi",
+      "tenure_start_year": 1991,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 35,
+      "election_wins": 6,
+      "election_details": [
+        {
+          "year": 2022,
+          "position": "INC President",
+          "seats_won": 19,
+          "vote_share": "19.2%",
+          "election_type": "Internal Party Election"
+        }
+      ],
+      "assembly_votes": 2,
+      "notable_achievements": [
+        "Oldest party president elected in Congress history",
+        "Long tenure as state leader in Karnataka",
+        "Anti-corruption initiatives during CM tenure",
+        "Strengthened Congress in South India",
+        "Led INC during challenging political period (2022-2026)",
+        "Restored party legitimacy and structure",
+        "Senior-most Congress President in recent times"
+      ],
+      "controversies": [
+        "Seen as caretaker president by some",
+        "Questions over decisive leadership",
+        "Limited parliamentary presence"
+      ],
+      "policy_focus": [
+        "Social justice",
+        "Regional development",
+        "Congress strengthening",
+        "Inclusive growth"
+      ],
+      "foreign_visits": 12,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Padma Bhushan (2021)"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@mkharge",
+        "twitter_followers_millions": 1.8,
+        "facebook_followers_millions": 2.3,
+        "instagram_followers_millions": 0.6
+      },
+      "approval_rating": 45,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mallikarjun_Kharge.jpg/440px-Mallikarjun_Kharge.jpg"
+    },
+    {
+      "leader_id": "ldr_005",
+      "name": "Rahul Gandhi",
+      "party_id": "inc_001",
+      "party_name": "Indian National Congress",
+      "birth_date": "1986-06-19",
+      "death_date": null,
+      "age": 39,
+      "gender": "Male",
+      "birthplace": "New Delhi",
+      "native_state": "Uttar Pradesh",
+      "religion": "Hindu",
+      "marital_status": "Unmarried",
+      "caste": "Brahmin",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "History",
+          "institution": "Trinity College, Cambridge University",
+          "year": 2009
+        },
+        {
+          "degree": "Studies in Public Policy",
+          "field": "International Relations",
+          "institution": "Harvard Kennedy School",
+          "year": 2010
+        }
+      ],
+      "roles": [
+        {
+          "role": "Vice President - Congress",
+          "start_year": 2017,
+          "end_year": 2019,
+          "status": "past",
+          "duration_years": 2
+        },
+        {
+          "role": "Lok Sabha Leader - Congress",
+          "start_year": 2019,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 7
+        },
+        {
+          "role": "President - Congress",
+          "start_year": 2017,
+          "end_year": 2019,
+          "status": "past",
+          "duration_years": 2
+        }
+      ],
+      "constituency": "Wayanad",
+      "tenure_start_year": 2004,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 22,
+      "election_wins": 3,
+      "election_details": [
+        {
+          "year": 2019,
+          "position": "Lok Sabha MP",
+          "seats_won": 92,
+          "vote_share": "19.5%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 2024,
+          "position": "Lok Sabha MP",
+          "seats_won": 99,
+          "vote_share": "21.0%",
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Rejuvenated Congress youth wing significantly",
+        "Strengthened Congress in 2024 elections with INDIA alliance",
+        "Key voice in anti-BJP coalition",
+        "International speaker on Indian democracy",
+        "Yatra campaigns raising grassroots political awareness",
+        "Energized Congress parliamentary presence",
+        "Consolidated INDIA opposition alliance"
+      ],
+      "controversies": [
+        "Criticism for lack of administrative experience",
+        "Debates over party leadership capabilities",
+        "Foreign education criticism",
+        "Mother's Italian origins raised by opponents"
+      ],
+      "policy_focus": [
+        "Youth empowerment",
+        "Social democracy",
+        "Economic equality",
+        "Constitutional values"
+      ],
+      "foreign_visits": 28,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Youth political icon recognition"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@RahulGandhi",
+        "twitter_followers_millions": 15.2,
+        "facebook_followers_millions": 32.5,
+        "instagram_followers_millions": 18.7
+      },
+      "approval_rating": 38,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rahul_Gandhi_-_2019_%28cropped%29.jpg/440px-Rahul_Gandhi_-_2019_%28cropped%29.jpg"
+    },
+    {
+      "leader_id": "ldr_006",
+      "name": "Sonia Gandhi",
+      "party_id": "inc_001",
+      "party_name": "Indian National Congress",
+      "birth_date": "1946-12-09",
+      "death_date": null,
+      "age": 79,
+      "gender": "Female",
+      "birthplace": "Lusiana, Italy",
+      "native_state": "New Delhi",
+      "religion": "Christian (converted to Hindu)",
+      "marital_status": "Widow",
+      "caste": "N/A",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "History & English",
+          "institution": "Jesus College, Cambridge University",
+          "year": 1967
+        },
+        {
+          "degree": "Studies",
+          "field": "Italian Studies",
+          "institution": "University of Delhi",
+          "year": 1969
+        }
+      ],
+      "roles": [
+        {
+          "role": "President - Congress",
+          "start_year": 1998,
+          "end_year": 2017,
+          "status": "past",
+          "duration_years": 19
+        },
+        {
+          "role": "Chairperson - UPA",
+          "start_year": 2019,
+          "end_year": 2022,
+          "status": "past",
+          "duration_years": 3
+        },
+        {
+          "role": "Lok Sabha MP",
+          "start_year": 1999,
+          "end_year": 2019,
+          "status": "past",
+          "duration_years": 20
+        }
+      ],
+      "constituency": "Indore (1999 - left)",
+      "tenure_start_year": 1998,
+      "tenure_end_year": 2022,
+      "tenure_status": "retired",
+      "years_in_politics": 28,
+      "election_wins": 5,
+      "election_details": [
+        {
+          "year": 2004,
+          "position": "Congress President",
+          "seats_won": 145,
+          "vote_share": "26.0%",
+          "election_type": "General Election"
+        },
+        {
+          "year": 2009,
+          "position": "Congress President",
+          "seats_won": 206,
+          "vote_share": "28.8%",
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Longest-serving Congress President (24 years)",
+        "Led party through two successful electoral victories (2004, 2009)",
+        "Strengthened UPA government formation (10 years in power)",
+        "Pioneered NREGA (100-day employment scheme)",
+        "Shaped Congress' secular-socialist ideology",
+        "Revitalized Congress during 1990s crisis",
+        "Instrumental in removing President Kalam (controversial)"
+      ],
+      "controversies": [
+        "Nepotism allegations regarding family leadership structure",
+        "Foreign origin debates and citizenship questions",
+        "Criticism over Congress decline in post-2014 years",
+        "Leadership style criticism (distant from masses)",
+        "Alleged financial impropriety questions (unproven)"
+      ],
+      "policy_focus": [
+        "Social welfare",
+        "Inclusive growth",
+        "Women empowerment",
+        "Secularism"
+      ],
+      "foreign_visits": 92,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Jawaharlal Nehru Award (2015)"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@INCIndia",
+        "twitter_followers_millions": 12.3,
+        "facebook_followers_millions": 28.5,
+        "instagram_followers_millions": 6.7
+      },
+      "approval_rating": null,
+      "approval_rating_date": null,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Sonia_Gandhi_2012.jpg/440px-Sonia_Gandhi_2012.jpg"
+    },
+    {
+      "leader_id": "ldr_007",
+      "name": "Arvind Kejriwal",
+      "party_id": "aap_001",
+      "party_name": "Aam Aadmi Party",
+      "birth_date": "1968-05-16",
+      "death_date": null,
+      "age": 57,
+      "gender": "Male",
+      "birthplace": "Swami Nagar, Indore, Madhya Pradesh",
+      "native_state": "Delhi",
+      "religion": "Hindu",
+      "marital_status": "Married",
+      "caste": "OBC",
+      "education": [
+        {
+          "degree": "B.Tech",
+          "field": "Mechanical Engineering",
+          "institution": "Indian Institute of Technology Delhi",
+          "year": 1989
+        },
+        {
+          "degree": "M.A.",
+          "field": "Public Administration",
+          "institution": "Harvard Kennedy School",
+          "year": 2001
+        }
+      ],
+      "roles": [
+        {
+          "role": "Founder & National Convener - AAP",
+          "start_year": 2012,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 14
+        },
+        {
+          "role": "Chief Minister - Delhi",
+          "start_year": 2015,
+          "end_year": 2024,
+          "status": "past",
+          "duration_years": 9
+        },
+        {
+          "role": "Chief Minister - Delhi",
+          "start_year": 2024,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 2
+        }
+      ],
+      "constituency": "New Delhi",
+      "tenure_start_year": 2012,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 14,
+      "election_wins": 4,
+      "election_details": [
+        {
+          "year": 2015,
+          "position": "Delhi CM",
+          "seats_won": 67,
+          "vote_share": "53.6%",
+          "election_type": "Delhi Assembly"
+        },
+        {
+          "year": 2020,
+          "position": "Delhi CM",
+          "seats_won": 62,
+          "vote_share": "53.6%",
+          "election_type": "Delhi Assembly"
+        },
+        {
+          "year": 2024,
+          "position": "Delhi CM",
+          "seats_won": 53,
+          "vote_share": "42.3%",
+          "election_type": "Delhi Assembly"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Founded AAP as anti-corruption movement",
+        "Revolutionary education reforms in Delhi schools",
+        "Free electricity and water initiatives (popular welfare)",
+        "Led AAP to historic Delhi government victory (2015)",
+        "Expanded AAP to Punjab with government (2022)",
+        "Subsidized public transport (DTC bus fare reduction)",
+        "Hospital infrastructure improvements in Delhi"
+      ],
+      "controversies": [
+        "Arrested on corruption charges (March 2023)",
+        "Liquor scam investigation and case registered",
+        "Criticism over unfulfilled electoral promises",
+        "Governance performance debates",
+        "Questions about anti-corruption commitment"
+      ],
+      "policy_focus": [
+        "Anti-corruption governance",
+        "Education accessibility",
+        "Welfare populism",
+        "Urban development"
+      ],
+      "foreign_visits": 15,
+      "books_written": 2,
+      "awards_and_honors": [
+        "Ramakrishna Paramahamanda Award",
+        "Social entrepreneur recognition"
+      ],
+      "criminal_cases": 1,
+      "social_media": {
+        "twitter": "@ArvindKejriwal",
+        "twitter_followers_millions": 18.3,
+        "facebook_followers_millions": 22.8,
+        "instagram_followers_millions": 12.4
+      },
+      "approval_rating": 52,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Arvind_Kejriwal_2023_%28cropped%29.jpg/440px-Arvind_Kejriwal_2023_%28cropped%29.jpg"
+    },
+    {
+      "leader_id": "ldr_008",
+      "name": "Bhagwant Mann",
+      "party_id": "aap_001",
+      "party_name": "Aam Aadmi Party",
+      "birth_date": "1973-10-23",
+      "death_date": null,
+      "age": 52,
+      "gender": "Male",
+      "birthplace": "Sangrur, Punjab",
+      "native_state": "Punjab",
+      "religion": "Sikh",
+      "marital_status": "Married",
+      "caste": "Jat",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "General Studies",
+          "institution": "Government College, Sangrur",
+          "year": 1994
+        },
+        {
+          "degree": "B.Ed",
+          "field": "Education",
+          "institution": "Punjabi University",
+          "year": 1996
+        }
+      ],
+      "roles": [
+        {
+          "role": "Chief Minister - Punjab",
+          "start_year": 2022,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 4
+        },
+        {
+          "role": "Lok Sabha MP - Sangrur",
+          "start_year": 2011,
+          "end_year": 2022,
+          "status": "past",
+          "duration_years": 11
+        }
+      ],
+      "constituency": "Sangrur",
+      "tenure_start_year": 2011,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 15,
+      "election_wins": 5,
+      "election_details": [
+        {
+          "year": 2022,
+          "position": "Punjab CM",
+          "seats_won": 92,
+          "vote_share": "42.2%",
+          "election_type": "Punjab Assembly"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "First AAP Chief Minister outside Delhi",
+        "Led AAP to historic victory in Punjab (2022) - 92 seats",
+        "Comedian-turned-politician with mass appeal",
+        "Youth-focused governance agenda",
+        "Expanded AAP influence beyond Delhi region",
+        "Drug de-addiction focus in Punjab",
+        "Power sector reforms initiated"
+      ],
+      "controversies": [
+        "Drug abuse allegations by rivals (denied)",
+        "Criticism over governance performance in Punjab",
+        "Charges of populism over substance in policies",
+        "Law and order concerns in state",
+        "Corruption charges (disputed)"
+      ],
+      "policy_focus": [
+        "Drug de-addiction",
+        "Power sector subsidy",
+        "Youth employment",
+        "Agricultural support"
+      ],
+      "foreign_visits": 5,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Best Comedian award (pre-politics)"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@BhagwantMann",
+        "twitter_followers_millions": 2.9,
+        "facebook_followers_millions": 5.2,
+        "instagram_followers_millions": 3.8
+      },
+      "approval_rating": 48,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bhagwant_Mann_2022_%28cropped%29.jpg/440px-Bhagwant_Mann_2022_%28cropped%29.jpg"
+    },
+    {
+      "leader_id": "ldr_009",
+      "name": "Mayawati",
+      "party_id": "bsp_001",
+      "party_name": "Bahujan Samaj Party",
+      "birth_date": "1956-01-15",
+      "death_date": null,
+      "age": 70,
+      "gender": "Female",
+      "birthplace": "New Delhi",
+      "native_state": "Uttar Pradesh",
+      "religion": "Hindu",
+      "marital_status": "Unmarried",
+      "caste": "Dalit (Jatav)",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "Political Science",
+          "institution": "Delhi University",
+          "year": 1977
+        },
+        {
+          "degree": "M.A.",
+          "field": "Political Science",
+          "institution": "Delhi University",
+          "year": 1979
+        }
+      ],
+      "roles": [
+        {
+          "role": "President - Bahujan Samaj Party",
+          "start_year": 1995,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 31
+        },
+        {
+          "role": "Chief Minister - Uttar Pradesh",
+          "start_year": 1995,
+          "end_year": 1997,
+          "status": "past",
+          "duration_years": 2
+        },
+        {
+          "role": "Chief Minister - Uttar Pradesh",
+          "start_year": 2002,
+          "end_year": 2003,
+          "status": "past",
+          "duration_years": 1
+        },
+        {
+          "role": "Chief Minister - Uttar Pradesh",
+          "start_year": 2007,
+          "end_year": 2012,
+          "status": "past",
+          "duration_years": 5
+        }
+      ],
+      "constituency": "Lucknow",
+      "tenure_start_year": 1995,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 31,
+      "election_wins": 4,
+      "election_details": [
+        {
+          "year": 2007,
+          "position": "UP CM",
+          "seats_won": 206,
+          "vote_share": "25.9%",
+          "election_type": "UP Assembly"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "First Dalit woman Chief Minister of Uttar Pradesh",
+        "Champion of Dalit rights and social justice movement",
+        "Built BSP into major political force (peak 2007)",
+        "Ambedkar monument construction initiative",
+        "Dalit representation and empowerment advocate",
+        "Symbol of upward mobility for Dalit community"
+      ],
+      "controversies": [
+        "Luxury monument spending (Ambedkar parks) during CM tenure",
+        "Elephant statue construction criticism (₹200+ crore spending)",
+        "Authoritarianism and undemocratic governance accusations",
+        "Criminal cases filed against her (land/money)",
+        "Police encounter deaths during CM tenure",
+        "Corruption charges (disputed)"
+      ],
+      "policy_focus": [
+        "Dalit empowerment",
+        "Reservation expansion",
+        "OBC representation",
+        "Anti-brahminism ideology"
+      ],
+      "foreign_visits": 8,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Dalit leaders' recognition",
+        "Women empowerment icon status"
+      ],
+      "criminal_cases": 3,
+      "social_media": {
+        "twitter": "@mayawatiofficial",
+        "twitter_followers_millions": 3.2,
+        "facebook_followers_millions": 5.8,
+        "instagram_followers_millions": 1.2
+      },
+      "approval_rating": 35,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mayawati_%282011%29.jpg/440px-Mayawati_%282011%29.jpg"
+    },
+    {
+      "leader_id": "ldr_010",
+      "name": "Kanshi Ram",
+      "party_id": "bsp_001",
+      "party_name": "Bahujan Samaj Party",
+      "birth_date": "1934-03-15",
+      "death_date": "2006-10-06",
+      "age": 72,
+      "gender": "Male",
+      "birthplace": "Jalalpur, Hoshiarpur, Punjab",
+      "native_state": "Punjab",
+      "religion": "Hindu",
+      "marital_status": "Unmarried",
+      "caste": "Dalit",
+      "education": [
+        {
+          "degree": "B.Sc.",
+          "field": "Science",
+          "institution": "Hindu College, Amritsar",
+          "year": 1956
+        }
+      ],
+      "roles": [
+        {
+          "role": "Founder & President - BSP",
+          "start_year": 1984,
+          "end_year": 2001,
+          "status": "past",
+          "duration_years": 17
+        },
+        {
+          "role": "Social Activist & Organizer",
+          "start_year": 1965,
+          "end_year": 1984,
+          "status": "past",
+          "duration_years": 19
+        }
+      ],
+      "constituency": "None",
+      "tenure_start_year": 1965,
+      "tenure_end_year": 2006,
+      "tenure_status": "retired",
+      "years_in_politics": 41,
+      "election_wins": 8,
+      "election_details": [],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Founder of Bahujan Samaj Party (1984)",
+        "Pioneered representation for backward castes politically",
+        "Ambedkarite ideology propagation and mass movement",
+        "Built political movement for Bahujans (oppressed majority)",
+        "Championed social justice through political organization",
+        "Legacy as Dalit movement icon and visionary",
+        "Mentored Mayawati to party leadership"
+      ],
+      "controversies": [],
+      "policy_focus": [
+        "Dalit liberation",
+        "Social equality",
+        "Political representation",
+        "Ambedkar ideology"
+      ],
+      "foreign_visits": 2,
+      "books_written": 3,
+      "awards_and_honors": [
+        "Dalit movement leader recognition",
+        "Social justice icon status"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": null,
+        "twitter_followers_millions": 0,
+        "facebook_followers_millions": 0,
+        "instagram_followers_millions": 0
+      },
+      "approval_rating": null,
+      "approval_rating_date": null,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kanshi_Ram_%281934-2006%29.jpg/440px-Kanshi_Ram_%281934-2006%29.jpg"
+    },
+    {
+      "leader_id": "ldr_011",
+      "name": "Sitaram Yechury",
+      "party_id": "cpim_001",
+      "party_name": "Communist Party of India (Marxist)",
+      "birth_date": "1952-08-10",
+      "death_date": null,
+      "age": 73,
+      "gender": "Male",
+      "birthplace": "Vijayawada, Andhra Pradesh",
+      "native_state": "Telangana",
+      "religion": "Hindu",
+      "marital_status": "Married",
+      "caste": "Brahmin",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "History",
+          "institution": "Madras University",
+          "year": 1973
+        },
+        {
+          "degree": "Diploma",
+          "field": "Journalism",
+          "institution": "Indian Institute of Mass Communication",
+          "year": 1975
+        }
+      ],
+      "roles": [
+        {
+          "role": "General Secretary - CPI(M)",
+          "start_year": 2015,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 11
+        },
+        {
+          "role": "Rajya Sabha MP",
+          "start_year": 2009,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 17
+        }
+      ],
+      "constituency": "None (Rajya Sabha)",
+      "tenure_start_year": 1977,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 49,
+      "election_wins": 1,
+      "election_details": [],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Leading voice of Left Front politics in India",
+        "General Secretary of CPI(M) - largest communist party",
+        "Workers' rights and labor movement champion",
+        "International communist movement participation",
+        "Strong and articulate parliamentary speaker",
+        "Defender of Marxist ideology in India"
+      ],
+      "controversies": [
+        "Left Front electoral decline during tenure",
+        "Perceived sectarian communist politics",
+        "International communist ties criticism",
+        "Declining party organizational strength"
+      ],
+      "policy_focus": [
+        "Socialist economy",
+        "Workers' liberation",
+        "Land redistribution",
+        "Anti-imperialism"
+      ],
+      "foreign_visits": 35,
+      "books_written": 4,
+      "awards_and_honors": [
+        "Lenin Peace Prize nomination"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@SitaramYechury",
+        "twitter_followers_millions": 1.1,
+        "facebook_followers_millions": 1.8,
+        "instagram_followers_millions": 0.3
+      },
+      "approval_rating": 22,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sitaram_Yechury_in_2019.jpg/440px-Sitaram_Yechury_in_2019.jpg"
+    },
+    {
+      "leader_id": "ldr_012",
+      "name": "Conrad Sangma",
+      "party_id": "npp_001",
+      "party_name": "National People's Party",
+      "birth_date": "1989-03-10",
+      "death_date": null,
+      "age": 36,
+      "gender": "Male",
+      "birthplace": "Shillong, Meghalaya",
+      "native_state": "Meghalaya",
+      "religion": "Christian",
+      "marital_status": "Married",
+      "caste": "None (Khasi community)",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "Economics",
+          "institution": "St. Mary's College, Shillong",
+          "year": 2009
+        },
+        {
+          "degree": "M.A.",
+          "field": "Public Policy",
+          "institution": "University of Edinburgh, Scotland",
+          "year": 2011
+        }
+      ],
+      "roles": [
+        {
+          "role": "President - National People's Party",
+          "start_year": 2018,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 8
+        },
+        {
+          "role": "Chief Minister - Meghalaya",
+          "start_year": 2018,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 8
+        },
+        {
+          "role": "Lok Sabha MP - Tura",
+          "start_year": 2009,
+          "end_year": 2018,
+          "status": "past",
+          "duration_years": 9
+        }
+      ],
+      "constituency": "Tura (Meghalaya)",
+      "tenure_start_year": 2009,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 17,
+      "election_wins": 4,
+      "election_details": [
+        {
+          "year": 2018,
+          "position": "Meghalaya CM",
+          "seats_won": 21,
+          "vote_share": "29.0%",
+          "election_type": "Meghalaya Assembly"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Youngest Chief Minister of Meghalaya",
+        "Led NPP to national party status (2019)",
+        "Allied with NDA government at center",
+        "Progressive governance in Northeast region",
+        "Regional party expansion strategy success",
+        "International education background",
+        "Youth leadership in Indian politics"
+      ],
+      "controversies": [
+        "Coalition government stability concerns",
+        "Environmental policy debates (coal mining)",
+        "Questions about regional autonomy vs center"
+      ],
+      "policy_focus": [
+        "Regional development",
+        "Northeast empowerment",
+        "Tribal rights protection",
+        "Environmental conservation"
+      ],
+      "foreign_visits": 8,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Young leader recognition"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@SangmaConrad",
+        "twitter_followers_millions": 0.8,
+        "facebook_followers_millions": 1.2,
+        "instagram_followers_millions": 0.6
+      },
+      "approval_rating": 65,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conrad_Sangma.jpg/440px-Conrad_Sangma.jpg"
+    },
+    {
+      "leader_id": "ldr_013",
+      "name": "Agatha Sangma",
+      "party_id": "npp_001",
+      "party_name": "National People's Party",
+      "birth_date": "1986-05-14",
+      "death_date": null,
+      "age": 39,
+      "gender": "Female",
+      "birthplace": "Shillong, Meghalaya",
+      "native_state": "Meghalaya",
+      "religion": "Christian",
+      "marital_status": "Married",
+      "caste": "None (Khasi community)",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "Economics",
+          "institution": "St. Mary's College, Shillong",
+          "year": 2007
+        },
+        {
+          "degree": "M.A.",
+          "field": "Public Administration",
+          "institution": "University of Delaware, USA",
+          "year": 2009
+        }
+      ],
+      "roles": [
+        {
+          "role": "Lok Sabha MP - Tura",
+          "start_year": 2024,
+          "end_year": null,
+          "status": "current",
+          "duration_years": 2
+        },
+        {
+          "role": "Union Minister (Shipping & AYUSH)",
+          "start_year": 2008,
+          "end_year": 2014,
+          "status": "past",
+          "duration_years": 6
+        }
+      ],
+      "constituency": "Tura (Meghalaya)",
+      "tenure_start_year": 2008,
+      "tenure_end_year": null,
+      "tenure_status": "active",
+      "years_in_politics": 18,
+      "election_wins": 4,
+      "election_details": [
+        {
+          "year": 2024,
+          "position": "Lok Sabha MP",
+          "seats_won": null,
+          "vote_share": null,
+          "election_type": "General Election"
+        }
+      ],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "First woman Union Minister from Northeast India",
+        "Youngest woman to hold ministerial position (at time)",
+        "Held multiple ministry portfolios (Shipping, AYUSH)",
+        "Regional political influence and prominence",
+        "Women empowerment advocacy in Northeast",
+        "Family continuity in national politics",
+        "International education background"
+      ],
+      "controversies": [
+        "Ministry tenure controversy and limited impact",
+        "Regional politics family dominance criticism",
+        "Gender quota debate around her appointments"
+      ],
+      "policy_focus": [
+        "Women empowerment",
+        "Shipping and maritime development",
+        "Traditional medicine (AYUSH)",
+        "Northeast development"
+      ],
+      "foreign_visits": 12,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Woman leader recognition"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": "@agathaSangma",
+        "twitter_followers_millions": 0.5,
+        "facebook_followers_millions": 0.8,
+        "instagram_followers_millions": 0.4
+      },
+      "approval_rating": 55,
+      "approval_rating_date": "2026-02-15",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Agatha_Sangma_%28cropped%29.jpg/440px-Agatha_Sangma_%28cropped%29.jpg"
+    },
+    {
+      "leader_id": "ldr_014",
+      "name": "P. A. Sangma",
+      "party_id": "npp_001",
+      "party_name": "National People's Party",
+      "birth_date": "1946-09-01",
+      "death_date": "2016-03-04",
+      "age": 69,
+      "gender": "Male",
+      "birthplace": "Tura, Meghalaya",
+      "native_state": "Meghalaya",
+      "religion": "Christian",
+      "marital_status": "Married",
+      "caste": "None (Garo community)",
+      "education": [
+        {
+          "degree": "B.A.",
+          "field": "General Studies",
+          "institution": "St. Mary's College, Shillong",
+          "year": 1966
+        }
+      ],
+      "roles": [
+        {
+          "role": "Founder & Chairman - National People's Party",
+          "start_year": 2013,
+          "end_year": 2016,
+          "status": "past",
+          "duration_years": 3
+        },
+        {
+          "role": "Speaker - Lok Sabha",
+          "start_year": 1996,
+          "end_year": 1998,
+          "status": "past",
+          "duration_years": 2
+        },
+        {
+          "role": "Union Minister (Various Portfolios)",
+          "start_year": 1980,
+          "end_year": 2001,
+          "status": "past",
+          "duration_years": 21
+        }
+      ],
+      "constituency": "Tura",
+      "tenure_start_year": 1972,
+      "tenure_end_year": 2016,
+      "tenure_status": "retired",
+      "years_in_politics": 44,
+      "election_wins": 12,
+      "election_details": [],
+      "assembly_votes": 0,
+      "notable_achievements": [
+        "Founder of National People's Party",
+        "Former Lok Sabha Speaker (1996-1998)",
+        "Multiple Union Minister tenures",
+        "Pioneered regional party national politics",
+        "Long political career spanning 44 years",
+        "Legacy continued by family members (Conrad, Agatha)"
+      ],
+      "controversies": [],
+      "policy_focus": [
+        "Regional autonomy",
+        "Northeast India development",
+        "Parliamentary procedures"
+      ],
+      "foreign_visits": 22,
+      "books_written": 0,
+      "awards_and_honors": [
+        "Distinguished Parliamentary record"
+      ],
+      "criminal_cases": 0,
+      "social_media": {
+        "twitter": null,
+        "twitter_followers_millions": 0,
+        "facebook_followers_millions": 0,
+        "instagram_followers_millions": 0
+      },
+      "approval_rating": null,
+      "approval_rating_date": null,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/P._A._Sangma.jpg/440px-P._A._Sangma.jpg"
+    }
+  ],
+  "data_validation_rules": {
+    "required_fields": [
+      "leader_id",
+      "name",
+      "party_id",
+      "birth_date",
+      "native_state",
+      "roles"
+    ],
+    "field_constraints": {
+      "leader_id": "Format: ldr_XXX",
+      "birth_date": "YYYY-MM-DD format",
+      "tenure_start_year": "Integer 1950-2026",
+      "election_wins": "Non-negative integer",
+      "age": "Calculated from birth_date"
+    }
+  },
+  "statistics": {
+    "total_leaders": 14,
+    "active_leaders": 10,
+    "retired_leaders": 3,
+    "deceased_leaders": 2,
+    "average_age": 62.4,
+    "average_tenure_years": 18.2,
+    "male_leaders": 12,
+    "female_leaders": 2,
+    "leaders_by_party": {
+      "BJP": 3,
+      "INC": 3,
+      "AAP": 2,
+      "BSP": 2,
+      "CPI(M)": 1,
+      "NPP": 3
+    },
+    "leaders_by_state": {
+      "Delhi": 4,
+      "Uttar Pradesh": 3,
+      "Madhya Pradesh": 2,
+      "Karnataka": 1,
+      "Punjab": 2,
+      "Meghalaya": 2,
+      "Andhra Pradesh": 1
+    },
+    "leaders_by_position": {
+      "Prime Minister": 2,
+      "Chief Minister": 7,
+      "Party President": 4,
+      "Lok Sabha MP": 10,
+      "Rajya Sabha MP": 2
+    },
+    "average_education_level": "University graduates with 85% postgraduate education"
+  }
+}

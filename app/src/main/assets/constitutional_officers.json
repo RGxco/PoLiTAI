@@ -1,0 +1,98 @@
+[
+    {
+        "id": "CO_001",
+        "position": "Chief Justice of India",
+        "name": "Sanjiv Khanna",
+        "since": "November 2024",
+        "article": "Article 124",
+        "text": "Chief Justice of India: Sanjiv Khanna (since November 2024). Appointed under Article 124 of the Constitution. Head of Indian judiciary. Presides over Supreme Court. Administers oath to President and Vice President."
+    },
+    {
+        "id": "CO_002",
+        "position": "Comptroller and Auditor General",
+        "name": "Girish Chandra Murmu",
+        "since": "August 2020",
+        "article": "Article 148",
+        "text": "Comptroller and Auditor General (CAG): Girish Chandra Murmu (since August 2020). Appointed under Article 148. Audits all government expenditure. Reports to Parliament. Independent constitutional authority."
+    },
+    {
+        "id": "CO_003",
+        "position": "Attorney General of India",
+        "name": "R. Venkataramani",
+        "since": "October 2022",
+        "article": "Article 76",
+        "text": "Attorney General of India: R. Venkataramani (since October 2022). Appointed under Article 76. Chief legal advisor to Government of India. Right to audience in all courts. Not a government employee."
+    },
+    {
+        "id": "CO_004",
+        "position": "Solicitor General of India",
+        "name": "Tushar Mehta",
+        "since": "2018",
+        "article": "Article 76",
+        "text": "Solicitor General of India: Tushar Mehta (since 2018). Second highest law officer after Attorney General. Represents Union of India in Supreme Court. Assists AG in legal matters of national importance."
+    },
+    {
+        "id": "CO_005",
+        "position": "Chief Election Commissioner",
+        "name": "Rajiv Kumar",
+        "since": "May 2022",
+        "article": "Article 324",
+        "text": "Chief Election Commissioner: Rajiv Kumar (since May 2022). Appointed under Article 324. Heads the Election Commission which conducts all elections. Can only be removed by impeachment like a Supreme Court judge."
+    },
+    {
+        "id": "CO_006",
+        "position": "Chairman, UPSC",
+        "name": "Manoj Soni",
+        "since": "2023",
+        "article": "Article 316",
+        "text": "Chairman, Union Public Service Commission: Manoj Soni (since 2023). UPSC conducts Civil Services Examination (IAS, IPS, IFS). Appointed under Article 316. Independent constitutional body."
+    },
+    {
+        "id": "CO_007",
+        "position": "Finance Commission Chairman",
+        "name": "Arvind Panagariya",
+        "since": "2024",
+        "article": "Article 280",
+        "text": "16th Finance Commission Chairman: Arvind Panagariya (since 2024). Appointed under Article 280. Recommends distribution of tax revenues between Centre and States. Determines devolution formula."
+    },
+    {
+        "id": "CO_008",
+        "position": "National Human Rights Commission Chair",
+        "name": "Justice Arun Mishra",
+        "since": "2021",
+        "article": "Protection of Human Rights Act 1993",
+        "text": "NHRC Chairperson: Justice Arun Mishra (since 2021). Investigates human rights violations. Can summon witnesses, examine evidence. Statutory body established under the Protection of Human Rights Act 1993."
+    },
+    {
+        "id": "CO_009",
+        "position": "Speaker of Lok Sabha",
+        "name": "Om Birla",
+        "since": "June 2024",
+        "article": "Article 93",
+        "text": "Speaker of Lok Sabha: Om Birla (re-elected June 2024). Elected under Article 93. Presides over Lok Sabha sessions. Maintains order and interprets rules. Casts deciding vote in case of tie. Anti-defection decisions."
+    },
+    {
+        "id": "CO_010",
+        "position": "Chairman of Rajya Sabha",
+        "name": "Jagdeep Dhankhar",
+        "since": "August 2022",
+        "article": "Article 89",
+        "text": "Chairman of Rajya Sabha: Vice President Jagdeep Dhankhar (since August 2022). Under Article 89, the VP is ex-officio Chairman. Presides over Rajya Sabha sessions. Cannot vote except in case of tie."
+    },
+    {
+        "id": "CO_011",
+        "position": "Lokpal of India",
+        "name": "Justice A.M. Khanwilkar",
+        "since": "2022",
+        "article": "Lokpal and Lokayuktas Act 2013",
+        "text": "Lokpal of India: Justice A.M. Khanwilkar (since 2022). Anti-corruption ombudsman. Investigates complaints against public servants including PM (with safeguards). Established under the 2013 Act after Anna Hazare movement."
+    },
+    {
+        "id": "CO_012",
+        "position": "Principal Scientific Adviser",
+        "name": "Ajay Kumar Sood",
+        "since": "2022",
+        "article": "Executive appointment",
+        "text": "Principal Scientific Adviser to GOI: Prof. Ajay Kumar Sood (since 2022). Advises PM and Cabinet on science and technology policy. Coordinates national science missions and R&D priorities."
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "NH_001",
+        "project": "Bharatmala Pariyojana Phase-I",
+        "length_km": 34800,
+        "cost_crore": 536000,
+        "status": "Ongoing",
+        "text": "Highway: Bharatmala Phase-I. 34,800 km highway development. ₹5.36 lakh crore. Includes economic corridors, inter-corridors, feeder routes. 12,600 km completed. Target: 2027-28. Connects border areas, religious circuits, and coastal regions."
+    },
+    {
+        "id": "NH_002",
+        "project": "Mumbai-Delhi Expressway",
+        "length_km": 1386,
+        "cost_crore": 98000,
+        "status": "Partially Operational",
+        "text": "Highway: Mumbai-Delhi Expressway (Delhi-Mumbai Expressway). 1,386 km. ₹98,000 crore. India's longest expressway. 8-lane expandable to 12. Travel time: 12 hours (vs 24). Sohna-Dausa stretch operational. Full completion by 2025."
+    },
+    {
+        "id": "NH_003",
+        "project": "Amritsar-Jamnagar Expressway",
+        "length_km": 1257,
+        "cost_crore": 65000,
+        "status": "Under Construction",
+        "text": "Highway: Amritsar-Jamnagar Expressway. 1,257 km. ₹65,000 crore. Connects Punjab to Gujarat via Rajasthan. Part of Bharatmala Phase-I. Strategic connectivity to Kandla Port. 6-lane access-controlled expressway."
+    },
+    {
+        "id": "NH_004",
+        "project": "Ganga Expressway (UP)",
+        "length_km": 594,
+        "cost_crore": 36230,
+        "status": "Under Construction",
+        "text": "Highway: Ganga Expressway, Uttar Pradesh. 594 km. ₹36,230 crore. India's longest state expressway. Meerut to Prayagraj. 6-lane (expandable to 8). Connects Meerut, Budaun, Shahjahanpur, Hardoi, Unnao, Rae Bareli, Pratapgarh, Prayagraj."
+    },
+    {
+        "id": "NH_005",
+        "project": "Golden Quadrilateral",
+        "length_km": 5846,
+        "cost_crore": 30000,
+        "status": "Completed",
+        "text": "Highway: Golden Quadrilateral. 5,846 km. ₹30,000 crore (original). Connects Delhi-Mumbai-Chennai-Kolkata. India's first large highway project. Conceived by PM Vajpayee. Completed in 2012. Reduced travel time by 20-30%."
+    },
+    {
+        "id": "NH_006",
+        "project": "Nagpur-Mumbai Samruddhi Expressway",
+        "length_km": 701,
+        "cost_crore": 55335,
+        "status": "Operational",
+        "text": "Highway: Nagpur-Mumbai Samruddhi Expressway (Hindu Hrudaysamrat Balasaheb Thackeray MSE). 701 km. ₹55,335 crore. Maharashtra's flagship. Fully opened December 2024. 8-lane. Travel time: 7 hours (vs 16)."
+    }
+]

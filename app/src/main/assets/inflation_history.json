@@ -1,0 +1,51 @@
+[
+    {
+        "id": "INF_001",
+        "year": 2023,
+        "avg_cpi": 179.8,
+        "inflation_pct": 5.7,
+        "text": "Inflation History: 2023. Average CPI: 179.8. Annual inflation: 5.7%. Food inflation elevated at 6.8%. Core inflation moderated to 4.3%. RBI maintained repo rate at 6.5% through year."
+    },
+    {
+        "id": "INF_002",
+        "year": 2022,
+        "avg_cpi": 172.2,
+        "inflation_pct": 6.7,
+        "text": "Inflation History: 2022. Average CPI: 172.2. Annual inflation: 6.7%. Exceeded RBI's 6% upper tolerance band. Driven by crude oil prices, Ukraine war impact. RBI raised repo rate by 250 bps (4% to 6.5%)."
+    },
+    {
+        "id": "INF_003",
+        "year": 2021,
+        "avg_cpi": 161.3,
+        "inflation_pct": 5.1,
+        "text": "Inflation History: 2021. Average CPI: 161.3. Annual inflation: 5.1%. Post-COVID recovery pushed demand. Supply chain disruptions persisted. Food prices volatile. RBI maintained accommodative policy."
+    },
+    {
+        "id": "INF_004",
+        "year": 2020,
+        "avg_cpi": 153.5,
+        "inflation_pct": 6.2,
+        "text": "Inflation History: 2020. Average CPI: 153.5. Annual inflation: 6.2%. COVID-19 supply disruptions. Vegetable and pulses prices spiked. Lockdown distorted price patterns. RBI cut repo rate 115 bps to support economy."
+    },
+    {
+        "id": "INF_005",
+        "year": 2019,
+        "avg_cpi": 144.6,
+        "inflation_pct": 3.7,
+        "text": "Inflation History: 2019. Average CPI: 144.6. Annual inflation: 3.7%. Below RBI target of 4%. Food deflation in first half. Onion prices spiked in Q4. Core inflation at multi-year low."
+    },
+    {
+        "id": "INF_006",
+        "year": 2024,
+        "avg_cpi": 187.5,
+        "inflation_pct": 4.8,
+        "text": "Inflation History: 2024. Average CPI: 187.5 (estimated). Annual inflation: 4.8%. Within RBI tolerance band (2-6%). Food inflation moderated. RBI began easing cycle with 25 bps cut in Feb 2025."
+    },
+    {
+        "id": "INF_007",
+        "year": 2018,
+        "avg_cpi": 139.2,
+        "inflation_pct": 3.4,
+        "text": "Inflation History: 2018. Average CPI: 139.2. Annual inflation: 3.4%. Well within RBI target. Fuel prices elevated due to global crude. Core inflation stable. Government increased MSP for kharif crops."
+    }
+]

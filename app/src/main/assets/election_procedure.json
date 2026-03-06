@@ -1,0 +1,355 @@
+{
+  "dataset_info": {
+    "title": "Indian Election Procedure & Election Commission of India",
+    "source": "Wikipedia - Elections in India",
+    "created_date": "2026-03-06",
+    "version": "1.0",
+    "purpose": "AI Training Dataset",
+    "description": "Comprehensive details on India's election procedures, voting technologies, special voting provisions, and the Election Commission of India"
+  },
+
+  "election_commission_of_india": {
+    "section_title": "Election Commission of India (ECI)",
+    "records": [
+      {
+        "record_id": "ECI_001",
+        "topic": "Overview",
+        "body_name": "Election Commission of India",
+        "abbreviation": "ECI",
+        "type": "Autonomous Constitutional Body",
+        "established_under": "Article 324 of the Constitution of India",
+        "nature": "Permanent Constitutional Body",
+        "first_chief_election_commissioner": "Sukumar Sen",
+        "responsibilities": [
+          "Superintendence, direction, and control of all elections to Parliament",
+          "Conducting State Legislature elections",
+          "Conducting Presidential elections",
+          "Conducting Vice Presidential elections",
+          "Ensuring elections are free and fair without bias",
+          "Handling all election-related disputes"
+        ],
+        "residuary_powers": "Where enacted laws are silent or insufficient, the ECI has residuary powers under the Constitution to act as appropriate (upheld by Supreme Court of India)",
+        "text": "The Election Commission of India (ECI) is an autonomous permanent constitutional body established under Article 324 of the Constitution. It oversees all parliamentary, state legislature, presidential and vice presidential elections. The Supreme Court has upheld that ECI holds residuary powers when laws are silent. India's first Chief Election Commissioner was Sukumar Sen."
+      },
+      {
+        "record_id": "ECI_002",
+        "topic": "Elections Conducted by ECI",
+        "body_name": "Election Commission of India",
+        "elections_conducted": [
+          "President of India",
+          "Vice President of India",
+          "Members of Parliament in Rajya Sabha (Upper House)",
+          "Members of Parliament in Lok Sabha (Lower House)",
+          "Members of State Legislative Assemblies (Lower/Unicameral House)",
+          "Members of State Legislative Councils (Upper House)",
+          "Members of Legislative Assembly of National Capital Territory of Delhi",
+          "Members of Legislative Assembly of Union Territory of Jammu and Kashmir",
+          "Members of Legislative Assembly of Union Territory of Puducherry"
+        ],
+        "text": "The ECI conducts elections for the President and Vice President of India, both houses of Parliament (Rajya Sabha and Lok Sabha), State Legislative Assemblies and Councils, and the legislative assemblies of Delhi, Jammu & Kashmir, and Puducherry."
+      },
+      {
+        "record_id": "ECI_003",
+        "topic": "State Election Commissions (SEC)",
+        "body_name": "State Election Commission",
+        "abbreviation": "SEC",
+        "type": "Autonomous Constitutional Authority",
+        "governance_tier": "3rd tier — Local Government",
+        "covers": [
+          "Panchayati Raj Institutions",
+          "Urban Local Bodies (Municipalities)"
+        ],
+        "commissioner_appointment_by": "Governor of the respective State",
+        "commissioner_tenure_years": 5,
+        "removal_process": "Same manner as a Judge of a High Court",
+        "total_state_commissions": 31,
+        "list_of_state_election_commissions": [
+          "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar",
+          "Chhattisgarh", "Delhi", "Goa", "Gujarat", "Haryana",
+          "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand",
+          "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
+          "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
+          "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+          "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"
+        ],
+        "text": "State Election Commissions (SECs) manage elections for local governance bodies — Panchayats and Municipalities. Each SEC is headed by a State Election Commissioner appointed by the Governor for a 5-year term, removable only like a High Court judge. There are 31 SECs across India."
+      },
+      {
+        "record_id": "ECI_004",
+        "topic": "Chief Electoral Officer (CEO)",
+        "role": "State-level election oversight authority",
+        "appointed_by": "Election Commission of India",
+        "service_cadre": "Senior Indian Administrative Service (IAS) officer",
+        "nominated_from": "State or Union Territory government",
+        "responsibilities": [
+          "Voter registration",
+          "Preparing and maintaining electoral rolls",
+          "Ensuring compliance with election laws",
+          "Enforcing the Model Code of Conduct",
+          "Smooth conduct of Parliament and State Legislature elections"
+        ],
+        "text": "The Chief Electoral Officer (CEO) is a senior IAS officer nominated by the ECI to oversee elections at the state level. Each state and UT has a CEO responsible for voter registration, electoral rolls, law compliance, the Model Code of Conduct, and smooth election conduct."
+      },
+      {
+        "record_id": "ECI_005",
+        "topic": "District & Booth Level Election Machinery",
+        "roles": [
+          {
+            "role": "District Election Officer (DEO)",
+            "designated_by": "ECI and SECs",
+            "also_serves_as": "District Collector",
+            "responsibilities": ["Supervises all elections in the district", "Oversees electoral roll preparation", "Conducts local government elections under SEC direction"]
+          },
+          {
+            "role": "Returning Officer (RO)",
+            "assigned_to": "Each Lok Sabha and State Legislative Assembly constituency",
+            "responsibilities": ["Conducting the election in the constituency"]
+          },
+          {
+            "role": "Assistant Returning Officer (ARO)",
+            "responsibilities": ["Assists Returning Officer"]
+          },
+          {
+            "role": "Electoral Registration Officer (ERO)",
+            "assigned_to": "Each legislative constituency",
+            "responsibilities": ["Voter list management"]
+          },
+          {
+            "role": "Booth Level Officer (BLO)",
+            "level": "Field level",
+            "responsibilities": ["Voter registration at booth level", "Registering eligible home voters 10 days before election"]
+          },
+          {
+            "role": "Presiding Officer",
+            "level": "Polling booth",
+            "responsibilities": ["Conducting election at polling booth with a team of Polling Officers"]
+          }
+        ],
+        "text": "India's election machinery is layered: District Collectors serve as DEOs, overseeing Returning Officers for each constituency, who are assisted by AROs. Electoral Registration Officers manage voter lists. Booth Level Officers handle field-level voter registration. Presiding Officers with Polling Officers conduct elections at individual booths."
+      }
+    ]
+  },
+
+  "election_procedures": {
+    "section_title": "Election Procedures in India",
+    "records": [
+      {
+        "record_id": "PROC_001",
+        "topic": "Types of Elections in India",
+        "types": [
+          {
+            "election_type": "Lok Sabha (General Election)",
+            "frequency": "Once every 5 years",
+            "seats": 543,
+            "eligibility": "All adult citizens of India aged 18 and above",
+            "winner_title": "Member of Parliament (MP)",
+            "tenure": "5 years or until dissolved by President"
+          },
+          {
+            "election_type": "State Assembly Election (Vidhan Sabha)",
+            "frequency": "Once every 5 years",
+            "seats": "Varies by state (based on size and population)",
+            "eligibility": "All adult citizens in the state",
+            "winner_title": "Member of Legislative Assembly (MLA)",
+            "tenure": "5 years or until dissolved by Governor"
+          },
+          {
+            "election_type": "Rajya Sabha Election",
+            "frequency": "One-third of members re-elected every 2 years",
+            "seats": "Up to 250 (238 elected + up to 12 nominated by President)",
+            "eligibility": "Elected by members of State Legislative Assemblies (indirect election)",
+            "winner_title": "Member of Parliament (Rajya Sabha)",
+            "tenure": "6 years"
+          },
+          {
+            "election_type": "Presidential Election",
+            "frequency": "Every 5 years",
+            "eligibility": "Elected by elected members of Parliament and State Legislative Assemblies (indirect election)",
+            "winner_title": "President of India"
+          },
+          {
+            "election_type": "Vice Presidential Election",
+            "frequency": "Every 5 years",
+            "eligibility": "Elected by members of both Houses of Parliament",
+            "winner_title": "Vice President of India"
+          },
+          {
+            "election_type": "By-Election (Bypoll)",
+            "frequency": "As needed",
+            "trigger": "When a seat becomes vacant before term ends"
+          }
+        ],
+        "text": "India holds multiple types of elections: Lok Sabha every 5 years (543 seats), State Assembly elections every 5 years, Rajya Sabha elections on a rolling basis (one-third every 2 years, 6-year tenure), Presidential and Vice Presidential elections every 5 years, and By-elections whenever seats fall vacant mid-term."
+      },
+      {
+        "record_id": "PROC_002",
+        "topic": "Lok Sabha — How It Works",
+        "house_name": "Lok Sabha (House of the People)",
+        "type": "Lower House of Parliament",
+        "total_seats": 543,
+        "voting_eligibility": "All adult Indian citizens aged 18 and above",
+        "constituency_rule": "Each adult citizen can vote only in their own constituency",
+        "meeting_location": "Lok Sabha Chambers, Sansad Bhavan, New Delhi",
+        "purpose": "Creation of new laws, removal or improvement of existing laws affecting all citizens",
+        "dissolution": "By the President on advice of the Council of Ministers",
+        "text": "Members of Lok Sabha are elected directly by all adult Indians (18+) from their respective constituencies. MPs hold seats for 5 years or until dissolution. The house meets at Sansad Bhavan, New Delhi, to create and amend national laws."
+      },
+      {
+        "record_id": "PROC_003",
+        "topic": "Rajya Sabha — How It Works",
+        "house_name": "Rajya Sabha (Council of States)",
+        "type": "Upper House of Parliament",
+        "election_method": "Indirect — elected by State Legislative Assembly members",
+        "presidential_nominations": "Up to 12 members nominated by the President for contributions to art, literature, science, and social services",
+        "member_tenure_years": 6,
+        "re_election_cycle": "One-third of members face re-election every 2 years",
+        "chairman": "Vice President of India (ex-officio)",
+        "role": "Second-level review body — reviews bills before they become acts",
+        "money_bill_rule": "Money bills must originate in Lok Sabha. Rajya Sabha can only recommend changes within 14 days. If not returned in 14 days, the bill is deemed passed.",
+        "bill_process": "Can approve, reject, or return bills to Lok Sabha with amendments",
+        "text": "The Rajya Sabha is India's upper house, with members indirectly elected by state assemblies for 6-year terms. Up to 12 members can be nominated by the President. Chaired by the Vice President, it reviews bills from Lok Sabha. Money bills can only originate in Lok Sabha; Rajya Sabha may suggest changes within 14 days."
+      },
+      {
+        "record_id": "PROC_004",
+        "topic": "By-Elections",
+        "also_called": "Bypolls",
+        "definition": "Election held when an elected seat becomes vacant before the term ends",
+        "triggers": [
+          "Resignation of sitting MP or MLA",
+          "Death of sitting MP or MLA",
+          "Criminal conviction",
+          "Failure to maintain minimum level of attendance",
+          "Election irregularities discovered later",
+          "Candidate wins more than one seat and must vacate one"
+        ],
+        "text": "By-elections (bypolls) fill vacated seats in the Lok Sabha, State Assemblies, or Rajya Sabha before term end. Triggers include death, resignation, criminal conviction, attendance failure, irregularities, or multi-seat wins requiring one seat to be vacated."
+      },
+      {
+        "record_id": "PROC_005",
+        "topic": "General Voting Process",
+        "polling_hours": "7:00 AM to 6:00 PM",
+        "district_in_charge": "Collector of each district",
+        "poll_officers": "Government employees",
+        "voting_method": "Electronic Voting Machines (EVMs)",
+        "voter_identification": "Indelible ink applied to left index finger after voting",
+        "indelible_ink_practice_since_year": 1962,
+        "campaigning_deadline": "Ends at 6:00 PM two days before polling day",
+        "candidate_nomination": "Candidates file nomination papers with the Electoral Commission",
+        "banned_practices": [
+          "Use of government resources for campaigning",
+          "Bribing candidates before elections",
+          "Starting government projects during election period"
+        ],
+        "text": "Indian elections run from 7AM to 6PM. District Collectors oversee polling with government employees as poll officers. EVMs are used to cast votes. After voting, the left index finger is marked with indelible ink (since 1962). Campaigning is banned 48 hours before polling. Government projects, resource use for campaigns, and bribery are prohibited during the election period."
+      },
+      {
+        "record_id": "PROC_006",
+        "topic": "Electronic Voting Machines (EVM)",
+        "full_name": "BHAVIK Electronic Voting Machine",
+        "first_used_year": 1997,
+        "became_sole_voting_method_year": 2004,
+        "benefits": ["Saves time in reporting results", "Prevents election fraud"],
+        "vvpat": {
+          "full_name": "Voter-Verified Paper Audit Trail",
+          "introduced_date": "14 August 2014",
+          "introduced_location": "Nagaland",
+          "2014_pilot_constituencies": [
+            "Lucknow", "Gandhinagar", "Bangalore South", "Chennai Central",
+            "Jadavpur", "Raipur", "Patna Sahib", "Mizoram"
+          ],
+          "mandatory_since": 2019,
+          "supreme_court_order_date": "9 April 2019",
+          "verification_count": "5 randomly selected EVMs per assembly constituency",
+          "total_evms_verified_2019": 20625,
+          "function": "Produces a paper slip showing party name, serial number, and candidate image to allow voters to cross-check their vote",
+          "post_2019_result": "ECI declared no mismatches between EVM and VVPAT in 2019 General Election"
+        },
+        "text": "EVMs replaced ballot boxes in 1997 and became the only voting method in 2004. VVPAT was introduced in Nagaland on 14 August 2014, piloted in 8 constituencies in 2014, and made mandatory nationwide from 2019 after a Supreme Court order requiring verification of 5 random EVMs per assembly constituency. Post-2019, ECI confirmed zero EVM-VVPAT mismatches."
+      },
+      {
+        "record_id": "PROC_007",
+        "topic": "NOTA (None of the Above)",
+        "full_name": "None of the Above",
+        "abbreviation": "NOTA",
+        "replaced": "49-O provision",
+        "supreme_court_judgment_date": "27 September 2013",
+        "petitioned_by": ["Electoral Commission", "People's Union for Civil Liberties (PUCL)"],
+        "petition_year": 2009,
+        "first_used_in_state_elections": "November 2013 (5 state elections)",
+        "rule": "Even if NOTA gets more votes than any candidate, the candidate with the highest individual votes is still declared the winner",
+        "text": "NOTA was introduced after a Supreme Court judgment on 27 September 2013 following a petition by the Electoral Commission and PUCL in 2009. First used in 5 state elections in November 2013. Even if NOTA wins the most votes, the candidate with the highest vote count is still declared elected."
+      },
+      {
+        "record_id": "PROC_008",
+        "topic": "Indelible Ink",
+        "purpose": "Prevent multiple voting by the same person",
+        "research_body": "Council of Scientific and Industrial Research (CSIR)",
+        "researcher": "M. L. Goel",
+        "research_location": "Chemical Division, National Physical Laboratory of India",
+        "research_decade": "1950s",
+        "active_ingredient": "Silver nitrate",
+        "photo_sensitive": true,
+        "storage": "Amber-colored plastic or brown-colored glass bottles",
+        "minimum_duration_on_skin": "2 days",
+        "maximum_duration_on_skin": "Up to 1 month",
+        "applied_to": "Left index finger",
+        "practice_introduced_year": 1962,
+        "text": "India's indelible election ink was developed by CSIR in the 1950s by M.L. Goel at the National Physical Laboratory. It contains photo-sensitive silver nitrate and lasts 2 days to 1 month on the left index finger. Applied to every voter since 1962 to prevent duplicate voting."
+      },
+      {
+        "record_id": "PROC_009",
+        "topic": "Vote From Home",
+        "introduced_for": "Senior citizens and persons with disabilities",
+        "original_eligible_age": 80,
+        "age_from_2024": 85,
+        "also_eligible": "Persons with Disabilities (PwD)",
+        "nature": "Voluntary — cannot be reversed once chosen",
+        "registration_process": "Register with designated Booth Level Officer (BLO)",
+        "registration_deadline": "At least 10 days before election date",
+        "form_required": "Form 12-D",
+        "voting_method": "Postal ballot",
+        "visiting_team_size": 5,
+        "visiting_team_composition": ["Polling officer", "Micro observer", "Police officer", "Photographer"],
+        "documentation": "Entire process documented via photographs and videos",
+        "2024_update": "In 2024 Lok Sabha elections, ECI extended the facility to those aged 85+ and PwD voters for the first time in Lok Sabha history",
+        "text": "The ECI allows voters 80+ (85+ from 2024) and disabled persons to vote from home via postal ballot. They must register 10 days in advance with their BLO using Form 12-D. A 5-member team including a polling officer, micro observer, police officer and photographer visits their home. Once selected, this option cannot be reversed."
+      },
+      {
+        "record_id": "PROC_010",
+        "topic": "Postal Voting",
+        "system_name": "Electronically Transmitted Postal Ballot Papers (ETPB)",
+        "administered_by": "Election Commission of India",
+        "process": "Ballot papers distributed to registered eligible voters; votes returned by post",
+        "counting_order": "Postal votes are counted before EVM votes",
+        "eligible_categories": [
+          "Union armed forces personnel",
+          "State police personnel",
+          "Spouses of armed forces and state police",
+          "Government of India employees officially posted abroad",
+          "People in preventive detention",
+          "Disabled persons",
+          "Persons above the age of 80 years"
+        ],
+        "service_voters_term": "Service voters (armed forces, state police, spouses, government employees abroad)",
+        "ineligible": "Prisoners — cannot vote at all",
+        "absentee_voting_note": "India does not provide general absentee voting. Non-resident Indians were granted voting rights in 2010 (Representation of the People Amendment Bill) but physical presence at polling booth is still required.",
+        "text": "India's postal voting uses the ETPB system. Eligible voters include military, police, their spouses, government employees abroad, people in preventive detention, disabled persons, and those above 80. Prisoners cannot vote. Postal votes are counted before EVM votes. General absentee voting is not available; NRIs must be physically present to vote despite 2010 law changes."
+      },
+      {
+        "record_id": "PROC_011",
+        "topic": "Bill to Act — Legislative Process",
+        "definition_of_bill": "A draft of a legislative proposal brought before either house of Parliament",
+        "passing_process": [
+          "Bill introduced in either Lok Sabha or Rajya Sabha",
+          "Passed by both Lok Sabha and Rajya Sabha",
+          "Assented to by the President of India",
+          "Becomes an Act of Parliament"
+        ],
+        "money_bill_rule": "Money bills must originate in Lok Sabha only. Rajya Sabha can only recommend changes within 14 days.",
+        "rajya_sabha_role": "Can approve, reject, or return bills with suggested amendments",
+        "lok_sabha_supremacy": "If Lok Sabha rejects all Rajya Sabha amendments, the bill is deemed passed by both Houses in its Lok Sabha form",
+        "text": "A bill is a draft legislative proposal. It becomes an Act of Parliament only after being passed by both Lok Sabha and Rajya Sabha and receiving Presidential assent. Money bills must originate in Lok Sabha. If Lok Sabha rejects Rajya Sabha's amendments, the Lok Sabha version is deemed passed by both houses."
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+[
+    {
+        "id": "FSS_001",
+        "scheme": "PM-KISAN",
+        "budget_crore": 60000,
+        "beneficiaries": "11.8 crore families",
+        "benefit": "₹6,000/year in 3 installments",
+        "text": "Farmer Scheme: PM-KISAN. Budget: ₹60,000 crore. 11.8 crore farmer families receive ₹6,000/year in 3 installments via DBT. All landholding families eligible. 17th installment in Feb 2025 released. Total transfer: ₹3.24 lakh crore since inception."
+    },
+    {
+        "id": "FSS_002",
+        "scheme": "PM Fasal Bima Yojana (PMFBY)",
+        "budget_crore": 14600,
+        "beneficiaries": "4 crore farmers",
+        "benefit": "Crop insurance at 1.5-5% premium",
+        "text": "Farmer Scheme: PM Fasal Bima Yojana. Budget: ₹14,600 crore. Crop insurance for natural calamities. Premium: 2% Kharif, 1.5% Rabi, 5% horticultural. 4 crore farmers enrolled annually. ₹1.5 lakh crore claims settled since 2016."
+    },
+    {
+        "id": "FSS_003",
+        "scheme": "Kisan Credit Card (KCC)",
+        "budget_crore": 20000,
+        "beneficiaries": "7.5 crore active cards",
+        "benefit": "Crop loans at 4% interest (with subsidy)",
+        "text": "Farmer Scheme: Kisan Credit Card. 7.5 crore active KCCs. Short-term crop loans up to ₹3 lakh at 4% effective interest (7% - 3% interest subvention). Extended to PM-KISAN beneficiaries, fishermen, and animal husbandry farmers."
+    },
+    {
+        "id": "FSS_004",
+        "scheme": "Soil Health Card Scheme",
+        "budget_crore": 568,
+        "beneficiaries": "23 crore cards distributed",
+        "benefit": "Free soil testing and fertilizer recommendations",
+        "text": "Farmer Scheme: Soil Health Card. 23 crore cards distributed in 2 cycles. Free soil testing for NPK, pH, micronutrients. Customized fertilizer recommendations. 429 soil testing labs. Improves yields by 5-6% through optimized nutrition."
+    },
+    {
+        "id": "FSS_005",
+        "scheme": "eNAM (National Agriculture Market)",
+        "budget_crore": 600,
+        "beneficiaries": "1.75 crore farmers registered",
+        "benefit": "Online trading platform for agricultural commodities",
+        "text": "Farmer Scheme: eNAM. Pan-India electronic trading portal. 1,361 mandis integrated. 1.75 crore farmers, 2.5 lakh traders registered. Transparent price discovery. Inter-state trade facility. FPO module for farmer producer organizations."
+    },
+    {
+        "id": "FSS_006",
+        "scheme": "PM AASHA",
+        "budget_crore": 15000,
+        "beneficiaries": "Farmers growing pulses, oilseeds, copra",
+        "text": "Farmer Scheme: PM AASHA (Annadata Aashirvaad). Price support for pulses, oilseeds, copra when market prices fall below MSP. Three components: PSS (Price Support Scheme), PDPS (Price Deficiency Payment), pilot PPP. NAFED is procurement agency."
+    }
+]

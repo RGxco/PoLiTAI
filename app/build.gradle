@@ -12,8 +12,8 @@ android {
         applicationId "com.example.politai"
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName "2.0.0-master"
+        versionCode 3
+        versionName "3.0.0"
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         
@@ -69,6 +69,12 @@ android {
         }
         abi {
             enableSplit = true
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "PoLiTAI.apk"
         }
     }
 }

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "IMF_001",
+        "name": "Mahatma Gandhi",
+        "role": "Father of the Nation",
+        "born": 1869,
+        "died": 1948,
+        "key_contributions": "Non-violence, Satyagraha, Salt March, Quit India",
+        "text": "Independence: Mahatma Gandhi (1869-1948). Father of the Nation. Pioneer of non-violence and Satyagraha. Led Salt March (1930), Quit India Movement (1942), Non-Cooperation Movement (1920). Assassinated January 30, 1948. His principles shaped India's democratic foundation."
+    },
+    {
+        "id": "IMF_002",
+        "name": "Jawaharlal Nehru",
+        "role": "First PM, Independence leader",
+        "born": 1889,
+        "died": 1964,
+        "key_contributions": "Discovery of India, First PM, modern India architect",
+        "text": "Independence: Jawaharlal Nehru (1889-1964). First Prime Minister. Key role in independence struggle. Authored Discovery of India. 'Tryst with Destiny' speech at midnight Aug 15, 1947. Shaped modern India's democratic, secular, and scientific foundations."
+    },
+    {
+        "id": "IMF_003",
+        "name": "Subhas Chandra Bose",
+        "role": "INA Commander, Freedom Fighter",
+        "born": 1897,
+        "died": 1945,
+        "key_contributions": "Indian National Army, Azad Hind Fauj, Forward Bloc",
+        "text": "Independence: Subhas Chandra Bose (1897-1945). Founded Indian National Army (Azad Hind Fauj). 'Give me blood, I shall give you freedom.' Formed Azad Hind government. INA marched toward India through Burma. Netaji's military approach complemented Gandhian non-violence."
+    },
+    {
+        "id": "IMF_004",
+        "name": "B.R. Ambedkar",
+        "role": "Father of Indian Constitution",
+        "born": 1891,
+        "died": 1956,
+        "key_contributions": "Constitution drafting, Dalit rights, social justice",
+        "text": "Independence: B.R. Ambedkar (1891-1956). Chairman of Constitution Drafting Committee. Father of the Indian Constitution. Champion of Dalit rights and social justice. First Law Minister. Bharat Ratna 1990 (posthumous). Anti-caste movement leader."
+    },
+    {
+        "id": "IMF_005",
+        "name": "Sardar Vallabhbhai Patel",
+        "role": "Iron Man of India, First Home Minister",
+        "born": 1875,
+        "died": 1950,
+        "key_contributions": "Integration of princely states, Statue of Unity",
+        "text": "Independence: Sardar Vallabhbhai Patel (1875-1950). Iron Man of India. Unified 562 princely states into Indian Union. First Home Minister and Deputy PM. Statue of Unity (182m, world's tallest) in Gujarat. Bharat Ratna 1991."
+    },
+    {
+        "id": "IMF_006",
+        "name": "Bhagat Singh",
+        "role": "Revolutionary Freedom Fighter",
+        "born": 1907,
+        "died": 1931,
+        "key_contributions": "Armed resistance, Assembly bomb, Lahore Conspiracy",
+        "text": "Independence: Bhagat Singh (1907-1931). Revolutionary freedom fighter. Threw bombs in Central Legislative Assembly (1929) as protest. Lahore Conspiracy Case. Hanged at age 23 on March 23, 1931. 'Inquilab Zindabad' became iconic slogan."
+    },
+    {
+        "id": "IMF_007",
+        "name": "Sarojini Naidu",
+        "role": "Nightingale of India, First Woman Governor",
+        "born": 1879,
+        "died": 1949,
+        "key_contributions": "Poet, first woman governor, women's rights",
+        "text": "Independence: Sarojini Naidu (1879-1949). Nightingale of India. First woman president of Indian National Congress (1925). First woman Governor of a state (UP, 1947). Renowned poet. Active in Salt March and Quit India Movement."
+    },
+    {
+        "id": "IMF_008",
+        "name": "Maulana Abul Kalam Azad",
+        "role": "First Education Minister, Freedom Fighter",
+        "born": 1888,
+        "died": 1958,
+        "key_contributions": "INC President, education system architect, communal harmony",
+        "text": "Independence: Maulana Abul Kalam Azad (1888-1958). First Education Minister of India. Youngest INC President at 35. Established IITs, UGC, and AICTE framework. Championed communal harmony and Hindu-Muslim unity. Bharat Ratna 1992."
+    }
+]

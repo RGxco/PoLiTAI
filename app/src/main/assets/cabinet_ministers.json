@@ -1,0 +1,122 @@
+[
+    {
+        "id": "CAB_001",
+        "name": "Rajnath Singh",
+        "portfolio": "Defence",
+        "party": "BJP",
+        "constituency": "Lucknow",
+        "text": "Rajnath Singh: Minister of Defence. BJP. MP from Lucknow. Former Home Minister and BJP President. Heads India's defence modernization, Make in India in defence, and armed forces operations."
+    },
+    {
+        "id": "CAB_002",
+        "name": "Amit Shah",
+        "portfolio": "Home Affairs, Co-operation",
+        "party": "BJP",
+        "constituency": "Gandhinagar",
+        "text": "Amit Shah: Minister of Home Affairs and Co-operation. BJP. MP from Gandhinagar. Handles internal security, border management, police reforms, J&K integration, and cooperative sector."
+    },
+    {
+        "id": "CAB_003",
+        "name": "Nitin Gadkari",
+        "portfolio": "Road Transport & Highways",
+        "party": "BJP",
+        "constituency": "Nagpur",
+        "text": "Nitin Gadkari: Minister of Road Transport and Highways. BJP. MP from Nagpur. Driving India's highway expansion — building 27 km roads/day. Key: Bharatmala, expressways, and green fuel advocacy."
+    },
+    {
+        "id": "CAB_004",
+        "name": "Nirmala Sitharaman",
+        "portfolio": "Finance, Corporate Affairs",
+        "party": "BJP",
+        "constituency": "Rajya Sabha (Karnataka)",
+        "text": "Nirmala Sitharaman: Minister of Finance and Corporate Affairs. BJP. Rajya Sabha. First full-time woman FM. Presents Union Budget. Key reforms: GST rationalization, PLI schemes, startup tax benefits."
+    },
+    {
+        "id": "CAB_005",
+        "name": "S. Jaishankar",
+        "portfolio": "External Affairs",
+        "party": "BJP",
+        "constituency": "Rajya Sabha (Gujarat)",
+        "text": "Dr. S. Jaishankar: Minister of External Affairs. BJP. Rajya Sabha. Former Foreign Secretary. Driving India's assertive foreign policy, Quad engagement, and neighbourhood-first diplomacy."
+    },
+    {
+        "id": "CAB_006",
+        "name": "Dharmendra Pradhan",
+        "portfolio": "Education, Skill Development",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Dharmendra Pradhan: Minister of Education and Skill Development. BJP. Implementing National Education Policy 2020. Focus: Digital university, PM SHRI Schools, and internationalization of education."
+    },
+    {
+        "id": "CAB_007",
+        "name": "Piyush Goyal",
+        "portfolio": "Commerce & Industry",
+        "party": "BJP",
+        "constituency": "Rajya Sabha (Maharashtra)",
+        "text": "Piyush Goyal: Minister of Commerce and Industry. BJP. Rajya Sabha. Focus: India's trade agreements, export promotion, Open Network for Digital Commerce (ONDC), and bilateral FTAs."
+    },
+    {
+        "id": "CAB_008",
+        "name": "Mansukh Mandaviya",
+        "portfolio": "Labour & Employment, Youth Affairs",
+        "party": "BJP",
+        "constituency": "Rajya Sabha (Gujarat)",
+        "text": "Mansukh Mandaviya: Minister of Labour & Employment and Youth Affairs. BJP. Former Health Minister during COVID vaccination drive. Focus: Labour code implementation and PM Mudra Yojana."
+    },
+    {
+        "id": "CAB_009",
+        "name": "Bhupender Yadav",
+        "portfolio": "Environment, Labour (former)",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Bhupender Yadav: Minister of Environment, Forest and Climate Change. BJP. Rajya Sabha. India's climate commitments — net zero by 2070, renewable energy targets, and green hydrogen mission."
+    },
+    {
+        "id": "CAB_010",
+        "name": "Smriti Irani",
+        "portfolio": "Women & Child Development (former)",
+        "party": "BJP",
+        "constituency": "Amethi (former)",
+        "text": "Smriti Irani: Former Minister of Women & Child Development. BJP. Won Amethi from Rahul Gandhi in 2019. Former HRD Minister who introduced NEP groundwork. Implemented Beti Bachao Beti Padhao."
+    },
+    {
+        "id": "CAB_011",
+        "name": "Giriraj Singh",
+        "portfolio": "Textiles (former), Rural Development",
+        "party": "BJP",
+        "constituency": "Begusarai",
+        "text": "Giriraj Singh: Cabinet Minister. BJP. MP from Begusarai, Bihar. Focus on rural development policies and cooperative sector. Known for grassroots political engagement."
+    },
+    {
+        "id": "CAB_012",
+        "name": "Hardeep Singh Puri",
+        "portfolio": "Petroleum & Natural Gas, Housing",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Hardeep Singh Puri: Minister of Petroleum & Natural Gas and Housing. BJP. Former Indian Foreign Service officer. Driving PMAY Housing for All, ethanol blending, and energy transition."
+    },
+    {
+        "id": "CAB_013",
+        "name": "Jyotiraditya Scindia",
+        "portfolio": "Telecommunications",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Jyotiraditya Scindia: Minister of Telecommunications. BJP. Former Congress leader. Driving 5G rollout, BSNL revival, digital connectivity in rural India, and satellite-based communications."
+    },
+    {
+        "id": "CAB_014",
+        "name": "Ashwini Vaishnaw",
+        "portfolio": "Railways, Electronics & IT",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Ashwini Vaishnaw: Minister of Railways and Electronics & IT. BJP. IAS officer turned politician. Driving Vande Bharat trains, station redevelopment, Digital India Act, semiconductor manufacturing."
+    },
+    {
+        "id": "CAB_015",
+        "name": "Sarbananda Sonowal",
+        "portfolio": "Ports, Shipping, Waterways, AYUSH",
+        "party": "BJP",
+        "constituency": "Rajya Sabha",
+        "text": "Sarbananda Sonowal: Minister of Ports, Shipping, Waterways, and AYUSH. BJP. Former Chief Minister of Assam. Focus: Sagarmala project, inland waterways, and Ayurveda promotion."
+    }
+]

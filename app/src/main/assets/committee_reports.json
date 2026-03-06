@@ -1,0 +1,74 @@
+[
+    {
+        "id": "CR_001",
+        "committee": "Standing Committee on Finance",
+        "chairman": "Jayant Sinha",
+        "report_number": "67",
+        "year": 2024,
+        "topic": "Digital Lending Regulation",
+        "text": "Committee Report: Standing Committee on Finance, Report #67 (2024). Chairman: Jayant Sinha. Topic: Digital Lending and Fintech Regulation. Recommended RBI oversight of digital lending apps, interest rate caps, and consumer protection framework."
+    },
+    {
+        "id": "CR_002",
+        "committee": "Standing Committee on Defence",
+        "chairman": "Radha Mohan Singh",
+        "report_number": "54",
+        "year": 2024,
+        "topic": "Defence Procurement Reform",
+        "text": "Committee Report: Standing Committee on Defence, Report #54 (2024). Chairman: Radha Mohan Singh. Topic: Defence Procurement. Recommended faster indigenous manufacturing, reduced import dependence to 30%, and DPP reforms."
+    },
+    {
+        "id": "CR_003",
+        "committee": "Standing Committee on Health",
+        "chairman": "Ram Gopal Yadav",
+        "report_number": "143",
+        "year": 2023,
+        "topic": "Healthcare Infrastructure",
+        "text": "Committee Report: Standing Committee on Health, Report #143 (2023). Chairman: Ram Gopal Yadav. Topic: Healthcare Infrastructure gaps. Recommended increasing health budget to 3% of GDP, 1 PHC per 30,000 population, and more medical colleges."
+    },
+    {
+        "id": "CR_004",
+        "committee": "Public Accounts Committee",
+        "chairman": "Adhir Ranjan Chowdhury",
+        "report_number": "98",
+        "year": 2023,
+        "topic": "CAG Audit of PM-KISAN",
+        "text": "Committee Report: Public Accounts Committee, Report #98 (2023). Chairman: Adhir Ranjan Chowdhury. PAC examined CAG audit of PM-KISAN. Found ₹1,364 crore disbursed to ineligible beneficiaries. Recommended Aadhaar-based verification."
+    },
+    {
+        "id": "CR_005",
+        "committee": "Joint Parliamentary Committee on Waqf",
+        "chairman": "Jagdambika Pal",
+        "report_number": "1",
+        "year": 2024,
+        "topic": "Waqf Amendment Bill",
+        "text": "Committee Report: JPC on Waqf Amendment Bill (2024). Chairman: Jagdambika Pal. Examined Waqf (Amendment) Bill 2024. Received representations from Muslim organizations. Report submitted with recommendations on property documentation."
+    },
+    {
+        "id": "CR_006",
+        "committee": "Standing Committee on Education",
+        "chairman": "Vivek Thakur",
+        "report_number": "35",
+        "year": 2024,
+        "topic": "NEP Implementation",
+        "text": "Committee Report: Standing Committee on Education, Report #35 (2024). Topic: NEP 2020 Implementation. Recommended faster adoption of 5+3+3+4 structure, mother-tongue instruction, and digital infrastructure in rural schools."
+    },
+    {
+        "id": "CR_007",
+        "committee": "Estimates Committee",
+        "chairman": "Girish Bhalchandra Bapat (late)",
+        "report_number": "21",
+        "year": 2023,
+        "topic": "Smart Cities Mission Review",
+        "text": "Committee Report: Estimates Committee, Report #21 (2023). Topic: Smart Cities Mission review. Found 29 of 100 cities behind schedule. Recommended timeline extensions, better fund utilization monitoring, and private sector engagement."
+    },
+    {
+        "id": "CR_008",
+        "committee": "Standing Committee on IT",
+        "chairman": "Prataprao Jadhav",
+        "report_number": "28",
+        "year": 2024,
+        "topic": "AI Regulation",
+        "text": "Committee Report: Standing Committee on IT, Report #28 (2024). Chairman: Prataprao Jadhav. Topic: Artificial Intelligence regulation framework for India. Recommended sector-specific AI guidelines, ethical AI standards, and AI safety board."
+    }
+]

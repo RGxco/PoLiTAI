@@ -1,0 +1,74 @@
+[
+    {
+        "id": "PQ_001",
+        "type": "Starred Question",
+        "member": "Rahul Gandhi",
+        "ministry": "Ministry of Finance",
+        "session": "Budget 2024",
+        "topic": "Unemployment",
+        "text": "Parliamentary Question: Rahul Gandhi (INC) asked Ministry of Finance about unemployment rate trends among youth (15-29 age group). Starred question requiring oral answer. Budget Session 2024. Addressed rising youth unemployment concerns."
+    },
+    {
+        "id": "PQ_002",
+        "type": "Unstarred Question",
+        "member": "Mahua Moitra",
+        "ministry": "Ministry of IT",
+        "session": "Monsoon 2023",
+        "topic": "Digital Privacy",
+        "text": "Parliamentary Question: Mahua Moitra (TMC) asked Ministry of Electronics & IT about data breaches in Aadhaar and government portals. Unstarred question. Monsoon Session 2023. Raised digital privacy concerns."
+    },
+    {
+        "id": "PQ_003",
+        "type": "Short Duration Discussion",
+        "member": "Derek O'Brien",
+        "ministry": "Ministry of Home Affairs",
+        "session": "Winter 2023",
+        "topic": "Manipur Violence",
+        "text": "Parliamentary Question: Derek O'Brien (TMC) raised Short Duration Discussion on Manipur ethnic violence and displacement. Winter Session 2023. Demanded PM's statement on Manipur situation. Ministry of Home Affairs responded."
+    },
+    {
+        "id": "PQ_004",
+        "type": "Starred Question",
+        "member": "Nishikant Dubey",
+        "ministry": "Ministry of Education",
+        "session": "Monsoon 2024",
+        "topic": "NEET Exam Integrity",
+        "text": "Parliamentary Question: Nishikant Dubey (BJP) asked about NEET examination integrity and paper leak allegations. Starred question. Monsoon Session 2024. Ministry detailed CBI investigation and NTA reforms."
+    },
+    {
+        "id": "PQ_005",
+        "type": "Calling Attention Motion",
+        "member": "Jairam Ramesh",
+        "ministry": "Ministry of Agriculture",
+        "session": "Budget 2023",
+        "topic": "MSP Guarantee",
+        "text": "Parliamentary Question: Jairam Ramesh (INC) called attention to MSP guarantee demand and farmer protests. Budget Session 2023. Ministry of Agriculture outlined MSP procurement statistics and reforms."
+    },
+    {
+        "id": "PQ_006",
+        "type": "Unstarred Question",
+        "member": "Asaduddin Owaisi",
+        "ministry": "Ministry of Home Affairs",
+        "session": "Winter 2024",
+        "topic": "CAA Implementation",
+        "text": "Parliamentary Question: Asaduddin Owaisi (AIMIM) questioned CAA implementation status and citizenship applications received. Unstarred question. Winter Session 2024. MHA shared implementation data."
+    },
+    {
+        "id": "PQ_007",
+        "type": "Zero Hour Mention",
+        "member": "Hema Malini",
+        "ministry": "Ministry of Road Transport",
+        "session": "Budget 2024",
+        "topic": "Road Safety",
+        "text": "Parliamentary Question: Hema Malini (BJP) raised Zero Hour mention on road safety and highway accidents in Mathura constituency. Budget Session 2024. Called for better road infrastructure and speed control."
+    },
+    {
+        "id": "PQ_008",
+        "type": "Private Member Bill",
+        "member": "Manoj Jha",
+        "ministry": "General",
+        "session": "Winter 2023",
+        "topic": "Caste Census",
+        "text": "Parliamentary Question: Manoj Jha (RJD) introduced Private Member Bill for nationwide caste census. Winter Session 2023. Argued for data-driven reservation policy. Bill was discussed but not passed."
+    }
+]

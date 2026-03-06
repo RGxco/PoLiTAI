@@ -1,0 +1,37 @@
+[
+    {
+        "id": "ED_001",
+        "program": "NEP 2020 (National Education Policy)",
+        "budget_crore": 120000,
+        "beneficiaries": "All students",
+        "text": "Education: National Education Policy 2020. Replaces 1986 policy. 5+3+3+4 school structure. Mother tongue medium till Class 5. Multiple entry-exit in higher education. Academic Bank of Credits. National Research Foundation. Target: 6% GDP on education."
+    },
+    {
+        "id": "ED_002",
+        "program": "PM SHRI Schools",
+        "budget_crore": 27360,
+        "schools": 14500,
+        "text": "Education: PM SHRI Schools. 14,500 schools upgraded as model NEP schools. ₹27,360 crore. Smart classrooms, labs, green schools. Discovery-based learning. 21st century skills focus. National benchmarks for quality education."
+    },
+    {
+        "id": "ED_003",
+        "program": "Samagra Shiksha Abhiyan",
+        "budget_crore": 37453,
+        "beneficiaries": "26 crore students",
+        "text": "Education: Samagra Shiksha. ₹37,453 crore FY24. Integrated scheme for school education (pre-school to Class 12). 14.89 lakh schools. Transport/escort for girls. Inclusive education for CWSN. Kasturba Gandhi Balika Vidyalaya: 750+ operational."
+    },
+    {
+        "id": "ED_004",
+        "program": "National Skill Development Mission",
+        "budget_crore": 12000,
+        "beneficiaries": "4 crore youth trained",
+        "text": "Education: National Skill Development Mission. 4 crore youth trained through PMKVY and other schemes. 15,000 Pradhan Mantri Kaushal Kendras. Recognition of Prior Learning. Industry linkages for placement. Skill India Digital Hub."
+    },
+    {
+        "id": "ED_005",
+        "program": "Atal Tinkering Labs",
+        "budget_crore": 1000,
+        "labs": 10000,
+        "text": "Education: Atal Tinkering Labs by NITI Aayog's Atal Innovation Mission. 10,000 labs in schools across India. STEM and innovation focus. Robotics, 3D printing, IoT equipment. 75 lakh+ students benefited. Innovation ecosystem in schools."
+    }
+]

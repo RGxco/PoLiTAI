@@ -1,0 +1,128 @@
+[
+    {
+        "id": "PM_001",
+        "name": "Jawaharlal Nehru",
+        "term": "1947-1964",
+        "party": "INC",
+        "years_served": 17,
+        "key_policies": "Non-Aligned Movement, Five Year Plans, IITs, Panchsheel",
+        "text": "Jawaharlal Nehru: 1st Prime Minister of India (1947-1964). Indian National Congress. Served 17 years. Architect of modern India. Key policies: Non-Aligned Movement, Five Year Plans, establishment of IITs and scientific institutions, Panchsheel principles. Known as Pandit Nehru and Chacha Nehru."
+    },
+    {
+        "id": "PM_002",
+        "name": "Lal Bahadur Shastri",
+        "term": "1964-1966",
+        "party": "INC",
+        "years_served": 2,
+        "key_policies": "Jai Jawan Jai Kisan, White Revolution, 1965 Indo-Pak War",
+        "text": "Lal Bahadur Shastri: 2nd Prime Minister of India (1964-1966). INC. Famous slogan: Jai Jawan Jai Kisan. Led India during the 1965 Indo-Pakistan War. Promoted the White Revolution (Operation Flood). Died in Tashkent after signing the Tashkent Declaration."
+    },
+    {
+        "id": "PM_003",
+        "name": "Indira Gandhi",
+        "term": "1966-1977, 1980-1984",
+        "party": "INC",
+        "years_served": 16,
+        "key_policies": "Bank Nationalization, Green Revolution, Emergency, Garibi Hatao",
+        "text": "Indira Gandhi: 3rd Prime Minister of India (1966-1977, 1980-1984). INC. Served 16 total years across two terms. Key: Bank nationalization (1969), Green Revolution, Garibi Hatao slogan, 1971 Bangladesh War, Emergency (1975-77). Assassinated October 31, 1984."
+    },
+    {
+        "id": "PM_004",
+        "name": "Morarji Desai",
+        "term": "1977-1979",
+        "party": "Janata Party",
+        "years_served": 2,
+        "key_policies": "First non-Congress PM, Janata Party coalition",
+        "text": "Morarji Desai: 4th Prime Minister of India (1977-1979). Janata Party. First non-Congress PM. Former Finance Minister and Chief Minister of Bombay State. Received Bharat Ratna (1991) and Pakistan's Nishan-e-Pakistan."
+    },
+    {
+        "id": "PM_005",
+        "name": "Charan Singh",
+        "term": "1979-1980",
+        "party": "Janata Party (Secular)",
+        "years_served": 0.5,
+        "key_policies": "Farmer advocacy, shortest-serving PM who never faced Parliament",
+        "text": "Charan Singh: 5th Prime Minister of India (1979-1980). Janata Party (Secular). Served approximately 170 days. Never faced a vote of confidence in Parliament. Known as champion of farmers. Received posthumous Bharat Ratna in 2024."
+    },
+    {
+        "id": "PM_006",
+        "name": "Rajiv Gandhi",
+        "term": "1984-1989",
+        "party": "INC",
+        "years_served": 5,
+        "key_policies": "Computer Revolution, Telecom expansion, Anti-Defection Law, Panchayati Raj",
+        "text": "Rajiv Gandhi: 6th Prime Minister of India (1984-1989). INC. Youngest PM at age 40. Introduced computerization and telecom revolution. Anti-Defection Law (52nd Amendment). Panchayati Raj reforms. Assassinated May 21, 1991 during election campaign."
+    },
+    {
+        "id": "PM_007",
+        "name": "V.P. Singh",
+        "term": "1989-1990",
+        "party": "Janata Dal",
+        "years_served": 1,
+        "key_policies": "Mandal Commission implementation, OBC reservations",
+        "text": "V.P. Singh: 7th Prime Minister of India (1989-1990). Janata Dal. Implemented the Mandal Commission recommendations for 27% OBC reservations in government jobs. This led to widespread protests and political upheaval."
+    },
+    {
+        "id": "PM_008",
+        "name": "Chandra Shekhar",
+        "term": "1990-1991",
+        "party": "Samajwadi Janata Party",
+        "years_served": 0.6,
+        "key_policies": "Gulf War crisis management, brief tenure with Congress support",
+        "text": "Chandra Shekhar: 8th Prime Minister of India (1990-1991). Samajwadi Janata Party. Governed with outside support of INC. Managed the Gulf War crisis and evacuation of Indians from Kuwait. Served approximately 7 months."
+    },
+    {
+        "id": "PM_009",
+        "name": "P.V. Narasimha Rao",
+        "term": "1991-1996",
+        "party": "INC",
+        "years_served": 5,
+        "key_policies": "1991 Economic Liberalization, LPG reforms with Manmohan Singh",
+        "text": "P.V. Narasimha Rao: 9th Prime Minister of India (1991-1996). INC. Architect of economic liberalization with Finance Minister Manmohan Singh. LPG (Liberalization, Privatization, Globalization) reforms. Opened India to foreign investment. Called Father of Indian Economic Reforms."
+    },
+    {
+        "id": "PM_010",
+        "name": "Atal Bihari Vajpayee",
+        "term": "1996, 1998-2004",
+        "party": "BJP",
+        "years_served": 6,
+        "key_policies": "Pokhran-II nuclear tests, Golden Quadrilateral, Sarva Shiksha Abhiyan",
+        "text": "Atal Bihari Vajpayee: 10th Prime Minister of India (1996 for 13 days, then 1998-2004). BJP. Pokhran-II nuclear tests (1998). Golden Quadrilateral highway project. Sarva Shiksha Abhiyan. Kargil War (1999). Bharat Ratna 2015 (posthumous in effect). Revered orator and poet."
+    },
+    {
+        "id": "PM_011",
+        "name": "H.D. Deve Gowda",
+        "term": "1996-1997",
+        "party": "Janata Dal",
+        "years_served": 1,
+        "key_policies": "United Front coalition, farmer-centric policies",
+        "text": "H.D. Deve Gowda: 11th Prime Minister of India (1996-1997). Janata Dal. Led the United Front coalition government. Former Chief Minister of Karnataka. Known for farmer-centric policies. Served approximately 11 months."
+    },
+    {
+        "id": "PM_012",
+        "name": "I.K. Gujral",
+        "term": "1997-1998",
+        "party": "Janata Dal",
+        "years_served": 1,
+        "key_policies": "Gujral Doctrine on foreign policy with neighbors",
+        "text": "I.K. Gujral: 12th Prime Minister of India (1997-1998). Janata Dal. Known for the Gujral Doctrine — India should give more to its smaller neighbors without expecting reciprocity. Former External Affairs Minister. Served approximately 11 months."
+    },
+    {
+        "id": "PM_013",
+        "name": "Manmohan Singh",
+        "term": "2004-2014",
+        "party": "INC",
+        "years_served": 10,
+        "key_policies": "MGNREGA, RTI Act, Aadhaar, Indo-US Nuclear Deal, UPA coalition",
+        "text": "Dr. Manmohan Singh: 13th Prime Minister of India (2004-2014). INC-led UPA. Served two terms. Architect of 1991 economic reforms as FM. Key achievements as PM: MGNREGA (2005), RTI Act (2005), Aadhaar system, Indo-US Civil Nuclear Agreement. Oxford and Cambridge educated economist."
+    },
+    {
+        "id": "PM_014",
+        "name": "Narendra Modi",
+        "term": "2014-present",
+        "party": "BJP",
+        "years_served": 11,
+        "key_policies": "Digital India, Swachh Bharat, Make in India, GST, Demonetization, Ayushman Bharat, PM-KISAN",
+        "text": "Narendra Modi: 14th and current Prime Minister of India since 2014, serving third consecutive term. BJP. Previously CM of Gujarat (2001-2014). Major reforms: GST implementation, demonetization (2016), Digital India, Swachh Bharat, Make in India, Ayushman Bharat, PM-KISAN, Atmanirbhar Bharat. Won 2014, 2019, 2024 Lok Sabha elections."
+    }
+]

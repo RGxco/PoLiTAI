@@ -1,0 +1,50 @@
+[
+    {
+        "id": "GR_001",
+        "title": "Economic Survey 2023-24",
+        "ministry": "Ministry of Finance",
+        "year": 2024,
+        "type": "Annual",
+        "text": "Government Report: Economic Survey 2023-24. Chief Economic Adviser V. Anantha Nageswaran. GDP growth 8.2% FY24. India fastest growing major economy. Inflation moderated to 5.4%. Fiscal deficit at 5.6% of GDP. Capex surge driving growth. Recommends 7% growth target sustained."
+    },
+    {
+        "id": "GR_002",
+        "title": "CAG Report on Implementation of MGNREGS",
+        "ministry": "CAG",
+        "year": 2023,
+        "type": "Audit",
+        "text": "Government Report: CAG Audit of MGNREGS (2023). Key findings: ₹3,700 crore funds diverted in 10 states. Ghost workers detected through Aadhaar mismatches. Wage payment delays exceeded 15 days in 40% cases. Material-labour ratio violated in 25% of works. Recommendations for biometric attendance."
+    },
+    {
+        "id": "GR_003",
+        "title": "Annual Report of Ministry of Railways",
+        "ministry": "Ministry of Railways",
+        "year": 2024,
+        "type": "Annual",
+        "text": "Government Report: Ministry of Railways Annual Report 2024. Revenue: ₹2.56 lakh crore. Freight loading: 1,591 MT. Passenger revenue: ₹72,000 crore. Capital expenditure: ₹2.55 lakh crore (highest ever). 136 Vande Bharat trains launched. 95% electrification complete."
+    },
+    {
+        "id": "GR_004",
+        "title": "NITI Aayog SDG India Index",
+        "ministry": "NITI Aayog",
+        "year": 2024,
+        "type": "Index",
+        "text": "Government Report: NITI Aayog SDG India Index 2024. Top states: Kerala (75), Tamil Nadu (74), Himachal Pradesh (73). Bottom: Bihar (52), Jharkhand (53). National score: 66/100. Improvement in clean water, sanitation, education. Gaps in: hunger, inequality, climate action."
+    },
+    {
+        "id": "GR_005",
+        "title": "NSO Periodic Labour Force Survey (PLFS)",
+        "ministry": "Ministry of Statistics",
+        "year": 2024,
+        "type": "Annual",
+        "text": "Government Report: PLFS Annual Report 2024. Unemployment rate: 3.2% (lowest in 7 years). Youth (15-29) unemployment: 10.2%. Female LFPR improved to 37%. Self-employed: 57.3%. Regular wage/salaried: 21.7%. Casual labour: 21%. Urban unemployment higher than rural."
+    },
+    {
+        "id": "GR_006",
+        "title": "Swachh Survekshan 2024",
+        "ministry": "Ministry of Housing",
+        "year": 2024,
+        "type": "Ranking",
+        "text": "Government Report: Swachh Survekshan 2024. Cleanest city: Indore (7th consecutive time). Top 3: 1. Indore, 2. Surat, 3. Navi Mumbai. Cleanest state: Maharashtra. 4,476 cities surveyed. Parameters: service level, certification, citizen feedback. Promotes competitive cleanliness."
+    }
+]

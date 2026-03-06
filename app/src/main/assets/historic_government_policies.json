@@ -1,0 +1,58 @@
+[
+    {
+        "id": "HGP_001",
+        "policy": "Five Year Plans",
+        "period": "1951-2017",
+        "government": "Multiple (Nehru to Modi)",
+        "text": "Historic Policy: Five Year Plans (1951-2017). 12 plans executed over 66 years. Planning Commission (now NITI Aayog) directed economic development. 1st Plan: agriculture focus. 2nd: heavy industry (Mahalanobis model). Replaced by NITI Aayog's 15-year vision in 2017."
+    },
+    {
+        "id": "HGP_002",
+        "policy": "Green Revolution",
+        "period": "1960s-1970s",
+        "government": "Indira Gandhi era",
+        "text": "Historic Policy: Green Revolution (1960s-70s). Introduced high-yield variety seeds (Norman Borlaug). Punjab, Haryana became 'food bowls.' India from food-deficit to self-sufficient. M.S. Swaminathan: Father of Indian Green Revolution. Wheat and rice production doubled."
+    },
+    {
+        "id": "HGP_003",
+        "policy": "White Revolution (Operation Flood)",
+        "period": "1970-1996",
+        "government": "Multiple",
+        "text": "Historic Policy: White Revolution/Operation Flood (1970-1996). Dr. Verghese Kurien — Milkman of India. Amul model cooperative movement. India became world's largest milk producer (230 MT, FY24). 2 lakh dairy cooperatives. 1.9 crore farmer members."
+    },
+    {
+        "id": "HGP_004",
+        "policy": "Bank Nationalization",
+        "period": "1969, 1980",
+        "government": "Indira Gandhi",
+        "text": "Historic Policy: Bank Nationalization. 1969: 14 commercial banks nationalized. 1980: 6 more. Transformed banking from elite to mass. Rural branch expansion from 1,833 to 35,000+. Priority sector lending mandated. Foundation for Jan Dhan and financial inclusion."
+    },
+    {
+        "id": "HGP_005",
+        "policy": "Reservation Policy",
+        "period": "1950-present",
+        "government": "Multiple",
+        "text": "Historic Policy: Reservation in India. SC: 15% (since 1950). ST: 7.5% (since 1950). OBC: 27% (Mandal Commission, implemented 1990). EWS: 10% (103rd Amendment, 2019). Applies to government jobs and educational institutions. 50% ceiling rule (Supreme Court)."
+    },
+    {
+        "id": "HGP_006",
+        "policy": "Look East / Act East Policy",
+        "period": "1991-present",
+        "government": "Narasimha Rao, Modi",
+        "text": "Historic Policy: Look East (1991) → Act East (2014). Engaging ASEAN, Japan, Korea, Australia. FTAs with ASEAN, Japan, Korea. Northeast India as gateway. IMT Trilateral Highway. BIMSTEC engagement. Indo-Pacific strategic framework. Quad partnership."
+    },
+    {
+        "id": "HGP_007",
+        "policy": "Nuclear Doctrine",
+        "period": "1998-present",
+        "government": "Vajpayee, subsequent PMs",
+        "text": "Historic Policy: India's Nuclear Doctrine. No First Use (NFU) policy since 1998. Nuclear triad: land (Agni), sea (Arihant submarines), air. Credible Minimum Deterrence. Nuclear Command Authority: Political Council (PM) and Executive Council (NSA). India not signed NPT."
+    },
+    {
+        "id": "HGP_008",
+        "policy": "Make in India",
+        "period": "2014-present",
+        "government": "Narendra Modi",
+        "text": "Historic Policy: Make in India (launched Sept 2014). Transform India into global manufacturing hub. 25 focus sectors. FDI increased from $36B (2014) to $84B (2022). PLI schemes: ₹1.97 lakh crore across 14 sectors. Manufacturing share of GDP target: 25%."
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "SC_001",
+        "name": "Standing Committee on Finance",
+        "chairman": "Jayant Sinha",
+        "members": 31,
+        "constituted": "17th Lok Sabha",
+        "ministry": "Ministry of Finance",
+        "text": "Standing Committee on Finance. Chairman: Jayant Sinha (BJP). 31 members (21 Lok Sabha + 10 Rajya Sabha). Examines bills and policies related to Finance, Corporate Affairs, Planning. Reviews RBI, SEBI, banking sector performance."
+    },
+    {
+        "id": "SC_002",
+        "name": "Standing Committee on Defence",
+        "chairman": "Radha Mohan Singh",
+        "members": 31,
+        "constituted": "17th Lok Sabha",
+        "ministry": "Ministry of Defence",
+        "text": "Standing Committee on Defence. Chairman: Radha Mohan Singh (BJP). 31 members. Reviews defence procurement, armed forces modernization, border security. Examines Defence Ministry budget and grant demands."
+    },
+    {
+        "id": "SC_003",
+        "name": "Standing Committee on Health",
+        "chairman": "Ram Gopal Yadav",
+        "members": 31,
+        "constituted": "17th Lok Sabha",
+        "ministry": "Ministry of Health",
+        "text": "Standing Committee on Health and Family Welfare. Chairman: Ram Gopal Yadav (SP). 31 members. Reviews public health policy, AIIMS functioning, medical education, Ayushman Bharat, pandemic preparedness."
+    },
+    {
+        "id": "SC_004",
+        "name": "Standing Committee on Home Affairs",
+        "chairman": "Brij Lal",
+        "members": 31,
+        "constituted": "17th Lok Sabha",
+        "ministry": "Ministry of Home Affairs",
+        "text": "Standing Committee on Home Affairs. Chairman: Brij Lal (BJP). 31 members. Reviews internal security, police reforms, border management, disaster management, census, CRPF and BSF operations."
+    },
+    {
+        "id": "SC_005",
+        "name": "Standing Committee on Education",
+        "chairman": "Vivek Thakur",
+        "members": 31,
+        "constituted": "18th Lok Sabha",
+        "ministry": "Ministry of Education",
+        "text": "Standing Committee on Education, Women, Children, Youth and Sports. Chairman: Vivek Thakur. 31 members. Reviews NEP implementation, university governance, mid-day medals, and sports infrastructure."
+    },
+    {
+        "id": "SC_006",
+        "name": "Standing Committee on IT",
+        "chairman": "Prataprao Jadhav",
+        "members": 31,
+        "constituted": "18th Lok Sabha",
+        "ministry": "Ministry of Electronics & IT",
+        "text": "Standing Committee on Communications and IT. Chairman: Prataprao Jadhav (BJP). 31 members. Reviews telecom policy, internet governance, digital India projects, cybersecurity, and social media regulation."
+    },
+    {
+        "id": "SC_007",
+        "name": "Standing Committee on Agriculture",
+        "chairman": "P.C. Gaddigoudar",
+        "members": 31,
+        "constituted": "17th Lok Sabha",
+        "ministry": "Ministry of Agriculture",
+        "text": "Standing Committee on Agriculture, Animal Husbandry and Food Processing. 31 members. Reviews agricultural policy, MSP, PM-KISAN, food processing industry, animal husbandry, and dairy development."
+    },
+    {
+        "id": "SC_008",
+        "name": "Public Accounts Committee (PAC)",
+        "chairman": "K.C. Venugopal",
+        "members": 22,
+        "constituted": "18th Lok Sabha",
+        "ministry": "All Ministries (audit)",
+        "text": "Public Accounts Committee (PAC). Chairman: K.C. Venugopal (INC). 22 members (15 LS + 7 RS). Examines CAG audit reports. Most powerful financial committee. Holds government accountable for expenditure. By convention, chaired by opposition MP."
+    },
+    {
+        "id": "SC_009",
+        "name": "Estimates Committee",
+        "chairman": "Sanjay Jaiswal",
+        "members": 30,
+        "constituted": "18th Lok Sabha",
+        "ministry": "All Ministries",
+        "text": "Estimates Committee. Chairman: Sanjay Jaiswal (BJP). 30 members (all from Lok Sabha). Reviews budget estimates. Suggests economies, alternative policies, and organizational improvements across ministries."
+    },
+    {
+        "id": "SC_010",
+        "name": "Committee on Public Undertakings",
+        "chairman": "Not yet announced",
+        "members": 22,
+        "constituted": "18th Lok Sabha",
+        "ministry": "PSU oversight",
+        "text": "Committee on Public Undertakings (COPU). 22 members (15 LS + 7 RS). Examines working of public sector enterprises like BHEL, SAIL, NTPC. Reviews CAG audit reports on PSUs. Suggests performance improvements."
+    }
+]

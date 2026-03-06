@@ -1,0 +1,50 @@
+[
+    {
+        "id": "RLY_001",
+        "project": "Vande Bharat Express",
+        "type": "Semi-High Speed",
+        "trains_running": 136,
+        "speed_kmh": 160,
+        "text": "Railway: Vande Bharat Express. 136 trains operational. Semi-high speed: 160 km/h. Made in India by ICF Chennai. 52 routes across India. Tilting technology trains next. Chair car and Executive class. WiFi, GPS-based passenger info."
+    },
+    {
+        "id": "RLY_002",
+        "project": "Mumbai-Ahmedabad Bullet Train",
+        "type": "High Speed Rail",
+        "length_km": 508,
+        "cost_crore": 110000,
+        "text": "Railway: Mumbai-Ahmedabad High Speed Rail (Bullet Train). 508 km. ₹1.10 lakh crore. JICA funded (81%). Shinkansen E5 technology. 320 km/h speed. 12 stations. Travel time: 2 hours. Under construction. Target: 2028-29."
+    },
+    {
+        "id": "RLY_003",
+        "project": "Dedicated Freight Corridors",
+        "type": "Freight",
+        "length_km": 3306,
+        "cost_crore": 120000,
+        "text": "Railway: Dedicated Freight Corridors (DFC). Eastern DFC: 1,337 km (Ludhiana-Dankuni). Western DFC: 1,506 km (JNPT-Dadri). ₹1.2 lakh crore. 70% operational. Double-stack containers. Decongests passenger routes. ₹38,000 cr JICA loan."
+    },
+    {
+        "id": "RLY_004",
+        "project": "Amrit Bharat Station Scheme",
+        "type": "Station Modernization",
+        "stations": 1309,
+        "cost_crore": 24470,
+        "text": "Railway: Amrit Bharat Station Scheme. 1,309 stations being modernized. ₹24,470 crore. Roof plazas, improved facades, city integration. Green buildings, solar panels. Escalators, lifts, waiting lounges. Target completion: 2026."
+    },
+    {
+        "id": "RLY_005",
+        "project": "Kavach (Automatic Train Protection)",
+        "type": "Safety System",
+        "coverage_km": 6000,
+        "cost_crore": 14000,
+        "text": "Railway: Kavach (meaning 'armour'). Indian-developed Automatic Train Protection system. Anti-collision technology. Covers 6,000 km sanctioned. ₹14,000 crore investment. Prevents signal passing at danger. Automatic braking. SIL-4 safety standard."
+    },
+    {
+        "id": "RLY_006",
+        "project": "Railway Electrification",
+        "type": "Infrastructure",
+        "electrified_pct": 95,
+        "target": "100% by 2025",
+        "text": "Railway: Electrification. 95% of broad gauge network electrified (62,400 km). Target: 100% by 2025. Saves ₹15,000 crore diesel cost annually. Reduces carbon emissions. Electric loco production at CLW Chittaranjan — world's largest."
+    }
+]
