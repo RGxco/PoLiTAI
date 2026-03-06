@@ -16,13 +16,6 @@ PoLiTAI is a professional-grade governance assistant and RAG-powered AI tool des
 1. Download the latest APK from the [Releases](https://github.com/RGxco/PoLiTAI/releases) page.
 2. Install the APK on your device.
 
-### 3. Model Setup (Important)
-Due to file size limits, the 1.3GB AI model is hosted externally.
-1. Download `gemma-2b-it-gpu-int4.bin` from the [Official Google Drive Folder](https://drive.google.com/drive/folders/1s4_55-mwK29ti1I21NVLLoYVtH_uJuuE?usp=sharing).
-2. For developers: Place the file in `app/src/main/assets/` before building.
-3. For users: The app will look for the model in internal storage on first run.
-
----
 
 ## ✨ Features
 - **Retrieval-Augmented Generation (RAG)**: Queries real-time JSON databases including budget allocations, government schemes, and citizen grievances.
