@@ -10,7 +10,7 @@
             android:title="New Chat" />
     </group>
 
-    <item android:title="History">
+    <item android:title="History" android:id="@+id/nav_history_placeholder">
         <menu>
             <item
                 android:id="@+id/nav_by_date"

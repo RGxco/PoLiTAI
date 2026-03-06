@@ -1,0 +1,66 @@
+[
+    {
+        "id": "SGS_001",
+        "sector": "Agriculture",
+        "fy": "FY24",
+        "growth_pct": 1.4,
+        "contribution_to_gdp_pct": 15.0,
+        "text": "Sector Growth: Agriculture. FY24 growth: 1.4%. Contribution to GDP: 15%. Employs ~42% of workforce. Affected by El Nino. Kharif production impacted. Rabi season recovery. Government pushed PM-KISAN and crop insurance."
+    },
+    {
+        "id": "SGS_002",
+        "sector": "Manufacturing",
+        "fy": "FY24",
+        "growth_pct": 9.9,
+        "contribution_to_gdp_pct": 17.4,
+        "text": "Sector Growth: Manufacturing. FY24 growth: 9.9%. Contribution to GDP: 17.4%. Driven by PLI schemes, auto sector boom, electronics manufacturing. India became 5th largest manufacturing nation. ₹1.97 lakh crore PLI incentives."
+    },
+    {
+        "id": "SGS_003",
+        "sector": "Services",
+        "fy": "FY24",
+        "growth_pct": 7.6,
+        "contribution_to_gdp_pct": 54.0,
+        "text": "Sector Growth: Services. FY24 growth: 7.6%. Contribution to GDP: 54%. Includes IT/BPO, finance, real estate, trade. India's largest GDP contributor. IT exports: $200 billion+. Financial services grew 7.1%."
+    },
+    {
+        "id": "SGS_004",
+        "sector": "Construction",
+        "fy": "FY24",
+        "growth_pct": 10.7,
+        "contribution_to_gdp_pct": 8.5,
+        "text": "Sector Growth: Construction. FY24 growth: 10.7%. Contribution to GDP: 8.5%. Driven by national highway expansion, housing (PMAY), and infrastructure push. PM GatiShakti Master Plan coordination. Employs 7.1 crore workers."
+    },
+    {
+        "id": "SGS_005",
+        "sector": "Mining",
+        "fy": "FY24",
+        "growth_pct": 7.1,
+        "contribution_to_gdp_pct": 2.4,
+        "text": "Sector Growth: Mining & Quarrying. FY24 growth: 7.1%. Contribution to GDP: 2.4%. Coal production reached 1 billion tonnes target. Iron ore, limestone, bauxite production up. Mining reforms through MMDR Amendment Act."
+    },
+    {
+        "id": "SGS_006",
+        "sector": "IT & Digital",
+        "fy": "FY24",
+        "growth_pct": 8.3,
+        "contribution_to_gdp_pct": 7.5,
+        "text": "Sector Growth: IT & Digital Economy. FY24 growth: 8.3%. Contribution to GDP: 7.5%. Revenue: $254 billion. Exports: $200 billion. 5.4 million direct employees. AI and cloud services driving growth. India stack powering digital infrastructure."
+    },
+    {
+        "id": "SGS_007",
+        "sector": "Defence Manufacturing",
+        "fy": "FY24",
+        "growth_pct": 12.0,
+        "contribution_to_gdp_pct": 0.8,
+        "text": "Sector Growth: Defence Manufacturing. FY24 growth: 12%. Defence exports reached ₹21,083 crore. Goal: $5 billion exports by 2025. 411 items on positive indigenization list. Private sector participation increased under strategic partnership model."
+    },
+    {
+        "id": "SGS_008",
+        "sector": "Renewable Energy",
+        "fy": "FY24",
+        "growth_pct": 15.0,
+        "contribution_to_gdp_pct": 1.2,
+        "text": "Sector Growth: Renewable Energy. FY24 growth: 15%. Installed capacity: 190 GW (including large hydro). Solar: 82 GW. Wind: 47 GW. Target: 500 GW non-fossil fuel by 2030. Green hydrogen mission. India 4th globally in renewables."
+    }
+]

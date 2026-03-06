@@ -1,0 +1,42 @@
+[
+    {
+        "id": "VT_001",
+        "election": "18th Lok Sabha 2024",
+        "national_turnout": 65.79,
+        "highest_state": "Lakshadweep (84.5%)",
+        "lowest_state": "Bihar (58.2%)",
+        "text": "Voter Turnout: 18th Lok Sabha 2024. National: 65.79%. Highest: Lakshadweep 84.5%, Tripura 81.8%. Lowest: Bihar 58.2%, UP 56.9%. Total electors: 96.88 crore. EVM-VVPAT in all booths. Phased voting over 7 phases."
+    },
+    {
+        "id": "VT_002",
+        "election": "17th Lok Sabha 2019",
+        "national_turnout": 67.4,
+        "highest_state": "Lakshadweep (84.6%)",
+        "lowest_state": "Bihar (57.3%)",
+        "text": "Voter Turnout: 17th Lok Sabha 2019. National: 67.4% (highest ever in Lok Sabha). Highest: Lakshadweep 84.6%. Lowest: Bihar 57.3%. Total electors: 91.19 crore. 7 phases. 10.39 lakh polling stations."
+    },
+    {
+        "id": "VT_003",
+        "election": "16th Lok Sabha 2014",
+        "national_turnout": 66.4,
+        "highest_state": "Nagaland (87.8%)",
+        "lowest_state": "J&K (49.5%)",
+        "text": "Voter Turnout: 16th Lok Sabha 2014. National: 66.4%. Highest: Nagaland 87.8%. Lowest: J&K 49.5%. Total electors: 83.41 crore. 9 phases. Record 55.38 crore votes cast. NOTA option introduced."
+    },
+    {
+        "id": "VT_004",
+        "election": "State Elections Avg 2023",
+        "national_turnout": 73.8,
+        "highest_state": "Mizoram (81%)",
+        "lowest_state": "MP (75.6% but among 5 states)",
+        "text": "Voter Turnout: Five State Elections 2023 (MP, Rajasthan, Chhattisgarh, Telangana, Mizoram). Average: 73.8%. State elections typically have higher turnout than Lok Sabha. Mizoram: 81%. MP: 75.6%. Rajasthan: 74.6%."
+    },
+    {
+        "id": "VT_005",
+        "election": "Historical Trend",
+        "national_turnout": 0,
+        "highest_state": "",
+        "lowest_state": "",
+        "text": "Voter Turnout Historical Trend: 1st LS (1951): 45.7%. 5th LS (1971): 55.3%. 10th LS (1991): 56.9%. 15th LS (2009): 58.2%. 17th LS (2019): 67.4% (peak). Trend: Steady increase since 2009, driven by awareness campaigns, EPIC cards, improved booth access."
+    }
+]

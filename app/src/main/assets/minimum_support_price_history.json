@@ -1,0 +1,62 @@
+[
+    {
+        "id": "MSP_001",
+        "crop": "Paddy (Common)",
+        "season": "Kharif",
+        "fy": "2024-25",
+        "msp_per_quintal": 2300,
+        "previous_year": 2183,
+        "increase_pct": 5.4,
+        "text": "MSP: Paddy (Common). Kharif 2024-25. MSP: ₹2,300/quintal. Previous: ₹2,183. Increase: 5.4%. Cost of production: ₹1,455. Returns over cost: 58%. CACP recommends MSP based on A2+FL cost formula."
+    },
+    {
+        "id": "MSP_002",
+        "crop": "Wheat",
+        "season": "Rabi",
+        "fy": "2024-25",
+        "msp_per_quintal": 2275,
+        "previous_year": 2125,
+        "increase_pct": 7.1,
+        "text": "MSP: Wheat. Rabi 2024-25. MSP: ₹2,275/quintal. Previous: ₹2,125. Increase: 7.1%. Government procured 26.2 MT wheat at MSP. Punjab, Haryana, MP top procurement states."
+    },
+    {
+        "id": "MSP_003",
+        "crop": "Cotton (Long Staple)",
+        "season": "Kharif",
+        "fy": "2024-25",
+        "msp_per_quintal": 7020,
+        "previous_year": 6620,
+        "increase_pct": 6.0,
+        "text": "MSP: Cotton (Long Staple). Kharif 2024-25. MSP: ₹7,020/quintal. Previous: ₹6,620. Increase: 6%. CCI is nodal procurement agency. Maharashtra and Gujarat key procurement regions."
+    },
+    {
+        "id": "MSP_004",
+        "crop": "Tur (Arhar)",
+        "season": "Kharif",
+        "fy": "2024-25",
+        "msp_per_quintal": 7550,
+        "previous_year": 7000,
+        "increase_pct": 7.9,
+        "text": "MSP: Tur/Arhar Dal. Kharif 2024-25. MSP: ₹7,550/quintal. Previous: ₹7,000. Increase: 7.9%. NAFED procures under PM-AASHA scheme. Import duty adjusted to manage domestic prices."
+    },
+    {
+        "id": "MSP_005",
+        "crop": "Mustard",
+        "season": "Rabi",
+        "fy": "2024-25",
+        "msp_per_quintal": 5650,
+        "previous_year": 5450,
+        "increase_pct": 3.7,
+        "text": "MSP: Mustard. Rabi 2024-25. MSP: ₹5,650/quintal. Previous: ₹5,450. Increase: 3.7%. Rajasthan largest producer. Key oilseed for edible oil self-sufficiency mission. NAFED procurement."
+    },
+    {
+        "id": "MSP_006",
+        "crop": "Sugarcane",
+        "season": "Annual",
+        "fy": "2024-25",
+        "msp_per_quintal": 340,
+        "previous_year": 315,
+        "increase_pct": 7.9,
+        "text": "MSP (FRP): Sugarcane. 2024-25. Fair & Remunerative Price: ₹340/quintal. Previous: ₹315. Increase: 7.9%. States set SAP (State Advised Price) above FRP. UP SAP: ₹400/quintal. CCEA fixes sugarcane FRP."
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "SC_001",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "investment_crore": 7118,
+        "focus": "Solar city, heritage conservation",
+        "text": "Smart City: Bhopal, Madhya Pradesh. Investment: ₹7,118 crore. Focus: Solar city, heritage conservation, lake restoration, e-governance. ICCC (Integrated Command and Control Centre) operational. Ranked among top smart cities."
+    },
+    {
+        "id": "SC_002",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "investment_crore": 5500,
+        "focus": "IT integration, river rejuvenation",
+        "text": "Smart City: Pune, Maharashtra. Investment: ₹5,500 crore. Focus: IT integration, Mula-Mutha river rejuvenation, smart mobility, EV charging infra. Open data platform. Smart parking and traffic management."
+    },
+    {
+        "id": "SC_003",
+        "city": "Surat",
+        "state": "Gujarat",
+        "investment_crore": 5100,
+        "focus": "Diamond and textile hub digitization",
+        "text": "Smart City: Surat, Gujarat. Investment: ₹5,100 crore. Focus: Diamond/textile industry digitization, CCTV surveillance (17,000+ cameras), water management, solar rooftops. One of India's cleanest cities."
+    },
+    {
+        "id": "SC_004",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "investment_crore": 5400,
+        "focus": "BRTS, heritage city, riverfront",
+        "text": "Smart City: Ahmedabad, Gujarat. Investment: ₹5,400 crore. Focus: Sabarmati Riverfront development, BRTS transit, heritage city (UNESCO), slum rehabilitation. GIFT City nearby for fintech."
+    },
+    {
+        "id": "SC_005",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "investment_crore": 4800,
+        "focus": "Waste management, cleanest city",
+        "text": "Smart City: Indore, Madhya Pradesh. Investment: ₹4,800 crore. India's cleanest city (7 consecutive times, Swachh Survekshan). 100% door-to-door waste collection. Bio-CNG from waste. Smart bus, e-governance."
+    },
+    {
+        "id": "SC_006",
+        "city": "Overview",
+        "state": "National",
+        "investment_crore": 200000,
+        "focus": "100 cities selected",
+        "text": "Smart City Mission: Overview. Launched June 2015 for 100 cities. ₹2 lakh crore investment (center + state + PPP). 8,000+ projects, 5,700+ completed. ICCCs in 95 cities. Focus: e-governance, smart mobility, water, energy, waste. Extended to March 2025."
+    }
+]

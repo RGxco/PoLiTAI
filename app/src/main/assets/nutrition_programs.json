@@ -1,0 +1,30 @@
+[
+    {
+        "id": "NUT_001",
+        "program": "PM POSHAN (Mid-Day Meal)",
+        "budget_crore": 11600,
+        "beneficiaries": "11.8 crore children",
+        "text": "Nutrition: PM POSHAN (Mid-Day Meal). Budget: ₹11,600 crore FY24. Cooked meals for 11.8 crore children in 11.2 lakh government schools (Classes I-VIII). One of world's largest school feeding programmes. Improved attendance and learning outcomes."
+    },
+    {
+        "id": "NUT_002",
+        "program": "Integrated Child Development Services (ICDS)",
+        "budget_crore": 20263,
+        "beneficiaries": "10 crore children, 2.5 crore pregnant/lactating women",
+        "text": "Nutrition: ICDS/Saksham Anganwadi. ₹20,263 crore. 13.9 lakh Anganwadi Centres. Supplementary nutrition for 10 crore children (0-6 years) and 2.5 crore pregnant/lactating women. Pre-school education, immunization, health check-ups."
+    },
+    {
+        "id": "NUT_003",
+        "program": "POSHAN Abhiyaan (National Nutrition Mission)",
+        "budget_crore": 3700,
+        "beneficiaries": "Targets stunting, wasting reduction",
+        "text": "Nutrition: POSHAN Abhiyaan. ₹3,700 crore. Target: 2% annual reduction in stunting, underweight, anemia. Jan Andolan approach. POSHAN Tracker app monitors 10 crore beneficiaries. Real-time data for targeted interventions."
+    },
+    {
+        "id": "NUT_004",
+        "program": "National Food Security Act (NFSA)",
+        "budget_crore": 200000,
+        "beneficiaries": "81.35 crore people",
+        "text": "Nutrition/Food: National Food Security Act 2013. 81.35 crore beneficiaries. Free 5 kg foodgrains/person/month under PMGKAY (extended). PDS through 5.5 lakh Fair Price Shops. Aadhaar-linked One Nation One Ration Card for portability."
+    }
+]

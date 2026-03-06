@@ -1,0 +1,42 @@
+[
+    {
+        "id": "IRR_001",
+        "project": "Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)",
+        "budget_crore": 50000,
+        "status": "Ongoing",
+        "coverage": "99 priority projects",
+        "text": "Irrigation: PMKSY. Budget: ₹50,000 crore. 99 AIBP priority projects. Target: Har Khet Ko Pani. 76 projects completed, 23 ongoing. Created 76.03 lakh hectare irrigation potential. Per Drop More Crop micro-irrigation component."
+    },
+    {
+        "id": "IRR_002",
+        "project": "Ken-Betwa River Linking",
+        "budget_crore": 44605,
+        "status": "Under Construction",
+        "coverage": "Bundelkhand region (MP-UP)",
+        "text": "Irrigation: Ken-Betwa River Linking. Budget: ₹44,605 crore. First national river interlinking project. Benefits Bundelkhand (MP & UP). Irrigates 10.62 lakh hectares. Drinking water for 62 lakh people. Daudhan Dam is key component."
+    },
+    {
+        "id": "IRR_003",
+        "project": "Accelerated Irrigation Benefits Programme (AIBP)",
+        "budget_crore": 21000,
+        "status": "Ongoing",
+        "coverage": "National",
+        "text": "Irrigation: AIBP (merged into PMKSY). Budget: ₹21,000 crore. Fast-tracks incomplete major/medium irrigation projects. Priority to drought-prone and tribal areas. 99 projects prioritized. Created irrigation potential for 47 lakh hectares."
+    },
+    {
+        "id": "IRR_004",
+        "project": "PM Micro Irrigation Fund",
+        "budget_crore": 5000,
+        "status": "Active",
+        "coverage": "National",
+        "text": "Irrigation: Micro Irrigation Fund. ₹5,000 crore under NABARD. Promotes drip and sprinkler irrigation. 77 lakh hectares covered under micro irrigation. Water saving: 30-70%. Subsidy: 55% for small farmers, 45% for others."
+    },
+    {
+        "id": "IRR_005",
+        "project": "Jal Shakti Abhiyan",
+        "budget_crore": 3500,
+        "status": "Active",
+        "coverage": "256 water-stressed districts",
+        "text": "Irrigation: Jal Shakti Abhiyan. Campaign in 256 water-stressed districts. Focus: Rainwater harvesting, groundwater recharge, watershed development. 3.5 lakh water bodies restored. Mission Amrit Sarovar: 50,000+ ponds built."
+    }
+]

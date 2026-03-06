@@ -1,0 +1,43 @@
+[
+    {
+        "id": "DI_001",
+        "project": "Digital India",
+        "launch": 2015,
+        "budget_crore": 420000,
+        "text": "Digital India: Umbrella programme launched July 2015. ₹4.2 lakh crore investment. Pillars: broadband highways, universal mobile access, e-governance, e-Kranti, information for all, electronics manufacturing, IT for jobs."
+    },
+    {
+        "id": "DI_002",
+        "project": "BharatNet",
+        "investment_crore": 42000,
+        "coverage": "6.5 lakh villages",
+        "text": "Digital India — BharatNet: Optical fiber to 6.5 lakh gram panchayats. ₹42,000 crore. Phase 1 & 2: 1,94,000+ GPs connected. Phase 3 via satellite. Free WiFi in 84,000+ GPs. Digital divide reduction mission."
+    },
+    {
+        "id": "DI_003",
+        "project": "DigiLocker",
+        "users": "30 crore",
+        "documents": "600 crore+ documents",
+        "text": "Digital India — DigiLocker: Digital documents platform. 30 crore users. 600 crore+ documents issued. Driving license, Aadhaar, PAN, certificates stored digitally. Accepted as valid documents. 2,900+ issuing organizations."
+    },
+    {
+        "id": "DI_004",
+        "project": "UPI (Unified Payments Interface)",
+        "transactions": "1,300 crore/month",
+        "value": "₹23 lakh crore/month",
+        "text": "Digital India — UPI: India's real-time payment system. 1,300 crore monthly transactions. Value: ₹23 lakh crore/month (FY25). 424 banks on UPI. Global expansion: UAE, Singapore, France, Sri Lanka. NPCI-developed on IMPS platform."
+    },
+    {
+        "id": "DI_005",
+        "project": "UMANG App",
+        "services": 1700,
+        "downloads": "7 crore+",
+        "text": "Digital India — UMANG (Unified Mobile Application for New-age Governance). 1,700+ government services across 200+ departments. 7 crore+ downloads. PF, passport, income tax, PM-KISAN status tracking. One-stop governance app."
+    },
+    {
+        "id": "DI_006",
+        "project": "IndiaStack",
+        "components": "Aadhaar, UPI, DigiLocker, CoWIN, ONDC",
+        "text": "Digital India — IndiaStack: Open digital infrastructure. Components: Aadhaar (identity), UPI (payments), DigiLocker (documents), ABHA (health), CoWIN (vaccination), ONDC (commerce). Model adopted by 50+ countries."
+    }
+]

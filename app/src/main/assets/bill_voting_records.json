@@ -1,0 +1,74 @@
+[
+    {
+        "id": "BVR_001",
+        "bill": "Women's Reservation Bill (Nari Shakti Vandan Adhiniyam)",
+        "session": "Special Session Sept 2023",
+        "result": "Passed",
+        "lok_sabha_ayes": 454,
+        "lok_sabha_noes": 2,
+        "text": "Bill Voting: Women's Reservation Bill 2023 (Nari Shakti Vandan Adhiniyam). Passed in Special Session Sept 2023. Lok Sabha: 454 Ayes, 2 Noes. Rajya Sabha: Passed unanimously. Reserves 33% seats for women in Lok Sabha and State Assemblies. Effective after delimitation exercise."
+    },
+    {
+        "id": "BVR_002",
+        "bill": "Digital Personal Data Protection Act 2023",
+        "session": "Monsoon 2023",
+        "result": "Passed",
+        "lok_sabha_ayes": null,
+        "lok_sabha_noes": null,
+        "text": "Bill Voting: Digital Personal Data Protection Act 2023. Passed in Monsoon Session Aug 2023. Passed by voice vote in both Houses. Establishes Data Protection Board. Applies to digital personal data. ₹250 crore maximum penalty for violations."
+    },
+    {
+        "id": "BVR_003",
+        "bill": "Telecommunications Act 2023",
+        "session": "Winter 2023",
+        "result": "Passed",
+        "lok_sabha_ayes": null,
+        "lok_sabha_noes": null,
+        "text": "Bill Voting: Telecommunications Act 2023. Passed in Winter Session Dec 2023. Replaces Indian Telegraph Act 1885. Government can take control of telecom services during emergencies. Spectrum allocation reformed."
+    },
+    {
+        "id": "BVR_004",
+        "bill": "Citizenship Amendment Act (CAA) 2019",
+        "session": "Winter 2019",
+        "result": "Passed",
+        "lok_sabha_ayes": 311,
+        "lok_sabha_noes": 80,
+        "text": "Bill Voting: Citizenship Amendment Act 2019. Passed in Winter Session Dec 2019. Lok Sabha: 311 Ayes, 80 Noes. Rajya Sabha: 125-105. Fast-track citizenship for persecuted minorities from Pakistan, Bangladesh, Afghanistan. Controversial — sparked nationwide protests."
+    },
+    {
+        "id": "BVR_005",
+        "bill": "Farm Laws Repeal 2021",
+        "session": "Winter 2021",
+        "result": "Passed (Repeal)",
+        "lok_sabha_ayes": null,
+        "lok_sabha_noes": null,
+        "text": "Bill Voting: Farm Laws Repeal Bill 2021. Passed in Winter Session Nov 2021 by voice vote within minutes. Repealed three farm laws after year-long farmer protests. PM Modi announced repeal on Guru Nanak Jayanti. All three bills had been passed in Sept 2020."
+    },
+    {
+        "id": "BVR_006",
+        "bill": "Article 370 Abrogation (J&K Reorganisation)",
+        "session": "Budget 2019 (Special)",
+        "result": "Passed",
+        "lok_sabha_ayes": 370,
+        "lok_sabha_noes": 70,
+        "text": "Bill Voting: Jammu & Kashmir Reorganisation Act 2019. Passed Aug 5-6, 2019. Lok Sabha: 370 Ayes, 70 Noes. Rajya Sabha: 125-61. Abrogated Article 370. Split J&K into two Union Territories: J&K and Ladakh."
+    },
+    {
+        "id": "BVR_007",
+        "bill": "Triple Talaq Bill (Muslim Women Protection)",
+        "session": "Budget 2019",
+        "result": "Passed",
+        "lok_sabha_ayes": 303,
+        "lok_sabha_noes": 82,
+        "text": "Bill Voting: Muslim Women (Protection of Rights on Marriage) Act 2019. Passed July 2019. Lok Sabha: 303-82. Criminalized instant triple talaq with up to 3 years imprisonment. First major Muslim personal law reform."
+    },
+    {
+        "id": "BVR_008",
+        "bill": "Goods and Services Tax (GST) Constitutional Amendment",
+        "session": "2016",
+        "result": "Passed",
+        "lok_sabha_ayes": null,
+        "lok_sabha_noes": null,
+        "text": "Bill Voting: Constitution (101st Amendment) Act 2016 — GST. Passed by both Houses Aug 2016. Passed Rajya Sabha with rare consensus. Created unified indirect tax system replacing 17 central and state levies. GST Council established. Implemented July 1, 2017."
+    }
+]

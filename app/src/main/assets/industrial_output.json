@@ -1,0 +1,50 @@
+[
+    {
+        "id": "IND_001",
+        "sector": "Manufacturing",
+        "month": "December 2024",
+        "iip": 152.3,
+        "growth_pct": 5.2,
+        "text": "Industrial Output (IIP): Manufacturing sector. December 2024. Index: 152.3. Growth: 5.2% YoY. Driven by auto components, electronics, and chemicals. Manufacturing accounts for 77.6% of IIP weight."
+    },
+    {
+        "id": "IND_002",
+        "sector": "Mining",
+        "month": "December 2024",
+        "iip": 131.8,
+        "growth_pct": 3.8,
+        "text": "Industrial Output (IIP): Mining sector. December 2024. Index: 131.8. Growth: 3.8% YoY. Coal production: 93 MT in month. Iron ore output steady. Mining weight in IIP: 14.4%."
+    },
+    {
+        "id": "IND_003",
+        "sector": "Electricity",
+        "month": "December 2024",
+        "iip": 218.4,
+        "growth_pct": 6.1,
+        "text": "Industrial Output (IIP): Electricity sector. December 2024. Index: 218.4. Growth: 6.1% YoY. Peak demand: 230 GW. Renewable share: 23%. Weight in IIP: 8%. Thermal capacity utilization: 72%."
+    },
+    {
+        "id": "IND_004",
+        "sector": "Capital Goods",
+        "month": "Q3 FY25",
+        "iip": 167.2,
+        "growth_pct": 11.5,
+        "text": "Industrial Output: Capital Goods. Q3 FY25 average index: 167.2. Growth: 11.5% YoY. Indicator of investment activity. Machinery, equipment manufacturing up. Government capex push driving demand."
+    },
+    {
+        "id": "IND_005",
+        "sector": "Consumer Durables",
+        "month": "Q3 FY25",
+        "iip": 143.8,
+        "growth_pct": 7.3,
+        "text": "Industrial Output: Consumer Durables. Q3 FY25 average index: 143.8. Growth: 7.3% YoY. Festival season demand. AC, refrigerator, white goods production up. PLI impact on electronics manufacturing."
+    },
+    {
+        "id": "IND_006",
+        "sector": "Infrastructure/Construction",
+        "month": "Q3 FY25",
+        "iip": 178.6,
+        "growth_pct": 9.1,
+        "text": "Industrial Output: Infrastructure/Construction goods. Q3 FY25 average: 178.6. Growth: 9.1%. Cement, steel, glass production up. National Highway construction: 27 km/day target. PM GatiShakti driving demand."
+    }
+]

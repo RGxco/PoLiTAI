@@ -1,0 +1,50 @@
+[
+    {
+        "id": "TAX_001",
+        "policy": "Goods and Services Tax (GST)",
+        "type": "Indirect",
+        "year_introduced": 2017,
+        "current_rates": "0%, 5%, 12%, 18%, 28%",
+        "text": "Tax Policy: GST. Indirect tax introduced July 1, 2017. Four slabs: 5%, 12%, 18%, 28% (plus cess on luxury/demerit goods). GST Council decides rates. Subsumed 17 central and state taxes. FY24 collection: ₹20.18 lakh crore. Highest monthly: ₹2.10 lakh crore (April 2024)."
+    },
+    {
+        "id": "TAX_002",
+        "policy": "Income Tax",
+        "type": "Direct",
+        "year_introduced": 1961,
+        "current_rates": "New regime: 0-3L: Nil, 3-7L: 5%, 7-10L: 10%, 10-12L: 15%, 12-15L: 20%, >15L: 30%",
+        "text": "Tax Policy: Income Tax. Direct tax. New regime (Budget 2025): No tax up to ₹12 lakh income. Old and New regime options. ₹19.58 lakh crore direct tax collection FY24. 8.18 crore ITR filers FY24. Standard deduction ₹75,000 in new regime."
+    },
+    {
+        "id": "TAX_003",
+        "policy": "Corporate Tax",
+        "type": "Direct",
+        "year_introduced": 1961,
+        "current_rates": "New companies: 15%, Existing: 22% (without exemptions)",
+        "text": "Tax Policy: Corporate Tax. New manufacturing companies: 15% (from Oct 2019). Existing companies: 22% (without exemptions). Effective rate among lowest in Asia. MAT: 15%. Surcharge based on income. ₹9.11 lakh crore corporate tax collection FY24."
+    },
+    {
+        "id": "TAX_004",
+        "policy": "Customs Duty",
+        "type": "Indirect",
+        "year_introduced": 1962,
+        "current_rates": "Varies: 0-150% depending on goods",
+        "text": "Tax Policy: Customs Duty. Import tariffs ranging from 0% to 150%. Basic Customs Duty + Social Welfare Surcharge. Electronics: 0-20%. Automobiles: 60-150%. Agricultural goods protected. FY24 collection: ₹2.33 lakh crore. Phased reduction under FTAs."
+    },
+    {
+        "id": "TAX_005",
+        "policy": "Securities Transaction Tax (STT)",
+        "type": "Direct",
+        "year_introduced": 2004,
+        "current_rates": "Equity delivery: 0.1%, F&O: 0.0125-0.1%",
+        "text": "Tax Policy: Securities Transaction Tax (STT). Levied on stock exchange transactions. Equity delivery: 0.1% on buy and sell. F&O: 0.0125% to 0.1%. Increased for F&O in Budget 2024. FY24 STT collection: ₹34,000 crore. Replaced long-term capital gains tax briefly."
+    },
+    {
+        "id": "TAX_006",
+        "policy": "Property Tax",
+        "type": "Direct (Local)",
+        "year_introduced": "Varies by state",
+        "current_rates": "0.5%-2% of property value",
+        "text": "Tax Policy: Property Tax. Levied by municipal bodies. Based on property area, location, usage. Rates: 0.5%-2% of property value. Major revenue source for urban local bodies. Digital payment systems introduced. SWAMITVA scheme mapping rural properties."
+    }
+]

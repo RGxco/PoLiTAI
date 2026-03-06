@@ -1,0 +1,50 @@
+[
+    {
+        "id": "DBP_001",
+        "district": "Varanasi",
+        "project": "Kashi Vishwanath Corridor",
+        "cost_crore": 339,
+        "status": "Completed",
+        "text": "District Project: Varanasi — Kashi Vishwanath Corridor. ₹339 crore. PM Modi's constituency project. Temple-Ganga link. 40+ ancient temples restored. Tourist amenities, museum, shopping complex. 7 crore visitors since inauguration."
+    },
+    {
+        "id": "DBP_002",
+        "district": "Ayodhya",
+        "project": "Ram Mandir and Township Development",
+        "cost_crore": 1800,
+        "status": "Operational",
+        "text": "District Project: Ayodhya — Ram Mandir and Township. Temple cost: ₹1,800 crore. Airport: Maharishi Valmiki (₹1,450 cr). Railway station modernization. 25 km Ring Road. Tourism infrastructure for 1 lakh daily visitors projected."
+    },
+    {
+        "id": "DBP_003",
+        "district": "Lucknow",
+        "project": "Metro Rail Phase 1",
+        "cost_crore": 6928,
+        "status": "Operational",
+        "text": "District Project: Lucknow Metro Phase 1. ₹6,928 crore. 23 km North-South corridor. CCS Airport to Munshipulia. 21 stations. Daily ridership: 1.5 lakh. Phase 2 (11 km East-West) under planning."
+    },
+    {
+        "id": "DBP_004",
+        "district": "Jaipur",
+        "project": "Metro Phase 1B Extension",
+        "cost_crore": 2500,
+        "status": "Under Construction",
+        "text": "District Project: Jaipur Metro Phase 1B. ₹2,500 crore. Chandpole to Badi Chaupar extension. Pink Line connecting key tourist areas. Phase 2 proposal for Sitapura to Ambabari."
+    },
+    {
+        "id": "DBP_005",
+        "district": "Indore",
+        "project": "Super Corridor IT Hub",
+        "cost_crore": 3000,
+        "status": "Operational",
+        "text": "District Project: Indore Super Corridor. ₹3,000 crore. 25 km IT/business corridor. TCS, Infosys, WNS offices. 50,000+ IT jobs created. IIM Indore and IIT Indore nearby. Integrated township development."
+    },
+    {
+        "id": "DBP_006",
+        "district": "Muzaffarpur",
+        "project": "Flood Protection and Litchi Processing",
+        "cost_crore": 450,
+        "status": "Ongoing",
+        "text": "District Project: Muzaffarpur — Flood protection embankments (₹300 cr) and Litchi Processing Centre (₹150 cr). Gandak embankment strengthening. Cold chain for Shahi Litchi preservation. Target: reduce flood damage and increase farmer income."
+    }
+]

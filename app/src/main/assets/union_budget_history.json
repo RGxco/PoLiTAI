@@ -1,0 +1,56 @@
+[
+    {
+        "id": "UB_001",
+        "fy": "FY2024-25",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 4818000,
+        "revenue_receipts_crore": 3001000,
+        "fiscal_deficit_pct_gdp": 4.9,
+        "text": "Union Budget FY2024-25. FM: Nirmala Sitharaman. Total Expenditure: ₹48.18 lakh crore. Revenue Receipts: ₹30.01 lakh crore. Fiscal Deficit: 4.9% of GDP. Capital Expenditure: ₹11.11 lakh crore. Focus: Infrastructure, employment, rural development."
+    },
+    {
+        "id": "UB_002",
+        "fy": "FY2025-26",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 5018000,
+        "revenue_receipts_crore": 3350000,
+        "fiscal_deficit_pct_gdp": 4.4,
+        "text": "Union Budget FY2025-26. FM: Nirmala Sitharaman. Total Expenditure: ₹50.18 lakh crore (est). Fiscal Deficit target: 4.4% of GDP. Major: Income tax relief — no tax up to ₹12 lakh. New Income Tax Bill introduced. Capex: ₹11.21 lakh crore."
+    },
+    {
+        "id": "UB_003",
+        "fy": "FY2023-24",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 4503097,
+        "revenue_receipts_crore": 2637000,
+        "fiscal_deficit_pct_gdp": 5.8,
+        "text": "Union Budget FY2023-24. FM: Nirmala Sitharaman. Total Expenditure: ₹45.03 lakh crore. Revenue Receipts: ₹26.37 lakh crore. Fiscal Deficit: 5.8% of GDP. Capital Expenditure: ₹10 lakh crore (33% increase). Focus: Green growth, inclusive development."
+    },
+    {
+        "id": "UB_004",
+        "fy": "FY2022-23",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 3931922,
+        "revenue_receipts_crore": 2249000,
+        "fiscal_deficit_pct_gdp": 6.4,
+        "text": "Union Budget FY2022-23. Total Expenditure: ₹39.32 lakh crore. Fiscal Deficit: 6.4% of GDP. PM GatiShakti Master Plan focus. 25,000 km highway expansion. 400 Vande Bharat trains. Digital Rupee introduced."
+    },
+    {
+        "id": "UB_005",
+        "fy": "FY2021-22",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 3483236,
+        "revenue_receipts_crore": 1788000,
+        "fiscal_deficit_pct_gdp": 6.7,
+        "text": "Union Budget FY2021-22. Total Expenditure: ₹34.83 lakh crore. Fiscal Deficit: 6.7% of GDP. Post-COVID recovery budget. ₹64,180 crore for health. National Infrastructure Pipeline. Privatization of Air India, LIC IPO announced."
+    },
+    {
+        "id": "UB_006",
+        "fy": "FY2020-21",
+        "fm": "Nirmala Sitharaman",
+        "total_expenditure_crore": 3483236,
+        "revenue_receipts_crore": 1621000,
+        "fiscal_deficit_pct_gdp": 9.2,
+        "text": "Union Budget FY2020-21. Total Expenditure: ₹34.83 lakh crore (revised massively). Fiscal Deficit: 9.2% of GDP (pandemic impact). COVID relief: ₹20 lakh crore Atmanirbhar Bharat package. Free food-grain scheme for 80 crore people."
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "MET_001",
+        "city": "Delhi",
+        "project": "Delhi Metro",
+        "length_km": 393,
+        "stations": 288,
+        "ridership_daily": "60 lakh",
+        "text": "Metro: Delhi Metro. 393 km across NCR. 288 stations. Daily ridership: 60 lakh. Phases 1-4 (Phase 4 under construction). DMRC operated. Airport Express Line: 23 km. Connects Delhi, Gurgaon, Noida, Faridabad, Ghaziabad."
+    },
+    {
+        "id": "MET_002",
+        "city": "Mumbai",
+        "project": "Mumbai Metro",
+        "length_km": 337,
+        "stations": 252,
+        "ridership_daily": "Under expansion",
+        "text": "Metro: Mumbai Metro. 337 km planned (14 corridors). Currently Aqua Line (46 km) operational. Mumbai Metro Line 3 (Colaba-SEEPZ) 33 km underground. ₹1.3 lakh crore total investment. Will transform Mumbai's transit."
+    },
+    {
+        "id": "MET_003",
+        "city": "Bengaluru",
+        "project": "Namma Metro",
+        "length_km": 175,
+        "stations": 150,
+        "ridership_daily": "8 lakh",
+        "text": "Metro: Bengaluru Namma Metro. 175 km planned. Purple and Green lines operational (69 km). Phase 2: 72 km under construction. Daily ridership: 8 lakh. ORR-Airport line approved. Connects major IT corridors."
+    },
+    {
+        "id": "MET_004",
+        "city": "Hyderabad",
+        "project": "Hyderabad Metro",
+        "length_km": 69,
+        "stations": 57,
+        "ridership_daily": "5 lakh",
+        "text": "Metro: Hyderabad Metro. 69 km operational. 57 stations. World's largest PPP metro project (L&T). Daily ridership: 5 lakh. Airport Metro Express under construction. Connects Miyapur-LB Nagar and Nagole-Raidurg."
+    },
+    {
+        "id": "MET_005",
+        "city": "Chennai",
+        "project": "Chennai Metro",
+        "length_km": 119,
+        "stations": 96,
+        "ridership_daily": "2.5 lakh",
+        "text": "Metro: Chennai Metro. Phase 1: 54 km operational. Phase 2: 119 km under construction. 96 total stations when complete. ₹63,246 crore investment for Phase 2. Connects 4 corridors across Chennai."
+    },
+    {
+        "id": "MET_006",
+        "city": "Pune",
+        "project": "Pune Metro",
+        "length_km": 54,
+        "stations": 44,
+        "ridership_daily": "Newly operational",
+        "text": "Metro: Pune Metro. 54 km across 3 lines. Phase 1: 33 km under construction/opening. Hinjewadi-Shivajinagar line (23 km) by Tata-Siemens PPP. ₹11,420 crore. PCMC to Swargate line partially open."
+    }
+]

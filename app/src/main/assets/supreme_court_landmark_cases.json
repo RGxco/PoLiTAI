@@ -1,0 +1,82 @@
+[
+    {
+        "id": "SC_CASE_001",
+        "case_name": "Kesavananda Bharati v. State of Kerala (1973)",
+        "year": 1973,
+        "bench": "13-judge bench",
+        "subject": "Basic Structure Doctrine",
+        "text": "Supreme Court Landmark: Kesavananda Bharati v. State of Kerala (1973). 13-judge bench, 7-6 verdict. Established Basic Structure Doctrine — Parliament can amend Constitution but cannot alter its basic structure. Most important constitutional case in Indian history."
+    },
+    {
+        "id": "SC_CASE_002",
+        "case_name": "Vishaka v. State of Rajasthan (1997)",
+        "year": 1997,
+        "bench": "3-judge bench",
+        "subject": "Sexual Harassment at Workplace",
+        "text": "Supreme Court Landmark: Vishaka v. State of Rajasthan (1997). Laid down Vishaka Guidelines for prevention of sexual harassment at workplace. Led to POSH Act 2013. Recognized sexual harassment as violation of Articles 14, 15, 19, and 21."
+    },
+    {
+        "id": "SC_CASE_003",
+        "case_name": "Navtej Singh Johar v. Union of India (2018)",
+        "year": 2018,
+        "bench": "5-judge bench",
+        "subject": "Decriminalization of Section 377",
+        "text": "Supreme Court Landmark: Navtej Singh Johar v. Union of India (2018). 5-judge Constitution bench unanimously decriminalized consensual homosexual relations. Struck down Section 377 IPC (partially). Affirmed right to privacy and dignity under Article 21."
+    },
+    {
+        "id": "SC_CASE_004",
+        "case_name": "K.S. Puttaswamy v. Union of India (2017)",
+        "year": 2017,
+        "bench": "9-judge bench",
+        "subject": "Right to Privacy as Fundamental Right",
+        "text": "Supreme Court Landmark: K.S. Puttaswamy v. Union of India (2017). 9-judge bench unanimously held right to privacy is a Fundamental Right under Article 21. Overruled M.P. Sharma and Kharak Singh cases. Foundation for data protection legislation and Aadhaar regulation."
+    },
+    {
+        "id": "SC_CASE_005",
+        "case_name": "Indra Sawhney v. Union of India (1992)",
+        "year": 1992,
+        "bench": "9-judge bench",
+        "subject": "OBC Reservations — Mandal Commission",
+        "text": "Supreme Court Landmark: Indra Sawhney v. Union of India (1992). 9-judge bench. Upheld 27% OBC reservation. Set 50% ceiling on total reservations. Introduced creamy layer concept for OBC exclusion. Mandal Commission case. Most significant reservation judgment."
+    },
+    {
+        "id": "SC_CASE_006",
+        "case_name": "S.R. Bommai v. Union of India (1994)",
+        "year": 1994,
+        "bench": "9-judge bench",
+        "subject": "Article 356 — President's Rule limits",
+        "text": "Supreme Court Landmark: S.R. Bommai v. Union of India (1994). 9-judge bench. Set strict limits on Article 356 (President's Rule). Declared floor test as proper method. President's proclamation is subject to judicial review. Prevented arbitrary dismissal of state governments."
+    },
+    {
+        "id": "SC_CASE_007",
+        "case_name": "Minerva Mills v. Union of India (1980)",
+        "year": 1980,
+        "bench": "5-judge bench",
+        "subject": "Judicial review and basic structure",
+        "text": "Supreme Court Landmark: Minerva Mills v. Union of India (1980). Struck down sections of 42nd Amendment. Held that judicial review is basic structure. Harmony between Fundamental Rights and Directive Principles — neither is superior. Limited Parliament's amending power."
+    },
+    {
+        "id": "SC_CASE_008",
+        "case_name": "Maneka Gandhi v. Union of India (1978)",
+        "year": 1978,
+        "bench": "7-judge bench",
+        "subject": "Due Process and Article 21 expansion",
+        "text": "Supreme Court Landmark: Maneka Gandhi v. Union of India (1978). Expanded Article 21 (Right to Life) beyond mere animal existence. Introduced due process requirement. Any law affecting life/liberty must be fair, just, and reasonable. Transformed Article 21 into most dynamic fundamental right."
+    },
+    {
+        "id": "SC_CASE_009",
+        "case_name": "Janhit Abhiyan v. Union of India (2022)",
+        "year": 2022,
+        "bench": "5-judge bench",
+        "subject": "EWS Reservation Validity",
+        "text": "Supreme Court Landmark: Janhit Abhiyan v. Union of India (2022). 3-2 verdict. Upheld 103rd Constitutional Amendment providing 10% EWS reservation. Held 50% ceiling can be breached for EWS as it's a separate category. Dissent argued it violates equality."
+    },
+    {
+        "id": "SC_CASE_010",
+        "case_name": "In Re: Article 370 (2023)",
+        "year": 2023,
+        "bench": "5-judge bench",
+        "subject": "Validity of Article 370 Abrogation",
+        "text": "Supreme Court Landmark: In Re: Article 370 Abrogation (2023). 5-judge Constitution bench unanimously upheld abrogation of Article 370 and reorganization of J&K. Held Article 370 was temporary and President had power to abrogate. Directed elections in J&K by Sept 2024."
+    }
+]

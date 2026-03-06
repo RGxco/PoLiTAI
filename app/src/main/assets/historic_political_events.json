@@ -1,0 +1,58 @@
+[
+    {
+        "id": "HPE_001",
+        "event": "Independence Day",
+        "date": "15 August 1947",
+        "significance": "India gained independence from British rule",
+        "text": "Historic Event: Independence Day — August 15, 1947. India gained independence from British colonial rule after nearly 200 years. PM Nehru's 'Tryst with Destiny' speech at Red Fort. Partition of India and Pakistan. Lord Mountbatten was last Viceroy."
+    },
+    {
+        "id": "HPE_002",
+        "event": "Republic Day",
+        "date": "26 January 1950",
+        "significance": "Constitution came into effect",
+        "text": "Historic Event: Republic Day — January 26, 1950. Constitution of India came into effect, replacing Government of India Act 1935. India became a sovereign democratic republic. Dr. Rajendra Prasad became first President. Chosen to honor 1930 Purna Swaraj declaration."
+    },
+    {
+        "id": "HPE_003",
+        "event": "Emergency (1975-77)",
+        "date": "25 June 1975 - 21 March 1977",
+        "significance": "Fundamental rights suspended",
+        "text": "Historic Event: Emergency — June 25, 1975 to March 21, 1977. PM Indira Gandhi declared internal Emergency under Article 352. Fundamental rights suspended. Press censored. Opposition leaders jailed. 21-month period. Led to Janata Party victory in 1977 elections."
+    },
+    {
+        "id": "HPE_004",
+        "event": "1991 Economic Liberalization",
+        "date": "July 1991",
+        "significance": "LPG reforms transformed Indian economy",
+        "text": "Historic Event: 1991 Economic Liberalization. PM P.V. Narasimha Rao and FM Manmohan Singh. India facing balance of payments crisis — pledged gold reserves. LPG (Liberalization, Privatization, Globalization). Industrial licensing abolished. FDI opened. Transformed India into market economy."
+    },
+    {
+        "id": "HPE_005",
+        "event": "Pokhran-II Nuclear Tests",
+        "date": "11-13 May 1998",
+        "significance": "India declared nuclear weapon state",
+        "text": "Historic Event: Pokhran-II — May 11, 1998. PM Vajpayee authorized nuclear tests (5 detonations over 2 days). India declared nuclear weapon state. Codename: Operation Shakti. International sanctions followed. APJ Abdul Kalam led technical team. Changed India's strategic posture."
+    },
+    {
+        "id": "HPE_006",
+        "event": "2016 Demonetization",
+        "date": "8 November 2016",
+        "significance": "₹500 and ₹1000 notes invalidated overnight",
+        "text": "Historic Event: Demonetization — November 8, 2016. PM Modi announced invalidation of ₹500 and ₹1000 notes (86% of currency). Aimed at: black money, counterfeit notes, digital payments push. Massive economic disruption. GDP growth dipped 1.5%. Digital transactions surged 300%."
+    },
+    {
+        "id": "HPE_007",
+        "event": "Article 370 Abrogation",
+        "date": "5 August 2019",
+        "significance": "J&K special status revoked, split into 2 UTs",
+        "text": "Historic Event: Article 370 Abrogation — August 5, 2019. Home Minister Amit Shah moved resolution in Rajya Sabha. J&K's special status revoked. State reorganized into 2 Union Territories: J&K and Ladakh. Internet shutdown. Upheld by Supreme Court in December 2023."
+    },
+    {
+        "id": "HPE_008",
+        "event": "COVID-19 National Lockdown",
+        "date": "25 March 2020",
+        "significance": "World's largest lockdown — 1.4 billion people",
+        "text": "Historic Event: COVID-19 Lockdown — March 25, 2020. PM Modi announced 21-day national lockdown. World's largest lockdown (1.4 billion people). Extended until May 31 in phases. Migrant crisis. ₹20 lakh crore Atmanirbhar Bharat package. Vaccination drive (220 crore doses)."
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "LSE_001",
+        "year": 2024,
+        "seats_total": 543,
+        "winner": "NDA",
+        "nda_seats": 293,
+        "india_seats": 234,
+        "others": 16,
+        "pm_elected": "Narendra Modi (3rd term)",
+        "turnout_pct": 65.79,
+        "text": "Lok Sabha Election 2024 (18th). NDA: 293 seats (BJP 240, TDP 16, JDU 12, Shiv Sena 7, others). INDIA alliance: 234 seats (INC 99, SP 37, TMC 29, DMK 22, others). Others: 16. Turnout: 65.79%. PM Modi won 3rd term."
+    },
+    {
+        "id": "LSE_002",
+        "year": 2019,
+        "seats_total": 543,
+        "winner": "NDA",
+        "nda_seats": 353,
+        "upa_seats": 91,
+        "others": 99,
+        "pm_elected": "Narendra Modi (2nd term)",
+        "turnout_pct": 67.4,
+        "text": "Lok Sabha Election 2019 (17th). NDA: 353 seats (BJP 303 — highest since 1984). UPA: 91 (INC 52). Others: 99. Turnout: 67.4% (highest ever). PM Modi re-elected. Key: Pulwama/Balakot, nationalism wave."
+    },
+    {
+        "id": "LSE_003",
+        "year": 2014,
+        "seats_total": 543,
+        "winner": "NDA",
+        "nda_seats": 336,
+        "upa_seats": 60,
+        "others": 147,
+        "pm_elected": "Narendra Modi (1st term)",
+        "turnout_pct": 66.4,
+        "text": "Lok Sabha Election 2014 (16th). NDA: 336 (BJP 282 — first single-party majority since 1984). UPA: 60 (INC 44 — worst ever). Others: 147. Turnout: 66.4%. Anti-incumbency against UPA. Modi wave. End of UPA-II."
+    },
+    {
+        "id": "LSE_004",
+        "year": 2009,
+        "seats_total": 543,
+        "winner": "UPA",
+        "upa_seats": 262,
+        "nda_seats": 159,
+        "others": 122,
+        "pm_elected": "Manmohan Singh (2nd term)",
+        "turnout_pct": 58.2,
+        "text": "Lok Sabha Election 2009 (15th). UPA: 262 (INC 206). NDA: 159 (BJP 116). Others: 122. Turnout: 58.2%. Manmohan Singh re-elected. 26/11 aftermath, NREGA impact. First time UPA improved from previous election."
+    },
+    {
+        "id": "LSE_005",
+        "year": 2004,
+        "seats_total": 543,
+        "winner": "UPA",
+        "upa_seats": 222,
+        "nda_seats": 189,
+        "others": 132,
+        "pm_elected": "Manmohan Singh (1st term)",
+        "turnout_pct": 58.07,
+        "text": "Lok Sabha Election 2004 (14th). UPA: 222 (INC 145). NDA: 189 (BJP 138). Others: 132. Turnout: 58.07%. Surprise UPA victory — India Shining campaign failed for NDA. Manmohan Singh became PM with Sonia Gandhi's support. Left parties provided outside support."
+    },
+    {
+        "id": "LSE_006",
+        "year": 1999,
+        "seats_total": 543,
+        "winner": "NDA",
+        "nda_seats": 303,
+        "upa_seats": 136,
+        "others": 104,
+        "pm_elected": "Atal Bihari Vajpayee",
+        "turnout_pct": 59.99,
+        "text": "Lok Sabha Election 1999 (13th). NDA: 303 (BJP 182). Congress+: 136. Others: 104. Turnout: 60%. Vajpayee elected PM. Post-Kargil War wave. Stable NDA government for full 5-year term."
+    }
+]

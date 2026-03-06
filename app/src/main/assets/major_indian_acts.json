@@ -1,0 +1,122 @@
+[
+    {
+        "id": "ACT_001",
+        "act_name": "Right to Information Act, 2005",
+        "year": 2005,
+        "act_number": "22 of 2005",
+        "category": "Governance",
+        "ministry": "Ministry of Personnel",
+        "key_provisions": "Citizens can request info from public authorities within 30 days",
+        "text": "Right to Information Act 2005 (Act 22 of 2005). Ministry of Personnel. Every citizen can request information from public authorities. 30-day response deadline. ₹10 application fee. Central and State Information Commissions. Repealed Official Secrets Act misuse. Landmark transparency law."
+    },
+    {
+        "id": "ACT_002",
+        "act_name": "Goods and Services Tax Act, 2017",
+        "year": 2017,
+        "act_number": "12 of 2017",
+        "category": "Taxation",
+        "ministry": "Ministry of Finance",
+        "key_provisions": "Unified indirect tax replacing 17 taxes, GST Council",
+        "text": "GST Acts 2017 (CGST, SGST, IGST). Ministry of Finance. Unified indirect tax system. Replaced VAT, service tax, excise, and 14 other levies. Four slabs: 5%, 12%, 18%, 28%. GST Council is constitutional body. E-way bill for goods >₹50,000. Implemented July 1, 2017."
+    },
+    {
+        "id": "ACT_003",
+        "act_name": "Aadhaar Act, 2016",
+        "year": 2016,
+        "act_number": "18 of 2016",
+        "category": "Identity",
+        "ministry": "Ministry of Electronics & IT",
+        "key_provisions": "12-digit unique identity, biometric authentication, DBT",
+        "text": "Aadhaar (Targeted Delivery) Act 2016 (Act 18 of 2016). 12-digit unique identity number. Biometric and demographic authentication. Enables Direct Benefit Transfer (DBT). 140 crore Aadhaar numbers issued. Supreme Court upheld validity in Puttaswamy case (2018) with conditions."
+    },
+    {
+        "id": "ACT_004",
+        "act_name": "MGNREGA, 2005",
+        "year": 2005,
+        "act_number": "42 of 2005",
+        "category": "Employment",
+        "ministry": "Ministry of Rural Development",
+        "key_provisions": "100 days guaranteed wage employment per rural household per year",
+        "text": "Mahatma Gandhi NREGA 2005 (Act 42 of 2005). Ministry of Rural Development. Guarantees 100 days of wage employment per rural household per year. Demand-driven scheme. ₹73,000 crore budget FY24. 15 crore active job cards. Largest employment guarantee program globally."
+    },
+    {
+        "id": "ACT_005",
+        "act_name": "Right to Education Act, 2009",
+        "year": 2009,
+        "act_number": "35 of 2009",
+        "category": "Education",
+        "ministry": "Ministry of Education",
+        "key_provisions": "Free and compulsory education for children 6-14 years",
+        "text": "Right to Education Act 2009 (Act 35 of 2009). Free and compulsory education for children aged 6-14 years. 25% seats in private schools reserved for EWS under Section 12(1)(c). No detention policy up to Class 8. Pupil-teacher ratio norms. Constitutional backing from Article 21A."
+    },
+    {
+        "id": "ACT_006",
+        "act_name": "Food Safety and Standards Act, 2006",
+        "year": 2006,
+        "act_number": "34 of 2006",
+        "category": "Health",
+        "ministry": "Ministry of Health",
+        "key_provisions": "FSSAI established, food quality standards, licensing of food businesses",
+        "text": "Food Safety and Standards Act 2006. Established FSSAI as regulatory authority. All food businesses require FSSAI license. Standards for food quality, hygiene, and labeling. Penalties for adulteration up to ₹10 lakh and imprisonment."
+    },
+    {
+        "id": "ACT_007",
+        "act_name": "Companies Act, 2013",
+        "year": 2013,
+        "act_number": "18 of 2013",
+        "category": "Corporate",
+        "ministry": "Ministry of Corporate Affairs",
+        "key_provisions": "CSR mandate, women director, independent directors, NCLT",
+        "text": "Companies Act 2013 (Act 18 of 2013). Mandatory CSR for companies with >₹500 crore turnover (2% of net profit). At least one woman director on board. Independent directors requirement. NCLT established. One Person Company concept introduced."
+    },
+    {
+        "id": "ACT_008",
+        "act_name": "Consumer Protection Act, 2019",
+        "year": 2019,
+        "act_number": "35 of 2019",
+        "category": "Consumer Rights",
+        "ministry": "Ministry of Consumer Affairs",
+        "key_provisions": "E-commerce regulation, product liability, Central Consumer Protection Authority",
+        "text": "Consumer Protection Act 2019 (Act 35 of 2019). Replaced 1986 Act. E-commerce consumer protection rules. Product liability provisions. Established Central Consumer Protection Authority (CCPA). Celebrity endorser liability. Mediation as dispute resolution mechanism."
+    },
+    {
+        "id": "ACT_009",
+        "act_name": "Criminal Laws (BNS, BNSS, BSA) 2023",
+        "year": 2023,
+        "act_number": "45, 46, 47 of 2023",
+        "category": "Criminal Law",
+        "ministry": "Ministry of Home Affairs",
+        "key_provisions": "Replaced IPC, CrPC, and Evidence Act. Zero FIR, e-reporting, video trials",
+        "text": "New Criminal Laws 2023: Bharatiya Nyaya Sanhita (BNS) replaced IPC, Bharatiya Nagarik Suraksha Sanhita (BNSS) replaced CrPC, Bharatiya Sakshya Adhiniyam (BSA) replaced Evidence Act. Effective July 1, 2024. Key: Zero FIR, e-FIR, mandatory videography of crime scenes, community service as punishment."
+    },
+    {
+        "id": "ACT_010",
+        "act_name": "Prevention of Corruption Act, 1988",
+        "year": 1988,
+        "act_number": "49 of 1988",
+        "category": "Anti-Corruption",
+        "ministry": "Ministry of Personnel",
+        "key_provisions": "Criminalizes bribery, corruption by public servants, Lokpal",
+        "text": "Prevention of Corruption Act 1988 (Act 49 of 1988, amended 2018). Criminalizes bribery and corruption by public servants. Both bribe-giver and taker are liable (2018 amendment). Prior sanction needed to prosecute. CBI is primary investigating agency. Lokpal Act 2013 supplements this."
+    },
+    {
+        "id": "ACT_011",
+        "act_name": "Insolvency and Bankruptcy Code, 2016",
+        "year": 2016,
+        "act_number": "31 of 2016",
+        "category": "Finance",
+        "ministry": "Ministry of Finance",
+        "key_provisions": "Time-bound insolvency resolution, NCLT as adjudicating authority, IBBI",
+        "text": "Insolvency and Bankruptcy Code 2016 (Act 31 of 2016). Time-bound resolution: 180 days (+90 extension). NCLT as adjudicating authority. Insolvency and Bankruptcy Board of India (IBBI) as regulator. Corporate Insolvency Resolution Process (CIRP). Resolved ₹3.16 lakh crore by FY24."
+    },
+    {
+        "id": "ACT_012",
+        "act_name": "Digital Personal Data Protection Act, 2023",
+        "year": 2023,
+        "act_number": "22 of 2023",
+        "category": "Digital Rights",
+        "ministry": "Ministry of Electronics & IT",
+        "key_provisions": "Data Protection Board, consent-based processing, ₹250 cr penalty",
+        "text": "Digital Personal Data Protection Act 2023 (Act 22 of 2023). India's first comprehensive data protection law. Consent-based data processing. Data Principal rights: access, correction, erasure. Data Protection Board of India. ₹250 crore maximum penalty. Cross-border data transfer provisions."
+    }
+]

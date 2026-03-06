@@ -1,0 +1,82 @@
+[
+    {
+        "id": "CPS_001",
+        "crop": "Rice (Paddy)",
+        "season": "Kharif 2023-24",
+        "production_mt": 136.7,
+        "area_mha": 46.3,
+        "yield_kgha": 2952,
+        "top_states": "West Bengal, UP, Punjab, Odisha",
+        "text": "Crop: Rice (Paddy). Kharif 2023-24. Production: 136.7 MT. Area: 46.3 M ha. Yield: 2,952 kg/ha. Top: West Bengal, UP, Punjab, Odisha. India 2nd largest rice producer globally after China. MSP: ₹2,183/quintal."
+    },
+    {
+        "id": "CPS_002",
+        "crop": "Wheat",
+        "season": "Rabi 2023-24",
+        "production_mt": 113.3,
+        "area_mha": 31.8,
+        "yield_kgha": 3562,
+        "top_states": "UP, Punjab, Haryana, MP, Rajasthan",
+        "text": "Crop: Wheat. Rabi 2023-24. Production: 113.3 MT (record). Area: 31.8 M ha. Yield: 3,562 kg/ha. Top: UP, Punjab, Haryana, MP, Rajasthan. India 2nd largest wheat producer. MSP: ₹2,275/quintal."
+    },
+    {
+        "id": "CPS_003",
+        "crop": "Sugarcane",
+        "season": "2023-24",
+        "production_mt": 453.0,
+        "area_mha": 5.5,
+        "yield_kgha": 82363,
+        "top_states": "UP, Maharashtra, Karnataka",
+        "text": "Crop: Sugarcane. 2023-24. Production: 453 MT. Area: 5.5 M ha. India: largest sugarcane producer globally. Top: UP (47% share), Maharashtra, Karnataka. FRP: ₹315/quintal. Sugar production: 33 MT. Ethanol blending: 15%."
+    },
+    {
+        "id": "CPS_004",
+        "crop": "Cotton",
+        "season": "Kharif 2023-24",
+        "production_mt": 32.5,
+        "area_mha": 12.7,
+        "yield_kgha": 456,
+        "top_states": "Gujarat, Maharashtra, Telangana, Rajasthan",
+        "text": "Crop: Cotton. Kharif 2023-24. Production: 32.5 million bales. Area: 12.7 M ha. Yield: 456 kg/ha. Top: Gujarat, Maharashtra, Telangana, Rajasthan. India 3rd after China and US in production. MSP: ₹6,620/quintal (long staple)."
+    },
+    {
+        "id": "CPS_005",
+        "crop": "Pulses",
+        "season": "2023-24",
+        "production_mt": 23.5,
+        "area_mha": 30.8,
+        "yield_kgha": 763,
+        "top_states": "MP, Rajasthan, Maharashtra, UP",
+        "text": "Crop: Pulses. 2023-24. Production: 23.5 MT. Area: 30.8 M ha. Yield: 763 kg/ha. Major: Tur, Chana, Moong, Urad. India imports ~15% of pulse demand. Government push for self-sufficiency. MSP increased substantially."
+    },
+    {
+        "id": "CPS_006",
+        "crop": "Soybean",
+        "season": "Kharif 2023-24",
+        "production_mt": 13.2,
+        "area_mha": 12.0,
+        "yield_kgha": 1100,
+        "top_states": "Madhya Pradesh, Maharashtra, Rajasthan",
+        "text": "Crop: Soybean. Kharif 2023-24. Production: 13.2 MT. Area: 12 M ha. India largest soybean producer in Asia outside of China. Top: MP (largest), Maharashtra, Rajasthan. MSP: ₹4,600/quintal."
+    },
+    {
+        "id": "CPS_007",
+        "crop": "Maize",
+        "season": "2023-24",
+        "production_mt": 35.6,
+        "area_mha": 10.2,
+        "yield_kgha": 3490,
+        "top_states": "Karnataka, MP, Bihar, Tamil Nadu",
+        "text": "Crop: Maize. 2023-24. Production: 35.6 MT. Area: 10.2 M ha. Used for animal feed (60%) and starch industry. Growing ethanol feedstock. Top: Karnataka, MP, Bihar, Tamil Nadu. MSP: ₹2,090/quintal."
+    },
+    {
+        "id": "CPS_008",
+        "crop": "Oilseeds (Total)",
+        "season": "2023-24",
+        "production_mt": 41.0,
+        "area_mha": 29.5,
+        "yield_kgha": 1390,
+        "top_states": "Rajasthan, MP, Gujarat, Maharashtra",
+        "text": "Crop: Total Oilseeds. 2023-24. Production: 41 MT. Area: 29.5 M ha. Includes groundnut, mustard, soybean, sunflower. India still imports 60% edible oil needs. National Edible Oil Mission targets self-sufficiency."
+    }
+]

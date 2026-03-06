@@ -1,0 +1,56 @@
+[
+    {
+        "id": "DE_001",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "gsdp_crore": 580000,
+        "per_capita_income": 450000,
+        "major_industries": "IT, Biotech, Aerospace, Startups",
+        "text": "District Economy: Bengaluru Urban, Karnataka. GSDP: ₹5.8 lakh crore. Per Capita: ₹4.5 lakh. Top sector: IT/BPO ($100B+). 4,000+ tech companies. India's startup capital (12,000+ startups). ISRO, HAL, BEL headquarters. Aerospace hub."
+    },
+    {
+        "id": "DE_002",
+        "district": "Mumbai",
+        "state": "Maharashtra",
+        "gsdp_crore": 1200000,
+        "per_capita_income": 550000,
+        "major_industries": "Finance, Film, Port, Pharma",
+        "text": "District Economy: Mumbai, Maharashtra. GSDP: ₹12 lakh crore. Per Capita: ₹5.5 lakh. India's financial capital. BSE (Asia's oldest exchange), NSE, RBI HQ. Bollywood: ₹19,000 cr industry. JNPT: 50% of containerized cargo."
+    },
+    {
+        "id": "DE_003",
+        "district": "Gurugram",
+        "state": "Haryana",
+        "gsdp_crore": 235000,
+        "per_capita_income": 680000,
+        "major_industries": "IT, Auto, Finance, Real Estate",
+        "text": "District Economy: Gurugram, Haryana. GSDP: ₹2.35 lakh crore. Per capita: ₹6.8 lakh (among highest). 500+ Fortune 500 offices. Maruti Suzuki HQ. DLF Cyber City. India's corporate hub alongside Mumbai. Rapid urbanization."
+    },
+    {
+        "id": "DE_004",
+        "district": "Surat",
+        "state": "Gujarat",
+        "gsdp_crore": 300000,
+        "per_capita_income": 310000,
+        "major_industries": "Diamond, Textile, Chemicals",
+        "text": "District Economy: Surat, Gujarat. GSDP: ₹3 lakh crore. Per Capita: ₹3.1 lakh. World's diamond cutting capital (90% of world's diamonds). Textile hub: 40,000+ power looms. Chemical corridor. One of India's cleanest cities."
+    },
+    {
+        "id": "DE_005",
+        "district": "Ludhiana",
+        "state": "Punjab",
+        "gsdp_crore": 95000,
+        "per_capita_income": 235000,
+        "major_industries": "Hosiery, Bicycles, Auto Parts, Agriculture",
+        "text": "District Economy: Ludhiana, Punjab. GSDP: ₹95,000 crore. Per Capita: ₹2.35 lakh. Manchester of India — hosiery capital. 95% of India's bicycle production. Auto components hub. Agricultural hinterland. Industrial SME clusters."
+    },
+    {
+        "id": "DE_006",
+        "district": "Coimbatore",
+        "state": "Tamil Nadu",
+        "gsdp_crore": 120000,
+        "per_capita_income": 290000,
+        "major_industries": "Engineering, Textile, IT, Pump manufacturing",
+        "text": "District Economy: Coimbatore, Tamil Nadu. GSDP: ₹1.2 lakh crore. Per Capita: ₹2.9 lakh. Engineering cluster — 30,000+ MSMEs. World's pump manufacturing hub. Textile: 25,000+ mills. Growing IT sector. Education hub."
+    }
+]

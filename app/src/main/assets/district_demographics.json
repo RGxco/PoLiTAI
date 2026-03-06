@@ -1,0 +1,62 @@
+[
+    {
+        "id": "DD_001",
+        "district": "Mumbai",
+        "state": "Maharashtra",
+        "population": "1.24 crore",
+        "density": 20634,
+        "urban_pct": 100,
+        "religion_majority": "Hindu 65.9%, Muslim 20.7%",
+        "text": "Demographics: Mumbai, Maharashtra. Population: 1.24 crore. Density: 20,634/sq km. 100% urban. Religion: Hindu 65.9%, Muslim 20.7%, Buddhist 5.2%, Christian 3.3%. Languages: Marathi, Hindi, Gujarati, English. Sex Ratio: 832."
+    },
+    {
+        "id": "DD_002",
+        "district": "Delhi",
+        "state": "Delhi NCT",
+        "population": "1.67 crore",
+        "density": 11297,
+        "urban_pct": 97.5,
+        "religion_majority": "Hindu 81.7%, Muslim 12.9%",
+        "text": "Demographics: Delhi NCT. Population: 1.67 crore. Density: 11,297/sq km. 97.5% urban. Hindu 81.7%, Muslim 12.9%, Sikh 3.4%. Languages: Hindi, Urdu, Punjabi, English. Sex Ratio: 868. Literacy: 86.2%."
+    },
+    {
+        "id": "DD_003",
+        "district": "Kolkata",
+        "state": "West Bengal",
+        "population": "44.97 lakh",
+        "density": 24000,
+        "urban_pct": 100,
+        "religion_majority": "Hindu 76.5%, Muslim 20.6%",
+        "text": "Demographics: Kolkata, West Bengal. Population: 44.97 lakh. Density: 24,000/sq km (highest in India). 100% urban. Hindu 76.5%, Muslim 20.6%. Languages: Bengali, Hindi, Urdu, English. Sex Ratio: 899. Literacy: 87.1%."
+    },
+    {
+        "id": "DD_004",
+        "district": "Chennai",
+        "state": "Tamil Nadu",
+        "population": "46.47 lakh",
+        "density": 26903,
+        "urban_pct": 100,
+        "religion_majority": "Hindu 81.3%, Muslim 9.5%, Christian 7.7%",
+        "text": "Demographics: Chennai, Tamil Nadu. Population: 46.47 lakh. Density: 26,903/sq km. 100% urban. Hindu 81.3%, Christian 7.7%, Muslim 9.5%. Languages: Tamil, English, Telugu. Sex Ratio: 989. Literacy: 90.2%."
+    },
+    {
+        "id": "DD_005",
+        "district": "Prayagraj",
+        "state": "Uttar Pradesh",
+        "population": "59.59 lakh",
+        "density": 1087,
+        "urban_pct": 22.7,
+        "religion_majority": "Hindu 80.1%, Muslim 19.1%",
+        "text": "Demographics: Prayagraj (Allahabad), UP. Population: 59.59 lakh. Density: 1,087/sq km. Urban: 22.7%. Hindu 80.1%, Muslim 19.1%. Triveni Sangam — Maha Kumbh Mela 2025 (45 crore visitors). University of Allahabad."
+    },
+    {
+        "id": "DD_006",
+        "district": "Ahmedabad",
+        "state": "Gujarat",
+        "population": "72.08 lakh",
+        "density": 890,
+        "urban_pct": 72.4,
+        "religion_majority": "Hindu 81.4%, Muslim 13.5%, Jain 3.2%",
+        "text": "Demographics: Ahmedabad, Gujarat. Population: 72.08 lakh. Density: 890/sq km. Urban: 72.4%. Hindu 81.4%, Muslim 13.5%, Jain 3.2%. Languages: Gujarati, Hindi. UNESCO Heritage City. Textile and pharma hub."
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "id": "CM_001",
+        "name": "Yogi Adityanath",
+        "state": "Uttar Pradesh",
+        "party": "BJP",
+        "since": "2017",
+        "text": "Yogi Adityanath: Chief Minister of Uttar Pradesh since 2017 (re-elected 2022). BJP. MP from Gorakhpur for 5 terms. Focus: Law and order, expressway development, investment summits, and industrial development in UP."
+    },
+    {
+        "id": "CM_002",
+        "name": "Mamata Banerjee",
+        "state": "West Bengal",
+        "party": "TMC",
+        "since": "2011",
+        "text": "Mamata Banerjee: Chief Minister of West Bengal since 2011 (3rd term). All India Trinamool Congress founder. Focus: Kanyashree scheme, social welfare, Duare Sarkar (doorstep government services)."
+    },
+    {
+        "id": "CM_003",
+        "name": "M.K. Stalin",
+        "state": "Tamil Nadu",
+        "party": "DMK",
+        "since": "2021",
+        "text": "M.K. Stalin: Chief Minister of Tamil Nadu since 2021. DMK President. Son of M. Karunanidhi. Focus: Dravidian model of governance, social justice, breakfast scheme for schoolchildren, Tamil pride."
+    },
+    {
+        "id": "CM_004",
+        "name": "Pinarayi Vijayan",
+        "state": "Kerala",
+        "party": "CPI(M)",
+        "since": "2021",
+        "text": "Pinarayi Vijayan: Chief Minister of Kerala since 2016 (re-elected 2021). CPI(M). Focus: Kerala development model, K-FON internet project, healthcare and education. Led COVID response in Kerala."
+    },
+    {
+        "id": "CM_005",
+        "name": "Siddaramaiah",
+        "state": "Karnataka",
+        "party": "INC",
+        "since": "2023",
+        "text": "Siddaramaiah: Chief Minister of Karnataka since 2023 (2nd term, first 2013-2018). INC. Introduced five guarantee schemes: Shakti, Gruha Jyothi, Gruha Lakshmi, Anna Bhagya, Yuva Nidhi."
+    },
+    {
+        "id": "CM_006",
+        "name": "Revanth Reddy",
+        "state": "Telangana",
+        "party": "INC",
+        "since": "2023",
+        "text": "Revanth Reddy: Chief Minister of Telangana since December 2023. INC. Former MP from Malkajgiri. Ended BRS rule in Telangana. Focus: Six guarantees including farm loan waiver, free bus travel for women."
+    },
+    {
+        "id": "CM_007",
+        "name": "Bhagwant Mann",
+        "state": "Punjab",
+        "party": "AAP",
+        "since": "2022",
+        "text": "Bhagwant Mann: Chief Minister of Punjab since 2022. Aam Aadmi Party. Former comedian. Focus: Anti-corruption, free electricity, education reform, doorstep delivery of government services."
+    },
+    {
+        "id": "CM_008",
+        "name": "Himanta Biswa Sarma",
+        "state": "Assam",
+        "party": "BJP",
+        "since": "2021",
+        "text": "Himanta Biswa Sarma: Chief Minister of Assam since 2021. BJP. Former Congress leader. Focus: Act East Policy implementation, flood management, NRC, and anti-drug campaigns in Northeast India."
+    },
+    {
+        "id": "CM_009",
+        "name": "Nitish Kumar",
+        "state": "Bihar",
+        "party": "JDU",
+        "since": "2024",
+        "text": "Nitish Kumar: Chief Minister of Bihar since 2024 (9th term total). JDU. Known for prohibition policy, women empowerment schemes, and infrastructure development. One of India's longest-serving CMs."
+    },
+    {
+        "id": "CM_010",
+        "name": "Naveen Patnaik",
+        "state": "Odisha (former)",
+        "party": "BJD",
+        "since": "2000-2024",
+        "text": "Naveen Patnaik: Chief Minister of Odisha for 24 years (2000-2024, 5 terms). BJD founder. Longest-serving CM of Odisha. Known for disaster management and KALIA scheme for farmers. Lost 2024 elections."
+    },
+    {
+        "id": "CM_011",
+        "name": "Mohan Yadav",
+        "state": "Madhya Pradesh",
+        "party": "BJP",
+        "since": "2023",
+        "text": "Mohan Yadav: Chief Minister of Madhya Pradesh since December 2023. BJP. OBC leader. Succeeded Shivraj Singh Chouhan. Focus: Ladli Behna Yojana continuation and industrial development."
+    },
+    {
+        "id": "CM_012",
+        "name": "Bhajan Lal Sharma",
+        "state": "Rajasthan",
+        "party": "BJP",
+        "since": "2023",
+        "text": "Bhajan Lal Sharma: Chief Minister of Rajasthan since December 2023. BJP. First-time CM. Focus: Water conservation, tourism development, and continuation of welfare schemes in Rajasthan."
+    },
+    {
+        "id": "CM_013",
+        "name": "Eknath Shinde",
+        "state": "Maharashtra",
+        "party": "Shiv Sena",
+        "since": "2022",
+        "text": "Eknath Shinde: Chief Minister of Maharashtra since June 2022. Shiv Sena (Shinde faction). Led rebellion against Uddhav Thackeray. Alliance with BJP and NCP (Ajit Pawar faction) in Mahayuti coalition."
+    },
+    {
+        "id": "CM_014",
+        "name": "N. Chandrababu Naidu",
+        "state": "Andhra Pradesh",
+        "party": "TDP",
+        "since": "2024",
+        "text": "N. Chandrababu Naidu: Chief Minister of Andhra Pradesh since June 2024 (4th term). TDP founder. Known as architect of Hyderabad IT hub. Focus: Amaravati capital development, industrial growth."
+    },
+    {
+        "id": "CM_015",
+        "name": "Sukhvinder Singh Sukhu",
+        "state": "Himachal Pradesh",
+        "party": "INC",
+        "since": "2022",
+        "text": "Sukhvinder Singh Sukhu: Chief Minister of Himachal Pradesh since December 2022. INC. Focus: Old Pension Scheme restoration, Start-up policy, and apple farming support."
+    },
+    {
+        "id": "CM_016",
+        "name": "Pushkar Singh Dhami",
+        "state": "Uttarakhand",
+        "party": "BJP",
+        "since": "2021",
+        "text": "Pushkar Singh Dhami: Chief Minister of Uttarakhand since 2021 (re-elected 2022). BJP. Youngest CM of Uttarakhand. Focus: Uniform Civil Code implementation, anti-conversion law, hill state development."
+    },
+    {
+        "id": "CM_017",
+        "name": "Pramod Sawant",
+        "state": "Goa",
+        "party": "BJP",
+        "since": "2019",
+        "text": "Pramod Sawant: Chief Minister of Goa since 2019 (re-elected 2022). BJP. Former Speaker of Goa Assembly. Focus: Tourism revival, IT infrastructure, and mining policy reform."
+    },
+    {
+        "id": "CM_018",
+        "name": "Conrad Sangma",
+        "state": "Meghalaya",
+        "party": "NPP",
+        "since": "2018",
+        "text": "Conrad Sangma: Chief Minister of Meghalaya since 2018 (re-elected 2023). National People's Party. Focus: Infrastructure development, healthcare, education in Northeast India."
+    },
+    {
+        "id": "CM_019",
+        "name": "Hemant Soren",
+        "state": "Jharkhand",
+        "party": "JMM",
+        "since": "2024",
+        "text": "Hemant Soren: Chief Minister of Jharkhand since July 2024 (3rd term). JMM. Focus: Tribal rights, mining regulation, forest land rights, Abua Awas Yojana."
+    },
+    {
+        "id": "CM_020",
+        "name": "Arvind Kejriwal",
+        "state": "Delhi (former)",
+        "party": "AAP",
+        "since": "2013-2024",
+        "text": "Arvind Kejriwal: Former Chief Minister of Delhi (2013 briefly, then 2015-2024). AAP National Convener. Focus: Mohalla Clinics, government school transformation, free water and electricity, doorstep delivery."
+    }
+]

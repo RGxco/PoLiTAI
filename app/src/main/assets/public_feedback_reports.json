@@ -1,0 +1,50 @@
+[
+    {
+        "id": "PFR_001",
+        "topic": "NEET Examination Reform",
+        "sentiment": "Negative",
+        "region": "National",
+        "period": "June-July 2024",
+        "text": "Public Feedback: NEET 2024 controversy. Overwhelmingly negative sentiment. Paper leak allegations in Bihar and Gujarat. Grace marks controversy affected 1,563 students. Students demanded re-examination. CBI investigation ordered. NTA reforms announced. Trust in exam system shaken."
+    },
+    {
+        "id": "PFR_002",
+        "topic": "Agnipath Military Recruitment",
+        "sentiment": "Mixed",
+        "region": "National",
+        "period": "2022-2024",
+        "text": "Public Feedback: Agnipath scheme. Mixed sentiment. Youth: Protests in UP, Bihar, Rajasthan against 4-year contract. Defence establishment: Supports younger force profile. 46,000 Agniveers recruited in first batch. Retention: 25% after 4 years. Pension savings significant for exchequer."
+    },
+    {
+        "id": "PFR_003",
+        "topic": "Jal Jeevan Mission",
+        "sentiment": "Positive",
+        "region": "Rural India",
+        "period": "2023-2024",
+        "text": "Public Feedback: Jal Jeevan Mission. Strongly positive. 77% rural households now have tap connections (up from 17% in 2019). Women and children most benefited — reduced water collection time. Some complaints about water quality and non-functional taps in remote areas."
+    },
+    {
+        "id": "PFR_004",
+        "topic": "Ladki Bahin/Lakshmir Bhandar Schemes",
+        "sentiment": "Positive",
+        "region": "Maharashtra, West Bengal",
+        "period": "2024",
+        "text": "Public Feedback: Women cash transfer schemes. Very positive. Maharashtra Ladki Bahin (₹1,500/month): 2.5 crore applications in first month. West Bengal Lakshmir Bhandar (₹1,000/month): 1.7 crore beneficiaries. Credited for electoral success. Demand for similar schemes nationwide."
+    },
+    {
+        "id": "PFR_005",
+        "topic": "Income Tax Reform (Budget 2025)",
+        "sentiment": "Positive",
+        "region": "National",
+        "period": "February 2025",
+        "text": "Public Feedback: Budget 2025 income tax relief. Highly positive from middle class. No tax up to ₹12 lakh income. Benefiting salaried class and small business owners. Standard deduction ₹75,000. Criticized by some for not addressing high prices and cost of living."
+    },
+    {
+        "id": "PFR_006",
+        "topic": "EVM Trust and Electoral Process",
+        "sentiment": "Mixed",
+        "region": "National",
+        "period": "2023-2024",
+        "text": "Public Feedback: EVM and electoral integrity. Mixed sentiment. Opposition parties demand return to ballot papers or 100% VVPAT verification. Election Commission maintains EVMs are tamper-proof. Supreme Court upheld EVM usage. Public trust varies by political affiliation."
+    }
+]

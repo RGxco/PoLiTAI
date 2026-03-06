@@ -1,0 +1,82 @@
+[
+    {
+        "id": "DDI_001",
+        "district": "Lucknow",
+        "state": "Uttar Pradesh",
+        "population": "45.89 lakh",
+        "literacy_pct": 79.3,
+        "sex_ratio": 917,
+        "key_indicators": "State capital, IT hubs, metro connectivity",
+        "text": "District: Lucknow, UP. Pop: 45.89 lakh. Literacy: 79.3%. Sex Ratio: 917. State capital. Key: IT City Lucknow, Metro operational (40 km), AIIMS, major industrial corridor. HDI: 0.69. Urban: 67%."
+    },
+    {
+        "id": "DDI_002",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "population": "48.01 lakh",
+        "literacy_pct": 63.4,
+        "sex_ratio": 921,
+        "key_indicators": "Litchi production, flood-prone, education hub",
+        "text": "District: Muzaffarpur, Bihar. Pop: 48.01 lakh. Literacy: 63.4%. Sex Ratio: 921. Famous for Shahi Litchi. Flood-prone (Gandak, Burhi Gandak rivers). Education hub with multiple universities. Key issues: floods, low industrial development."
+    },
+    {
+        "id": "DDI_003",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "population": "94.29 lakh",
+        "literacy_pct": 87.2,
+        "sex_ratio": 915,
+        "key_indicators": "IT hub, automobile, education capital",
+        "text": "District: Pune, Maharashtra. Pop: 94.29 lakh. Literacy: 87.2%. Sex Ratio: 915. India's IT hub with Hinjewadi IT Park. Automobile capital (Tata, Bajaj, Mercedes). Top universities. Smart City. Metro under construction."
+    },
+    {
+        "id": "DDI_004",
+        "district": "Jaipur",
+        "state": "Rajasthan",
+        "population": "66.63 lakh",
+        "literacy_pct": 75.5,
+        "sex_ratio": 909,
+        "key_indicators": "Tourism, gems-jewelry, IT investment",
+        "text": "District: Jaipur, Rajasthan. Pop: 66.63 lakh. Literacy: 75.5%. Sex Ratio: 909. State capital. UNESCO World Heritage (Pink City). Gems and jewelry industry hub. Growing IT sector. Metro operational. Major tourism revenue."
+    },
+    {
+        "id": "DDI_005",
+        "district": "Varanasi",
+        "state": "Uttar Pradesh",
+        "population": "36.77 lakh",
+        "literacy_pct": 77.1,
+        "sex_ratio": 913,
+        "key_indicators": "PM's constituency, Smart City, Kashi Vishwanath",
+        "text": "District: Varanasi, UP. Pop: 36.77 lakh. Literacy: 77.1%. Sex Ratio: 913. PM Modi's constituency. Kashi Vishwanath Corridor (₹339 cr). Smart City. Silk weaving (Banarasi sarees). BHU — oldest central university. River tourism."
+    },
+    {
+        "id": "DDI_006",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "population": "95.88 lakh",
+        "literacy_pct": 88.5,
+        "sex_ratio": 916,
+        "key_indicators": "IT capital, startup hub, Namma Metro",
+        "text": "District: Bengaluru Urban, Karnataka. Pop: 95.88 lakh. Literacy: 88.5%. Sex Ratio: 916. India's Silicon Valley. 4,000+ tech companies. Startup capital. Namma Metro (69 km). ISRO HQ. Highest per capita income among metro cities."
+    },
+    {
+        "id": "DDI_007",
+        "district": "Patna",
+        "state": "Bihar",
+        "population": "58.38 lakh",
+        "literacy_pct": 70.7,
+        "sex_ratio": 897,
+        "key_indicators": "State capital, AIIMS, Ganga riverfront",
+        "text": "District: Patna, Bihar. Pop: 58.38 lakh. Literacy: 70.7%. Sex Ratio: 897. State capital. Ancient Pataliputra. AIIMS Patna. Ganga riverfront development. Key issues: urban flooding, traffic, infrastructure gaps."
+    },
+    {
+        "id": "DDI_008",
+        "district": "Indore",
+        "state": "Madhya Pradesh",
+        "population": "32.76 lakh",
+        "literacy_pct": 80.9,
+        "sex_ratio": 916,
+        "key_indicators": "Cleanest city 7x, textile hub, Super Corridor",
+        "text": "District: Indore, MP. Pop: 32.76 lakh. Literacy: 80.9%. Sex Ratio: 916. India's cleanest city (7 consecutive Swachh Survekshan wins). Textile and pharmaceutical hub. Super Corridor IT zone. IIT/IIM hub."
+    }
+]

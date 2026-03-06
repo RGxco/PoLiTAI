@@ -1,0 +1,44 @@
+[
+    {
+        "id": "GST_001",
+        "month": "April 2024",
+        "collection_crore": 210740,
+        "yoy_growth_pct": 12.4,
+        "text": "GST Collection: April 2024. ₹2,10,740 crore — highest ever monthly collection. YoY growth: 12.4%. CGST: ₹43,846 cr, SGST: ₹53,538 cr, IGST: ₹99,623 cr, Cess: ₹13,260 cr."
+    },
+    {
+        "id": "GST_002",
+        "month": "March 2024",
+        "collection_crore": 186302,
+        "yoy_growth_pct": 11.5,
+        "text": "GST Collection: March 2024. ₹1,86,302 crore. YoY growth: 11.5%. Second highest monthly collection. End of FY24 compliance surge."
+    },
+    {
+        "id": "GST_003",
+        "month": "January 2025",
+        "collection_crore": 195000,
+        "yoy_growth_pct": 10.8,
+        "text": "GST Collection: January 2025. ₹1,95,000 crore (approx). YoY growth: 10.8%. Strong start to Q4 FY25. Driven by festive season economic activity."
+    },
+    {
+        "id": "GST_004",
+        "month": "October 2024",
+        "collection_crore": 187800,
+        "yoy_growth_pct": 9.2,
+        "text": "GST Collection: October 2024. ₹1,87,800 crore. YoY growth: 9.2%. Post-Diwali collection surge. E-invoicing compliance at 98%."
+    },
+    {
+        "id": "GST_005",
+        "month": "FY24 Total",
+        "collection_crore": 2018000,
+        "yoy_growth_pct": 11.7,
+        "text": "GST Collection: Full Year FY24. ₹20.18 lakh crore. YoY growth: 11.7%. Average monthly: ₹1.68 lakh crore. 1.44 crore registered taxpayers. Return filing compliance improved to 85%."
+    },
+    {
+        "id": "GST_006",
+        "month": "FY23 Total",
+        "collection_crore": 1806000,
+        "yoy_growth_pct": 22.0,
+        "text": "GST Collection: Full Year FY23. ₹18.06 lakh crore. YoY growth: 22%. Average monthly: ₹1.51 lakh crore. Highest growth year driven by post-COVID recovery and anti-evasion measures."
+    }
+]

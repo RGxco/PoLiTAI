@@ -1,0 +1,50 @@
+[
+    {
+        "id": "PD_001",
+        "title": "NITI Aayog Vision 2047",
+        "year": 2024,
+        "ministry": "NITI Aayog",
+        "category": "Long-term Strategy",
+        "text": "Policy Document: NITI Aayog Vision India@2047. Roadmap for Viksit Bharat (Developed India) by 2047 (centenary of independence). Targets: $30 trillion economy, 100% literacy, zero poverty, clean energy transition, top-3 global manufacturing. State-level strategy papers for each state."
+    },
+    {
+        "id": "PD_002",
+        "title": "National Education Policy 2020",
+        "year": 2020,
+        "ministry": "Ministry of Education",
+        "category": "Education Reform",
+        "text": "Policy Document: National Education Policy 2020. Replaces 34-year-old 1986 policy. 5+3+3+4 school structure. 50% GER target by 2035. Mother tongue/regional language instruction till Class 5. Academic Bank of Credits. National Research Foundation. Multiple entry-exit in higher education."
+    },
+    {
+        "id": "PD_003",
+        "title": "National Logistics Policy 2022",
+        "year": 2022,
+        "ministry": "Ministry of Commerce",
+        "category": "Infrastructure",
+        "text": "Policy Document: National Logistics Policy 2022. Target: Reduce logistics cost from 14% to 8% of GDP. PM GatiShakti integration. Unified Logistics Interface Platform (ULIP). Ease of Logistics Services (ELOS). Multimodal connectivity. Digital documentation for freight."
+    },
+    {
+        "id": "PD_004",
+        "title": "India's Long-term Low Emission Development Strategy",
+        "year": 2022,
+        "ministry": "Ministry of Environment",
+        "category": "Climate",
+        "text": "Policy Document: India's LT-LEDS presented at COP27 (2022). Net Zero by 2070 target. 500 GW non-fossil fuel by 2030. 50% cumulative electric power from renewables by 2030. Green hydrogen mission. Carbon intensity reduction of 45% by 2030 vs 2005 levels."
+    },
+    {
+        "id": "PD_005",
+        "title": "PM GatiShakti National Master Plan",
+        "year": 2021,
+        "ministry": "DPIIT, Commerce Ministry",
+        "category": "Infrastructure Planning",
+        "text": "Policy Document: PM GatiShakti National Master Plan (2021). GIS-based integrated planning for 7 engines of growth: railways, roads, ports, waterways, airports, mass transit, logistics. 16 ministries connected. Reduces project delays, cost overruns, and multi-modal inefficiencies."
+    },
+    {
+        "id": "PD_006",
+        "title": "National Health Policy 2017",
+        "year": 2017,
+        "ministry": "Ministry of Health",
+        "category": "Healthcare",
+        "text": "Policy Document: National Health Policy 2017. Target: Health expenditure to 2.5% of GDP. Ayushman Bharat framework. Primary healthcare strengthening. Disease surveillance. Medical education reform. Focus: Universal Health Coverage, preventive care, reducing out-of-pocket expenditure."
+    }
+]

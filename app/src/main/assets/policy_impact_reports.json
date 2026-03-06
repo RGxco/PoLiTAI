@@ -1,0 +1,44 @@
+[
+    {
+        "id": "PIR_001",
+        "policy": "GST Implementation",
+        "assessment": "Partially Successful",
+        "year_evaluated": 2024,
+        "text": "Policy Impact: GST Implementation (2017-2024). Tax base doubled from 65 lakh to 1.44 crore. Monthly collections: ₹1.68 lakh cr avg (FY24). Compliance improved. But multiple rate slabs remain (rationalization needed). Small traders initially burdened. Cascading tax eliminated. Rating: 7/10."
+    },
+    {
+        "id": "PIR_002",
+        "policy": "Swachh Bharat Mission",
+        "assessment": "Highly Successful",
+        "year_evaluated": 2024,
+        "text": "Policy Impact: Swachh Bharat Mission (2014-2024). 11.73 crore household toilets built. ODF declared Oct 2019. Rural sanitation: 17% to 100%. Behavioral change in open defecation. Urban: 110+ Smart Cities have ICCC-linked waste management. International recognition. Rating: 9/10."
+    },
+    {
+        "id": "PIR_003",
+        "policy": "Demonetization 2016",
+        "assessment": "Mixed Results",
+        "year_evaluated": 2023,
+        "text": "Policy Impact: Demonetization 2016 (Nov 8). 99.3% of demonetized currency returned — black money capture failed. GDP dipped 1-1.5%. Informal sector devastated. BUT: Digital payments surged 300%. UPI transactions grew exponentially. Formalization increased. Tax filings up 25%. Rating: 5/10."
+    },
+    {
+        "id": "PIR_004",
+        "policy": "PM-KISAN",
+        "assessment": "Successful with Leakage",
+        "year_evaluated": 2024,
+        "text": "Policy Impact: PM-KISAN. ₹3.24 lakh crore transferred to 11.8 crore families. DBT reduced intermediary corruption. BUT: CAG found ₹1,364 crore to ineligible beneficiaries. Aadhaar-linked verification improving targeting. Impact on farmer distress: moderate. Rating: 7/10."
+    },
+    {
+        "id": "PIR_005",
+        "policy": "Digital India",
+        "assessment": "Highly Successful",
+        "year_evaluated": 2024,
+        "text": "Policy Impact: Digital India (2015-2024). UPI: 1,300 crore monthly transactions. Aadhaar: 140 crore enrollments. 6.5 lakh GPs connected by fiber. E-governance penetration transformed. India Stack model exported globally. Digital divide narrowing but rural access gaps remain. Rating: 8/10."
+    },
+    {
+        "id": "PIR_006",
+        "policy": "Ayushman Bharat PM-JAY",
+        "assessment": "Moderately Successful",
+        "year_evaluated": 2024,
+        "text": "Policy Impact: Ayushman Bharat PM-JAY. 7.5 crore hospital treatments. 55 crore eligible. BUT: Utilization rate only ~14% of potential beneficiaries. Hospital empanelment gaps in rural areas. Fraud cases detected. Reduced catastrophic healthcare expenditure for poorest 40%. Rating: 6.5/10."
+    }
+]

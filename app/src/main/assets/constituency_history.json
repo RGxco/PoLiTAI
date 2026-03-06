@@ -1,0 +1,56 @@
+[
+    {
+        "id": "CH_001",
+        "constituency": "Varanasi",
+        "state": "UP",
+        "type": "Lok Sabha",
+        "current_mp": "Narendra Modi (BJP)",
+        "notable_contests": "2014: Modi vs Kejriwal vs Mukhtar Ansari",
+        "text": "Constituency: Varanasi, UP (Lok Sabha). Current MP: Narendra Modi (BJP, since 2014). 2024: Modi 6.12 lakh votes. 2014: Modi vs Arvind Kejriwal — historic contest. Sacred city. 19.32 lakh voters. Reserved: General."
+    },
+    {
+        "id": "CH_002",
+        "constituency": "Amethi",
+        "state": "UP",
+        "type": "Lok Sabha",
+        "current_mp": "Kishori Lal Sharma (INC)",
+        "notable_contests": "Gandhi family bastion, Smriti Irani won 2019",
+        "text": "Constituency: Amethi, UP (Lok Sabha). Current MP: Kishori Lal Sharma (INC, 2024). 2019: Smriti Irani (BJP) defeated Rahul Gandhi in historic upset. Gandhi family held Amethi since 1980s. Most watched constituency nationally."
+    },
+    {
+        "id": "CH_003",
+        "constituency": "Rae Bareli",
+        "state": "UP",
+        "type": "Lok Sabha",
+        "current_mp": "Rahul Gandhi (INC)",
+        "notable_contests": "Sonia Gandhi's former seat since 2004",
+        "text": "Constituency: Rae Bareli, UP (Lok Sabha). Current MP: Rahul Gandhi (INC, 2024 — switched from Wayanad). Sonia Gandhi's seat 2004-2024. Indira Gandhi also contested from here. INC bastion. 18.63 lakh voters."
+    },
+    {
+        "id": "CH_004",
+        "constituency": "Lucknow",
+        "state": "UP",
+        "type": "Lok Sabha",
+        "current_mp": "Rajnath Singh (BJP)",
+        "notable_contests": "Vajpayee's seat, now Rajnath Singh",
+        "text": "Constituency: Lucknow, UP (Lok Sabha). Current MP: Rajnath Singh (BJP, since 2014). Previously held by PM Vajpayee (1991-2009). BJP stronghold. State capital constituency. 22.8 lakh voters."
+    },
+    {
+        "id": "CH_005",
+        "constituency": "Gandhinagar",
+        "state": "Gujarat",
+        "type": "Lok Sabha",
+        "current_mp": "Amit Shah (BJP)",
+        "notable_contests": "L.K. Advani's seat before Shah",
+        "text": "Constituency: Gandhinagar, Gujarat (Lok Sabha). Current MP: Amit Shah (BJP, since 2019). Previously held by L.K. Advani (1998-2019). Gujarat's capital. BJP bastion. 18.7 lakh voters. High-profile urban constituency."
+    },
+    {
+        "id": "CH_006",
+        "constituency": "Indore",
+        "state": "Madhya Pradesh",
+        "type": "Lok Sabha",
+        "current_mp": "Candidate won unopposed 2024",
+        "notable_contests": "2024: All opposition withdrew candidature",
+        "text": "Constituency: Indore, MP (Lok Sabha). 2024: BJP candidate won unopposed — all opposition candidates withdrew. Unprecedented in modern Indian elections. Cleanest city connection doesn't hurt BJP's appeal. 23 lakh voters."
+    }
+]

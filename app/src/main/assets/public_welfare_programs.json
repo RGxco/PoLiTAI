@@ -1,0 +1,44 @@
+[
+    {
+        "id": "PWP_001",
+        "program": "PM Awas Yojana - Gramin (PMAY-G)",
+        "budget_crore": 79000,
+        "beneficiaries": "3.24 crore houses built",
+        "text": "Welfare: PMAY-Gramin. ₹79,000 crore. 3.24 crore pucca houses built for rural poor. ₹1.20 lakh per house (plains), ₹1.30 lakh (hilly). Convergence with MGNREGA for labor. Geo-tagged verification. Target: Housing for All."
+    },
+    {
+        "id": "PWP_002",
+        "program": "PM Awas Yojana - Urban (PMAY-U)",
+        "budget_crore": 80000,
+        "beneficiaries": "1.18 crore houses sanctioned",
+        "text": "Welfare: PMAY-Urban. ₹80,000 crore. 1.18 crore houses sanctioned. CLSS: ₹2.67 lakh interest subsidy for EWS/LIG/MIG. In-situ slum rehabilitation. Affordable Housing in Partnership. Credit-linked subsidy scheme."
+    },
+    {
+        "id": "PWP_003",
+        "program": "PM Ujjwala Yojana",
+        "budget_crore": 14000,
+        "beneficiaries": "10.35 crore LPG connections",
+        "text": "Welfare: PM Ujjwala Yojana. ₹14,000 crore. 10.35 crore free LPG connections to BPL women. ₹200 subsidy per refill. Reduced indoor air pollution. 99.8% LPG coverage nationally. Deposit-free connections under Ujjwala 2.0."
+    },
+    {
+        "id": "PWP_004",
+        "program": "PM Jan Dhan Yojana",
+        "budget_crore": 28000,
+        "beneficiaries": "52 crore accounts",
+        "text": "Welfare: PM Jan Dhan Yojana. Financial inclusion mission. 52 crore bank accounts opened. ₹2.29 lakh crore total deposits. Zero balance accounts. Free RuPay debit card. ₹30,000 overdraft facility. ₹2 lakh accident insurance."
+    },
+    {
+        "id": "PWP_005",
+        "program": "Swachh Bharat Mission",
+        "budget_crore": 36000,
+        "beneficiaries": "All citizens",
+        "text": "Welfare: Swachh Bharat Mission. Launched Oct 2014. Phase 1: 11.73 crore household toilets built. ODF (Open Defect Free) declared Oct 2019. Phase 2: ODF Plus — solid/liquid waste management. ₹36,000 crore investment. Urban: 72 lakh public toilets."
+    },
+    {
+        "id": "PWP_006",
+        "program": "Jal Jeevan Mission",
+        "budget_crore": 360000,
+        "beneficiaries": "15.1 crore tap connections",
+        "text": "Welfare: Jal Jeevan Mission. ₹3.6 lakh crore. Piped drinking water to every rural household. 15.1 crore tap connections (77% coverage). Target: 100% coverage by 2025. Har Ghar Jal. Water quality testing in villages."
+    }
+]
