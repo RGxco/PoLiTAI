@@ -20,16 +20,15 @@ PoLiTAI is a professional-grade governance assistant and RAG-powered AI tool des
 ## ✨ Features
 ### 🔥 New in Version 3.0
 - **Massive Database Expansion**: Added over 55+ new local JSON datasets covering historical elections, bills, budgets, demographics, and supreme court rulings.
-- **Response Quality Matrix**: Added Quick ⚡, Normal 📝, and Deep 📊 chip selectors. Control whether Gemma answers in 1 sentence or a comprehensive 3-paragraph analysis.
-- **Scrollable Sync Previews**: Web URL syncing now aggressively strips HTML clutter, guarantees minimum text density, and provides a scrollable 5000-character preview of the indexed text.
+- **Response Quality Matrix**: Added Quick ⚡, Normal 📝, and Deep 📊 chip selectors. Control whether Gemma answers in 1 sentence or a comprehensive 3-paragraph analysis..
 - **Smart Chat Management**: Added long-press imitation via dialogue boxes in the Navigation Drawer to easily delete individual chat histories from the Room database.
-- **Strict Anti-Hallucination Guardrails**: Gemma is now strictly prohibited from mixing Hindi, English, and Chinese characters. It adheres exclusively to the user's input language and never falls back to generative refusal phrases.
 
 ### Core Features
 - **Retrieval-Augmented Generation (RAG)**: Queries real-time JSON databases including budget allocations, government schemes, and citizen grievances.
 - **Multilingual Core**: Support for English, Hindi, Tamil, Telugu, and Marathi.
 - **Master-Grade Logic**: Optimized system prompts to provide direct, factual data without conversational filler.
 - **Privacy First**: No internet required for AI inference.
+- **Internet sync Feature**: Web URL syncing now aggressively strips HTML clutter, guarantees minimum text density, and provides a scrollable 5000-character preview of the indexed text it helps the AI stay connected to internet time to time so it doesn't miss any updates on news.
 
 ## 🛠️ Tech Stack
 - **Language**: Kotlin
