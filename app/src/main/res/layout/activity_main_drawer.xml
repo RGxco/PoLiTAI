@@ -231,7 +231,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:gravity="center"
-                    android:text="🤖 Auto"
+                    android:text="Auto"
                     android:textColor="@color/white_alpha_70"
                     android:textSize="12sp"
                     android:paddingHorizontal="16dp"
