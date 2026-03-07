@@ -18,9 +18,13 @@ PoLiTAI is a professional-grade governance assistant and RAG-powered AI tool des
 
 
 ## ✨ Features
+### 🚀 New in Version 3.1
+- **User Feedback & Bug Reporting**: Send detailed chat transcripts and automatically submit crash reports to the developer directly from the app (via GitHub Issues integration).
+- **Smarter Real-time Sync**: The RAG engine now splits synced web articles into granular, searchable paragraphs and intelligently appends new synced data instead of overwriting.
+
 ### 🔥 New in Version 3.0
 - **Massive Database Expansion**: Added over 55+ new local JSON datasets covering historical elections, bills, budgets, demographics, and supreme court rulings.
-- **Response Quality Matrix**: Added Quick ⚡, Normal 📝, and Deep 📊 chip selectors. Control whether Gemma answers in 1 sentence or a comprehensive 3-paragraph analysis..
+- **Response Quality Matrix**: Added Quick ⚡, Normal 📝, and Deep 📊 chip selectors. Control whether Gemma answers in 1 sentence or a comprehensive 3-paragraph analysis.
 - **Smart Chat Management**: Added long-press imitation via dialogue boxes in the Navigation Drawer to easily delete individual chat histories from the Room database.
 
 ### Core Features
