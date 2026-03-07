@@ -49,7 +49,17 @@ class ChatAdapter(
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
         val message = messages[position]
-        holder.messageText.text = message.content
+        
+        // Parse simple markdown (bold, italics, newlines) to HTML
+        val parsedContent = message.content
+            .replace(Regex("\\*\\*(.*?)\\*\\*", RegexOption.DOT_MATCHES_ALL), "<b>$1</b>")
+            .replace(Regex("_(.*?)_", RegexOption.DOT_MATCHES_ALL), "<i>$1</i>")
+            .replace("\n", "<br>")
+            
+        holder.messageText.text = androidx.core.text.HtmlCompat.fromHtml(
+            parsedContent, 
+            androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT
+        )
         
         val timeFormat = SimpleDateFormat("hh:mm a", Locale.getDefault())
         holder.timestampText.text = timeFormat.format(Date(message.timestamp))
