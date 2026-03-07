@@ -219,7 +219,58 @@ object QueryRouter {
         "sentiment" to listOf("public_feedback_reports.json"),
         "party" to listOf("party_profiles.json", "political_entities.json"),
         "neet" to listOf("public_feedback_reports.json"),
-        "agnipath" to listOf("public_feedback_reports.json")
+        "agnipath" to listOf("public_feedback_reports.json"),
+
+        // Defence & Foreign Policy
+        "defence" to listOf("defense_overview.json"),
+        "defense" to listOf("defense_overview.json"),
+        "army" to listOf("defense_overview.json"),
+        "navy" to listOf("defense_overview.json"),
+        "air force" to listOf("defense_overview.json"),
+        "military" to listOf("defense_overview.json"),
+        "nuclear" to listOf("defense_overview.json"),
+        "foreign" to listOf("foreign_policy.json"),
+        "china" to listOf("foreign_policy.json"),
+        "pakistan" to listOf("foreign_policy.json"),
+        "russia" to listOf("foreign_policy.json"),
+        "america" to listOf("foreign_policy.json"),
+        "usa" to listOf("foreign_policy.json"),
+        "brics" to listOf("foreign_policy.json"),
+        "g20" to listOf("foreign_policy.json"),
+        "quad" to listOf("foreign_policy.json"),
+
+        // Local Governance
+        "panchayat" to listOf("panchayat_raj.json"),
+        "gram sabha" to listOf("panchayat_raj.json"),
+        "municipal" to listOf("panchayat_raj.json"),
+        "nrega" to listOf("panchayat_raj.json"),
+        "mgnrega" to listOf("panchayat_raj.json"),
+        "local governance" to listOf("panchayat_raj.json"),
+
+        // Environment
+        "climate" to listOf("environmental_policies.json"),
+        "pollution" to listOf("environmental_policies.json"),
+        "solar" to listOf("environmental_policies.json"),
+        "environment" to listOf("environmental_policies.json"),
+        "ev" to listOf("environmental_policies.json"),
+        "electric vehicle" to listOf("environmental_policies.json"),
+        "clean air" to listOf("environmental_policies.json"),
+
+        // Women Empowerment
+        "women" to listOf("women_empowerment_schemes.json"),
+        "beti" to listOf("women_empowerment_schemes.json"),
+        "mahila" to listOf("women_empowerment_schemes.json"),
+        "sukanya" to listOf("women_empowerment_schemes.json"),
+        "maternity" to listOf("women_empowerment_schemes.json"),
+        "mudra" to listOf("women_empowerment_schemes.json"),
+
+        // Synced News (internet-downloaded content)
+        "news" to listOf("synced_news.json"),
+        "latest" to listOf("synced_news.json"),
+        "synced" to listOf("synced_news.json"),
+        "recent" to listOf("synced_news.json"),
+        "today" to listOf("synced_news.json"),
+        "yesterday" to listOf("synced_news.json")
     )
 
     // FALLBACK: if no route matches, search these core databases
@@ -227,6 +278,7 @@ object QueryRouter {
         "synced_news.json", // Load synced news first
         "heads_of_state.json",
         "politician_database.json",
+        "party_profiles.json",
         "india_government_schemes.json",
         "constitutional_articles.json",
         "budget_allocations.json",
@@ -234,7 +286,9 @@ object QueryRouter {
         "constituency_history.json",
         "cabinet_ministers.json",
         "chief_ministers.json",
-        "prime_ministers_history.json"
+        "prime_ministers_history.json",
+        "parliament_members.json",
+        "mps_mlas_constituencies.json"
     )
 
     fun routeQuery(query: String): List<String> {
@@ -616,6 +670,8 @@ class RAGEngine(private val context: Context) {
         listOf(
             "heads_of_state.json",
             "politician_database.json",
+            "parliament_members.json",
+            "party_profiles.json",
             "india_government_schemes.json",
             "budget_allocations.json",
             "constitutional_articles.json",
@@ -625,7 +681,10 @@ class RAGEngine(private val context: Context) {
             "chief_ministers.json",
             "prime_ministers_history.json",
             "lok_sabha_election_results.json",
-            "assembly_election_results.json"
+            "assembly_election_results.json",
+            "mps_mlas_constituencies.json",
+            "political_entities.json",
+            "synced_news.json"
         ).forEach { loadDatabase(it) }
     }
 

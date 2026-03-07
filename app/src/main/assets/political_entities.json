@@ -1,54 +1,44 @@
 [
   {
-    "category": "Former Prime Ministers",
-    "list": [
-      {"name": "Jawaharlal Nehru", "tenure": "1947-1964", "party": "INC"},
-      {"name": "Lal Bahadur Shastri", "tenure": "1964-1966", "party": "INC"},
-      {"name": "Indira Gandhi", "tenure": "1966-1977, 1980-1984", "party": "INC"},
-      {"name": "Morarji Desai", "tenure": "1977-1979", "party": "Janata Party"},
-      {"name": "Rajiv Gandhi", "tenure": "1984-1989", "party": "INC"},
-      {"name": "V. P. Singh", "tenure": "1989-1990", "party": "Janata Dal"},
-      {"name": "P. V. Narasimha Rao", "tenure": "1991-1996", "party": "INC"},
-      {"name": "Atal Bihari Vajpayee", "tenure": "1996, 1998-2004", "party": "BJP"},
-      {"name": "Manmohan Singh", "tenure": "2004-2014", "party": "INC"}
-    ],
-    "importance": "Provides historical context and policy legacy for current politicians."
+    "name": "National Democratic Alliance",
+    "abbreviation": "NDA",
+    "type": "Pre-election Alliance",
+    "leader": "Narendra Modi (BJP)",
+    "text": "NDA is the ruling coalition led by BJP. Key allies: JD(U), TDP, Shiv Sena (Shinde), LJP(RV), AJSU, JD(S), Naga People's Front. Won 293 seats in 2024 Lok Sabha. Formed government at the centre in 1998, 1999, 2014, 2019, and 2024."
   },
   {
-    "category": "Former Presidents",
-    "list": [
-      {"name": "Rajendra Prasad", "tenure": "1950-1962"},
-      {"name": "S. Radhakrishnan", "tenure": "1962-1967"},
-      {"name": "Zakir Husain", "tenure": "1967-1969"},
-      {"name": "V. V. Giri", "tenure": "1969-1974"},
-      {"name": "A. P. J. Abdul Kalam", "tenure": "2002-2007"},
-      {"name": "Pranab Mukherjee", "tenure": "2012-2017"},
-      {"name": "Ram Nath Kovind", "tenure": "2017-2022"}
-    ],
-    "importance": "Constitutional history and state-level leadership context."
+    "name": "INDIA Alliance",
+    "abbreviation": "INDIA",
+    "type": "Pre-election Alliance",
+    "leader": "Multi-party (Congress-led)",
+    "text": "Indian National Developmental Inclusive Alliance (INDIA) is the opposition coalition formed in 2023. Key members: Congress, SP, TMC, DMK, AAP, JMM, RJD, CPI(M), NCP-SP, Sena-UBT, IUML. Won 234 seats in 2024 Lok Sabha. Rahul Gandhi is the Leader of Opposition."
   },
   {
-    "category": "Current Chief Ministers (Major States)",
-    "list": [
-      {"state": "Uttar Pradesh", "name": "Yogi Adityanath", "party": "BJP"},
-      {"state": "West Bengal", "name": "Mamata Banerjee", "party": "TMC"},
-      {"state": "Tamil Nadu", "name": "M. K. Stalin", "party": "DMK"},
-      {"state": "Maharashtra", "name": "Eknath Shinde", "party": "Shiv Sena"},
-      {"state": "Bihar", "name": "Nitish Kumar", "party": "JDU"},
-      {"state": "Karnataka", "name": "Siddaramaiah", "party": "INC"},
-      {"state": "Rajasthan", "name": "Bhajan Lal Sharma", "party": "BJP"}
-    ],
-    "importance": "Crucial for understanding state-center relations and regional politics."
+    "name": "United Progressive Alliance",
+    "abbreviation": "UPA",
+    "type": "Pre-election Alliance (dormant)",
+    "leader": "Sonia Gandhi (Congress)",
+    "text": "UPA was the Congress-led coalition that ruled India from 2004 to 2014 under PM Manmohan Singh. Key allies included DMK, NCP, TMC (initially). Largely succeeded by the INDIA alliance in 2024."
   },
   {
-    "category": "Cabinet Ministers (Key Portfolios)",
-    "list": [
-      {"portfolio": "Home Affairs", "name": "Amit Shah"},
-      {"portfolio": "Defence", "name": "Rajnath Singh"},
-      {"portfolio": "External Affairs", "name": "S. Jaishankar"},
-      {"portfolio": "Finance", "name": "Nirmala Sitharaman"},
-      {"portfolio": "Road Transport & Highways", "name": "Nitin Gadkari"}
-    ],
-    "importance": "Essential for legislative coordination and policy implementation."
+    "name": "Left Front",
+    "abbreviation": "LF",
+    "type": "Alliance",
+    "leader": "CPI(M)-led",
+    "text": "Left Front is a coalition of communist and left-wing parties led by CPI(M). Ruled West Bengal for 34 years (1977-2011). Currently governs Kerala. Key members: CPI(M), CPI, RSP, Forward Bloc."
+  },
+  {
+    "name": "Maha Vikas Aghadi",
+    "abbreviation": "MVA",
+    "type": "State Alliance (Maharashtra)",
+    "leader": "Multi-party",
+    "text": "MVA is the opposition alliance in Maharashtra comprising Shiv Sena (UBT), NCP (Sharad Pawar), and Congress. Governed Maharashtra from 2019-2022 under CM Uddhav Thackeray. Won majority of Maharashtra's Lok Sabha seats in 2024."
+  },
+  {
+    "name": "Mahayuti",
+    "abbreviation": "Mahayuti",
+    "type": "State Alliance (Maharashtra)",
+    "leader": "BJP-led",
+    "text": "Mahayuti is the ruling alliance in Maharashtra comprising BJP, Shiv Sena (Shinde), and NCP (Ajit Pawar). Won the 2024 Maharashtra Assembly elections with a massive mandate."
   }
 ]

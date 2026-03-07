@@ -1,18 +1,122 @@
 [
   {
-    "category": "Members of Parliament (MP)",
-    "details": "Elected representatives of the people in the Lok Sabha. Currently includes 543 elected members from various constituencies across India.",
-    "importance": "MPs are the primary link between the central government and the local constituency. They participate in national policy making and oversight.",
-    "source": "https://sansad.in/ls/members",
-    "examples": [
-      {"name": "Narendra Modi", "constituency": "Varanasi", "state": "Uttar Pradesh"},
-      {"name": "Rahul Gandhi", "constituency": "Rae Bareli", "state": "Uttar Pradesh"}
-    ]
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Narendra Modi",
+    "party": "BJP",
+    "text": "Varanasi Lok Sabha constituency in Uttar Pradesh. Current MP: Narendra Modi (BJP). Modi won in 2014, 2019, and 2024."
   },
   {
-    "category": "Members of Legislative Assembly (MLA)",
-    "details": "Elected representatives to the State Legislative Assembly (Vidhan Sabha) of various states and union territories in India.",
-    "importance": "MLAs focus on state-level legislation and local development within their state constituencies.",
-    "source": "Official State Assembly websites (e.g., evidhan.nic.in)"
+    "constituency": "Rae Bareli",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Rahul Gandhi",
+    "party": "INC",
+    "text": "Rae Bareli Lok Sabha constituency in UP. Current MP: Rahul Gandhi (INC). Previously held by Sonia Gandhi from 2004-2024."
+  },
+  {
+    "constituency": "Gandhinagar",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "current_mp": "Amit Shah",
+    "party": "BJP",
+    "text": "Gandhinagar Lok Sabha constituency in Gujarat. Current MP: Amit Shah (BJP). Previously held by L.K. Advani."
+  },
+  {
+    "constituency": "Lucknow",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Rajnath Singh",
+    "party": "BJP",
+    "text": "Lucknow Lok Sabha constituency. Current MP: Rajnath Singh (BJP). Previously held by Atal Bihari Vajpayee."
+  },
+  {
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "current_mp": "Priyanka Gandhi Vadra",
+    "party": "INC",
+    "text": "Wayanad Lok Sabha constituency in Kerala. Current MP: Priyanka Gandhi Vadra (INC). Rahul Gandhi won here in 2019 but vacated in 2024."
+  },
+  {
+    "constituency": "Amethi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "K.L. Sharma",
+    "party": "INC",
+    "text": "Amethi Lok Sabha constituency in UP. Current MP: K.L. Sharma (INC). Was a Gandhi family bastion. Rahul Gandhi lost here in 2019 to Smriti Irani."
+  },
+  {
+    "constituency": "Hyderabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "current_mp": "Asaduddin Owaisi",
+    "party": "AIMIM",
+    "text": "Hyderabad Lok Sabha constituency. Current MP: Asaduddin Owaisi (AIMIM). Owaisi family bastion since 1984."
+  },
+  {
+    "constituency": "Thiruvananthapuram",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "current_mp": "Shashi Tharoor",
+    "party": "INC",
+    "text": "Thiruvananthapuram Lok Sabha constituency. Current MP: Shashi Tharoor (INC). Tharoor has held this seat since 2009."
+  },
+  {
+    "constituency": "Nagpur",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "current_mp": "Nitin Gadkari",
+    "party": "BJP",
+    "text": "Nagpur Lok Sabha constituency. Current MP: Nitin Gadkari (BJP). Nagpur is also the headquarters of RSS."
+  },
+  {
+    "constituency": "Baramati",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "current_mp": "Supriya Sule",
+    "party": "NCP-SP",
+    "text": "Baramati Lok Sabha constituency. Current MP: Supriya Sule (NCP-SP). A Pawar family bastion in Maharashtra."
+  },
+  {
+    "constituency": "Mathura",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Hema Malini",
+    "party": "BJP",
+    "text": "Mathura Lok Sabha constituency. Current MP: Hema Malini (BJP). Holy city of Lord Krishna."
+  },
+  {
+    "constituency": "Mandi",
+    "state": "Himachal Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Kangana Ranaut",
+    "party": "BJP",
+    "text": "Mandi Lok Sabha constituency. Current MP: Kangana Ranaut (BJP). Won in 2024 as a first-time candidate."
+  },
+  {
+    "constituency": "Mainpuri",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Dimple Yadav",
+    "party": "SP",
+    "text": "Mainpuri Lok Sabha constituency. Current MP: Dimple Yadav (SP). Was previously held by Mulayam Singh Yadav."
+  },
+  {
+    "constituency": "Kannauj",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "current_mp": "Akhilesh Yadav",
+    "party": "SP",
+    "text": "Kannauj Lok Sabha constituency. Current MP: Akhilesh Yadav (SP). Former CM of UP represents this seat."
+  },
+  {
+    "constituency": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "type": "Assembly",
+    "current_mla": "Yogi Adityanath",
+    "party": "BJP",
+    "text": "Gorakhpur assembly constituency. Current representative: Yogi Adityanath (BJP), Chief Minister of UP. Was MP from Gorakhpur for 5 terms before becoming CM."
   }
 ]

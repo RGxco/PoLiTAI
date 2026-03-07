@@ -1,20 +1,119 @@
 [
   {
-    "party": "Bharatiya Janata Party (BJP)",
-    "ideology": "Right-wing, Hindutva, Integral Humanism, Nationalism.",
-    "focus": "Economic growth, infrastructure, national security, and cultural preservation.",
-    "manifesto_points": "Atmanirbhar Bharat, Uniform Civil Code, Digital India, infrastructure development."
+    "name": "Bharatiya Janata Party",
+    "abbreviation": "BJP",
+    "founded": "1980",
+    "president": "J. P. Nadda",
+    "ideology": "Hindutva, Right-wing, Nationalism",
+    "alliance": "NDA (National Democratic Alliance)",
+    "text": "BJP is the ruling party at the centre. Founded in 1980. President: J.P. Nadda. Ideology: Integral Humanism, Cultural Nationalism. Part of NDA. Won 240 seats in 2024 Lok Sabha (303 in 2019, 282 in 2014). Largest political party in the world by membership. Key leaders: Narendra Modi, Amit Shah, Rajnath Singh, Yogi Adityanath, J.P. Nadda."
   },
   {
-    "party": "Indian National Congress (INC)",
-    "ideology": "Centrist, Big tent, Secularism, Social Democracy.",
-    "focus": "Social welfare, secularism, rural development, and healthcare access.",
-    "manifesto_points": "NYAY (Social Justice), minimum income support, healthcare for all, strengthening MSMEs."
+    "name": "Indian National Congress",
+    "abbreviation": "INC",
+    "founded": "1885",
+    "president": "Mallikarjun Kharge",
+    "ideology": "Centre-left, Secularism, Social Democracy",
+    "alliance": "INDIA (Indian National Developmental Inclusive Alliance)",
+    "text": "Congress is one of the oldest political parties in India, founded in 1885. President: Mallikarjun Kharge. Key leaders: Rahul Gandhi (Leader of Opposition), Sonia Gandhi, Priyanka Gandhi. Won 99 seats in 2024 Lok Sabha. Part of INDIA alliance. Ruled India for most of the post-independence period under Nehru-Gandhi family."
   },
   {
-    "party": "Aam Aadmi Party (AAP)",
-    "ideology": "Centrist, Populism, Anti-corruption.",
-    "focus": "Education, healthcare, free electricity/water, and direct democracy.",
-    "manifesto_points": "Mohalla Clinics, school infrastructure overhaul, transparent governance."
+    "name": "Aam Aadmi Party",
+    "abbreviation": "AAP",
+    "founded": "2012",
+    "president": "Arvind Kejriwal (National Convener)",
+    "ideology": "Anti-corruption, Populism",
+    "alliance": "INDIA",
+    "text": "AAP was founded by Arvind Kejriwal in 2012 after the Anna Hazare anti-corruption movement. Governs Punjab (CM: Bhagwant Mann). Won 3 seats in 2024 Lok Sabha. Known for focus on education, healthcare, free water and electricity. National party since 2023."
+  },
+  {
+    "name": "All India Trinamool Congress",
+    "abbreviation": "TMC",
+    "founded": "1998",
+    "president": "Mamata Banerjee",
+    "ideology": "Centre-left, Bengali Nationalism, Secularism",
+    "alliance": "INDIA",
+    "text": "TMC was founded by Mamata Banerjee in 1998 after splitting from Congress. Rules West Bengal since 2011. Won 29 seats in 2024 Lok Sabha. Key leaders: Mamata Banerjee, Abhishek Banerjee. Part of INDIA alliance."
+  },
+  {
+    "name": "Bahujan Samaj Party",
+    "abbreviation": "BSP",
+    "founded": "1984",
+    "president": "Mayawati",
+    "ideology": "Social Justice, Dalit empowerment, Ambedkarism",
+    "alliance": "Independent",
+    "text": "BSP was founded by Kanshi Ram in 1984, currently led by Mayawati. Represents Dalit and backward communities. Mayawati served 4 times as UP CM. Party's influence has declined in recent elections. Won 0 seats in 2024 Lok Sabha."
+  },
+  {
+    "name": "Samajwadi Party",
+    "abbreviation": "SP",
+    "founded": "1992",
+    "president": "Akhilesh Yadav",
+    "ideology": "Social Democracy, OBC empowerment, Secularism",
+    "alliance": "INDIA",
+    "text": "SP was founded by Mulayam Singh Yadav in 1992. Currently led by son Akhilesh Yadav. Won 37 seats in 2024 Lok Sabha, a massive jump. Key base: Yadav and Muslim communities in UP. Part of INDIA alliance."
+  },
+  {
+    "name": "Dravida Munnetra Kazhagam",
+    "abbreviation": "DMK",
+    "founded": "1949",
+    "president": "M. K. Stalin",
+    "ideology": "Dravidian, Social Justice, Secularism",
+    "alliance": "INDIA",
+    "text": "DMK was founded by C. N. Annadurai in 1949. Current president: M.K. Stalin (CM of Tamil Nadu). Won 22 seats in 2024 Lok Sabha. Dominant political force in Tamil Nadu. Part of INDIA alliance and a key ally of Congress."
+  },
+  {
+    "name": "Telugu Desam Party",
+    "abbreviation": "TDP",
+    "founded": "1982",
+    "president": "N. Chandrababu Naidu",
+    "ideology": "Regionalism, Telugu Pride",
+    "alliance": "NDA",
+    "text": "TDP was founded by N.T. Rama Rao in 1982. Current president: Chandrababu Naidu (CM of Andhra Pradesh since 2024). Won 16 seats in 2024 Lok Sabha. Key NDA ally. Known for IT development in Hyderabad."
+  },
+  {
+    "name": "Janata Dal (United)",
+    "abbreviation": "JD(U)",
+    "founded": "1999",
+    "president": "Nitish Kumar",
+    "ideology": "Social Justice, Secularism, Centrism",
+    "alliance": "NDA",
+    "text": "JD(U) is led by Bihar CM Nitish Kumar. Won 12 seats in 2024 Lok Sabha. Key NDA ally. Nitish Kumar has switched between NDA and opposition multiple times. Base primarily in Bihar."
+  },
+  {
+    "name": "Shiv Sena",
+    "abbreviation": "SHS",
+    "founded": "1966",
+    "president": "Eknath Shinde faction recognized by EC",
+    "ideology": "Hindutva, Marathi Pride, Regionalism",
+    "alliance": "NDA (Shinde faction)",
+    "text": "Shiv Sena was founded by Bal Thackeray in 1966. Split in 2022 into Eknath Shinde faction (NDA) and Uddhav Thackeray faction (Sena-UBT, INDIA alliance). Shinde faction won 7 seats, UBT won 9 seats in 2024."
+  },
+  {
+    "name": "Nationalist Congress Party",
+    "abbreviation": "NCP",
+    "founded": "1999",
+    "president": "Split: Ajit Pawar (EC-recognized) / Sharad Pawar (NCP-SP)",
+    "ideology": "Centre-left, Secularism",
+    "alliance": "NDA (Ajit Pawar) / INDIA (Sharad Pawar)",
+    "text": "NCP founded by Sharad Pawar in 1999 after splitting from Congress. Split again in 2023: Ajit Pawar faction joined NDA, Sharad Pawar faction (NCP-SP) is with INDIA alliance. Sharad Pawar's faction won 8 seats in 2024 Lok Sabha."
+  },
+  {
+    "name": "Communist Party of India (Marxist)",
+    "abbreviation": "CPI(M)",
+    "founded": "1964",
+    "president": "Sitaram Yechury (late) / New Gen Sec TBD",
+    "ideology": "Marxism, Communism, Left",
+    "alliance": "INDIA / Left Front",
+    "text": "CPI(M) is the largest communist party in India. Rules Kerala (CM: Pinarayi Vijayan). Won 4 seats in 2024 Lok Sabha. Part of Left Democratic Front in Kerala and Left Front in West Bengal. Key cadre-based party."
+  },
+  {
+    "name": "Rashtriya Janata Dal",
+    "abbreviation": "RJD",
+    "founded": "1997",
+    "president": "Lalu Prasad Yadav",
+    "ideology": "Social Justice, OBC/EBC empowerment, Secularism",
+    "alliance": "INDIA",
+    "text": "RJD was founded by Lalu Prasad Yadav in 1997 after splitting from Janata Dal. Key leader: Tejashwi Yadav (son of Lalu). Base primarily in Bihar among Yadav and Muslim communities. Won 4 seats in 2024 Lok Sabha. Part of INDIA alliance."
   }
 ]

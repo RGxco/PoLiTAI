@@ -8,6 +8,13 @@ android {
     namespace 'com.example.politai'
     compileSdk 34
     
+    // Read local.properties for secrets
+    def localProps = new Properties()
+    def localPropsFile = rootProject.file('local.properties')
+    if (localPropsFile.exists()) {
+        localProps.load(new FileInputStream(localPropsFile))
+    }
+    
     defaultConfig {
         applicationId "com.example.politai"
         minSdk 26
@@ -19,6 +26,9 @@ android {
         
         // Enable multidex for large app support
         multiDexEnabled true
+        
+        // Inject GitHub token from local.properties
+        buildConfigField "String", "GITHUB_TOKEN", "\"${localProps.getProperty('GITHUB_TOKEN', '')}\""
     }
     
     buildTypes {
@@ -49,6 +59,7 @@ android {
     
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
     
     packagingOptions {

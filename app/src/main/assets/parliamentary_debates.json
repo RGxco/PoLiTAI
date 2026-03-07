@@ -1,14 +1,32 @@
 [
   {
-    "title": "Debate on Budget 2024-25",
-    "text": "Discussion on infrastructure growth, tax reforms, and agricultural subsidies. Opposition raised concerns about unemployment and inflation.",
-    "importance": "Helps politicians understand the arguments for and against major policies and prepares them for counter-arguments.",
-    "source": "https://sansad.in/ls/debates"
+    "name": "Parliamentary Debates",
+    "category": "Parliament Operations",
+    "text": "Parliamentary debates in India occur in Lok Sabha and Rajya Sabha. Types include: Zero Hour (raised by MPs without prior notice), Question Hour (ministers answer pre-submitted questions), Short Duration Discussion, Calling Attention Motion, Adjournment Motion (to discuss urgent public matters), No Confidence Motion, and General Discussion on Budget. The Speaker of Lok Sabha and Chairman of Rajya Sabha preside over sessions."
   },
   {
-    "title": "Discussion on Digital Personal Data Protection Bill",
-    "text": "Debate regarding citizen privacy, government's access to data, and obligations of data fiduciaries.",
-    "importance": "Critical for understanding legislative intent and public concerns over technology policies.",
-    "source": "https://sansad.in/ls/debates"
+    "name": "CAA Debate 2019",
+    "category": "Major Debate",
+    "text": "The Citizenship Amendment Act (CAA) 2019 was intensely debated in Parliament. The bill was passed in Lok Sabha on Dec 9, 2019 (311-80) and Rajya Sabha on Dec 11 (125-105). Opposition argued it discriminated based on religion. Government argued it protected persecuted minorities from Pakistan, Bangladesh, and Afghanistan. Led to nationwide protests."
+  },
+  {
+    "name": "Farm Laws Debate 2020",
+    "category": "Major Debate",
+    "text": "Three farm reform bills were passed in September 2020 amid massive opposition protests. The bills aimed to deregulate agricultural markets. Led to the longest farmer protest in Indian history (2020-2021). PM Modi repealed all three farm laws in November 2021 ahead of UP elections."
+  },
+  {
+    "name": "Article 370 Debate 2019",
+    "category": "Major Debate",
+    "text": "The abrogation of Article 370 was debated in Parliament on August 5-6, 2019. Home Minister Amit Shah moved the resolution. Jammu & Kashmir was bifurcated into two Union Territories: J&K (with legislature) and Ladakh (without). Opposition called it unconstitutional. Supreme Court upheld the decision in December 2023."
+  },
+  {
+    "name": "GST Bill Debate 2017",
+    "category": "Major Debate",
+    "text": "The Goods and Services Tax (GST) constitutional amendment and implementation bills were debated extensively. GST was launched on July 1, 2017 as 'One Nation, One Tax'. The 101st Constitutional Amendment enabled it. Opposition raised concerns about revenue loss to states and complex rate structure."
+  },
+  {
+    "name": "Womens Reservation Bill 2023",
+    "category": "Major Debate",
+    "text": "The Women's Reservation Bill (Nari Shakti Vandan Adhiniyam) was passed in September 2023, reserving 33% seats in Lok Sabha and state assemblies for women. Originally introduced in 1996, it took 27 years to pass. Implementation linked to delimitation exercise after the next census."
   }
 ]

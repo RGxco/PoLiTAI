@@ -1,97 +1,242 @@
 [
   {
     "name": "Narendra Modi",
-    "role": "Prime Minister of India",
-    "party": "Bharatiya Janata Party (BJP)",
+    "party": "BJP",
     "constituency": "Varanasi",
-    "text": "Narendra Modi: 14th and current Prime Minister of India since 2014. Previously Chief Minister of Gujarat. Focus areas: Digital India, Swachh Bharat, Atmanirbhar Bharat, and infrastructure development."
-  },
-  {
-    "name": "Amit Shah",
-    "role": "Minister of Home Affairs",
-    "party": "BJP",
-    "constituency": "Gandhinagar",
-    "text": "Amit Shah: Current Minister of Home Affairs and Minister of Co-operation. Key roles: Internal security, border management, and legislative reforms like Article 370 abrogation."
-  },
-  {
-    "name": "S. Jaishankar",
-    "role": "Minister of External Affairs",
-    "party": "BJP",
-    "constituency": "Rajya Sabha (Gujarat)",
-    "text": "Subrahmanyam Jaishankar: Minister of External Affairs. Former Foreign Secretary. Focus: Indian diplomacy, global strategic partnerships, and 'India First' foreign policy."
-  },
-  {
-    "name": "Nirmala Sitharaman",
-    "role": "Minister of Finance",
-    "party": "BJP",
-    "constituency": "Rajya Sabha (Karnataka)",
-    "text": "Nirmala Sitharaman: Minister of Finance and Corporate Affairs. Previously Defense Minister. Managing Union Budgets, GST reforms, and economic growth strategies."
-  },
-  {
-    "name": "Rajnath Singh",
-    "role": "Minister of Defence",
-    "party": "BJP",
-    "constituency": "Lucknow",
-    "text": "Rajnath Singh: Current Minister of Defence. Former Home Minister and BJP President. Focus: Modernization of armed forces and 'Make in India' in defence."
-  },
-  {
-    "name": "Yogi Adityanath",
-    "role": "Chief Minister of Uttar Pradesh",
-    "party": "BJP",
-    "constituency": "Gorakhpur Urban",
-    "text": "Yogi Adityanath: 22nd and current Chief Minister of Uttar Pradesh since 2017. Known for law and order focus and development projects in UP."
+    "position": "Prime Minister of India (14th)",
+    "state": "Gujarat (born)",
+    "text": "Narendra Damodardas Modi is the 14th and current Prime Minister of India since 26 May 2014. He represents Varanasi constituency in Lok Sabha. Born on 17 September 1950 in Vadnagar, Gujarat. He served as Chief Minister of Gujarat from 2001 to 2014. Key initiatives include Digital India, Swachh Bharat, Make in India, Atmanirbhar Bharat, and Startup India. He won the 2014 and 2019 general elections with massive mandates and formed NDA government for the third consecutive term in 2024."
   },
   {
     "name": "Rahul Gandhi",
-    "role": "Leader of Opposition (Lok Sabha)",
     "party": "Indian National Congress (INC)",
     "constituency": "Rae Bareli",
-    "text": "Rahul Gandhi: Member of Parliament and current Leader of Opposition in the 18th Lok Sabha. Former Congress President. Prominent opposition voice."
+    "position": "Leader of Opposition in Lok Sabha (18th)",
+    "state": "Delhi",
+    "text": "Rahul Rajiv Gandhi is an Indian politician serving as Member of Parliament from Rae Bareli and the Leader of Opposition in the 18th Lok Sabha. Born on 19 June 1970 in New Delhi, he is the son of former PM Rajiv Gandhi and Sonia Gandhi, and grandson of Indira Gandhi. He served as Congress President from 2017 to 2019. He previously represented Amethi (2004-2019). He led the Bharat Jodo Yatra (2022-23) and Bharat Jodo Nyay Yatra (2024). He is a key leader of the INDIA opposition alliance."
+  },
+  {
+    "name": "Amit Shah",
+    "party": "BJP",
+    "constituency": "Gandhinagar",
+    "position": "Union Home Minister",
+    "state": "Gujarat",
+    "text": "Amit Anil Chandra Shah is the current Union Minister of Home Affairs and Minister of Cooperation. He represents Gandhinagar constituency in Lok Sabha. Born on 22 October 1964 in Mumbai. He served as BJP National President from 2014 to 2020. Key policies under his leadership include abrogation of Article 370 in Jammu & Kashmir, Citizenship Amendment Act (CAA), and National Register of Citizens (NRC). He is considered the chief strategist of BJP's electoral victories."
+  },
+  {
+    "name": "Droupadi Murmu",
+    "party": "BJP (Nominated)",
+    "constituency": "N/A (President)",
+    "position": "15th President of India",
+    "state": "Odisha",
+    "text": "Droupadi Murmu is the 15th and current President of India since 25 July 2022. Born on 20 June 1958 in Uparbeda village, Mayurbhanj district, Odisha. She is the first tribal woman and second woman to hold the office of President of India. She previously served as Governor of Jharkhand (2015-2021). She belongs to the Santhal tribal community."
+  },
+  {
+    "name": "Jagdeep Dhankhar",
+    "party": "BJP (Nominated)",
+    "constituency": "N/A (Vice President)",
+    "position": "14th Vice President of India",
+    "state": "Rajasthan",
+    "text": "Jagdeep Dhankhar is the 14th and current Vice President of India and Chairman of the Rajya Sabha since 11 August 2022. Born on 18 May 1951 in Kithana, Jhunjhunu, Rajasthan. He previously served as Governor of West Bengal (2019-2022). He is an advocate by profession."
+  },
+  {
+    "name": "Sonia Gandhi",
+    "party": "Indian National Congress (INC)",
+    "constituency": "Rajya Sabha MP",
+    "position": "Congress Parliamentary Party Chairperson",
+    "state": "Delhi",
+    "text": "Sonia Gandhi is an Indian politician who served as President of the Indian National Congress from 1998 to 2017 and again from 2019 to 2022. Born Edvige Antonia Albina Maino on 9 December 1946 in Italy. She is the widow of former PM Rajiv Gandhi. She represented Rae Bareli in Lok Sabha from 2004 to 2024. She is currently a Rajya Sabha member. She led UPA government as coalition chairperson from 2004 to 2014."
   },
   {
     "name": "Mallikarjun Kharge",
-    "role": "Congress President",
-    "party": "INC",
-    "constituency": "Rajya Sabha (Karnataka)",
-    "text": "Mallikarjun Kharge: Current President of the Indian National Congress. Leader of Opposition in Rajya Sabha. Long-standing parliamentary career."
+    "party": "Indian National Congress (INC)",
+    "constituency": "Rajya Sabha MP",
+    "position": "President of Indian National Congress",
+    "state": "Karnataka",
+    "text": "Mallikarjun Kharge is the current President of the Indian National Congress since October 2022. Born on 21 July 1942 in Varavatti, Bidar, Karnataka. He is a veteran Dalit leader who served as Leader of Opposition in Rajya Sabha. He has been an MP multiple times from Gulbarga constituency. He previously served as Union Minister of Railways and Labour."
+  },
+  {
+    "name": "Rajnath Singh",
+    "party": "BJP",
+    "constituency": "Lucknow",
+    "position": "Union Defence Minister",
+    "state": "Uttar Pradesh",
+    "text": "Rajnath Singh is the current Union Minister of Defence and represents Lucknow constituency in Lok Sabha. Born on 10 July 1951 in Chandauli, Uttar Pradesh. He served as BJP National President twice (2005-2009, 2013-2014). He previously served as Union Home Minister (2014-2019) and Chief Minister of Uttar Pradesh (2000-2002)."
+  },
+  {
+    "name": "Nirmala Sitharaman",
+    "party": "BJP",
+    "constituency": "Rajya Sabha MP",
+    "position": "Union Finance Minister",
+    "state": "Tamil Nadu/Karnataka",
+    "text": "Nirmala Sitharaman is the current Union Minister of Finance and Corporate Affairs. Born on 18 August 1959 in Madurai, Tamil Nadu. She is the second woman to hold the Finance Ministry portfolio. She previously served as Defence Minister (2017-2019), becoming the first full-time woman Defence Minister of India. She has presented multiple Union Budgets since 2019."
+  },
+  {
+    "name": "S. Jaishankar",
+    "party": "BJP",
+    "constituency": "Rajya Sabha MP",
+    "position": "Union External Affairs Minister",
+    "state": "Delhi",
+    "text": "Dr. Subrahmanyam Jaishankar is the current Union Minister of External Affairs. Born on 9 January 1955. He is a career diplomat who served as Foreign Secretary of India (2015-2018) and Indian Ambassador to the United States and China. He is known for his expertise in foreign policy and India's strategic partnerships."
   },
   {
     "name": "Arvind Kejriwal",
-    "role": "Former Chief Minister of Delhi",
     "party": "Aam Aadmi Party (AAP)",
-    "constituency": "New Delhi",
-    "text": "Arvind Kejriwal: National Convener of AAP. Served as Chief Minister of Delhi. Focus areas: Mohalla Clinics, education reforms, and free electricity/water models."
+    "constituency": "Delhi MLA (former)",
+    "position": "AAP National Convener, Former CM of Delhi",
+    "state": "Delhi",
+    "text": "Arvind Kejriwal is the national convener of the Aam Aadmi Party (AAP) and former Chief Minister of Delhi (2013-2014, 2015-2024). Born on 16 August 1968 in Siwani, Haryana. He is a former IRS officer and RTI activist. He founded AAP in 2012 after the India Against Corruption movement. Under his leadership, AAP focused on education, healthcare, free water, and free electricity in Delhi."
+  },
+  {
+    "name": "Yogi Adityanath",
+    "party": "BJP",
+    "constituency": "Gorakhpur (MLA)",
+    "position": "Chief Minister of Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "text": "Yogi Adityanath (Ajay Singh Bisht) is the current Chief Minister of Uttar Pradesh since 19 March 2017, serving his second consecutive term since 2022. Born on 5 June 1972 in Panchur, Uttarakhand. He is the head priest (Mahant) of the Gorakhnath Math in Gorakhpur. He was MP from Gorakhpur for five consecutive terms (1998-2017). Key initiatives include UP Expressway network, crackdown on crime, and Ram Mandir construction in Ayodhya."
   },
   {
     "name": "Mamata Banerjee",
-    "role": "Chief Minister of West Bengal",
     "party": "All India Trinamool Congress (TMC)",
-    "constituency": "Bhabanipur",
-    "text": "Mamata Banerjee: 8th and current Chief Minister of West Bengal since 2011. Founder of TMC. Key focus: Social welfare schemes like Kanyashree."
+    "constituency": "Bhawanipur (MLA)",
+    "position": "Chief Minister of West Bengal",
+    "state": "West Bengal",
+    "text": "Mamata Banerjee is the Chief Minister of West Bengal since 2011 and founder of the All India Trinamool Congress (TMC). Born on 5 January 1955 in Kolkata. She ended the 34-year Left Front rule in West Bengal. She previously served as Union Railway Minister. She is popularly known as 'Didi'. She won her third consecutive term as CM in 2021."
   },
   {
     "name": "M. K. Stalin",
-    "role": "Chief Minister of Tamil Nadu",
-    "party": "DMK",
-    "constituency": "Kolathur",
-    "text": "M. K. Stalin: 8th and current Chief Minister of Tamil Nadu. President of DMK. Focus: Dravidian model of governance and social justice."
+    "party": "Dravida Munnetra Kazhagam (DMK)",
+    "constituency": "Kolathur (MLA)",
+    "position": "Chief Minister of Tamil Nadu",
+    "state": "Tamil Nadu",
+    "text": "Muthuvel Karunanidhi Stalin is the current Chief Minister of Tamil Nadu since May 2021. Born on 1 March 1953 in Chennai. He is the son of former CM M. Karunanidhi. He served as DMK President since 2018. He led DMK to a massive victory in the 2021 Tamil Nadu Assembly elections. Key initiatives include breakfast scheme for school children and Dravidian model of governance."
   },
   {
-    "name": "C. Rajagopalachari",
-    "role": "Last Governor-General of India",
-    "party": "Swatantra Party",
-    "text": "C. Rajagopalachari (Rajaji): Last Governor-General of India, first Indian-born. Bharat Ratna recipient. Chief Minister of Madras. Founded Swatantra Party (Free Market focus)."
+    "name": "Nitish Kumar",
+    "party": "Janata Dal (United) - JD(U)",
+    "constituency": "Bihar MLA",
+    "position": "Chief Minister of Bihar",
+    "state": "Bihar",
+    "text": "Nitish Kumar is the current Chief Minister of Bihar, serving his eighth term. Born on 1 March 1951 in Bakhtiarpur, Bihar. He is the national president of Janata Dal (United). He has been CM of Bihar multiple times since 2000. He is an NDA ally. Key initiatives include prohibition in Bihar, Jeevika self-help groups, and road infrastructure development."
   },
   {
-    "name": "B. R. Ambedkar",
-    "role": "Father of Indian Constitution",
-    "party": "Independent Labour Party",
-    "text": "B. R. Ambedkar: Architect of the Indian Constitution. First Law Minister. Social reformer who fought against caste discrimination."
+    "name": "Akhilesh Yadav",
+    "party": "Samajwadi Party (SP)",
+    "constituency": "Kannauj MP",
+    "position": "Samajwadi Party President",
+    "state": "Uttar Pradesh",
+    "text": "Akhilesh Yadav is the president of the Samajwadi Party and a Member of Parliament from Kannauj. Born on 1 July 1973 in Saifai, Etawah, UP. He served as Chief Minister of Uttar Pradesh from 2012 to 2017, becoming the youngest CM of UP at age 38. He is the son of SP founder Mulayam Singh Yadav. He led SP to a strong performance in the 2024 Lok Sabha elections as part of the INDIA alliance."
   },
   {
-    "name": "Jawaharlal Nehru",
-    "role": "1st Prime Minister of India",
-    "party": "INC",
-    "text": "Jawaharlal Nehru: First Prime Minister of India (1947-1964). Central figure in the independence movement. Architect of modern Indian nation-state."
+    "name": "Mayawati",
+    "party": "Bahujan Samaj Party (BSP)",
+    "constituency": "N/A",
+    "position": "BSP National President",
+    "state": "Uttar Pradesh",
+    "text": "Mayawati Kumari is the national president of the Bahujan Samaj Party. Born on 15 January 1956 in Delhi. She served as Chief Minister of Uttar Pradesh four times (1995, 1997, 2002-2003, 2007-2012). She is a prominent Dalit leader and champion of Scheduled Caste rights. She was the first Dalit woman to become CM of any Indian state."
+  },
+  {
+    "name": "Sharad Pawar",
+    "party": "Nationalist Congress Party (NCP-SP)",
+    "constituency": "Rajya Sabha",
+    "position": "NCP-SP President",
+    "state": "Maharashtra",
+    "text": "Sharad Govindrao Pawar is the founder and president of the Nationalist Congress Party (Sharadchandra Pawar faction). Born on 12 December 1940 in Baramati, Maharashtra. He served as Chief Minister of Maharashtra three times and as Union Minister of Agriculture and Defence. He is one of the most experienced politicians in India with over 55 years in active politics."
+  },
+  {
+    "name": "Uddhav Thackeray",
+    "party": "Shiv Sena (UBT)",
+    "constituency": "MLC",
+    "position": "Shiv Sena (UBT) President",
+    "state": "Maharashtra",
+    "text": "Uddhav Bal Thackeray is the president of Shiv Sena (Uddhav Balasaheb Thackeray faction). Born on 27 July 1960 in Mumbai. He served as Chief Minister of Maharashtra from 2019 to 2022 heading the Maha Vikas Aghadi (MVA) coalition. He is the son of Shiv Sena founder Bal Thackeray. His party is part of the INDIA opposition alliance."
+  },
+  {
+    "name": "Eknath Shinde",
+    "party": "Shiv Sena",
+    "constituency": "Kopri-Pachpakhadi (MLA)",
+    "position": "Former Chief Minister of Maharashtra",
+    "state": "Maharashtra",
+    "text": "Eknath Sambhaji Shinde led a rebellion in Shiv Sena in June 2022 and became Chief Minister of Maharashtra from 2022 to 2024 with BJP support. Born on 9 February 1964. He leads the Shiv Sena faction recognized by the Election Commission. He is currently part of the Mahayuti alliance with BJP and NCP (Ajit Pawar)."
+  },
+  {
+    "name": "Naveen Patnaik",
+    "party": "Biju Janata Dal (BJD)",
+    "constituency": "N/A",
+    "position": "Former CM of Odisha, BJD President",
+    "state": "Odisha",
+    "text": "Naveen Patnaik served as Chief Minister of Odisha for five consecutive terms from 2000 to 2024, the longest-serving CM of Odisha. Born on 16 October 1946. He is the son of former CM Biju Patnaik after whom his party BJD is named. His party lost power to BJP in the 2024 Odisha Assembly elections."
+  },
+  {
+    "name": "Tejashwi Yadav",
+    "party": "Rashtriya Janata Dal (RJD)",
+    "constituency": "Raghopur MLA",
+    "position": "Former Deputy CM of Bihar, RJD Leader",
+    "state": "Bihar",
+    "text": "Tejashwi Pratap Yadav is a prominent leader of Rashtriya Janata Dal. Born on 9 November 1989. He served as Deputy Chief Minister of Bihar from August 2022 to January 2024. He is the son of former CM Lalu Prasad Yadav. He is seen as a young leader of the opposition in Bihar."
+  },
+  {
+    "name": "Asaduddin Owaisi",
+    "party": "All India Majlis-e-Ittehadul Muslimeen (AIMIM)",
+    "constituency": "Hyderabad MP",
+    "position": "AIMIM President",
+    "state": "Telangana",
+    "text": "Asaduddin Owaisi is the president of AIMIM and four-term MP from Hyderabad. Born on 13 May 1969 in Hyderabad. He is a barrister and a prominent voice for Muslim minority rights in Indian Parliament. His party has expanded from Hyderabad to Bihar, Maharashtra and other states."
+  },
+  {
+    "name": "Chandrababu Naidu",
+    "party": "Telugu Desam Party (TDP)",
+    "constituency": "Kuppam MLA",
+    "position": "Chief Minister of Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "text": "Nara Chandrababu Naidu is the current Chief Minister of Andhra Pradesh since June 2024. Born on 20 April 1950. He previously served as CM from 1995 to 2004 and is known as the architect of Hyderabad's IT boom. His party TDP is an NDA ally. He is the national president of TDP."
+  },
+  {
+    "name": "Pinarayi Vijayan",
+    "party": "Communist Party of India (Marxist) - CPI(M)",
+    "constituency": "Dharmadam MLA",
+    "position": "Chief Minister of Kerala",
+    "state": "Kerala",
+    "text": "Pinarayi Vijayan is the current Chief Minister of Kerala since May 2016, serving his second consecutive term since 2021. Born on 21 March 1944 in Pinarayi, Kannur, Kerala. He leads the Left Democratic Front (LDF) government. His government is known for Kerala's healthcare model and disaster management during floods."
+  },
+  {
+    "name": "Siddaramaiah",
+    "party": "Indian National Congress (INC)",
+    "constituency": "Varuna MLA",
+    "position": "Chief Minister of Karnataka",
+    "state": "Karnataka",
+    "text": "Siddaramaiah is the current Chief Minister of Karnataka since May 2023. Born on 12 August 1948 in Siddaramanahundi, Mysuru. He previously served as CM from 2013 to 2018. He is known for implementing five guarantee schemes in Karnataka including Gruha Lakshmi and Yuva Nidhi. He has been a prominent OBC leader in Karnataka politics."
+  },
+  {
+    "name": "Bhagwant Mann",
+    "party": "Aam Aadmi Party (AAP)",
+    "constituency": "Dhuri MLA",
+    "position": "Chief Minister of Punjab",
+    "state": "Punjab",
+    "text": "Bhagwant Singh Mann is the current Chief Minister of Punjab since March 2022. Born on 17 October 1973 in Satoj, Sangrur, Punjab. He is a comedian-turned-politician. He previously served as MP from Sangrur (2014-2022). He led AAP to a massive victory in the 2022 Punjab Assembly elections, winning 92 out of 117 seats."
+  },
+  {
+    "name": "Hemant Soren",
+    "party": "Jharkhand Mukti Morcha (JMM)",
+    "constituency": "Barhait MLA",
+    "position": "Chief Minister of Jharkhand",
+    "state": "Jharkhand",
+    "text": "Hemant Soren is the current Chief Minister of Jharkhand, having previously served from 2019 to 2024 before a brief period of judicial custody. Born on 10 August 1975. He is the son of former CM Shibu Soren. His party JMM is a key tribal political force in Jharkhand and is an ally of the INDIA bloc."
+  },
+  {
+    "name": "Omar Abdullah",
+    "party": "National Conference (NC)",
+    "constituency": "Budgam MLA",
+    "position": "Chief Minister of Jammu & Kashmir",
+    "state": "Jammu & Kashmir",
+    "text": "Omar Abdullah is the current Chief Minister of Jammu & Kashmir since October 2024, the first CM after J&K's reorganization as a Union Territory. Born on 10 March 1970. He is the son of former CM Farooq Abdullah. He previously served as CM from 2009 to 2014 and as Union Minister of State for External Affairs."
+  },
+  {
+    "name": "Chirag Paswan",
+    "party": "Lok Janshakti Party (Ram Vilas) - LJPRV",
+    "constituency": "Hajipur MP",
+    "position": "Union Minister",
+    "state": "Bihar",
+    "text": "Chirag Paswan is the president of Lok Janshakti Party (Ram Vilas) and a Union Minister in the Modi 3.0 government. Born on 31 October 1982. He is the son of late Ram Vilas Paswan. He represents Hajipur constituency in Bihar. His party is an NDA ally and an important Dalit political force in Bihar."
   }
 ]

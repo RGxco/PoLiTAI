@@ -1,26 +1,22 @@
 [
   {
-    "category": "Starred Question",
-    "id": "SQ-402",
-    "session": "Monsoon Session 2024",
-    "question": "Regarding the steps taken to increase the production of semiconductors in India.",
-    "answer": "The Ministry of Electronics and IT has launched the Semicon India program with an outlay of ₹76,000 crore to provide financial support to companies investing in semiconductors.",
-    "importance": "MPs use starred questions to hold ministries accountable and get oral answers on the floor of the House.",
-    "source": "https://sansad.in/ls/questions/starred-questions"
+    "topic": "How Indian Parliament Works",
+    "text": "The Parliament of India consists of the President, Lok Sabha (House of the People, 543 elected + 2 nominated), and Rajya Sabha (Council of States, 245 members). Lok Sabha members are directly elected for 5-year terms. Rajya Sabha members are elected by state legislatures for 6-year terms, with 1/3 retiring every 2 years. Annual sessions: Budget Session (Feb-May), Monsoon Session (Jul-Sep), Winter Session (Nov-Dec). The Speaker presides over Lok Sabha, Vice President chairs Rajya Sabha."
   },
   {
-    "category": "Committee Report",
-    "title": "Standing Committee on External Affairs - 24th Report",
-    "text": "Report on India's 'Neighborhood First' policy, focusing on trade and security cooperation with BIMSTEC nations.",
-    "importance": "Committee reports provide deep technical analysis of policies and help politicians understand legislative nuances.",
-    "source": "https://sansad.in/ls/committees/reports"
+    "topic": "How a Bill Becomes Law",
+    "text": "A Bill can be introduced in either house (except Money Bills which can only be in Lok Sabha). Steps: 1) Introduction (First Reading), 2) General Discussion (Second Reading), 3) Committee Stage (Standing/Select Committee review), 4) Clause-by-clause consideration, 5) Third Reading (voting), 6) Sent to other house for same process, 7) Presidential Assent. If houses disagree, a Joint Sitting can be called (Article 108). Money Bills don't need Rajya Sabha approval (only 14 days to return)."
   },
   {
-    "category": "Bill Voting Record",
-    "bill_name": "Digital Personal Data Protection Bill, 2023",
-    "status": "Passed",
-    "voting": "Voice Vote in Lok Sabha, Passed with amendments in Rajya Sabha.",
-    "importance": "Crucial for tracking party positions and legislative history of major laws.",
-    "source": "https://sansad.in/ls/legislation/bills"
+    "topic": "Question Hour",
+    "text": "Question Hour is the first hour of every parliamentary sitting. Types of questions: Starred Questions (oral answer + supplementary questions), Unstarred Questions (written answers), Short Notice Questions (urgent matters). Ministers must answer questions about their ministry. It is a key accountability mechanism. About 15-20 starred questions are answered daily."
+  },
+  {
+    "topic": "No Confidence Motion",
+    "text": "A No Confidence Motion can only be moved in Lok Sabha (not Rajya Sabha). Requires support of 50 MPs to be admitted. If passed, the government must resign. Last successful no confidence motion: 1979 against PM Morarji Desai. Narendra Modi's government faced a no-confidence motion in 2018 which was defeated (325-126). In 2023, INDIA alliance moved another one which was also defeated."
+  },
+  {
+    "topic": "Parliamentary Committees",
+    "text": "Parliamentary Committees examine governance in detail. Types: Standing Committees (Departmentally Related, 24 committees of 31 members each), Financial Committees (PAC, Estimates, Public Undertakings), Ad Hoc Committees (Select/Joint). The Public Accounts Committee (PAC) is traditionally chaired by an opposition MP. Committees can summon officials and examine witnesses."
   }
 ]

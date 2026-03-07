@@ -1,14 +1,27 @@
 [
   {
-    "title": "MPLADS Overview",
-    "details": "Members of Parliament Local Area Development Scheme. Each MP has the choice to suggest to the District Collector for works to the tune of ₹5 Crores per annum to be taken up in his/her constituency.",
-    "importance": "Crucial for politicians to fund local development projects like drinking water, primary education, public health, and roads.",
-    "source": "https://www.mplads.gov.in"
+    "year": "2023-24",
+    "mp_name": "Example: Varanasi",
+    "state": "Uttar Pradesh",
+    "fund_allocated_cr": 5.0,
+    "fund_utilized_cr": 4.2,
+    "projects": "Road construction, Community halls, Water supply",
+    "text": "MPLADS (Members of Parliament Local Area Development Scheme) provides Rs 5 crore per year to each MP for local development works. The scheme was introduced in 1993. MPs can recommend works for education, healthcare, drinking water, sanitation, roads, and community infrastructure. District Collectors implement the works. Fund allocation was suspended during COVID-19 (2020-21) and funds were diverted to COVID relief. Restored from 2021-22 onwards."
   },
   {
-    "title": "Eligible Works",
-    "details": "Construction of school buildings, labs, libraries, hospitals, community centers, and installation of solar lights.",
-    "importance": "Helps politicians address specific infrastructure gaps identified by their constituents.",
-    "source": "https://www.mplads.gov.in"
+    "year": "2022-23",
+    "total_release_cr": 3960,
+    "total_utilization_cr": 3100,
+    "text": "In 2022-23, total MPLADS release was Rs 3,960 crore for 792 MPs. Average utilization rate was about 78%. Top spending categories: Roads (30%), Drinking Water (18%), Education facilities (15%), Healthcare infrastructure (12%)."
+  },
+  {
+    "year": "2019-20",
+    "total_release_cr": 3960,
+    "text": "In 2019-20, MPLADS funds were released normally. Rs 5 crore per MP per year. Total allocation Rs 3,960 crore for 792 MPs (Lok Sabha + Rajya Sabha). Unspent balance carried forward."
+  },
+  {
+    "year": "2020-21",
+    "total_release_cr": 0,
+    "text": "MPLADS scheme was suspended for 2020-21 and 2021-22 (2 years). Rs 7,920 crore was redirected to the Consolidated Fund of India to fight COVID-19 pandemic. This was controversial as MPs had no local development funds during the pandemic."
   }
 ]

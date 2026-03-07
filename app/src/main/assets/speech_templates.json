@@ -1,23 +1,27 @@
 [
   {
-    "title": "Speech Supporting the Government Budget",
-    "category": "Budget/Finance",
-    "text": "Honourable Speaker Sir/Madam, Respected Members of this House, I rise today to present my strong support for the Budget presented by our Hon’ble Finance Minister. This budget is not merely a statement of income and expenditure; it is a vision document for the nation’s growth, stability, and inclusive development. It reflects our government’s commitment to building a stronger economy while ensuring that the benefits of development reach every citizen. 1. A Budget for Economic Growth: First and foremost, this budget focuses on accelerating economic growth. The government has prioritized investments in infrastructure, manufacturing, and innovation. Large-scale investments in roads, railways, ports, and digital infrastructure will generate employment and stimulate economic activity. 2. Support for Farmers: Our farmers are the backbone of the nation. The government has allocated significant funds for agricultural modernization, irrigation projects, and crop insurance schemes. 3. Empowering Youth: Emphasis on education, skill development, and entrepreneurship. Funds for skill training and start-up incentives. 4. Social Welfare: Increased spending on Healthcare, Education, Affordable housing, and Women and child welfare. 5. Middle Class: Rationalized taxation policies and incentives for savings. 6. Fiscal Responsibility: Maintaining fiscal discipline and efficient resource management. 7. Vision: A self-reliant and prosperous nation.",
-    "importance": "Provides a structured template for politicians to articulate support for financial policies and communicate government achievements to constituents.",
-    "source": "Template based on standard Parliamentary Budget Support speeches."
+    "type": "Independence Day Speech",
+    "occasion": "15th August",
+    "text": "Draft speech template for Independence Day: Respected Chief Guest, dignitaries, teachers, students, and fellow citizens. On this [Nth] Independence Day, we celebrate the sacrifices of our freedom fighters who gave us this great nation. [Mention local achievements]. Our district/constituency has made progress in [education/healthcare/infrastructure]. Key government initiatives like [scheme names] are transforming lives. Let us pledge to build a developed, prosperous, and self-reliant India. Jai Hind!"
   },
   {
-    "title": "Speech on Ensuring Education for Every Child",
-    "category": "Education/Rights",
-    "text": "Honourable Speaker Sir/Madam, Respected Members of this House, I rise today to address an issue that lies at the very heart of our nation’s progress — ensuring that every child in our country receives quality education. Education is not merely a fundamental right; it is the foundation upon which the future of our nation is built. 1. Strengthening Access: Every village must have a functional school. Improve transportation and build hostels. 2. Improving Quality: Recruit trained teachers, update curriculum, and introduce digital tools. 3. Addressing Barriers: Free textbooks, uniforms, scholarships, and mid-day meals. 4. Gender Equality: Provide safe environments and separate facilities for girls. Educating a girl empowers future generations. 5. Technology: Internet access and digital devices for remote corners. 6. Community Role: Active participation of parents and local institutions.",
-    "importance": "Crucial for advocacy on social justice and human capital development. Helps politicians frame education as a national priority.",
-    "source": "Parliamentary template for education policy advocacy."
+    "type": "Republic Day Speech",
+    "occasion": "26th January",
+    "text": "Draft speech template for Republic Day: Honorable guests, We celebrate the day our Constitution came into force in 1950, giving us the framework for democracy, justice, liberty, equality, and fraternity. Dr. B.R. Ambedkar's vision of social justice continues to guide us. [Mention key constitutional values]. Our commitment to inclusive governance through schemes like [scheme names] reflects these constitutional ideals. Let us rededicate ourselves to the principles enshrined in our Constitution. Jai Bharat!"
   },
   {
-    "title": "Speech on Balancing Population in the Country",
-    "category": "Population/Development",
-    "text": "Honourable Speaker Sir/Madam, Respected Members of this House, I rise today to address an important issue that has significant implications for our nation’s development and future prosperity — the challenge of balancing population growth in our country. Population is both a strength and a responsibility. 1. Awareness and Education: Education, especially for women, helps individuals understand the importance of smaller and well-planned families. 2. Empowering Women: Access to education, employment, and healthcare leads to stronger families and balanced growth. 3. Healthcare Services: Expand availability of contraceptives and reproductive health services. Improve maternal and child healthcare. 4. Economic Development: Economic security encourages families to focus on quality of life. 5. Sustainable Use of Resources: Balance growth with availability of water, food, and land.",
-    "importance": "Addresses long-term national sustainability and resource management. Useful for policy discussions on demographic trends.",
-    "source": "Parliamentary template for population management policy."
+    "type": "Budget Presentation Speech",
+    "occasion": "Annual Budget",
+    "text": "Draft speech for annual budget presentation: Respected members, I present the annual budget for [year]. Total revenue: Rs [X] crore. Total expenditure: Rs [Y] crore. Key allocations: Education [%], Healthcare [%], Infrastructure [%], Agriculture [%]. New schemes proposed: [list]. Tax relief measures: [details]. Focus areas: [priorities]. This budget aims to achieve [growth target]% growth while maintaining fiscal discipline."
+  },
+  {
+    "type": "Farmer Rally Speech",
+    "occasion": "Kisan Sammelan",
+    "text": "Draft speech for farmer gathering: Respected farmers and agricultural workers, You are the backbone of our nation. Key support through: PM-KISAN (Rs 6,000/year), crop insurance (PMFBY), MSP increases, and irrigation projects. [Mention local agricultural achievements]. New initiatives: [soil health cards, organic farming, e-NAM]. Our goal: doubling farmer income through technology, better prices, and reduced input costs."
+  },
+  {
+    "type": "Constituency Development Speech",
+    "occasion": "Public Meeting",
+    "text": "Draft constituency development speech: Respected citizens of [constituency name], Let me share the progress we have made. [List infrastructure projects completed]. MPLADS fund utilized for [projects]. Pending works: [list]. Key government schemes benefiting our area: [list with beneficiary numbers]. Employment generated: [numbers]. My commitment: [future plans]. Your feedback drives our development agenda."
   }
 ]

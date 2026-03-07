@@ -1,14 +1,162 @@
 [
   {
-    "category": "Lok Sabha",
-    "details": "The lower house of India's bicameral Parliament. It is composed of representatives of the people chosen by direct election on the basis of adult suffrage.",
-    "importance": "Crucial for understanding legislative representation and the source of major national laws.",
-    "source": "https://sansad.in/ls"
+    "name": "Narendra Modi",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "party": "BJP",
+    "text": "Narendra Modi, BJP MP from Varanasi, Prime Minister of India. Won Varanasi seat in 2014, 2019, and 2024 Lok Sabha elections."
   },
   {
-    "category": "Rajya Sabha",
-    "details": "The upper house of India's bicameral Parliament. It is a permanent body and not subject to dissolution. One third of its members retire every second year.",
-    "importance": "Key for understanding state representation at the center and review of legislation passed by Lok Sabha.",
-    "source": "https://sansad.in/rs"
+    "name": "Rahul Gandhi",
+    "house": "Lok Sabha",
+    "constituency": "Rae Bareli",
+    "state": "Uttar Pradesh",
+    "party": "INC",
+    "text": "Rahul Gandhi, Congress MP from Rae Bareli, Leader of Opposition in 18th Lok Sabha. Previously represented Amethi (2004-2019). Won Rae Bareli and Wayanad in 2024."
+  },
+  {
+    "name": "Amit Shah",
+    "house": "Lok Sabha",
+    "constituency": "Gandhinagar",
+    "state": "Gujarat",
+    "party": "BJP",
+    "text": "Amit Shah, BJP MP from Gandhinagar, Union Home Minister and Minister of Cooperation."
+  },
+  {
+    "name": "Rajnath Singh",
+    "house": "Lok Sabha",
+    "constituency": "Lucknow",
+    "state": "Uttar Pradesh",
+    "party": "BJP",
+    "text": "Rajnath Singh, BJP MP from Lucknow, Union Defence Minister."
+  },
+  {
+    "name": "Nitin Gadkari",
+    "house": "Lok Sabha",
+    "constituency": "Nagpur",
+    "state": "Maharashtra",
+    "party": "BJP",
+    "text": "Nitin Gadkari, BJP MP from Nagpur, former Union Minister of Road Transport and Highways. Known for massive highway construction push across India."
+  },
+  {
+    "name": "Smriti Irani",
+    "house": "Rajya Sabha",
+    "constituency": "N/A",
+    "state": "Gujarat",
+    "party": "BJP",
+    "text": "Smriti Zubin Irani, BJP Rajya Sabha MP. Former Union Minister of Women and Child Development. She previously defeated Rahul Gandhi in Amethi in 2019."
+  },
+  {
+    "name": "Anurag Thakur",
+    "house": "Lok Sabha",
+    "constituency": "Hamirpur",
+    "state": "Himachal Pradesh",
+    "party": "BJP",
+    "text": "Anurag Singh Thakur, BJP MP from Hamirpur. Former Union Minister of Information and Broadcasting and Youth Affairs."
+  },
+  {
+    "name": "Shashi Tharoor",
+    "house": "Lok Sabha",
+    "constituency": "Thiruvananthapuram",
+    "state": "Kerala",
+    "party": "INC",
+    "text": "Shashi Tharoor, Congress MP from Thiruvananthapuram. Diplomat, author, and former UN Under-Secretary-General. Known for his oratory and English vocabulary."
+  },
+  {
+    "name": "Mahua Moitra",
+    "house": "Former Lok Sabha MP",
+    "constituency": "Krishnanagar (former)",
+    "state": "West Bengal",
+    "party": "TMC",
+    "text": "Mahua Moitra, TMC leader. Former MP from Krishnanagar. Known for fiery speeches in Parliament. Was expelled from Lok Sabha in 2023 over ethics committee findings."
+  },
+  {
+    "name": "Asaduddin Owaisi",
+    "house": "Lok Sabha",
+    "constituency": "Hyderabad",
+    "state": "Telangana",
+    "party": "AIMIM",
+    "text": "Asaduddin Owaisi, AIMIM MP from Hyderabad. Four-term MP and prominent voice for minority rights. Barrister by profession."
+  },
+  {
+    "name": "Supriya Sule",
+    "house": "Lok Sabha",
+    "constituency": "Baramati",
+    "state": "Maharashtra",
+    "party": "NCP-SP",
+    "text": "Supriya Sule, NCP (Sharad Pawar) MP from Baramati, daughter of Sharad Pawar. Prominent woman leader in Maharashtra politics."
+  },
+  {
+    "name": "Jaya Bachchan",
+    "house": "Rajya Sabha",
+    "constituency": "N/A",
+    "state": "Uttar Pradesh",
+    "party": "SP",
+    "text": "Jaya Bachchan, SP Rajya Sabha MP. Veteran actress and politician. Known for raising cultural and film industry issues in Parliament."
+  },
+  {
+    "name": "Hema Malini",
+    "house": "Lok Sabha",
+    "constituency": "Mathura",
+    "state": "Uttar Pradesh",
+    "party": "BJP",
+    "text": "Hema Malini, BJP MP from Mathura. Veteran actress and MP since 2014. Has won Mathura seat twice."
+  },
+  {
+    "name": "Dimple Yadav",
+    "house": "Lok Sabha",
+    "constituency": "Mainpuri",
+    "state": "Uttar Pradesh",
+    "party": "SP",
+    "text": "Dimple Yadav, SP MP from Mainpuri. Wife of Akhilesh Yadav. Won Mainpuri in 2022 by-election and 2024 general election."
+  },
+  {
+    "name": "Priyanka Gandhi Vadra",
+    "house": "Lok Sabha",
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "party": "INC",
+    "text": "Priyanka Gandhi Vadra, Congress MP from Wayanad. She won the 2024 Wayanad by-election after Rahul Gandhi vacated the seat. She is Congress General Secretary and sister of Rahul Gandhi."
+  },
+  {
+    "name": "Dharmendra Pradhan",
+    "house": "Rajya Sabha",
+    "constituency": "N/A",
+    "state": "Madhya Pradesh",
+    "party": "BJP",
+    "text": "Dharmendra Pradhan, BJP Rajya Sabha MP and Union Minister of Education. Previously served as Petroleum Minister. Key architect of National Education Policy 2020."
+  },
+  {
+    "name": "Piyush Goyal",
+    "house": "Rajya Sabha",
+    "constituency": "N/A",
+    "state": "Maharashtra",
+    "party": "BJP",
+    "text": "Piyush Goyal, BJP RS MP and Union Minister of Commerce and Industry. Former Railway Minister and Energy Minister. Known for 100% railway electrification push."
+  },
+  {
+    "name": "Nusrat Jahan",
+    "house": "Former Lok Sabha MP",
+    "constituency": "Basirhat (former)",
+    "state": "West Bengal",
+    "party": "TMC",
+    "text": "Nusrat Jahan Ruhi Jain, TMC leader and actress. Former MP from Basirhat. One of the youngest and most glamorous MPs to enter Parliament."
+  },
+  {
+    "name": "Kangana Ranaut",
+    "house": "Lok Sabha",
+    "constituency": "Mandi",
+    "state": "Himachal Pradesh",
+    "party": "BJP",
+    "text": "Kangana Ranaut, BJP MP from Mandi, Himachal Pradesh. Bollywood actress who entered politics in 2024 and won the Mandi Lok Sabha seat."
+  },
+  {
+    "name": "Pappu Yadav",
+    "house": "Lok Sabha",
+    "constituency": "Purnia",
+    "state": "Bihar",
+    "party": "INC",
+    "text": "Rajesh Ranjan alias Pappu Yadav, Congress MP from Purnia, Bihar. Controversial strongman politician. Won the 2024 election on Congress ticket."
   }
 ]

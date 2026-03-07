@@ -292,19 +292,33 @@ class SettingsActivity : AppCompatActivity() {
                     throw Exception("Could not extract meaningful text from URL. Make sure it's a valid news article.")
                 }
 
-                // 3. Save as JSON format expected by RAGEngine
-                val jsonContent = """
-                    [
-                      {
-                        "source": "Internet Sync",
-                        "title": "Latest News & Updates",
-                        "text": "${cleanText.replace("\"", "\\\"").replace("\n", "  ")}"
-                      }
-                    ]
-                """.trimIndent()
+                // 3. Split text into paragraph-level records for better RAG matching
+                val paragraphs = cleanText.split(Regex("\\n\\n|\\r\\n\\r\\n|(?<=\\.)\\s{2,}"))
+                    .map { it.trim() }
+                    .filter { it.length > 50 }  // Only meaningful paragraphs
                 
+                val timestamp = java.text.SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
+                val newRecords = paragraphs.mapIndexed { index, para ->
+                    mapOf(
+                        "source" to "Internet Sync",
+                        "title" to "Synced News Part ${index + 1}",
+                        "synced_at" to timestamp,
+                        "url" to syncUrlStr,
+                        "text" to para.replace("\"", "'")
+                    )
+                }
+                
+                // Append to existing synced data instead of overwriting
                 val syncFile = java.io.File(filesDir, "synced_news.json")
-                syncFile.writeText(jsonContent)
+                val existingRecords = try {
+                    if (syncFile.exists()) {
+                        val type = object : com.google.gson.reflect.TypeToken<List<Map<String, Any?>>>() {}.type
+                        com.google.gson.Gson().fromJson<List<Map<String, Any?>>>(syncFile.readText(), type) ?: emptyList()
+                    } else emptyList()
+                } catch (_: Exception) { emptyList<Map<String, Any?>>() }
+                
+                val allRecords = existingRecords + newRecords
+                syncFile.writeText(com.google.gson.Gson().toJson(allRecords))
                 
                 // 4. Update stats
                 val ragEngine = RAGEngine(this@SettingsActivity)

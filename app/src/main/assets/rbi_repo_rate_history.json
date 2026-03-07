@@ -1,522 +1,57 @@
 [
   {
-    "id": "REPO_20040415",
-    "type": "RBI_Repo_Rate",
-    "date": "2004-04-15",
-    "rate_pct": 6.0,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2004-04-15: RBI keeps repo rate at 6.00%. Accommodative stance maintained amid growth recovery post-dotcom slowdown. Current rate: 6.0%. Change: No change."
-  },
-  {
-    "id": "REPO_20041026",
-    "type": "RBI_Repo_Rate",
-    "date": "2004-10-26",
-    "rate_pct": 6.0,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2004-10-26: Repo rate held at 6.00%. WPI inflation benign at 5.1%. Current rate: 6.0%. Change: No change."
-  },
-  {
-    "id": "REPO_20050426",
-    "type": "RBI_Repo_Rate",
-    "date": "2005-04-26",
-    "rate_pct": 6.25,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2005-04-26: RBI hikes repo rate by 25 bps to 6.25%. Rising credit growth (30%+) warrants tightening. Current rate: 6.25%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20060124",
-    "type": "RBI_Repo_Rate",
-    "date": "2006-01-24",
-    "rate_pct": 6.5,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2006-01-24: Repo rate raised to 6.50%. Global commodity prices driving WPI pressure. Current rate: 6.5%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20060608",
-    "type": "RBI_Repo_Rate",
-    "date": "2006-06-08",
-    "rate_pct": 6.75,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2006-06-08: Rate hike to 6.75%. Food inflation acceleration and credit growth concerns. Current rate: 6.75%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20060725",
-    "type": "RBI_Repo_Rate",
-    "date": "2006-07-25",
-    "rate_pct": 7.0,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2006-07-25: Repo rate at 7.00%. Emergency mid-cycle hike due to liquidity tightening. Current rate: 7.0%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20061031",
-    "type": "RBI_Repo_Rate",
-    "date": "2006-10-31",
-    "rate_pct": 7.25,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2006-10-31: Rate raised to 7.25%. Sustained tightening cycle continues. Current rate: 7.25%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20070330",
-    "type": "RBI_Repo_Rate",
-    "date": "2007-03-30",
-    "rate_pct": 7.5,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2007-03-30: Repo rate at 7.50%. Inflation above 6%, credit growth still elevated. Current rate: 7.5%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20070731",
-    "type": "RBI_Repo_Rate",
-    "date": "2007-07-31",
-    "rate_pct": 7.75,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2007-07-31: Rate hike to 7.75%. Global liquidity conditions tightening. Current rate: 7.75%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20080611",
-    "type": "RBI_Repo_Rate",
-    "date": "2008-06-11",
-    "rate_pct": 8.0,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2008-06-11: Rate raised to 8.00% as CPI surges above 8%. Current rate: 8.0%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20080729",
-    "type": "RBI_Repo_Rate",
-    "date": "2008-07-29",
-    "rate_pct": 8.5,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2008-07-29: Emergency 50 bps hike to 8.50%. CPI at 12.4%, WPI at 12.5%. Current rate: 8.5%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20081020",
-    "type": "RBI_Repo_Rate",
-    "date": "2008-10-20",
-    "rate_pct": 8.0,
-    "change_bps": -50,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2008-10-20: RBI cuts repo rate by 50 bps to 8.00%. Global financial crisis, Lehman collapse. Current rate: 8.0%. Change: -50 bps cut."
-  },
-  {
-    "id": "REPO_20081103",
-    "type": "RBI_Repo_Rate",
-    "date": "2008-11-03",
-    "rate_pct": 7.5,
-    "change_bps": -50,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2008-11-03: Further cut to 7.50%. Emergency response to global credit freeze. Current rate: 7.5%. Change: -50 bps cut."
-  },
-  {
-    "id": "REPO_20081208",
-    "type": "RBI_Repo_Rate",
-    "date": "2008-12-08",
-    "rate_pct": 6.5,
-    "change_bps": -100,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2008-12-08: 100 bps cut to 6.50%. Synchronized global easing amid recession fears. Current rate: 6.5%. Change: -100 bps cut."
-  },
-  {
-    "id": "REPO_20090102",
-    "type": "RBI_Repo_Rate",
-    "date": "2009-01-02",
-    "rate_pct": 5.5,
-    "change_bps": -100,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2009-01-02: Repo rate slashed to 5.50%. Fiscal stimulus and monetary easing coordinated. Current rate: 5.5%. Change: -100 bps cut."
-  },
-  {
-    "id": "REPO_20090304",
-    "type": "RBI_Repo_Rate",
-    "date": "2009-03-04",
-    "rate_pct": 5.0,
-    "change_bps": -50,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2009-03-04: Further cut to 5.00%. Supporting credit flow and economic recovery. Current rate: 5.0%. Change: -50 bps cut."
-  },
-  {
-    "id": "REPO_20100319",
-    "type": "RBI_Repo_Rate",
-    "date": "2010-03-19",
-    "rate_pct": 5.25,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2010-03-19: First hike in recovery cycle to 5.25%. Growth momentum restored. Current rate: 5.25%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20100420",
-    "type": "RBI_Repo_Rate",
-    "date": "2010-04-20",
-    "rate_pct": 5.5,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2010-04-20: Rate at 5.50%. WPI inflation re-emerging above comfort zone. Current rate: 5.5%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20100727",
-    "type": "RBI_Repo_Rate",
-    "date": "2010-07-27",
-    "rate_pct": 5.75,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2010-07-27: Hike to 5.75%. Food prices driving headline inflation. Current rate: 5.75%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20100916",
-    "type": "RBI_Repo_Rate",
-    "date": "2010-09-16",
-    "rate_pct": 6.0,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2010-09-16: Rate at 6.00%. Sustained tightening to anchor inflation expectations. Current rate: 6.0%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20110503",
-    "type": "RBI_Repo_Rate",
-    "date": "2011-05-03",
-    "rate_pct": 7.25,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2011-05-03: Rate raised to 7.25% (multiple hikes condensed). CPI above 9%. Current rate: 7.25%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20110726",
-    "type": "RBI_Repo_Rate",
-    "date": "2011-07-26",
-    "rate_pct": 8.0,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2011-07-26: Rate at 8.00%. Peak of tightening cycle, WPI at 9.7%. Current rate: 8.0%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20120417",
-    "type": "RBI_Repo_Rate",
-    "date": "2012-04-17",
-    "rate_pct": 8.0,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2012-04-17: Rate held at 8.00%. Growth slowing but inflation sticky. Current rate: 8.0%. Change: No change."
-  },
-  {
-    "id": "REPO_20130319",
-    "type": "RBI_Repo_Rate",
-    "date": "2013-03-19",
-    "rate_pct": 7.75,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2013-03-19: Rate cut to 7.75%. Growth slowdown warrants support. Current rate: 7.75%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20130503",
-    "type": "RBI_Repo_Rate",
-    "date": "2013-05-03",
-    "rate_pct": 7.5,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2013-05-03: Cut to 7.50%. Below 5% GDP growth pressuring RBI. Current rate: 7.5%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20130904",
-    "type": "RBI_Repo_Rate",
-    "date": "2013-09-04",
-    "rate_pct": 7.75,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2013-09-04: Rate hiked back to 7.75%. INR depreciation and external sector stress. Current rate: 7.75%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20140128",
-    "type": "RBI_Repo_Rate",
-    "date": "2014-01-28",
-    "rate_pct": 8.0,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2014-01-28: Rate raised to 8.00%. New governor Raghuram Rajan focuses on inflation targeting. Current rate: 8.0%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20150115",
-    "type": "RBI_Repo_Rate",
-    "date": "2015-01-15",
-    "rate_pct": 7.75,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2015-01-15: Inter-meeting cut to 7.75%. Inflation declining, oil price fall. Current rate: 7.75%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20150304",
-    "type": "RBI_Repo_Rate",
-    "date": "2015-03-04",
-    "rate_pct": 7.5,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2015-03-04: Cut to 7.50%. CPI below 6%, growth support needed. Current rate: 7.5%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20150602",
-    "type": "RBI_Repo_Rate",
-    "date": "2015-06-02",
-    "rate_pct": 7.25,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2015-06-02: Rate at 7.25%. Gradual easing as FMIT framework approaches. Current rate: 7.25%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20150929",
-    "type": "RBI_Repo_Rate",
-    "date": "2015-09-29",
-    "rate_pct": 6.75,
-    "change_bps": -50,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2015-09-29: Larger 50 bps cut to 6.75%. CPI below 4%, space for easing created. Current rate: 6.75%. Change: -50 bps cut."
-  },
-  {
-    "id": "REPO_20160405",
-    "type": "RBI_Repo_Rate",
-    "date": "2016-04-05",
-    "rate_pct": 6.5,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2016-04-05: Cut to 6.50%. MPC framework established. Urjit Patel appointed Governor. Current rate: 6.5%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20170802",
-    "type": "RBI_Repo_Rate",
-    "date": "2017-08-02",
-    "rate_pct": 6.0,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2017-08-02: Rate at 6.00%. Post-demonetization excess liquidity, below-target CPI. Current rate: 6.0%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20180606",
-    "type": "RBI_Repo_Rate",
-    "date": "2018-06-06",
-    "rate_pct": 6.25,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2018-06-06: First hike in 4 years to 6.25%. Oil prices rising, INR under pressure. Current rate: 6.25%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20180801",
-    "type": "RBI_Repo_Rate",
-    "date": "2018-08-01",
-    "rate_pct": 6.5,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2018-08-01: Rate at 6.50%. CPI at 5%, risk of overshooting target. Current rate: 6.5%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20190207",
-    "type": "RBI_Repo_Rate",
-    "date": "2019-02-07",
-    "rate_pct": 6.25,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2019-02-07: Cut to 6.25%. Stance changed to neutral. Shaktikanta Das new Governor. Current rate: 6.25%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20190404",
-    "type": "RBI_Repo_Rate",
-    "date": "2019-04-04",
-    "rate_pct": 6.0,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2019-04-04: Cut to 6.00%. Growth slowdown, CPI below 3%. Current rate: 6.0%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20190606",
-    "type": "RBI_Repo_Rate",
-    "date": "2019-06-06",
-    "rate_pct": 5.75,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2019-06-06: Rate at 5.75%. Below 5% CPI, growth dipping below 6%. Current rate: 5.75%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20190807",
-    "type": "RBI_Repo_Rate",
-    "date": "2019-08-07",
-    "rate_pct": 5.4,
-    "change_bps": -35,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2019-08-07: Unconventional 35 bps cut to 5.40%. RBI supports fiscal stimulus. Current rate: 5.4%. Change: -35 bps cut."
-  },
-  {
-    "id": "REPO_20191004",
-    "type": "RBI_Repo_Rate",
-    "date": "2019-10-04",
-    "rate_pct": 5.15,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2019-10-04: Cut to 5.15%. Slowest growth in 6 years at 4.5% GDP. Current rate: 5.15%. Change: -25 bps cut."
-  },
-  {
-    "id": "REPO_20200327",
-    "type": "RBI_Repo_Rate",
-    "date": "2020-03-27",
-    "rate_pct": 4.4,
-    "change_bps": -75,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2020-03-27: Emergency 75 bps cut to 4.40%. COVID-19 pandemic declared, lockdown. Current rate: 4.4%. Change: -75 bps cut."
-  },
-  {
-    "id": "REPO_20200522",
-    "type": "RBI_Repo_Rate",
-    "date": "2020-05-22",
-    "rate_pct": 4.0,
-    "change_bps": -40,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2020-05-22: Cut to 4.00%. Sustained COVID-19 impact, output contraction. Current rate: 4.0%. Change: -40 bps cut."
-  },
-  {
-    "id": "REPO_20220504",
-    "type": "RBI_Repo_Rate",
-    "date": "2022-05-04",
-    "rate_pct": 4.4,
-    "change_bps": 40,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2022-05-04: Emergency off-cycle hike to 4.40%. Inflation above 7%, Ukraine war impact. Current rate: 4.4%. Change: +40 bps hike."
-  },
-  {
-    "id": "REPO_20220608",
-    "type": "RBI_Repo_Rate",
-    "date": "2022-06-08",
-    "rate_pct": 4.9,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2022-06-08: Rate at 4.90%. Aggressive normalization cycle begins. Current rate: 4.9%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20220805",
-    "type": "RBI_Repo_Rate",
-    "date": "2022-08-05",
-    "rate_pct": 5.4,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2022-08-05: Hike to 5.40%. CPI at 7%+, coordinated global tightening. Current rate: 5.4%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20220930",
-    "type": "RBI_Repo_Rate",
-    "date": "2022-09-30",
-    "rate_pct": 5.9,
-    "change_bps": 50,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2022-09-30: Rate at 5.90%. Supply-side inflation persistent. Current rate: 5.9%. Change: +50 bps hike."
-  },
-  {
-    "id": "REPO_20221207",
-    "type": "RBI_Repo_Rate",
-    "date": "2022-12-07",
-    "rate_pct": 6.25,
-    "change_bps": 35,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2022-12-07: Rate raised to 6.25%. Inflation gradually declining from peak. Current rate: 6.25%. Change: +35 bps hike."
-  },
-  {
-    "id": "REPO_20230208",
-    "type": "RBI_Repo_Rate",
-    "date": "2023-02-08",
-    "rate_pct": 6.5,
-    "change_bps": 25,
-    "direction": "hike",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2023-02-08: Rate at 6.50%. Pause signaled ahead. CPI trending down. Current rate: 6.5%. Change: +25 bps hike."
-  },
-  {
-    "id": "REPO_20230406",
-    "type": "RBI_Repo_Rate",
-    "date": "2023-04-06",
-    "rate_pct": 6.5,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2023-04-06: MPC holds at 6.50%. Withdrawal of accommodation stance maintained. Current rate: 6.5%. Change: No change."
-  },
-  {
-    "id": "REPO_20240208",
-    "type": "RBI_Repo_Rate",
-    "date": "2024-02-08",
-    "rate_pct": 6.5,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2024-02-08: Rate held at 6.50% for 6th consecutive meeting. Inflation durable but growth strong. Current rate: 6.5%. Change: No change."
-  },
-  {
-    "id": "REPO_20241009",
-    "type": "RBI_Repo_Rate",
-    "date": "2024-10-09",
-    "rate_pct": 6.5,
-    "change_bps": 0,
-    "direction": "hold",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2024-10-09: Rate unchanged at 6.50%. Stance changed to neutral from withdrawal of accommodation. Current rate: 6.5%. Change: No change."
-  },
-  {
-    "id": "REPO_20241206",
-    "type": "RBI_Repo_Rate",
     "date": "2024-12-06",
-    "rate_pct": 6.25,
-    "change_bps": -25,
-    "direction": "cut",
-    "source": "Reserve Bank of India MPC Minutes",
-    "text": "RBI Repo Rate Decision \u2013 2024-12-06: First cut since 2020. Rate lowered to 6.25%. Inflation below 5%, growth resilient. Current rate: 6.25%. Change: -25 bps cut."
+    "repo_rate": "6.50%",
+    "text": "RBI kept repo rate unchanged at 6.50% in December 2024 MPC meeting. Governor Shaktikanta Das continued pause on rate changes citing inflation concerns."
+  },
+  {
+    "date": "2024-10-09",
+    "repo_rate": "6.50%",
+    "text": "RBI kept repo rate unchanged at 6.50% in October 2024. Changed stance from 'withdrawal of accommodation' to 'neutral'."
+  },
+  {
+    "date": "2024-02-08",
+    "repo_rate": "6.50%",
+    "text": "RBI maintained repo rate at 6.50% in February 2024. Sixth consecutive pause."
+  },
+  {
+    "date": "2023-04-06",
+    "repo_rate": "6.50%",
+    "text": "RBI raised repo rate by 25 basis points to 6.50% in April 2023. This was the last rate hike in the tightening cycle."
+  },
+  {
+    "date": "2023-02-08",
+    "repo_rate": "6.25%",
+    "text": "RBI raised the repo rate to 6.25% in February 2023, a 25 bps hike from 6.00%."
+  },
+  {
+    "date": "2022-12-07",
+    "repo_rate": "6.25%",
+    "text": "RBI raised repo rate by 35 bps to 6.25% in December 2022."
+  },
+  {
+    "date": "2022-05-04",
+    "repo_rate": "4.40%",
+    "text": "RBI began tightening cycle with surprise 40 bps hike to 4.40% in May 2022, responding to rising inflation after COVID."
+  },
+  {
+    "date": "2020-05-22",
+    "repo_rate": "4.00%",
+    "text": "RBI cut repo rate to historic low of 4.00% during COVID-19 pandemic to support the economy."
+  },
+  {
+    "date": "2019-02-07",
+    "repo_rate": "6.25%",
+    "text": "RBI cut repo rate to 6.25% in February 2019, beginning an easing cycle under Governor Shaktikanta Das."
+  },
+  {
+    "date": "2018-08-01",
+    "repo_rate": "6.50%",
+    "text": "RBI raised repo rate to 6.50% in August 2018 under Governor Urjit Patel, citing inflation concerns."
+  },
+  {
+    "date": "2016-10-04",
+    "repo_rate": "6.25%",
+    "text": "RBI cut repo rate to 6.25% in October 2016 under Governor Urjit Patel."
   }
 ]

@@ -39,6 +39,8 @@ import com.google.mediapipe.tasks.genai.llminference.LlmInference
 import com.google.mediapipe.tasks.genai.llminference.LlmInference.LlmInferenceOptions
 import kotlinx.coroutines.*
 import java.io.*
+import java.net.HttpURLConnection
+import java.net.URL
 import java.util.*
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicInteger
@@ -112,6 +114,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         initializeComponents()
         checkPermissions()
         setupBackPressInterceptor()
+        setupCrashReporter()
+        sendPendingCrashReport()
         
         // FIX: Create session and signal when ready
         lifecycleScope.launch {
@@ -574,6 +578,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_help, R.id.nav_about -> {
                 // Ignore for now
             }
+            R.id.nav_send_feedback -> {
+                sendChatFeedback()
+            }
             else -> {
                 // History item clicked
                 if (item.groupId == R.id.group_history) {
@@ -651,5 +658,110 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onDestroy()
         textToSpeech?.shutdown()
         llmInference?.close()
+    }
+    
+    // ── Send Feedback: Serialize chat → GitHub Issue ──
+    private fun sendChatFeedback() {
+        if (chatList.isEmpty()) {
+            Toast.makeText(this, "No chat to send", Toast.LENGTH_SHORT).show()
+            return
+        }
+        
+        AlertDialog.Builder(this)
+            .setTitle("📤 Send Feedback")
+            .setMessage("This will send the current chat transcript to the developer for improvement. Continue?")
+            .setPositiveButton("Send") { _, _ ->
+                Toast.makeText(this, "Sending feedback...", Toast.LENGTH_SHORT).show()
+                lifecycleScope.launch(Dispatchers.IO) {
+                    try {
+                        val chatTranscript = chatList.joinToString("\n\n") { msg ->
+                            val role = if (msg.isUser) "**User**" else "**PoLiTAI**"
+                            "$role:\n${msg.content}"
+                        }
+                        
+                        val deviceInfo = "Device: ${Build.MANUFACTURER} ${Build.MODEL}\nAndroid: ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\nApp Version: 3.0.0"
+                        val body = "## Chat Feedback\n\n$deviceInfo\n\n---\n\n$chatTranscript"
+                        
+                        val success = createGitHubIssue(
+                            title = "[Feedback] Chat from ${Build.MODEL} - ${java.text.SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(Date())}",
+                            body = body,
+                            labels = listOf("feedback", "user-chat")
+                        )
+                        
+                        withContext(Dispatchers.Main) {
+                            if (success) {
+                                Toast.makeText(this@MainActivity, "✓ Feedback sent to developer!", Toast.LENGTH_LONG).show()
+                            } else {
+                                Toast.makeText(this@MainActivity, "✗ Failed to send. Check internet.", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Failed to send feedback", e)
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(this@MainActivity, "✗ Error: ${e.message}", Toast.LENGTH_LONG).show()
+                        }
+                    }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+    
+    // ── Crash Reporter: Log uncaught exceptions → send on next launch ──
+    private fun setupCrashReporter() {
+        val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
+            try {
+                val crashFile = File(filesDir, "crash_log.txt")
+                val deviceInfo = "Device: ${Build.MANUFACTURER} ${Build.MODEL}\nAndroid: ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\nApp Version: 3.0.0\nTime: ${Date()}\nThread: ${thread.name}"
+                val stackTrace = StringWriter().also { throwable.printStackTrace(PrintWriter(it)) }.toString()
+                crashFile.writeText("$deviceInfo\n\n$stackTrace")
+            } catch (_: Exception) { }
+            defaultHandler?.uncaughtException(thread, throwable)
+        }
+    }
+    
+    private fun sendPendingCrashReport() {
+        val crashFile = File(filesDir, "crash_log.txt")
+        if (!crashFile.exists()) return
+        
+        lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                val crashContent = crashFile.readText()
+                val success = createGitHubIssue(
+                    title = "[Crash] ${Build.MODEL} - ${java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())}",
+                    body = "## Crash Report\n\n```\n$crashContent\n```",
+                    labels = listOf("bug", "crash-report")
+                )
+                if (success) {
+                    crashFile.delete()
+                    Log.d(TAG, "Crash report sent and cleared")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to send crash report", e)
+            }
+        }
+    }
+    
+    // ── GitHub Issues API ──
+    private fun createGitHubIssue(title: String, body: String, labels: List<String>): Boolean {
+        val token = BuildConfig.GITHUB_TOKEN
+        val url = URL("https://api.github.com/repos/RGxco/PoLiTAI/issues")
+        val labelsJson = labels.joinToString(",") { "\"$it\"" }
+        val escapedBody = body.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\t", "\\t")
+        val json = """{"title":"$title","body":"$escapedBody","labels":[$labelsJson]}"""
+        
+        val connection = url.openConnection() as HttpURLConnection
+        connection.requestMethod = "POST"
+        connection.setRequestProperty("Authorization", "Bearer $token")
+        connection.setRequestProperty("Accept", "application/vnd.github+json")
+        connection.setRequestProperty("Content-Type", "application/json")
+        connection.doOutput = true
+        
+        connection.outputStream.use { it.write(json.toByteArray()) }
+        
+        val responseCode = connection.responseCode
+        Log.d(TAG, "GitHub API response: $responseCode")
+        return responseCode == 201
     }
 }

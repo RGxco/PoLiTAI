@@ -1,14 +1,30 @@
 [
   {
-    "category": "Potable Water Access",
-    "details": "Frequent reports of water shortage and contamination in rural areas of Rajasthan and Maharashtra.",
-    "importance": "Crucial for politicians to prioritize Jal Jeevan Mission funds and address immediate public health needs.",
-    "source": "https://pgportal.gov.in (CPGRAMS)"
+    "category": "Road and Infrastructure",
+    "text": "Common public complaints about roads include potholes, lack of street lights, waterlogging, encroachment on footpaths, incomplete road projects, and traffic congestion. Citizens can file complaints through the Centralized Public Grievance Redress and Monitoring System (CPGRAMS) portal or state-level portals."
   },
   {
-    "category": "Road Maintenance",
-    "details": "High volume of complaints regarding potholes and lack of street lighting in suburban areas of Bengaluru and Chennai.",
-    "importance": "Direct impact on voter satisfaction and local economic activity. Politicians can use this to pressure PWD or Municipal Corporations.",
-    "source": "https://pgportal.gov.in (CPGRAMS)"
+    "category": "Water Supply",
+    "text": "Public complaints about water include irregular supply, contaminated water, broken pipelines, no new connections, and high water bills. Jal Jeevan Mission aims to provide tap water to all rural households by 2024. Urban water complaints handled by municipal corporations."
+  },
+  {
+    "category": "Electricity",
+    "text": "Common electricity complaints include frequent power cuts, high bills, transformer failures, new connection delays, and voltage fluctuations. Saubhagya scheme provided free electricity connections to all households. Complaints filed through state DISCOM portals."
+  },
+  {
+    "category": "Healthcare",
+    "text": "Healthcare complaints include long waiting times in government hospitals, lack of medicines, doctor absenteeism, ambulance availability, and denial of treatment under Ayushman Bharat. PM-JAY helpline: 14555."
+  },
+  {
+    "category": "Education",
+    "text": "Education-related complaints include teacher vacancies, poor school infrastructure, mid-day meal quality, admission issues, and scholarship delays. Right to Education Act mandates free education for ages 6-14."
+  },
+  {
+    "category": "Corruption and Bribery",
+    "text": "Anti-corruption complaints can be filed through Vigilance Commission portals, CBI complaint portal, and Lokpal. The Prevention of Corruption Act 1988 covers bribery by public servants. Whistleblower Protection Act 2014 protects complainants."
+  },
+  {
+    "category": "Ration and PDS",
+    "text": "Public Distribution System complaints include non-receipt of rations, quality of food grains, ghost beneficiaries, and Aadhaar linking issues. National Food Security Act provides subsidized food grains to 80 crore beneficiaries. One Nation One Ration Card scheme allows portability."
   }
 ]
