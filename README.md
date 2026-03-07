@@ -18,6 +18,9 @@ PoLiTAI is a professional-grade governance assistant and RAG-powered AI tool des
 
 
 ## ✨ Features
+### 🚀 New in Version 3.2
+- **Feedback Comments & Database Patches**: Added a comment feature in the feedback dialog and made slight database updates.
+
 ###  New in Version 3.1
 - **User Feedback & Bug Reporting**: Send detailed chat transcripts and automatically submit crash reports to the developer directly from the app (via GitHub Issues integration).
 - **Smarter Real-time Sync**: The RAG engine now splits synced web articles into granular, searchable paragraphs and intelligently appends new synced data instead of overwriting.
