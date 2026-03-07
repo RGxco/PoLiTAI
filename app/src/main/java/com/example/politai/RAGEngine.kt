@@ -472,9 +472,12 @@ class RAGEngine(private val context: Context) {
         complexity: QueryComplexity? = null
     ): Pair<String, QueryComplexity> {
         val actualComplexity = complexity ?: detectComplexity(query)
-        val searchInput = (query + " " + conversationContext).lowercase()
-        val keywords = extractKeywords(searchInput)
-        val targetDatabases = QueryRouter.routeQuery(searchInput)
+        
+        // FIX: Route and extract keywords from query ONLY, not conversationContext
+        // Conversation context was polluting routing with irrelevant terms
+        val queryLower = query.lowercase()
+        val keywords = extractKeywords(queryLower)
+        val targetDatabases = QueryRouter.routeQuery(queryLower)
 
         Log.d(TAG, "Complexity: ${actualComplexity.label}")
         Log.d(TAG, "Keywords: $keywords")
@@ -524,15 +527,14 @@ class RAGEngine(private val context: Context) {
             }
         }
 
-        // Sort by score descending, take top N based on complexity
-        val topMatches = allMatches
-            .sortedByDescending { it.second }
-            .take(actualComplexity.maxResults)
+        // Sort by score descending — do NOT cap by maxResults here
+        // Let trimToTokenBudget handle the size limit based on context budget
+        val sortedMatches = allMatches.sortedByDescending { it.second }
 
         // CONFIDENCE GATE: lowered from 4.0 to 1.5
-        val confidentMatches = topMatches.filter { it.second >= CONFIDENCE_THRESHOLD }
+        val confidentMatches = sortedMatches.filter { it.second >= CONFIDENCE_THRESHOLD }
 
-        Log.d(TAG, "Total matches: ${allMatches.size}, top: ${topMatches.size}, confident: ${confidentMatches.size}")
+        Log.d(TAG, "Total matches: ${allMatches.size}, confident: ${confidentMatches.size}")
         if (confidentMatches.isNotEmpty()) {
             Log.d(TAG, "Top score: ${confidentMatches[0].second}, preview: ${confidentMatches[0].first.take(80)}...")
         }
