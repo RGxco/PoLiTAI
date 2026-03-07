@@ -660,17 +660,28 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         llmInference?.close()
     }
     
-    // ── Send Feedback: Serialize chat → GitHub Issue ──
+    // ── Send Feedback: Serialize chat → GitHub Issue with user comment + crash log ──
     private fun sendChatFeedback() {
         if (chatList.isEmpty()) {
             Toast.makeText(this, "No chat to send", Toast.LENGTH_SHORT).show()
             return
         }
         
+        // Build dialog with an EditText for user comments
+        val commentInput = EditText(this).apply {
+            hint = "Describe the issue (optional)"
+            setPadding(48, 24, 48, 24)
+            minLines = 2
+            maxLines = 5
+            inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_FLAG_MULTI_LINE
+        }
+        
         AlertDialog.Builder(this)
             .setTitle("Send Feedback")
-            .setMessage("This will send the current chat transcript to the developer for improvement. Continue?")
+            .setMessage("Send chat transcript to the developer. Add a comment below if you'd like:")
+            .setView(commentInput)
             .setPositiveButton("Send") { _, _ ->
+                val userComment = commentInput.text.toString().trim()
                 Toast.makeText(this, "Sending feedback...", Toast.LENGTH_SHORT).show()
                 lifecycleScope.launch(Dispatchers.IO) {
                     try {
@@ -679,18 +690,35 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                             "$role:\n${msg.content}"
                         }
                         
-                        val deviceInfo = "Device: ${Build.MANUFACTURER} ${Build.MODEL}\nAndroid: ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\nApp Version: 3.0.0"
-                        val body = "## Chat Feedback\n\n$deviceInfo\n\n---\n\n$chatTranscript"
+                        val deviceInfo = "Device: ${Build.MANUFACTURER} ${Build.MODEL}\nAndroid: ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\nApp Version: 3.1.0"
+                        
+                        // Build body with optional comment and optional crash log
+                        val sb = StringBuilder("## Chat Feedback\n\n$deviceInfo\n\n")
+                        
+                        if (userComment.isNotEmpty()) {
+                            sb.append("### User Comment\n> $userComment\n\n")
+                        }
+                        
+                        // Attach crash log if one exists
+                        val crashFile = File(filesDir, "crash_log.txt")
+                        if (crashFile.exists()) {
+                            val crashContent = crashFile.readText().take(3000)
+                            sb.append("### Crash Log\n```\n$crashContent\n```\n\n")
+                        }
+                        
+                        sb.append("---\n\n$chatTranscript")
                         
                         val success = createGitHubIssue(
                             title = "[Feedback] Chat from ${Build.MODEL} - ${java.text.SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(Date())}",
-                            body = body,
+                            body = sb.toString(),
                             labels = listOf("feedback", "user-chat")
                         )
                         
                         withContext(Dispatchers.Main) {
                             if (success) {
                                 Toast.makeText(this@MainActivity, "✓ Feedback sent to developer!", Toast.LENGTH_LONG).show()
+                                // Clear crash log after successful send
+                                if (crashFile.exists()) crashFile.delete()
                             } else {
                                 Toast.makeText(this@MainActivity, "✗ Failed to send. Check internet.", Toast.LENGTH_LONG).show()
                             }
