@@ -36,7 +36,7 @@
             <item
                 android:id="@+id/nav_send_feedback"
                 android:icon="@drawable/ic_send"
-                android:title="📤 Send Feedback" />
+                android:title="Send Feedback" />
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_help"

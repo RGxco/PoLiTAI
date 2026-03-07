@@ -668,7 +668,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         
         AlertDialog.Builder(this)
-            .setTitle("📤 Send Feedback")
+            .setTitle("Send Feedback")
             .setMessage("This will send the current chat transcript to the developer for improvement. Continue?")
             .setPositiveButton("Send") { _, _ ->
                 Toast.makeText(this, "Sending feedback...", Toast.LENGTH_SHORT).show()
