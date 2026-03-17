@@ -17,3 +17,9 @@ local.properties
 # Big model files
 *.bin
 app/src/main/assets/gemma-2b-it-gpu-int4.bin
+app/src/main/assets/gemma_3n_2b.part*
+phi3_raw_weights/
+
+# IDE and local files
+.android/
+.gradle-local/

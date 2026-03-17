@@ -2,12 +2,15 @@ package com.example.politai
 
 import android.Manifest
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -24,7 +27,6 @@ import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -52,10 +54,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         private const val MAX_CONTEXT_LENGTH = 15000 
         private const val MAX_CONVERSATION_HISTORY = 3
         private const val MAX_HISTORY_CHARS = 600
-        private const val MODEL_FILENAME = "gemma-2b-it-gpu-int4.bin"
+        private const val MODEL_FILENAME = "gemma-3n-E2B-it-int4.task"
         private const val REQUEST_AUDIO_PERMISSION = 1001
         private const val MAX_TOKENS = 4096 
-        private const val FALLBACK_RESPONSE = "Information not available in the local governance database."
+        private const val FALLBACK_RESPONSE = "I do not have enough reliable information to answer that confidently."
     }
 
     private var llmInference: LlmInference? = null
@@ -63,7 +65,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var trendAnalyzer: TrendAnalyzer? = null
     private var textToSpeech: TextToSpeech? = null
     private var chatHistoryManager: ChatHistoryManager? = null
-    
+    private lateinit var prefs: SharedPreferences
+
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
     private lateinit var chatAdapter: ChatAdapter
@@ -78,37 +81,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var attachmentName: TextView
     private lateinit var removeAttachment: ImageButton
 
-    // Quality selector buttons
     private lateinit var btnQuick: TextView
     private lateinit var btnNormal: TextView
     private lateinit var btnDeep: TextView
     private lateinit var btnAuto: TextView
-    
+
     private val chatList = mutableListOf<ChatMessage>()
     private val conversationHistory = mutableListOf<Pair<String, String>>()
     private val isGenerating = AtomicBoolean(false)
     private val pendingMessageIndex = AtomicInteger(-1)
     private var currentLanguage = "en-IN"
     private var currentSessionId: Long = -1
-    private var sessionReady = CompletableDeferred<Long>()  // FIX: guarantees session is ready
+    private var sessionReady = CompletableDeferred<Long>()
     private var attachedFile: AttachedFile? = null
-    
-    // Response quality: null = auto-detect
     private var userComplexityOverride: QueryComplexity? = null
-    
-    private val supportedLanguages = mapOf(
-        "en-IN" to Pair("English (India)", Locale("en", "IN")),
-        "hi-IN" to Pair("हिन्दी", Locale("hi", "IN")),
-        "ta-IN" to Pair("தமிழ்", Locale("ta", "IN")),
-        "te-IN" to Pair("తెలుగు", Locale("te", "IN")),
-        "mr-IN" to Pair("मराठी", Locale("mr", "IN"))
-    )
+
+    private val supportedLanguages = AppLanguages.all.associateBy { it.code }
 
     data class AttachedFile(val uri: Uri, val name: String, val type: String, val content: String)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_drawer)
+        prefs = getSharedPreferences("PoLiTAI_Prefs", MODE_PRIVATE)
+        currentLanguage = prefs.getString("tts_language", currentLanguage) ?: currentLanguage
         setupNavigationDrawer()
         initializeUI()
         initializeComponents()
@@ -290,30 +286,79 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         ragEngine = RAGEngine(this)
         ragEngine?.preloadDatabases()
         trendAnalyzer = TrendAnalyzer(this)
+        val configuredLanguage = supportedLanguages[currentLanguage] ?: AppLanguages.fromCode("en-IN")
         textToSpeech = TextToSpeech(this) { status ->
-            if (status == TextToSpeech.SUCCESS) textToSpeech?.language = Locale("en", "IN")
+            if (status == TextToSpeech.SUCCESS) {
+                applySpeechLanguage(configuredLanguage)
+                textToSpeech?.setSpeechRate(0.95f)
+            }
         }
         lifecycleScope.launch(Dispatchers.IO) { loadModel() }
     }
-    
+
+    private fun createInference(modelFile: File): LlmInference {
+        val backends = listOf(
+            LlmInference.Backend.GPU,
+            LlmInference.Backend.DEFAULT,
+            LlmInference.Backend.CPU
+        )
+        var lastError: Exception? = null
+
+        backends.forEach { backend ->
+            try {
+                val options = LlmInferenceOptions.builder()
+                    .setModelPath(modelFile.absolutePath)
+                    .setMaxTokens(MAX_TOKENS)
+                    .setPreferredBackend(backend)
+                    .build()
+                Log.d(TAG, "Attempting inference backend: $backend")
+                return LlmInference.createFromOptions(this, options)
+            } catch (error: Exception) {
+                lastError = error
+                Log.w(TAG, "Failed to initialize backend $backend", error)
+            }
+        }
+
+        throw lastError ?: IllegalStateException("Could not initialize any inference backend.")
+    }
     private suspend fun loadModel() {
         try {
             withContext(Dispatchers.Main) { 
                 statusText.text = "Initializing AI Brain..."
                 statusText.visibility = View.VISIBLE
             }
-            val modelFile = File(filesDir, MODEL_FILENAME)
-            if (!modelFile.exists() || modelFile.length() < 1000000) {
-                withContext(Dispatchers.Main) { statusText.text = "Optimizing AI Assets..." }
-                assets.open(MODEL_FILENAME).use { input ->
-                    FileOutputStream(modelFile).use { output -> input.copyTo(output) }
+            
+            // Use internal filesDir to avoid Android 11+ external storage permission crashes
+            val extDir = filesDir.absolutePath
+            val modelFile = File(extDir, MODEL_FILENAME)
+            val partialModelFile = File(extDir, "$MODEL_FILENAME.partial")
+
+            if (partialModelFile.exists()) {
+                Log.w(TAG, "Removing stale partial model file: ${partialModelFile.absolutePath}")
+                partialModelFile.delete()
+            }
+            
+            if (!modelFile.exists() || modelFile.length() == 0L) {
+                val success = assembleModelChunks(modelFile)
+                if (!success) {
+                    // assembleModelChunks now updates statusText with the specific error, so we don't overwrite it here.
+                    return
                 }
             }
-            val options = LlmInferenceOptions.builder()
-                .setModelPath(modelFile.absolutePath)
-                .setMaxTokens(MAX_TOKENS)
-                .build()
-            llmInference = LlmInference.createFromOptions(this, options)
+
+            try {
+                llmInference = createInference(modelFile)
+            } catch (firstLoadError: Exception) {
+                Log.w(TAG, "Model load failed. Rebuilding from chunks once before giving up.", firstLoadError)
+                if (modelFile.exists()) {
+                    modelFile.delete()
+                }
+                val success = assembleModelChunks(modelFile)
+                if (!success) {
+                    return
+                }
+                llmInference = createInference(modelFile)
+            }
             withContext(Dispatchers.Main) {
                 statusText.text = "PoLiTAI Ready"
                 statusText.postDelayed({ statusText.visibility = View.GONE }, 3000)
@@ -324,20 +369,95 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
     
+    private suspend fun assembleModelChunks(destinationFile: File): Boolean = withContext(Dispatchers.IO) {
+        try {
+            val am = assets
+            val chunkPrefix = "gemma_3n_2b.part"
+            val partialFile = File(destinationFile.parentFile, "${destinationFile.name}.partial")
+            
+            val chunkFiles = (am.list("") ?: emptyArray())
+                .mapNotNull { assetName ->
+                    if (!assetName.startsWith(chunkPrefix)) return@mapNotNull null
+                    val chunkIndex = assetName.removePrefix(chunkPrefix).toIntOrNull() ?: return@mapNotNull null
+                    chunkIndex to assetName
+                }
+                .sortedBy { it.first }
+            
+            if (chunkFiles.isEmpty()) {
+                Log.e(TAG, "No model chunks found in assets!")
+                withContext(Dispatchers.Main) { statusText.text = "Error: Found 0 chunks." }
+                return@withContext false
+            }
+
+            val expectedChunks = (1..chunkFiles.size).toList()
+            val discoveredChunks = chunkFiles.map { it.first }
+            if (discoveredChunks != expectedChunks) {
+                val missingChunks = expectedChunks.filter { it !in discoveredChunks }
+                Log.e(TAG, "Chunk sequence is incomplete: $discoveredChunks")
+                withContext(Dispatchers.Main) {
+                    statusText.text = "Unpack Error: Missing chunk(s) ${missingChunks.joinToString(",")}"
+                }
+                return@withContext false
+            }
+            
+            Log.d(TAG, "Found ${chunkFiles.size} chunks to assemble: ${chunkFiles.map { it.second }}")
+            withContext(Dispatchers.Main) { statusText.text = "Unpacking: 0/${chunkFiles.size}" }
+            
+            // Delete any partial corrupted file
+            if (partialFile.exists()) partialFile.delete()
+            if (destinationFile.exists()) destinationFile.delete()
+            
+            var chunksProcessed = 0
+            FileOutputStream(partialFile).use { fos ->
+                val buffer = ByteArray(2 * 1024 * 1024) // 2MB buffer for faster copy
+                for ((_, chunkName) in chunkFiles) {
+                    Log.d(TAG, "Unpacking chunk: $chunkName")
+                    am.open(chunkName).use { input ->
+                        var bytesRead: Int
+                        while (input.read(buffer).also { bytesRead = it } != -1) {
+                            fos.write(buffer, 0, bytesRead)
+                        }
+                    }
+                    chunksProcessed++
+                    withContext(Dispatchers.Main) { 
+                        statusText.text = "Unpacking: $chunksProcessed/${chunkFiles.size}" 
+                    }
+                }
+            }
+
+            if (destinationFile.exists()) {
+                destinationFile.delete()
+            }
+            if (!partialFile.renameTo(destinationFile)) {
+                throw IOException("Could not finalize assembled model file.")
+            }
+
+            Log.d(TAG, "Model assembly complete! Saved to ${destinationFile.absolutePath}")
+            withContext(Dispatchers.Main) { statusText.text = "Unpacking Complete!" }
+            return@withContext true
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to assemble model chunks", e)
+            val errorMsg = e.message?.take(50) ?: "Unknown Error"
+            withContext(Dispatchers.Main) { statusText.text = "Unpack Error: $errorMsg" }
+            if (destinationFile.exists()) destinationFile.delete()
+            val partialFile = File(destinationFile.parentFile, "${destinationFile.name}.partial")
+            if (partialFile.exists()) partialFile.delete()
+            return@withContext false
+        }
+    }
+    
     private fun sendMessage(query: String, isVoiceInput: Boolean = false) {
         if (isGenerating.get()) return
 
-        // 1. QUICK GREETING INTERCEPT
-        val lowerQuery = query.lowercase(Locale.ROOT).trim()
+        val trimmedQuery = query.trim()
+        val targetLanguage = resolveResponseLanguage(trimmedQuery)
+        val lowerQuery = trimmedQuery.lowercase(Locale.ROOT)
+
         if (lowerQuery == "hi" || lowerQuery == "hello" || lowerQuery == "namaste" || lowerQuery == "namaskar") {
-            addUserMessage(query)
+            addUserMessage(trimmedQuery)
             addAIPlaceholder()
-            val greeting = if (currentLanguage == "hi-IN") {
-                "नमस्ते, मैं आपकी कैसे सहायता कर सकती हूँ?"
-            } else {
-                "PoLiTAI system online. Awaiting governance query."
-            }
-            updateAIMessage(greeting)
+            updateAIMessage(targetLanguage.greeting)
+            if (isVoiceInput) speakResponse(targetLanguage.greeting)
             return
         }
 
@@ -346,122 +466,111 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             return
         }
 
-        addUserMessage(query)
-        
-        val fullQuery = buildString {
-            if (attachedFile != null) {
-                append("[DOC: ${attachedFile?.name}]\n")
-                append("Content: ${attachedFile?.content?.take(2000)}\n")
-                if (query.isNotEmpty()) append("Query: $query")
-            } else append(query)
+        val attachmentSnapshot = attachedFile
+        val displayQuery = when {
+            trimmedQuery.isNotBlank() -> trimmedQuery
+            attachmentSnapshot != null -> "Please summarize this ${attachmentSnapshot.type} document."
+            else -> trimmedQuery
         }
-        
+        if (displayQuery.isBlank()) return
+
+        addUserMessage(displayQuery)
+
+        val fullQuery = buildString {
+            if (attachmentSnapshot != null) {
+                append("[ATTACHED DOCUMENT: ${attachmentSnapshot.name} | type=${attachmentSnapshot.type}]\n")
+                append("Document content:\n${attachmentSnapshot.content.take(4000)}\n")
+                if (trimmedQuery.isNotBlank()) {
+                    append("\nUser question: $trimmedQuery")
+                } else {
+                    append("\nInstruction: Summarize the document clearly.")
+                }
+            } else {
+                append(displayQuery)
+            }
+        }
+
+        val retrievalQuery = when {
+            trimmedQuery.isNotBlank() -> trimmedQuery
+            attachmentSnapshot != null -> "${attachmentSnapshot.name} ${attachmentSnapshot.type}"
+            else -> fullQuery.take(200)
+        }
+
         messageInput.text.clear()
         attachedFile = null
         attachmentPreview.visibility = View.GONE
         hideKeyboard()
-        
+
         isGenerating.set(true)
         loadingSpinner.visibility = View.VISIBLE
-        
         addAIPlaceholder()
-        
+
         lifecycleScope.launch(Dispatchers.IO) {
             try {
-                // FIX: Wait for session to be ready before saving
                 val safeSessionId = sessionReady.await()
-
                 val convContext = conversationHistory.takeLast(MAX_CONVERSATION_HISTORY)
                     .joinToString("\n") { (u, a) -> "U: $u\nA: $a" }
                     .takeLast(MAX_HISTORY_CHARS)
 
-                // RAG retrieval with complexity support
                 val (ragContext, detectedComplexity) = ragEngine?.loadRAGContext(
-                    fullQuery, convContext, userComplexityOverride
+                    retrievalQuery, convContext, userComplexityOverride
                 ) ?: ("" to QueryComplexity.MEDIUM)
 
                 Log.d(TAG, "RAG context length: ${ragContext.length}, complexity: ${detectedComplexity.label}")
                 Log.d(TAG, "RAG context preview: ${ragContext.take(200)}")
 
-                val langInstr = if (currentLanguage != "en-IN") "\n\n(Respond in ${supportedLanguages[currentLanguage]?.first})" else ""
-                
                 val prompt = SystemPrompts.buildCompletePrompt(
-                    userQuery = fullQuery + langInstr,
+                    userQuery = fullQuery,
                     ragContext = ragContext,
                     conversationContext = convContext,
                     isFollowUp = conversationHistory.isNotEmpty(),
-                    complexity = detectedComplexity
+                    complexity = detectedComplexity,
+                    targetLanguage = targetLanguage,
+                    hasAttachment = attachmentSnapshot != null
                 )
-                
-                var response = llmInference?.generateResponse(prompt) ?: FALLBACK_RESPONSE
-                
-                // CLEANUP: Remove any hallucinated prompt leakage
+
+                var response = llmInference?.generateResponse(prompt)
+                    ?.let(::cleanModelResponse)
+                    .orEmpty()
+
                 response = response
-                    .substringBefore("[USER QUERY]")
-                    .substringBefore("User:")
-                    .substringBefore("[GOVERNANCE RECORDS]")
-                    .substringBefore("ANSWER:")
+                    .replace(Regex("(?i)I (do not|don't) have access to real-time information[.,]?\\s*"), "")
+                    .replace(Regex("(?i)I do not have live internet access[.,]?\\s*"), "")
+                    .replace(Regex("(?i)information is not available in the local governance database[.]?\\s*"), "")
                     .trim()
 
-                // POST-VALIDATION: ONLY trust the LLM if RAG actually returned data.
-                // If RAG context is empty, the LLM has ZERO factual knowledge about this local offline question, 
-                // so anything it said is a hallucination (even if it's well-formatted Hindi).
-                if (ragContext.isBlank()) {
-                    response = FALLBACK_RESPONSE
-                }
-
-                // Remove "no real-time access" hallucination if model still produces it
-                if (response.contains("real-time", ignoreCase = true) ||
-                    response.contains("do not have access", ignoreCase = true) ||
-                    response.contains("don't have access", ignoreCase = true)) {
-                    if (ragContext.isNotBlank()) {
-                        // We DO have data — re-generate focusing on the data
-                        // Just strip the refusal prefix and use whatever follows
-                        val cleaned = response
-                            .replace(Regex("(?i)I (do not|don't) have access to real-time information[.,]?\\s*"), "")
-                            .replace(Regex("(?i)therefore[,]?\\s*"), "")
-                            .replace(Regex("(?i)I cannot provide[^.]*\\.\\s*"), "")
-                            .trim()
-                        response = if (cleaned.length > 20) cleaned else FALLBACK_RESPONSE
-                    } else {
-                        response = FALLBACK_RESPONSE
-                    }
-                }
-
-                // Remove conversational filler at the end of responses
-                response = response
-                    .replace(Regex("(?i)Please provide (additional|more) context.*"), "")
-                    .replace(Regex("(?i)Let me know if you need .*"), "")
-                    .replace(Regex("(?i)Is there anything else .*"), "")
-                    .replace(Regex("(?i)(If|Please let me know if) you have any (further|more) questions.*"), "")
-                    .trim()
-
-                // Ensure response isn't empty
+                response = translateResponseIfNeeded(response, targetLanguage)
                 if (response.isBlank()) response = FALLBACK_RESPONSE
+
+                val storedUserMessage = buildString {
+                    if (attachmentSnapshot != null) append("[DOC: ${attachmentSnapshot.name}] ")
+                    append(displayQuery)
+                }.trim()
 
                 withContext(Dispatchers.Main) {
                     updateAIMessage(response)
-                    conversationHistory.add(fullQuery to response)
-                    
-                    // Save messages with guaranteed valid session
+                    conversationHistory.add(storedUserMessage to response)
+
                     try {
                         chatHistoryManager?.saveMessage(
                             safeSessionId,
-                            ChatMessage(fullQuery, true, System.currentTimeMillis())
+                            ChatMessage(storedUserMessage, true, System.currentTimeMillis())
                         )
                         chatHistoryManager?.saveMessage(
                             safeSessionId,
                             ChatMessage(response, false, System.currentTimeMillis())
                         )
-                    } catch (e: Exception) {
-                        Log.e(TAG, "Failed to save chat message", e)
+                    } catch (error: Exception) {
+                        Log.e(TAG, "Failed to save chat message", error)
                     }
-                    
+
                     if (isVoiceInput) speakResponse(response)
                 }
-            } catch (e: Exception) {
-                Log.e(TAG, "Generation error", e)
-                withContext(Dispatchers.Main) { updateAIMessage("❌ Generation Error: ${e.message}") }
+            } catch (error: Exception) {
+                Log.e(TAG, "Generation error", error)
+                withContext(Dispatchers.Main) {
+                    updateAIMessage("Generation error: ${error.message}")
+                }
             } finally {
                 withContext(Dispatchers.Main) {
                     loadingSpinner.visibility = View.GONE
@@ -471,21 +580,74 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    private fun resolveResponseLanguage(query: String): AppLanguage {
+        val fallbackCode = prefs.getString("tts_language", currentLanguage) ?: currentLanguage
+        val resolvedLanguage = if (query.isBlank()) {
+            AppLanguages.fromCode(fallbackCode)
+        } else {
+            AppLanguages.detect(query, fallbackCode)
+        }
+
+        currentLanguage = resolvedLanguage.code
+        prefs.edit().putString("tts_language", currentLanguage).apply()
+        applySpeechLanguage(resolvedLanguage)
+        return resolvedLanguage
+    }
+
+    private fun applySpeechLanguage(language: AppLanguage) {
+        val tts = textToSpeech ?: return
+        val candidateLocales = listOf(language.locale, Locale(language.locale.language), Locale(language.locale.language, "IN"))
+        candidateLocales.firstOrNull { locale ->
+            tts.isLanguageAvailable(locale) >= TextToSpeech.LANG_AVAILABLE
+        }?.let { locale ->
+            tts.language = locale
+        }
+    }
+
+    private fun cleanModelResponse(response: String): String {
+        return response
+            .substringBefore("[USER QUERY]")
+            .substringBefore("[RETRIEVED CONTEXT]")
+            .substringBefore("User:")
+            .substringBefore("ANSWER:")
+            .substringBefore("TRANSLATION:")
+            .replace(Regex("(?i)^answer:\\s*"), "")
+            .replace(Regex("(?i)^translation:\\s*"), "")
+            .replace(Regex("(?i)Please provide (additional|more) context.*"), "")
+            .replace(Regex("(?i)Let me know if you need .*"), "")
+            .replace(Regex("(?i)Is there anything else .*"), "")
+            .replace(Regex("(?i)(If|Please let me know if) you have any (further|more) questions.*"), "")
+            .trim()
+    }
+
+    private fun translateResponseIfNeeded(response: String, targetLanguage: AppLanguage): String {
+        if (!AppLanguages.needsTranslation(response, targetLanguage)) return response
+
+        return runCatching {
+            llmInference?.generateResponse(SystemPrompts.buildTranslationPrompt(response, targetLanguage))
+                ?.let(::cleanModelResponse)
+                .orEmpty()
+        }.getOrElse { error ->
+            Log.w(TAG, "Translation fallback failed", error)
+            response
+        }.ifBlank { response }
+    }
+
     private fun addUserMessage(content: String) {
-        val displayMsg = if (attachedFile != null) "📎 ${attachedFile?.name}\n$content" else content
+        val displayMsg = if (attachedFile != null) "[Attachment] ${attachedFile?.name}\n$content" else content
         chatList.add(ChatMessage(displayMsg, true, System.currentTimeMillis()))
         chatAdapter.notifyItemInserted(chatList.size - 1)
         scrollToBottom()
     }
 
     private fun addAIPlaceholder() {
-        val aiPlaceholder = ChatMessage("🖋️ Analyzing...", false, System.currentTimeMillis())
+        val aiPlaceholder = ChatMessage("Analyzing...", false, System.currentTimeMillis())
         chatList.add(aiPlaceholder)
         pendingMessageIndex.set(chatList.size - 1)
         chatAdapter.notifyItemInserted(chatList.size - 1)
         scrollToBottom()
     }
-    
+
     private fun updateAIMessage(content: String) {
         val index = pendingMessageIndex.get()
         if (index >= 0 && index < chatList.size) {
@@ -494,32 +656,62 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             scrollToBottom()
         }
     }
-    
+
     private fun openFilePicker() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "*/*"
-            putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("application/pdf", "text/plain"))
+            putExtra(
+                Intent.EXTRA_MIME_TYPES,
+                arrayOf(
+                    "application/pdf",
+                    "application/msword",
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "text/plain",
+                    "text/html",
+                    "application/json",
+                    "text/csv",
+                    "text/markdown",
+                    "application/xml",
+                    "text/xml"
+                )
+            )
         }
         filePickerLauncher.launch(intent)
     }
-    
+
     private val filePickerLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             result.data?.data?.let { uri ->
+                val persistFlags = (result.data?.flags ?: 0) and Intent.FLAG_GRANT_READ_URI_PERMISSION
+                if (persistFlags != 0) {
+                    runCatching { contentResolver.takePersistableUriPermission(uri, persistFlags) }
+                }
+
                 lifecycleScope.launch(Dispatchers.IO) {
                     val name = getFileName(uri)
-                    val content = contentResolver.openInputStream(uri)?.use { it.bufferedReader().readText().take(3000) } ?: ""
+                    val mimeType = getFileMimeType(uri)
+                    val parsed = runCatching {
+                        DocumentProcessor.parse(this@MainActivity, uri, name, mimeType)
+                    }.getOrElse { error ->
+                        Log.e(TAG, "Failed to parse attachment", error)
+                        null
+                    }
+
                     withContext(Dispatchers.Main) {
-                        attachedFile = AttachedFile(uri, name, "pdf", content)
-                        attachmentName.text = name
-                        attachmentPreview.visibility = View.VISIBLE
+                        if (parsed == null || parsed.content.isBlank()) {
+                            Toast.makeText(this@MainActivity, "Could not extract readable text from this file.", Toast.LENGTH_SHORT).show()
+                        } else {
+                            attachedFile = AttachedFile(uri, name, parsed.type, parsed.content)
+                            attachmentName.text = "$name (${parsed.type.uppercase(Locale.ROOT)})"
+                            attachmentPreview.visibility = View.VISIBLE
+                        }
                     }
                 }
             }
         }
     }
-    
+
     private fun getFileName(uri: Uri): String {
         var result = "Document"
         contentResolver.query(uri, null, null, null, null)?.use { cursor ->
@@ -530,34 +722,59 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         return result
     }
-    
+
+    private fun getFileMimeType(uri: Uri): String? = contentResolver.getType(uri)
+
     private fun showLanguageSelector() {
-        val names = supportedLanguages.values.map { it.first }.toTypedArray()
-        AlertDialog.Builder(this).setTitle("Select Language").setItems(names) { _, i ->
-            currentLanguage = supportedLanguages.keys.elementAt(i)
-            supportedLanguages[currentLanguage]?.second?.let { textToSpeech?.language = it }
-            startVoiceInput()
-        }.show()
+        val languages = AppLanguages.all
+        val names = languages.map { it.displayName }.toTypedArray()
+        AlertDialog.Builder(this)
+            .setTitle("Select Language")
+            .setItems(names) { _, index ->
+                val selectedLanguage = languages[index]
+                currentLanguage = selectedLanguage.code
+                prefs.edit().putString("tts_language", currentLanguage).apply()
+                applySpeechLanguage(selectedLanguage)
+                startVoiceInput()
+            }
+            .show()
     }
-    
+
     private fun startVoiceInput() {
+        val selectedLanguage = supportedLanguages[currentLanguage] ?: AppLanguages.fromCode(currentLanguage)
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            putExtra(RecognizerIntent.EXTRA_LANGUAGE, currentLanguage)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, selectedLanguage.code)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, selectedLanguage.code)
+            putExtra(RecognizerIntent.EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE, selectedLanguage.code)
         }
-        speechResultLauncher.launch(intent)
+
+        try {
+            speechResultLauncher.launch(intent)
+        } catch (error: ActivityNotFoundException) {
+            Toast.makeText(this, "Speech recognition is not available on this device.", Toast.LENGTH_SHORT).show()
+        }
     }
-    
+
     private val speechResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val matches = result.data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
-            if (!matches.isNullOrEmpty()) sendMessage(matches[0], true)
+            if (!matches.isNullOrEmpty()) {
+                val detectedLanguage = AppLanguages.detect(matches[0], currentLanguage)
+                currentLanguage = detectedLanguage.code
+                prefs.edit().putString("tts_language", currentLanguage).apply()
+                applySpeechLanguage(detectedLanguage)
+                sendMessage(matches[0], true)
+            }
         }
     }
-    
+
     private fun speakResponse(text: String) {
-        val clean = text.replace(Regex("[*_#`📝📊💰🎙️❌→✓✅🔴🟠🟡🟢⚡🤖🖋️]"), "").take(500)
-        textToSpeech?.speak(clean, TextToSpeech.QUEUE_FLUSH, null, null)
+        if (!prefs.getBoolean("tts_enabled", true)) return
+        val clean = text.replace(Regex("[*_#`]+"), "").take(700).trim()
+        if (clean.isNotBlank()) {
+            textToSpeech?.speak(clean, TextToSpeech.QUEUE_FLUSH, null, "politai-response")
+        }
     }
     
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -660,7 +877,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         llmInference?.close()
     }
     
-    // ── Send Feedback: Serialize chat → GitHub Issue with user comment + crash log ──
+    // Ã¢â€â‚¬Ã¢â€â‚¬ Send Feedback: Serialize chat Ã¢â€ â€™ GitHub Issue with user comment + crash log Ã¢â€â‚¬Ã¢â€â‚¬
     private fun sendChatFeedback() {
         if (chatList.isEmpty()) {
             Toast.makeText(this, "No chat to send", Toast.LENGTH_SHORT).show()
@@ -716,17 +933,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         
                         withContext(Dispatchers.Main) {
                             if (success) {
-                                Toast.makeText(this@MainActivity, "✓ Feedback sent to developer!", Toast.LENGTH_LONG).show()
+                                Toast.makeText(this@MainActivity, "Ã¢Å“â€œ Feedback sent to developer!", Toast.LENGTH_LONG).show()
                                 // Clear crash log after successful send
                                 if (crashFile.exists()) crashFile.delete()
                             } else {
-                                Toast.makeText(this@MainActivity, "✗ Failed to send. Check internet.", Toast.LENGTH_LONG).show()
+                                Toast.makeText(this@MainActivity, "Ã¢Å“â€” Failed to send. Check internet.", Toast.LENGTH_LONG).show()
                             }
                         }
                     } catch (e: Exception) {
                         Log.e(TAG, "Failed to send feedback", e)
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@MainActivity, "✗ Error: ${e.message}", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this@MainActivity, "Ã¢Å“â€” Error: ${e.message}", Toast.LENGTH_LONG).show()
                         }
                     }
                 }
@@ -735,7 +952,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             .show()
     }
     
-    // ── Crash Reporter: Log uncaught exceptions → send on next launch ──
+    // Ã¢â€â‚¬Ã¢â€â‚¬ Crash Reporter: Log uncaught exceptions Ã¢â€ â€™ send on next launch Ã¢â€â‚¬Ã¢â€â‚¬
     private fun setupCrashReporter() {
         val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
         Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
@@ -771,7 +988,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
     
-    // ── GitHub Issues API ──
+    // Ã¢â€â‚¬Ã¢â€â‚¬ GitHub Issues API Ã¢â€â‚¬Ã¢â€â‚¬
     private fun createGitHubIssue(title: String, body: String, labels: List<String>): Boolean {
         val token = BuildConfig.GITHUB_TOKEN
         val url = URL("https://api.github.com/repos/RGxco/PoLiTAI/issues")
@@ -793,3 +1010,4 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return responseCode == 201
     }
 }
+

@@ -10,30 +10,30 @@ import java.io.InputStreamReader
 import java.util.concurrent.ConcurrentHashMap
 
 /**
- * PoLiTAI — Production RAG Engine v2
+ * PoLiTAI ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Production RAG Engine v2
  *
  * Key changes from v1:
- * - Lowered confidence threshold from 4.0 → 1.5 (fixes "no data" bug)
+ * - Lowered confidence threshold from 4.0 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 1.5 (fixes "no data" bug)
  * - Query complexity detection: SHORT / MEDIUM / LONG
  * - Adaptive context sizing based on complexity
  * - Improved fallback behavior
  */
 
-// ── Query Complexity ──
+// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Query Complexity ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
 enum class QueryComplexity(
     val maxResults: Int,
     val maxContextChars: Int,
     val maxResponseWords: Int,
     val label: String
 ) {
-    SHORT(3, 1200, 60, "⚡ Quick"),
-    MEDIUM(5, 2400, 150, "📝 Normal"),
-    LONG(12, 6000, 300, "📊 Deep")
+    SHORT(3, 1200, 60, "ÃƒÂ¢Ã…Â¡Ã‚Â¡ Quick"),
+    MEDIUM(5, 2400, 150, "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â Normal"),
+    LONG(12, 6000, 300, "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  Deep")
 }
 
-// ──────────────────────────────────────────────
-// Query Router — selects relevant databases
-// ──────────────────────────────────────────────
+// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// Query Router ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â selects relevant databases
+// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
 
 object QueryRouter {
 
@@ -91,7 +91,7 @@ object QueryRouter {
         // Economy
         "gdp" to listOf("india_gdp_quarterly.json", "sector_growth_statistics.json"),
         "growth" to listOf("india_gdp_quarterly.json", "sector_growth_statistics.json"),
-        "inflation" to listOf("india_cpi_monthly.json", "inflation_history.json"),
+        "inflation" to listOf("india_cpi_monthly.json", "inflation_history.json", "rbi_repo_rate_history.json"),
         "cpi" to listOf("india_cpi_monthly.json"),
         "repo" to listOf("rbi_repo_rate_history.json"),
         "rbi" to listOf("rbi_repo_rate_history.json"),
@@ -146,7 +146,8 @@ object QueryRouter {
         "healthcare" to listOf("healthcare_schemes.json"),
         "health" to listOf("healthcare_schemes.json", "nutrition_programs.json"),
         "education" to listOf("education_programs.json"),
-        "nep" to listOf("education_programs.json", "policy_documents.json"),
+        "nep" to listOf("education_programs.json", "policy_documents.json", "india_government_schemes.json"),
+        "new education policy" to listOf("india_government_schemes.json", "education_programs.json", "policy_documents.json"),
         "nutrition" to listOf("nutrition_programs.json"),
         "subsidy" to listOf("fertilizer_subsidy_programs.json", "india_government_schemes.json"),
         "benefit" to listOf("india_government_schemes.json", "public_welfare_programs.json"),
@@ -164,8 +165,10 @@ object QueryRouter {
         "complaint" to listOf("constituency_complaints.json", "citizen_grievances.json", "public_complaints.json"),
         "grievance" to listOf("citizen_grievances.json", "public_complaints.json"),
         "issue" to listOf("constituency_complaints.json", "issue_trends.json"),
-        "population" to listOf("district_demographics.json"),
-        "literacy" to listOf("district_demographics.json", "district_development_indicators.json"),
+        "population" to listOf("district_demographics.json", "district_development_indicators.json"),
+        "demographics" to listOf("district_demographics.json", "district_development_indicators.json"),
+        "census" to listOf("district_demographics.json", "district_development_indicators.json"),
+        "literacy" to listOf("district_development_indicators.json", "district_demographics.json"),
         "varanasi" to listOf("constituency_history.json", "district_development_indicators.json", "district_budget_projects.json"),
         "lucknow" to listOf("constituency_history.json", "district_development_indicators.json", "district_budget_projects.json"),
         "amethi" to listOf("constituency_history.json"),
@@ -244,8 +247,14 @@ object QueryRouter {
         "gram sabha" to listOf("panchayat_raj.json"),
         "municipal" to listOf("panchayat_raj.json"),
         "nrega" to listOf("panchayat_raj.json"),
-        "mgnrega" to listOf("panchayat_raj.json"),
         "local governance" to listOf("panchayat_raj.json"),
+
+        // States
+        "state" to listOf("state_budget_data.json", "assembly_election_results.json", "district_demographics.json"),
+        "uttar pradesh" to listOf("state_budget_data.json", "assembly_election_results.json", "lok_sabha_election_results.json"),
+        "maharashtra" to listOf("state_budget_data.json", "assembly_election_results.json", "lok_sabha_election_results.json"),
+        "west bengal" to listOf("state_budget_data.json", "assembly_election_results.json", "lok_sabha_election_results.json"),
+        "assembly" to listOf("assembly_election_results.json", "state_budget_data.json"),
 
         // Environment
         "climate" to listOf("environmental_policies.json"),
@@ -275,20 +284,27 @@ object QueryRouter {
 
     // FALLBACK: if no route matches, search these core databases
     private val FALLBACK_DATABASES = listOf(
-        "synced_news.json", // Load synced news first
         "heads_of_state.json",
         "politician_database.json",
+        "leaders.json",
         "party_profiles.json",
-        "india_government_schemes.json",
-        "constitutional_articles.json",
-        "budget_allocations.json",
-        "governance_meetings.json",
+        "parties.json",
+        "political_parties.json",
+        "political_entities.json",
+        "parliament_members.json",
+        "mps_mlas_constituencies.json",
         "constituency_history.json",
         "cabinet_ministers.json",
         "chief_ministers.json",
         "prime_ministers_history.json",
-        "parliament_members.json",
-        "mps_mlas_constituencies.json"
+        "lok_sabha_election_results.json",
+        "assembly_election_results.json",
+        "india_government_schemes.json",
+        "constitutional_articles.json",
+        "budget_allocations.json",
+        "governance_meetings.json",
+        "foreign_policy.json",
+        "defense_overview.json"
     )
 
     fun routeQuery(query: String): List<String> {
@@ -310,21 +326,21 @@ object QueryRouter {
     }
 }
 
-// ──────────────────────────────────────────────
-// RAGEngine — Production retrieval engine v2
-// ──────────────────────────────────────────────
+// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// RAGEngine ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Production retrieval engine v2
+// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
 
 class RAGEngine(private val context: Context) {
 
     companion object {
         private const val TAG = "PoLiTAI-RAG"
-        private const val CONFIDENCE_THRESHOLD = 1.5  // LOWERED from 4.0 — fixes "no data" bug
+        private const val CONFIDENCE_THRESHOLD = 1.5  // LOWERED from 4.0 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fixes "no data" bug
     }
 
     private val gson = Gson()
     private val cache = ConcurrentHashMap<String, List<Map<String, Any?>>>()
 
-    // ── Field weights: higher = more important for matching ──
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Field weights: higher = more important for matching ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     private val FIELD_WEIGHTS = mapOf(
         "text" to 3.0,
         "role" to 2.5,
@@ -353,14 +369,17 @@ class RAGEngine(private val context: Context) {
         "event" to 2.0,
         "amendment" to 2.0,
         "policy" to 2.0,
+        "language" to 0.5,
+        "host" to 1.0,
         "status" to 1.0,
         "year" to 0.5,
         "id" to 0.0,
         "type" to 0.0,
-        "source" to 0.0
+        "url" to 0.0,
+        "source" to 1.0
     )
 
-    // ── Stopwords to filter out of queries ──
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Stopwords to filter out of queries ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     private val STOPWORDS = setOf(
         "what", "who", "how", "when", "where", "which", "why",
         "the", "is", "are", "was", "were", "will", "would", "could", "should",
@@ -372,7 +391,7 @@ class RAGEngine(private val context: Context) {
         "current", "latest", "today", "now", "present"
     )
 
-    // ── Synonyms for keyword expansion (including Hindi mapping) ──
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Synonyms for keyword expansion (including Hindi mapping) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     private val SYNONYMS = mapOf(
         // English mappings
         "pm" to listOf("prime minister", "modi"),
@@ -393,39 +412,39 @@ class RAGEngine(private val context: Context) {
         "obc" to listOf("other backward classes"),
         
         // English -> Hindi concept mapping (transliterated and Devnagari)
-        "president" to listOf("राष्ट्रपति", "rashtrapati", "प्रेसिडेंट", "heads of state"),
-        "prime minister" to listOf("प्रधानमंत्री", "pradhan mantri", "pm", "modi"),
-        "chief minister" to listOf("मुख्यमंत्री", "mukhyamantri", "cm"),
-        "governor" to listOf("राज्यपाल", "rajyapal"),
-        "minister" to listOf("मंत्री", "mantri"),
-        "member of parliament" to listOf("सांसद", "sansad", "mp"),
-        "member of legislative assembly" to listOf("विधायक", "vidhayak", "mla"),
-        "government" to listOf("सरकार", "sarkar"),
-        "election" to listOf("चुनाव", "chunav", "इलेक्शन"),
-        "vote" to listOf("वोट", "मतदान", "matdan"),
-        "scheme" to listOf("योजना", "yojana"),
-        "law" to listOf("कानून", "kanoon"),
-        "constitution" to listOf("संविधान", "samvidhan"),
-        "budget" to listOf("बजट"),
-        "india" to listOf("भारत", "bharat", "इंडिया")
+        "president" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â·ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã…Â¸ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¤Ã‚Â¿", "rashtrapati", "ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â¡ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã…Â¸", "heads of state"),
+        "prime minister" to listOf("ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬", "pradhan mantri", "pm", "modi"),
+        "chief minister" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã¢â‚¬â€œÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬", "mukhyamantri", "cm"),
+        "governor" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã…â€œÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â²", "rajyapal"),
+        "minister" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬", "mantri"),
+        "member of parliament" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¦", "sansad", "mp"),
+        "member of legislative assembly" to listOf("ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢", "vidhayak", "mla"),
+        "government" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â°", "sarkar"),
+        "election" to listOf("ÃƒÂ Ã‚Â¤Ã…Â¡ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Âµ", "chunav", "ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã‚Â²ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¶ÃƒÂ Ã‚Â¤Ã‚Â¨"),
+        "vote" to listOf("ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¥Ã¢â‚¬Â¹ÃƒÂ Ã‚Â¤Ã…Â¸", "ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¤Ã‚Â¦ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨", "matdan"),
+        "scheme" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¹ÃƒÂ Ã‚Â¤Ã…â€œÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â¾", "yojana"),
+        "law" to listOf("ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¥Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¨", "kanoon"),
+        "constitution" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨", "samvidhan"),
+        "budget" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â¬ÃƒÂ Ã‚Â¤Ã…â€œÃƒÂ Ã‚Â¤Ã…Â¸"),
+        "india" to listOf("ÃƒÂ Ã‚Â¤Ã‚Â­ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¤", "bharat", "ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¡ÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚Â¾")
     )
     
     // Reverse mapping for Hindi -> English to ensure English queries pull the right data
     private val HINDI_TO_ENGLISH = mapOf(
-        "राष्ट्रपति" to "president", "rashtrapati" to "president", "प्रेसिडेंट" to "president",
-        "प्रधानमंत्री" to "prime minister", "pradhan mantri" to "prime minister",
-        "मुख्यमंत्री" to "chief minister", "mukhyamantri" to "chief minister",
-        "राज्यपाल" to "governor", "rajyapal" to "governor",
-        "मंत्री" to "minister", "mantri" to "minister",
-        "सांसद" to "member of parliament", "sansad" to "member of parliament",
-        "विधायक" to "member of legislative assembly", "vidhayak" to "member of legislative assembly",
-        "सरकार" to "government", "sarkar" to "government",
-        "चुनाव" to "election", "chunav" to "election", "इलेक्शन" to "election",
-        "वोट" to "vote", "मतदान" to "vote", "matdan" to "vote",
-        "योजना" to "scheme", "yojana" to "scheme",
-        "कानून" to "law", "kanoon" to "law",
-        "संविधान" to "constitution", "samvidhan" to "constitution",
-        "भारत" to "india", "bharat" to "india", "इंडिया" to "india"
+        "ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â·ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã…Â¸ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¤Ã‚Â¿" to "president", "rashtrapati" to "president", "ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â¡ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã…Â¸" to "president",
+        "ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬" to "prime minister", "pradhan mantri" to "prime minister",
+        "ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã¢â‚¬â€œÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬" to "chief minister", "mukhyamantri" to "chief minister",
+        "ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã…â€œÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚ÂªÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â²" to "governor", "rajyapal" to "governor",
+        "ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬" to "minister", "mantri" to "minister",
+        "ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â¦" to "member of parliament", "sansad" to "member of parliament",
+        "ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢" to "member of legislative assembly", "vidhayak" to "member of legislative assembly",
+        "ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â°" to "government", "sarkar" to "government",
+        "ÃƒÂ Ã‚Â¤Ã…Â¡ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Âµ" to "election", "chunav" to "election", "ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã‚Â²ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¶ÃƒÂ Ã‚Â¤Ã‚Â¨" to "election",
+        "ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¥Ã¢â‚¬Â¹ÃƒÂ Ã‚Â¤Ã…Â¸" to "vote", "ÃƒÂ Ã‚Â¤Ã‚Â®ÃƒÂ Ã‚Â¤Ã‚Â¤ÃƒÂ Ã‚Â¤Ã‚Â¦ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨" to "vote", "matdan" to "vote",
+        "ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¹ÃƒÂ Ã‚Â¤Ã…â€œÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¤Ã‚Â¾" to "scheme", "yojana" to "scheme",
+        "ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨ÃƒÂ Ã‚Â¥Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¨" to "law", "kanoon" to "law",
+        "ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚ÂµÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â§ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â¨" to "constitution", "samvidhan" to "constitution",
+        "ÃƒÂ Ã‚Â¤Ã‚Â­ÃƒÂ Ã‚Â¤Ã‚Â¾ÃƒÂ Ã‚Â¤Ã‚Â°ÃƒÂ Ã‚Â¤Ã‚Â¤" to "india", "bharat" to "india", "ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¡ÃƒÂ Ã‚Â¤Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¡ÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¤Ã‚Â¾" to "india"
     )
 
     /**
@@ -462,7 +481,7 @@ class RAGEngine(private val context: Context) {
 
     /**
      * Main retrieval function.
-     * Routes query → searches relevant DBs → scores → gates → trims.
+     * Routes query ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ searches relevant DBs ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ scores ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ gates ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ trims.
      * 
      * @param complexity Use null for auto-detection, or pass explicit value for user override
      */
@@ -472,12 +491,9 @@ class RAGEngine(private val context: Context) {
         complexity: QueryComplexity? = null
     ): Pair<String, QueryComplexity> {
         val actualComplexity = complexity ?: detectComplexity(query)
-        
-        // FIX: Route and extract keywords from query ONLY, not conversationContext
-        // Conversation context was polluting routing with irrelevant terms
         val queryLower = query.lowercase()
         val keywords = extractKeywords(queryLower)
-        val targetDatabases = QueryRouter.routeQuery(queryLower)
+        val targetDatabases = getPriorityDatabases(queryLower)
 
         Log.d(TAG, "Complexity: ${actualComplexity.label}")
         Log.d(TAG, "Keywords: $keywords")
@@ -494,13 +510,12 @@ class RAGEngine(private val context: Context) {
                     record.forEach { (key, value) ->
                         val valueStr = value?.toString() ?: ""
                         val weight = FIELD_WEIGHTS[key] ?: 1.0
-                        
+
                         if (weight > 0.0) {
                             val lowerValue = valueStr.lowercase()
                             keywords.forEach { keyword ->
                                 if (lowerValue.contains(keyword)) {
                                     score += weight
-                                    // Exact word boundary match bonus
                                     if (" $lowerValue ".contains(" $keyword ")) {
                                         score += weight * 0.5
                                     }
@@ -509,17 +524,8 @@ class RAGEngine(private val context: Context) {
                         }
                     }
 
-                    if (score > 0.5) { // Very low bar — let scoring sort it out
-                        // Use the 'text' field if available (RAG-optimized), otherwise concat all fields
-                        val textField = record["text"]?.toString()
-                        val formattedRecord = if (textField != null) {
-                            textField
-                        } else {
-                            record.entries
-                                .filter { (k, _) -> k != "id" && k != "type" && k != "source" }
-                                .joinToString(". ") { (k, v) -> "$k: $v" }
-                        }
-                        allMatches.add(formattedRecord to score)
+                    if (score > 0.5) {
+                        allMatches.add(formatRecordForContext(record) to score)
                     }
                 }
             } catch (e: Exception) {
@@ -527,11 +533,7 @@ class RAGEngine(private val context: Context) {
             }
         }
 
-        // Sort by score descending — do NOT cap by maxResults here
-        // Let trimToTokenBudget handle the size limit based on context budget
         val sortedMatches = allMatches.sortedByDescending { it.second }
-
-        // CONFIDENCE GATE: lowered from 4.0 to 1.5
         val confidentMatches = sortedMatches.filter { it.second >= CONFIDENCE_THRESHOLD }
 
         Log.d(TAG, "Total matches: ${allMatches.size}, confident: ${confidentMatches.size}")
@@ -542,7 +544,7 @@ class RAGEngine(private val context: Context) {
         val context = if (confidentMatches.isNotEmpty()) {
             trimToTokenBudget(confidentMatches, actualComplexity.maxContextChars)
         } else {
-            "" // Empty → triggers fallback in prompt
+            ""
         }
 
         return context to actualComplexity
@@ -608,6 +610,30 @@ class RAGEngine(private val context: Context) {
         return builder.toString().trim()
     }
 
+    private fun getPriorityDatabases(queryLower: String): List<String> {
+        val routedDatabases = QueryRouter.routeQuery(queryLower)
+        val syncedDatabases = SyncRepository.listSyncedDatabaseNames(context).take(6)
+        return (routedDatabases + syncedDatabases).distinct().take(16)
+    }
+
+    private fun formatRecordForContext(record: Map<String, Any?>): String {
+        val metadata = listOfNotNull(
+            record["title"]?.toString()?.takeIf { it.isNotBlank() }?.let { "Title: $it" },
+            record["source"]?.toString()?.takeIf { it.isNotBlank() }?.let { "Source: $it" },
+            record["language"]?.toString()?.takeIf { it.isNotBlank() }?.let { "Language: $it" },
+            record["url"]?.toString()?.takeIf { it.isNotBlank() }?.let { "URL: $it" }
+        )
+
+        val textField = record["text"]?.toString()?.trim()
+        if (!textField.isNullOrBlank()) {
+            return (metadata + textField).joinToString(". ")
+        }
+
+        return record.entries
+            .filter { (key, _) -> key != "id" && key != "type" }
+            .joinToString(". ") { (key, value) -> "$key: $value" }
+    }
+
     /**
      * Loads a database from either the internal files directory (for synced data) or assets with caching.
      */
@@ -669,11 +695,14 @@ class RAGEngine(private val context: Context) {
      * Preload frequently used databases into cache.
      */
     fun preloadDatabases() {
-        listOf(
+        val seedDatabases = listOf(
             "heads_of_state.json",
             "politician_database.json",
-            "parliament_members.json",
+            "leaders.json",
+            "parties.json",
             "party_profiles.json",
+            "political_entities.json",
+            "parliament_members.json",
             "india_government_schemes.json",
             "budget_allocations.json",
             "constitutional_articles.json",
@@ -684,10 +713,12 @@ class RAGEngine(private val context: Context) {
             "prime_ministers_history.json",
             "lok_sabha_election_results.json",
             "assembly_election_results.json",
-            "mps_mlas_constituencies.json",
-            "political_entities.json",
-            "synced_news.json"
-        ).forEach { loadDatabase(it) }
+            "mps_mlas_constituencies.json"
+        )
+
+        (seedDatabases + SyncRepository.listSyncedDatabaseNames(context).take(6))
+            .distinct()
+            .forEach { loadDatabase(it) }
     }
 
     /**

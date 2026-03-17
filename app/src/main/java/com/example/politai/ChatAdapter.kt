@@ -14,6 +14,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import io.noties.markwon.Markwon
+import io.noties.markwon.ext.tables.TablePlugin
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -50,16 +52,11 @@ class ChatAdapter(
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
         val message = messages[position]
         
-        // Parse simple markdown (bold, italics, newlines) to HTML
-        val parsedContent = message.content
-            .replace(Regex("\\*\\*(.*?)\\*\\*", RegexOption.DOT_MATCHES_ALL), "<b>$1</b>")
-            .replace(Regex("_(.*?)_", RegexOption.DOT_MATCHES_ALL), "<i>$1</i>")
-            .replace("\n", "<br>")
+        val markwon = Markwon.builder(holder.itemView.context)
+            .usePlugin(TablePlugin.create(holder.itemView.context))
+            .build()
             
-        holder.messageText.text = androidx.core.text.HtmlCompat.fromHtml(
-            parsedContent, 
-            androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT
-        )
+        markwon.setMarkdown(holder.messageText, message.content)
         
         val timeFormat = SimpleDateFormat("hh:mm a", Locale.getDefault())
         holder.timestampText.text = timeFormat.format(Date(message.timestamp))

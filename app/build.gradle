@@ -69,7 +69,10 @@ android {
             useLegacyPackaging true
         }
     }
-    
+    aaptOptions {
+        noCompress 'part1', 'part2', 'part3', 'part4', 'part5', 'part6', 'part7', 'part8', 'part9', 'part10', 'part11', 'part12', 'part13', 'part14', 'part15', 'part16', 'part17', 'part18', 'part19', 'part20', 'part21', 'part22', 'part23', 'part24', 'part25', 'part26', 'part27', 'part28', 'part29', 'part30', 'part31', 'part32', 'part33', 'part34', 'part35'
+    }
+
     // Reduce APK size
     bundle {
         language {
@@ -93,6 +96,7 @@ android {
 dependencies {
     // MediaPipe GenAI - GPU Optimized
     implementation 'com.google.mediapipe:tasks-genai:0.10.32'
+    compileOnly 'com.google.auto.value:auto-value-annotations:1.10.1'
     
     // AndroidX Core
     implementation 'androidx.core:core-ktx:1.12.0'
@@ -138,4 +142,11 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    
+    // ML Kit for OCR
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+    
+    // Markdown Text Rendering (Bold, Tables)
+    implementation 'io.noties.markwon:core:4.6.2'
+    implementation 'io.noties.markwon:ext-tables:4.6.2'
 }

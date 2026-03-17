@@ -81,7 +81,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sync URL"
+                android:text="Sync URL(s)"
                 android:textColor="@color/white_alpha_70"
                 android:textSize="14sp"
                 android:layout_marginTop="8dp" />
@@ -95,6 +95,11 @@
                 android:textSize="14sp"
                 android:padding="12dp"
                 android:layout_marginTop="4dp"
+                android:hint="One URL per line"
+                android:inputType="textUri|textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"
+                android:gravity="top|start"
                 android:enabled="false" />
 
             <!-- Sync Frequency -->
